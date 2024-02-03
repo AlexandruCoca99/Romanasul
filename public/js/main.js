@@ -170,6 +170,8 @@ jQuery(document).ready(function ($) {
   });
   console.log("sdasdsad");
 
+  $('.solist').css({color: 'red'})
+
   /*paralax*/
   jQuery("#parallax").jparallax({
     yparallax: false,
@@ -197,6 +199,7 @@ jQuery(document).ready(function ($) {
   contact_height = image_height_contact * proc_width_contact.toFixed(2);
   contact_width = (image_width_contact - 88) * proc_width_contact.toFixed(2);
   $(".footerCenter").css({ "background-size": contact_width });
+
 });
 
 $(function () {
