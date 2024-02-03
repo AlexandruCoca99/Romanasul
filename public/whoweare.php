@@ -3,11 +3,6 @@ include 'functions.php';
 get_header("Who we are");
 ?>
 
-<div class="wrapper">
-<div class="header"></div>
-<div class="content"></div>
-</div>
-
 <section>
   <p class="title">
     <?php echo _("Mission:") ?>
