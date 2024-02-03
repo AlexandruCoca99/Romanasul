@@ -1,0 +1,255 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: romanasul 2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-04 18:15+0200\n"
+"PO-Revision-Date: 2012-02-04 18:23+0200\n"
+"Last-Translator: adinnaplus <adinamldvn@yahoo.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: c:\\wamp\\www\\Romanasul_prezentare\n"
+"Plural-Forms: s\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: ROMANIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: competitions.php:5
+msgid "Prizes and  Distinctions"
+msgstr "Premii &#351;i distinc&#355;ii"
+
+#: competitions.php:6
+msgid "Since 1979, we have received the title of Laureate in every edition of the  student's folkloric festivals that we have taken part in, and of important  cultural meanings in Europe, North America, Africa and Asia.  We have won 36 First Prizes, 12 Second Prizes, 2 Third Prizes, 3 Gold Medals, 2  Silver Medals, and One Bronze Medal, along with numerous Special Prizes,  Honorary Plaquettes and Diplomas, Excellence  Diplomas, Merit Diplomas."
+msgstr "Începând cu anul 1979 ne bucurăm de titlul de laureat al tuturor ediţiilor festivalurilor studenţeşti de folclor la care am participat, şi în cadrul unor importante manifestări culturale din Europa, America de Nord, Africa şi Asia. Am obţinut 36 de Premii I, 12 Premii II, 2 Premii III, 3 Medalii de Aur, 2 Medalii de Argint, o Medalie Bronz, alături de importante premii speciale, diplome şi plachete de onoare, diplome de excelenţă, diplome de merit. "
+
+#: competitions.php:9
+msgid "Tours abroad:"
+msgstr "Turnee în străinătate:"
+
+#: competitions.php:14
+#: competitions.php:88
+msgid "Macedonia"
+msgstr "Macedonia"
+
+#: competitions.php:18
+msgid "France-Italy"
+msgstr "Franţa-Italia"
+
+#: competitions.php:23
+msgid "Netherlands"
+msgstr "Olanda"
+
+#: competitions.php:28
+#: competitions.php:38
+#: competitions.php:52
+#: competitions.php:66
+#: competitions.php:79
+#: competitions.php:84
+#: competitions.php:102
+#: competitions.php:107
+#: competitions.php:117
+#: competitions.php:122
+#: competitions.php:132
+#: competitions.php:146
+#: competitions.php:151
+#: competitions.php:161
+#: competitions.php:170
+#: competitions.php:197
+msgid "France"
+msgstr "Franţa"
+
+#: competitions.php:33
+#: competitions.php:42
+#: competitions.php:57
+#: competitions.php:92
+#: competitions.php:112
+msgid "Italy"
+msgstr "Italia"
+
+#: competitions.php:46
+#: competitions.php:141
+#: competitions.php:183
+#: competitions.php:193
+msgid "Switzerland"
+msgstr "Elveţia"
+
+#: competitions.php:61
+msgid "Serbia - Montenegro"
+msgstr "Serbia - Montenegru"
+
+#: competitions.php:71
+#: competitions.php:188
+msgid "Greece"
+msgstr "Grecia"
+
+#: competitions.php:75
+#: competitions.php:97
+msgid "Turkey"
+msgstr "Turcia"
+
+#: competitions.php:127
+msgid "South Africa"
+msgstr "Africa de Sud"
+
+#: competitions.php:137
+msgid "USA"
+msgstr "USA"
+
+#: competitions.php:156
+#: competitions.php:165
+#: competitions.php:174
+msgid "Spain"
+msgstr "Spania"
+
+#: competitions.php:179
+msgid "Norway"
+msgstr "Norvegia"
+
+#: contacts.php:7
+msgid "Current artistic management:"
+msgstr "Conducerea artistică actuală:"
+
+#: contacts.php:8
+msgid "Director:"
+msgstr "Director:"
+
+#: contacts.php:9
+msgid "Choreographer:"
+msgstr "Coregraf:"
+
+#: contacts.php:10
+msgid "Conductor:"
+msgstr "Dirijor:"
+
+#: contacts.php:11
+msgid "Artistic Conselors:"
+msgstr "Directori artistici:"
+
+#: contacts.php:13
+msgid "We are under the patronage of the Technical University in Cluj Napoca, rector: Prof.Dr.Ing"
+msgstr "Ne aflăm sub patronajul Universităţii Tehnice Cluj Napoca, rector: Prof.Dr.Ing"
+
+#: contacts.php:19
+msgid "Address"
+msgstr "Addres&#259;"
+
+#: contacts.php:37
+msgid "See full map"
+msgstr "Vezi toat&#259; harta"
+
+#: contacts.php:44
+msgid "All rights reserved"
+msgstr "Toate drepturile rezervate"
+
+#: header.php:8
+msgid "Home"
+msgstr "Pagina principala"
+
+#: header.php:9
+msgid "Who we are"
+msgstr "Cine suntem"
+
+#: header.php:10
+msgid "Images"
+msgstr "Imagini"
+
+#: header.php:11
+msgid "Music & Videos"
+msgstr "Muzica si Video"
+
+#: header.php:12
+msgid "Competitions"
+msgstr "Competi&#355;ii"
+
+#: header.php:13
+msgid "Contact Us"
+msgstr "Contacteaz&#259;-ne"
+
+#: home.php:21
+msgid "Mankind will find itself again only when it will understand the great lesson of folklore, and will acquire the profound meaning of its splendid unity in folk culture."
+msgstr "Omenirea se va regăsi pe sine însăşi, abia atunci când va înţelege marea lecţie a folclorului, când va cunoaşte sensul adânc al admirabilei sale unităţi în planul culturii populare."
+
+#: images.php:36
+msgid "The birth of Romanasul (1974-1989)"
+msgstr "Romanasul la &#238;nceput (1974-1989)"
+
+#: images.php:82
+msgid "Romanasul some time ago (1990-2002)"
+msgstr "Romanasul de ceva timp (1990-2002)"
+
+#: images.php:180
+msgid "Romanasul today (2003-now"
+msgstr "Romanasul ast&#259;zi (2003-acum)"
+
+#: whoweare.php:5
+msgid "Mission:"
+msgstr "Misiune:"
+
+#: whoweare.php:7
+msgid "To disseminate and bring Romanian folklore on stage, to cultivate among students the taste for beauty and the passion for art."
+msgstr "Popularizarea şi prezentarea folclorului românesc pe scenă,  cultivarea gustului pentru frumos şi a pasiunii pentru artă şi cultură în rândul studenţilor. "
+
+#: whoweare.php:11
+msgid "Short history:"
+msgstr "Scurt istoric:"
+
+#: whoweare.php:13
+msgid "Founded in 1974, initiated by a group of students from the Polytechnic Institute of Cluj-Napoca, coordinated by prof. Teodor NILAS. Since 1979, we enjoy a fruitful collaboration with Prof. Dumitru POP, with the Language Faculty of the Cluj-Napoca Babes-Bolyai University. We have developed, attained maturity and achieved consecration in student's contests and festivals 'Primavara Studenteasca', 'Festivalul artei si creatiei studentesti', 'Festivalul National Studentesc de Folclor', in shows and tours both in our country and abroad. In 1984, we have starred in a movie, 'O ceata de calusari din Campia Transilvaniei', in 35mm, of certified artistic and documentary value. In 1994 and in 2000, we brought two monographies to print, by Prof. Teodor NILAS. We have made recordings at National Radio and TV stations, and we have recorded a CD."
+msgstr "Ansamblul folcloric studenţesc “Românaşul” a luat fiinţă în primăvara anului 1974 în cadrul Clubului Cultural Studenţesc al Universităţii Tehnice din Cluj-Napoca. Iniţiat de un grup de studenţi (Ioan Dragoş - solist vocal, Octavian Corcheş - solist instrumentist şi dansatorii: Alexa Sînă, Petru Nistor, Vasile Titan, Nicolae Botiza, Alexandru Ortan, Andrei Chima, Susana Neamţu, Aurora Bucur, Cristina Mureşan, Maria Dit şi Florica Bădilă) coordonat de profesorul Teodor NILAŞ. <br>Din anul 1979 se bucură de colaborarea cu distinsului prof.univ.dr. Dumitru Pop de la Facultatea de Litere a Universităţii “Babeş-Bolyai” din Cluj-Napoca. Ideile sale cu privire la modul cum trebuie concepută valorificarea scenică a folclorului s-au concretizat în spectacolele: ”Satul Coruş, vatră de joc şi cântec popular”, “O ceată de căluşari din Câmpia Transilvaniei”, “Vine pârjolul”, “Din moşi-strămoşi”, ”Satule, de dorul tău”. <br>În toţi aceşti ani, “Românaşul” a beneficiat de sprijinul specialiştilor în folclor muzical şi coregrafic de la Filiala Cluj a Academiei Române, Institutul de Folclor, Muzeul Etnografic al Transilvaniei, Direcţia pentru Cultură,Culte şi Patriumoniu Cultural Naţional, Centrul Judeţean pentru Conservarea şi Promovarea Culturii Populare. <br> Ne-am dezvoltat, ne-am maturizat şi consacrat în cadrul concursurilor şi festivalelor studenţeşti “Primăvara studenţească”, “Festivalul artei şi creaţiei studenţeşti”, “Festivalul Naţional Studenţesc de Folclor”, în spectacolele şi turneele noastre din România şi străinătate. <br>  În 1984 am realizat filmul ”O ceată de căluşari din Câmpia Transilvaniei”, pe 35mm, o valoare documentară şi artistică certificată. <br> În 1994 şi 2000 apar două lucrări monografice semnate de profesor Teodor NILAŞ. "
+
+#: whoweare.php:16
+msgid "Members:"
+msgstr "Membrii:"
+
+#: whoweare.php:18
+msgid "Students of the Technical University and other Universities of Cluj-Napoca: each year, more than 80 students participate in our activities. Dancers, singers and musicians. Conductors, choreographers, stage directors, referents, artistic counselors."
+msgstr ""
+"Studenţi ai Universităţii Tehnice şi ai altor universităţi din Cluj: anual, peste 80 de studenţi lucrează la realizarea programelor “Românaşul” <br />\n"
+"  Dansatori, muzicieni, solişti vocali şi instrumentişti.<br />\n"
+"  Dirijori, coregrafi, regizori, referenţi, consilieri artistici."
+
+#: whoweare.php:21
+msgid "Choreographers:"
+msgstr "Coregrafi:"
+
+#: whoweare.php:37
+#: whoweare.php:55
+#: whoweare.php:62
+#: whoweare.php:63
+#: whoweare.php:64
+msgid "now"
+msgstr "acum"
+
+#: whoweare.php:43
+msgid "Conductors:"
+msgstr "Dirijori:"
+
+#: whoweare.php:59
+msgid "Cultural Attaches:"
+msgstr "Directori artistici:"
+
+#: whoweare.php:67
+msgid "Singers:"
+msgstr "Soli&#351;ti vocali:"
+
+#: whoweare.php:92
+msgid "THE STAR OF THE SINGER GROUP, AND ARTISTIC COUNSELOR OF THE"
+msgstr "VEDETA GRUPULUI DE SOLIŞTI VOCALI AL ANSAMBLULUI"
+
+#: whoweare.php:96
+msgid "Collaborating singers:"
+msgstr "Soli&#351;ti vocali - colaboratori:"
+
+#: whoweare.php:115
+msgid "Collaborating musicians:"
+msgstr "Soli&#351;ti instrumenti&#351;ti:"
+
+#: whoweare.php:127
+msgid "Show hosts:"
+msgstr "Prezentatori de spectacole:"
+
+#~ msgid "Music"
+#~ msgstr "Music&#259;"

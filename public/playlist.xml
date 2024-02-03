@@ -1,0 +1,91 @@
+	<?xml version="1.0" encoding="UTF-8"?> 
+<playlist version="0" xmlns="http://xspf.org/ns/0/">
+  <trackList> 
+    <track>
+		<location>http://romanasul.utcluj.ro/swf/Jocuri_de_pe_valea_Sebesului.mp3</location>
+		<annotation>Jocuri de pe valea Sebesului</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Dansuri_din_Boju-ansamblu.mp3</location>
+		<annotation>Dansuri din Boju</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Jocuri_din_Bihor.mp3</location>
+		<annotation>Jocuri din Bihor</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Dansuri_din_Banat.mp3</location>
+		<annotation>Dansuri din Banat</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Jocuri_din_Maramures-instrumental.mp3</location>
+		<annotation>Jocuri din Maramures - instrumental</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Dansul_fetelor_de_la_Crihalma-ansamblu.mp3</location>
+		<annotation>Dansul fetelor de la Crihalma</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Jocuri_la_instrumente_traditionale_romanesti.mp3</location>
+		<annotation>Jocuri la instrumente traditionale romanesti</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Cantece_si_jocuri_din_Ardeal.mp3</location>
+		<annotation>Cantece si jocuri din Ardeal</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Suita_de_dansuri_de_pe_Somes.mp3</location>
+		<annotation>Suita de dansuri de pe Somes</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Calusul_II.mp3</location>
+		<annotation>Calusul (varianta)</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Suita_de_invartite_de_la_Orastie.mp3</location>
+		<annotation>Suita de invartite de la Orastie</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Calusul.mp3</location>
+		<annotation>Calusul</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Suita_de_jocuri_de_pe_Valea_Almasului.mp3</location>
+		<annotation>Suita de jocuri de pe Valea Almasului</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Batranesc_Fecioresc_de_pe_Valea_Chintaului.mp3</location>
+		<annotation>Batranesc Fecioresc de pe Valea Chintaului</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Suita_de_orchestra_din_Apuseni.mp3</location>
+		<annotation>Suita de orchestra din Apuseni</annotation>
+		<image>images/favicon.jpg</image>
+
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Hora_si_Sarba_lui_Dobrica.mp3</location>
+		<annotation>Hora si Sarba lui Dobrica</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+	<track>
+		<location>http://romanasul.utcluj.ro/swf/Dans_din_Banat.mp3</location>
+		<annotation>Dans din Banat</annotation>
+		<image>images/favicon.jpg</image>
+	</track>
+</playlist>

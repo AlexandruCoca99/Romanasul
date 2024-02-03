@@ -1,0 +1,12 @@
+.videobutton-play {
+	background: transparent url(play.png) 3px 3px no-repeat;
+}
+.videobutton-pause {
+	background: transparent url(pause.png) 3px 3px no-repeat;
+}
+.videobutton-stop {
+	background: transparent url(stop.png) 3px 3px no-repeat;
+}
+.videobutton-thumb {
+	background: transparent url(thumb.png) no-repeat;
+}

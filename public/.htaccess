@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Only apply the rule if the requested file doesn't actually exist
+RewriteCond %{REQUEST_FILENAME} !-f
+# Only apply the rule if the requested directory doesn't actually exist
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite requests that do not contain a dot (.) to their .php counterparts
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
