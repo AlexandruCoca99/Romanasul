@@ -1,5 +1,12 @@
-<?php $page = "whoweare"; ?>
-<?php include 'header.php'; ?>
+<?php
+include 'functions.php';
+get_header("Who we are");
+?>
+
+<div class="wrapper">
+<div class="header"></div>
+<div class="content"></div>
+</div>
 
 <section>
   <p class="title">
@@ -171,3 +178,8 @@
     </p>
   </span>
 </section>
+
+<?php
+
+get_footer();
+?>
