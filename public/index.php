@@ -35,7 +35,7 @@ pageTracker._trackPageview();
     <![endif]-->
 </head>
 <body>
-
+<div class="content">
 <noscript>
     <h1>Romanasul Dance Group, Technical University, Cluj - Napoca, Romania</h1>
 </noscript>
@@ -76,6 +76,6 @@ pageTracker._trackPageview();
 <footer id="contacts">
     <?php include 'contacts.php'?>
 </footer>
-
+</div>
 </body>
 </html>
