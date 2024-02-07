@@ -1,7 +1,11 @@
-<div class="contacts">
-    <?php $page = "contacts";?>
-    <?php include 'header.php'; ?>
+<?php $page = "contacts";
+ include 'header.php'; 
+ include 'functions.php';
+get_header("Who we are");
+?>
 
+
+<div class="contacts">
     <div class="footerCenter">
         <div class="formBox">
             <p class="footerTitle"><i><?php echo _("Current artistic management:")?></i></p>

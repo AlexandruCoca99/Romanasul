@@ -1,5 +1,8 @@
-<?php $page="music";?>
-<?php include 'header.php'; ?>
+<?php $page = "video";
+ include 'header.php'; 
+ include 'functions.php';
+get_header("musicvideo");
+?>
 
 <?php 
 

@@ -139,7 +139,7 @@ div .homeSlogan div {
   width: 212px;
   height: 62px;
   float: right;
-  background: url(../images/logo-12-01.png) no-repeat 0 0;
+  background: url(../images/logo-12-01.png);
   margin-top: 10px;
 }
 
@@ -403,6 +403,15 @@ a.footer:hover {
 .footerCenter .bottomCopy .followBox a:hover {
   opacity: 1;
   filter: alpha(opacity=100);
+}
+
+/* Who we are section */
+.solisti-item {
+  margin: 2px 0;
+}
+
+.cultural-attaches-item {
+  margin: 2px 0;
 }
 
 /*--------- IE7 Hack ---------*/

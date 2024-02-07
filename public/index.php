@@ -63,7 +63,7 @@ pageTracker._trackPageview();
     <!-- Videos -->
 <!--    <div id="videos">-->
 <!--        --><?php //include 'videos.php';?>
-<!--    </div>-->
+<!--    </div> -->
 
     <!-- Competitions -->
     <div id="competitions">

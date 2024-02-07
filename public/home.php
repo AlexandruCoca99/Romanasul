@@ -1,7 +1,10 @@
-<div class="home">
-    <?php $page="home";?>
-    <?php include 'header.php'; ?>
+<?php $page = "home";
+ include 'header.php'; 
+ include 'functions.php';
+get_header("Home");
+?>
 
+<div class="home">
     <div class="parallaxBox">
 
         <div id="home_bg_div" style="width=98%;  text-align:center;">

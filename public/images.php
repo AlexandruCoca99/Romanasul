@@ -1,5 +1,8 @@
-<?php $page="images";?>
-<?php include"header.php"?>
+<?php $page = "images";
+ include 'header.php'; 
+ include 'functions.php';
+get_header("Images");
+?>
 
 <section>
 <table>

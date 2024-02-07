@@ -1,5 +1,8 @@
-<?php $page="competitions";?>
-<?php include 'header.php'; ?>
+<?php $page="competitions";
+include 'header.php'; 
+include 'functions.php';
+get_header("Who we are");
+?>
 
 <section>
 <p class="title"><?php echo _("Prizes and  Distinctions")?></p>

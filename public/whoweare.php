@@ -1,5 +1,6 @@
-<?php
-include 'functions.php';
+<?php $page = "whoweare";
+ include 'header.php'; 
+ include 'functions.php';
 get_header("Who we are");
 ?>
 
@@ -76,7 +77,18 @@ get_header("Who we are");
   <p class="title">
     <?php echo _("Cultural Attaches:") ?>
   </p>
-  <span>1. Prof.Ioan Bârsan (1974 - 1981)<br />
+
+  <span class="cultural-attaches-array">
+  <?php
+  $CulturalAttaches = ["Prof.Ioan Bârsan (1974 - 1981)", "Prof.Mîndru Alexandru (1981 - 2003)", "Prof.Victor Bercea (1982 - 1989; 2002 - " . _("now") . ")", "Ing.Marius Moldovan (2004 - " . _("now") . ")", "Anghel Mirela (2003 - " . _("now") . ")"];
+
+  foreach ($CulturalAttaches as $key => $element) {
+    echo '<p class="cultural-attaches-item">' . ($key + 1) . '. ' . $element . '</p>';
+  }
+  ?>
+</span>
+
+  <!-- <span>1. Prof.Ioan Bârsan (1974 - 1981)<br />
     2. Prof.Mîndru Alexandru (1981 - 2003)<br />
     3. Prof.Victor Bercea (1982 - 1989; 2002 -
     <?php echo _("now") ?>)<br />
@@ -84,18 +96,18 @@ get_header("Who we are");
     <?php echo _("now") ?>)<br />
     5. Anghel Mirela (2003 -
     <?php echo _("now") ?>)
-  </span>
+  </span> -->
 
   <p>&nbsp;</p>
   <p class="title">
     <?php echo _("Singers:") ?>
   </p>
-  <span>
+  <span class="solisti-array">
     <?php
     $solisti = ["Mariana Chiorean", " Ioan Dragoş", "Ioan Fechete","Ionuţ Fulea","Marius Fulea","Georgeta Fârţală", " Adriana Irimieş", "Felicia Lupu","Dorina Pentelescu","Ioan Sîncu","Crina Varga", " Rozalia Iuga", "Dorina Grad","Maria Mariş","Simona Baciu","Anda Conţiş", " Mircea Sime", "Florin Bota","Silviu Adrian Popa","Irinel Popa","Mirela Suciu","Camelia Lupaş","Claudiu Ciotleuş"];
 
     foreach ($solisti as $key => $element) {
-      echo '<p class="solist">' . ($key + 1) . '. ' . $element . '</p>';
+      echo '<p class="solisti-item">' . ($key + 1) . '. ' . $element . '</p>';
     }
 
     ?>
