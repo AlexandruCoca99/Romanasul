@@ -92,14 +92,14 @@ get_header("Who we are");
   </p>
   <span>
     <?php
-    $solisti = ["Mariana Chiorean", " Ioan Dragoş", "Ioan Fechete"];
+    $solisti = ["Mariana Chiorean", " Ioan Dragoş", "Ioan Fechete","Ionuţ Fulea","Marius Fulea","Georgeta Fârţală", " Adriana Irimieş", "Felicia Lupu","Dorina Pentelescu","Ioan Sîncu","Crina Varga", " Rozalia Iuga", "Dorina Grad","Maria Mariş","Simona Baciu","Anda Conţiş", " Mircea Sime", "Florin Bota","Silviu Adrian Popa","Irinel Popa","Mirela Suciu","Camelia Lupaş","Claudiu Ciotleuş"];
 
     foreach ($solisti as $key => $element) {
       echo '<p class="solist">' . ($key + 1) . '. ' . $element . '</p>';
     }
 
     ?>
-    <p class="solist">1. Mariana Chiorean</p><br />
+    <!-- <p class="solist">1. Mariana Chiorean</p><br />
     2. Ioan Dragoş<br />
     3. Ioan Fechete<br />
     4. Ionuţ Fulea<br />
@@ -122,7 +122,7 @@ get_header("Who we are");
     21. Irinel Popa<br />
     22. Mirela Suciu<br />
     23. Camelia Lupaş<br />
-    24. Claudiu Ciotleuş</p>
+    24. Claudiu Ciotleuş</p> -->
   </span>
   <p class="a">
     <?php echo _("THE STAR OF THE SINGER GROUP, AND ARTISTIC COUNSELOR OF THE") ?> &quot;Românaşul&quot; : IONUŢ
