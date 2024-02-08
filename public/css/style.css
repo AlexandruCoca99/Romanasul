@@ -53,6 +53,52 @@ section {
   width: 960px;
   margin: 0 auto;
 }
+
+/* Header section*/
+
+/* Style the navbar */
+nav {
+  float: left;
+  position: fixed; /* Set position to fixed */
+  margin-top: 30px;
+  margin-left: 20px;
+  color: #dde1e4;
+  font-size: 23px;
+  font-family: "FuturaStdLightTrRegular";
+  z-index: 10;
+}
+
+/* Style the links inside the navbar */
+nav a {
+  margin: 0 10px 0 10px;
+  font-size: 14px;
+  color: #900;
+  font-family: "FuturaStdBookTrRegular";
+}
+
+/* On hover, change the background color of the links */
+nav a:hover {
+  color: #c98c94;
+}
+.languageBtn {
+  margin-top: 5px;
+  margin-left: 5px;
+  position: absolute;
+  z-index: 100;
+}
+
+/* Style the logo */
+.logo {
+  float: right;
+  width: 150px;
+  height: 90px;
+  background: url(../images/Sigla-noua.png);
+  background-size: contain;
+  background-repeat: no-repeat 0 0;
+}
+
+/* Home background image section*/
+
 .parallaxBox {
   position: relative;
   margin: 0 auto;
@@ -60,6 +106,19 @@ section {
   height: 630px;
   width: auto;
 }
+
+#home-bg-div {
+  width: 98%;
+  text-align: center;
+}
+
+#home-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
 section:after {
   content: ".";
   display: block;
@@ -82,30 +141,6 @@ section:after {
   width: 960px;
   height: 20px;
   margin: 0 auto;
-}
-
-nav a {
-  margin: 0 10px 0 10px;
-  font-size: 14px;
-  color: #900;
-  font-family: "FuturaStdBookTrRegular";
-}
-nav {
-  float: left;
-  margin-top: 30px;
-  margin-left: 20px;
-  color: #dde1e4;
-  font-size: 23px;
-  font-family: "FuturaStdLightTrRegular";
-}
-nav a:hover {
-  color: #c98c94;
-}
-.languageBtn {
-  margin-top: 5px;
-  margin-left: 5px;
-  position: absolute;
-  z-index: 100;
 }
 
 div .homeSlogan {
@@ -138,15 +173,6 @@ div .homeSlogan div {
 }
 .homeSlogan p span {
   font-family: "FuturaStdBookTrRegular";
-}
-
-.logo {
-  width: 150px;
-  height: 90px;
-  float: right;
-  background: url(../images/Sigla-noua.png);
-  background-size: contain;
-  background-repeat: no-repeat 0 0;
 }
 
 footer .formBox {

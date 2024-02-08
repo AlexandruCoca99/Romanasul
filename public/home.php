@@ -7,8 +7,8 @@ get_header("Home");
 <div class="home">
     <div class="parallaxBox">
 
-        <div id="home_bg_div" style="width=98%;  text-align:center;">
-            <img id="home_bg" style="position:absolute; top:0px; left:0px;" alt="" src="images/header.png" />
+        <div id="home-bg-div">
+            <img id="home-bg"  src="images/header.png" />
         </div>
 
         <div class="languageBtn">
