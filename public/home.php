@@ -1,13 +1,14 @@
 <?php $page = "home";
- include 'header.php'; 
  include 'functions.php';
+ include 'header.php';
 get_header("Home");
+include 'header.php';
 ?>
 
 <div class="home">
     <div class="parallaxBox">
 
-        <div id="home-bg-div">
+    <div class="hero-wrapper">
             <img id="home-bg"  src="images/header.png" />
         </div>
 

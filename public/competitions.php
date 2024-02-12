@@ -3,6 +3,9 @@ include 'header.php';
 include 'functions.php';
 get_header("Who we are");
 ?>
+        <div class="hero-wrapper">
+            <img class="competitions-bg"  src="images/gallery/PozeRemastered/Competitons-bg2.jpg" />
+        </div>
 
 <section>
 <p class="title"><?php echo _("Prizes and  Distinctions")?></p>

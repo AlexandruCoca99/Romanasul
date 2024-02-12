@@ -44,28 +44,38 @@ section,
 article {
   display: block;
 }
-header {
-  width: 100%;
-  height: 100px;
-  margin: 0 auto;
-}
+
 section {
   width: 960px;
   margin: 0 auto;
 }
 
 /* Header section*/
+header {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
 
+/* hero wrapper */
+
+.hero-wrapper {
+  display: flex;
+}
 /* Style the navbar */
 nav {
   float: left;
-  position: fixed; /* Set position to fixed */
   margin-top: 30px;
   margin-left: 20px;
   color: #dde1e4;
   font-size: 23px;
   font-family: "FuturaStdLightTrRegular";
-  z-index: 10;
+  z-index: 1000;
 }
 
 /* Style the links inside the navbar */
@@ -95,6 +105,7 @@ nav a:hover {
   background: url(../images/Sigla-noua.png);
   background-size: contain;
   background-repeat: no-repeat 0 0;
+  z-index: 1000;
 }
 
 /* Home background image section*/
@@ -104,9 +115,7 @@ nav a:hover {
   margin: 0 auto;
   overflow: hidden;
   height: 630px;
-  width: auto;
 }
-
 #home-bg-div {
   width: 98%;
   text-align: center;
@@ -119,6 +128,23 @@ nav a:hover {
   width: 100%;
 }
 
+/* Who we are section */
+
+#whoweare-bg {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/* Competitions section */
+#competitions-bg {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 630px;
+}
 section:after {
   content: ".";
   display: block;

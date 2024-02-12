@@ -1,10 +1,15 @@
-<?php $page = "whoweare";
- include 'header.php'; 
+<?php $page = "whoweare"; 
  include 'functions.php';
 get_header("Who we are");
+include 'header.php';
 ?>
 
+        <div class="hero-wrapper" style = "">
+            <img class="whoweare-bg"  src="images/gallery/PozeRemastered/Fundal-who-we-are.jpg" />
+        </div>
+
 <section>
+
   <p class="title">
     <?php echo _("Mission:") ?>
   </p>
