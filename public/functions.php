@@ -11,7 +11,12 @@ function get_includes()
     <link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/fonts.css" />';
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="js/map.js"></script>';
 }
 function get_header($title = "")
 {
