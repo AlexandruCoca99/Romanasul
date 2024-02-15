@@ -5,7 +5,6 @@ function get_includes()
     return '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="../apis.google.com/js/plusone.js"></script>
     <script type="text/javascript" src="highslide/highslide-with-gallery.packed.js"/></script>
-    <script type="text/javascript" src="js/highslide_custom.js"/></script>
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
@@ -22,7 +21,8 @@ function get_local_scripts()
 {
     return '       
     <script type="text/javascript" src="js/main.js"></script>
-    <script src="js/map.js"></script>';
+    <script src="js/map.js"></script>
+    <script type="text/javascript" src="js/highslide_custom.js"/></script>';
 }
 
 function get_header($title = "")
