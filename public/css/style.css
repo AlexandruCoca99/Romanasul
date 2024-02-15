@@ -37,6 +37,10 @@ p {
   margin-bottom: 15px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 header,
 footer,
 nav,
@@ -52,14 +56,17 @@ section {
 
 /* Header section*/
 header {
+  position: fixed;
+  display: flex;
+  z-index: 1000;
   width: 100%;
   height: 100px;
   margin: 0 auto;
-  background-color: #f7f7f7;
-  position: fixed;
-  display: flex;
+  padding: 0 20px;
   justify-content: space-between;
-  z-index: 1000;
+  align-items: center;
+  box-shadow: 0 1px 12px #7e7e7e2e;
+  background-color: #f7f7f7;
 }
 
 /* hero wrapper */
@@ -69,21 +76,19 @@ header {
 }
 /* Style the navbar */
 nav {
-  float: left;
-  margin-top: 30px;
-  margin-left: 20px;
   color: #dde1e4;
   font-size: 23px;
   font-family: "FuturaStdLightTrRegular";
-  z-index: 1000;
 }
 
 /* Style the links inside the navbar */
 nav a {
   margin: 0 10px 0 10px;
-  font-size: 14px;
+  font-size: 16px;
   color: #900;
   font-family: "FuturaStdBookTrRegular";
+  line-height: 20px;
+  padding: 20px 0;
 }
 
 /* On hover, change the background color of the links */
@@ -99,13 +104,11 @@ nav a:hover {
 
 /* Style the logo */
 .logo {
-  float: right;
   width: 150px;
   height: 90px;
   background: url(../images/Sigla-noua.png);
   background-size: contain;
-  background-repeat: no-repeat 0 0;
-  z-index: 1000;
+  background-repeat: no-repeat;
 }
 
 /* Home background image section*/
