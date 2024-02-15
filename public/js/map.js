@@ -11,12 +11,12 @@
  */
 
 // Create root and chart
-var root = am5.Root.new("chartdiv");
+const root = am5.Root.new("chartdiv");
 
 // Set themes
 root.setThemes([am5themes_Animated.new(root)]);
 
-var chart = root.container.children.push(
+const chart = root.container.children.push(
   am5map.MapChart.new(root, {
     panX: "rotateX",
     projection: am5map.geoNaturalEarth1(),
@@ -24,7 +24,7 @@ var chart = root.container.children.push(
 );
 
 // Create polygon series
-var polygonSeries = chart.series.push(
+const polygonSeries = chart.series.push(
   am5map.MapPolygonSeries.new(root, {
     geoJSON: am5geodata_worldLow,
     exclude: ["AQ"],
