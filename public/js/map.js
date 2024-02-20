@@ -41,6 +41,9 @@ am4core.ready(function () {
   var hs = polygonTemplate.states.create("hover");
   hs.properties.fill = am4core.color("#367B25");
 
+  var hs_countries = polygonTemplate.states.create("hover");
+
+  //Background image
   var bgSeries = chart.series.push(new am4maps.MapImageSeries());
   bgSeries.toBack();
   var bgImage = bgSeries.mapImages.template.createChild(am4core.Image);
@@ -97,8 +100,8 @@ am4core.ready(function () {
   circle.zIndex = -1;
 
   // Create hover state to slightly increase radius
-  var hs = pin.background.states.create("hover");
-  hs.properties.radius = 50;
+  var hs_pin = pin.background.states.create("hover");
+  hs_pin.properties.radius = 50;
 
   imageSeries.data = [
     // {
@@ -114,7 +117,7 @@ am4core.ready(function () {
       longitude: 55.296249,
       imageURL: "images/gallery/AfiseTurnee/Dubai.jpg",
       value: 70,
-      title: "London",
+      title: "Dubai",
     },
     // {
     //   latitude: 48.856614,
@@ -163,14 +166,25 @@ am4core.ready(function () {
       id: "AE",
       fill: "images/gallery/AfiseTurnee/Dubai.jpg",
     },
+
     {
-      id: "RU",
-      fill: "images/gallery/AfiseTurnee/Canada.jpg",
+      id: "ES",
+      fill: "images/Poze-romanasul/1.Turnee/Barcelona-2022/Afis-Barcelona.jpg",
     },
 
     {
       id: "CA",
       fill: "images/gallery/AfiseTurnee/Canada.jpg",
+    },
+
+    {
+      id: "PT",
+      fill: "images/Poze-romanasul/1.Turnee/Portugalia-2019/Afis-reversed.png",
+    },
+
+    {
+      id: "FR",
+      fill: "images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg",
     },
   ];
 
@@ -184,48 +198,77 @@ am4core.ready(function () {
         pattern.x = -250;
         pattern.y = -375;
 
+        //Create image
         var image = new am4core.Image();
         image.width = 700;
         image.height = 950;
         image.href = polygon.dataItem.dataContext.fill;
 
+        //fill each country with the image
         switch (polygon.dataItem.dataContext.id) {
           case "CA":
-            image.width = 400;
-            image.height = 200;
+            image.width = 600;
+            image.height = 400;
 
-            pattern.width = 400;
-            pattern.height = 200;
-            pattern.x = -52;
-            pattern.y = -100;
+            pattern.width = 500;
+            pattern.height = 320;
+
+            pattern.x = 210;
+            pattern.y = 30;
             break;
 
           case "AE":
-            image.width = 200;
-            image.height = 200;
+            image.width = 30;
+            image.height = 15;
 
-            pattern.width = 200;
-            pattern.height = 200;
-            pattern.x = -52;
-            pattern.y = -100;
+            pattern.width = 30;
+            pattern.height = 10;
+            pattern.x = -15;
+            pattern.y = 0;
+            break;
+
+          case "ES":
+            image.width = 70;
+            image.height = 115;
+
+            pattern.width = 70;
+            pattern.height = 115;
+            pattern.x = -3;
+            pattern.y = 70;
+            break;
+
+          case "PT":
+            image.width = 15;
+            image.height = 23;
+
+            pattern.width = 15;
+            pattern.height = 23;
+            pattern.x = -3;
+            pattern.y = 70;
+            break;
+
+          case "FR":
+            image.width = 150;
+            image.height = 100;
+
+            pattern.width = 150;
+            pattern.height = 100;
+            pattern.x = 5;
+            pattern.y = -35;
             break;
         }
         pattern.addElement(image.element);
 
         polygon.fill = pattern;
-        // if (polygon.dataItem.dataContext.id === "CA") {
-        //   image.width = 400;
-        //   image.height = 200;
-
-        //   pattern.width = 400;
-        //   pattern.height = 200;
-        //   pattern.x = -52;
-        //   pattern.y = -100;
-        // }
-        // pattern.addElement(image.element);
-
-        // polygon.fill = pattern;
       }
     });
+  });
+
+  //Click event on countries
+  polygonSeries.mapPolygons.template.events.on("hit", function (ev) {
+    switch (ev.target.dataItem.dataContext.id) {
+      case "CA":
+        window.location.assign("competitions.php");
+    }
   });
 });
