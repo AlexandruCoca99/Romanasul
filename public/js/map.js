@@ -9,266 +9,314 @@
  * https://www.amcharts.com/docs/v4/
  * ---------------------------------------
  */
-am4core.ready(function () {
-  // Themes begin
-  am4core.useTheme(am4themes_animated);
-  // Themes end
+const visitedCountries = [
+  {
+    id: "AE",
+    fill: "images/gallery/AfiseTurnee/Dubai.jpg",
+  },
 
-  // Create map instance
-  var chart = am4core.create("chartdiv", am4maps.MapChart);
+  {
+    id: "ES",
+    fill: "images/Poze-romanasul/1.Turnee/Barcelona-2022/Afis-Barcelona.jpg",
+    buttons: ["ES-2022"],
+  },
 
-  // Set map definition
-  chart.geodata = am4geodata_worldLow;
+  {
+    id: "CA",
+    fill: "images/gallery/AfiseTurnee/Canada.jpg",
+    name: "Canada",
+    buttons: ["CA-2016", "CA-2022"],
+  },
 
-  // Set projection
-  chart.projection = new am4maps.projections.Miller();
+  {
+    id: "PT",
+    fill: "images/Poze-romanasul/1.Turnee/Portugalia-2019/Afis-reversed.png",
+  },
 
-  // Create map polygon series
-  var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+  {
+    id: "FR",
+    fill: "images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg",
+  },
+];
 
-  // Exclude Antartica
-  polygonSeries.exclude = ["AQ"];
+jQuery(document).ready(function ($) {
+  am4core.ready(function () {
+    // Themes begin
+    am4core.useTheme(am4themes_animated);
+    // Themes end
 
-  // Make map load polygon (like id names) data from GeoJSON
-  polygonSeries.useGeodata = true;
+    // Create map instance
+    var chart = am4core.create("chartdiv", am4maps.MapChart);
 
-  // Configure series
-  var polygonTemplate = polygonSeries.mapPolygons.template;
-  polygonTemplate.tooltipText = "{name}";
-  polygonTemplate.fill = chart.colors.getIndex(0);
+    // Set map definition
+    chart.geodata = am4geodata_worldLow;
 
-  // Create hover state and set alternative fill color
-  var hs = polygonTemplate.states.create("hover");
-  hs.properties.fill = am4core.color("#367B25");
+    // Set projection
+    chart.projection = new am4maps.projections.Miller();
 
-  var hs_countries = polygonTemplate.states.create("hover");
+    // Create map polygon series
+    var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
 
-  //Background image
-  var bgSeries = chart.series.push(new am4maps.MapImageSeries());
-  bgSeries.toBack();
-  var bgImage = bgSeries.mapImages.template.createChild(am4core.Image);
-  bgImage.propertyFields.href = "src";
-  bgImage.width = 2000;
-  bgImage.height = 500;
-  bgSeries.data = [
-    {
-      //src: "images/Map-bg-img.png",
-    },
-  ];
+    // Exclude Antartica
+    polygonSeries.exclude = ["AQ"];
 
-  // Image series
-  var imageSeries = chart.series.push(new am4maps.MapImageSeries());
-  var imageTemplate = imageSeries.mapImages.template;
-  imageTemplate.propertyFields.longitude = "longitude";
-  imageTemplate.propertyFields.latitude = "latitude";
-  imageTemplate.nonScaling = true;
+    // Make map load polygon (like id names) data from GeoJSON
+    polygonSeries.useGeodata = true;
 
-  // Creating a pin bullet
-  var pin = imageTemplate.createChild(am4plugins_bullets.PinBullet);
+    // Configure series
+    var polygonTemplate = polygonSeries.mapPolygons.template;
+    polygonTemplate.tooltipText = "{name}";
+    polygonTemplate.fill = chart.colors.getIndex(0);
 
-  // Set what to display on rollover tooltip
-  pin.tooltipText = "{title}";
-  imageSeries.tooltip.pointerOrientation = "center";
+    // Create hover state and set alternative fill color
+    var hs = polygonTemplate.states.create("hover");
+    hs.properties.fill = am4core.color("#367B25");
 
-  // Configuring pin appearance
-  pin.background.fill = chart.colors.getIndex(6);
-  pin.background.fillOpacity = 0.7;
-  pin.background.pointerAngle = 240;
-  pin.background.pointerBaseWidth = 5;
-  pin.background.pointerLength = 30;
-  // Adding an image with its "href" attribute tied to values in data
-  pin.image = new am4core.Image();
-  pin.image.propertyFields.href = "imageURL";
+    var hs_countries = polygonTemplate.states.create("hover");
 
-  // Creating a "heat rule" to modify "radius" of the bullet based
-  // on value in data
-  imageSeries.heatRules.push({
-    target: pin.background,
-    property: "radius",
-    min: 20,
-    max: 40,
-    dataField: "value",
-  });
+    //Background image
+    var bgSeries = chart.series.push(new am4maps.MapImageSeries());
+    bgSeries.toBack();
+    var bgImage = bgSeries.mapImages.template.createChild(am4core.Image);
+    bgImage.propertyFields.href = "src";
+    bgImage.width = 2000;
+    bgImage.height = 500;
+    bgSeries.data = [
+      {
+        //src: "images/Map-bg-img.png",
+      },
+    ];
 
-  // Add a circle to pin base.
-  // Bullet is a Container, so we can add there anything.
-  var circle = pin.createChild(am4core.Ellipse);
-  //circle.radius = am4core.percent(80);
-  circle.radiusY = 3;
-  circle.strokeWidth = 0;
-  circle.fillOpacity = 0.1;
-  circle.zIndex = -1;
+    // Image series
+    var imageSeries = chart.series.push(new am4maps.MapImageSeries());
+    var imageTemplate = imageSeries.mapImages.template;
+    imageTemplate.propertyFields.longitude = "longitude";
+    imageTemplate.propertyFields.latitude = "latitude";
+    imageTemplate.nonScaling = true;
 
-  // Create hover state to slightly increase radius
-  var hs_pin = pin.background.states.create("hover");
-  hs_pin.properties.radius = 50;
+    // Creating a pin bullet
+    var pin = imageTemplate.createChild(am4plugins_bullets.PinBullet);
 
-  imageSeries.data = [
-    // {
-    //   latitude: 40.416775,
-    //   longitude: -3.70379,
-    //   imageURL:
-    //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_madrid.jpg",
-    //   value: 100,
-    //   title: "Madrid",
-    // },
-    {
-      latitude: 25.276987,
-      longitude: 55.296249,
-      imageURL: "images/gallery/AfiseTurnee/Dubai.jpg",
-      value: 70,
-      title: "Dubai",
-    },
-    // {
-    //   latitude: 48.856614,
-    //   longitude: 2.352222,
-    //   imageURL:
-    //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_paris.jpg",
-    //   value: 60,
-    //   title: "Paris",
-    // },
-    // {
-    //   latitude: 52.520007,
-    //   longitude: 13.404954,
-    //   imageURL:
-    //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_berlin.jpg",
-    //   value: 22,
-    //   title: "Berlin",
-    // },
-    // {
-    //   latitude: 52.229676,
-    //   longitude: 21.012229,
-    //   imageURL:
-    //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_warsaw.jpg",
-    //   value: 39,
-    //   title: "Warsaw",
-    // },
-    // {
-    //   latitude: 41.872389,
-    //   longitude: 12.48018,
-    //   imageURL:
-    //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_rome.jpg",
-    //   value: 66,
-    //   title: "Rome",
-    // },
-    // {
-    //   latitude: 59.329323,
-    //   longitude: 18.068581,
-    //   imageURL:
-    //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_stockholm.jpg",
-    //   value: 50,
-    //   title: "Stockholm",
-    // },
-  ];
+    // Set what to display on rollover tooltip
+    pin.tooltipText = "{title}";
+    imageSeries.tooltip.pointerOrientation = "center";
 
-  polygonSeries.data = [
-    {
-      id: "AE",
-      fill: "images/gallery/AfiseTurnee/Dubai.jpg",
-    },
+    // Configuring pin appearance
+    pin.background.fill = chart.colors.getIndex(6);
+    pin.background.fillOpacity = 0.7;
+    pin.background.pointerAngle = 240;
+    pin.background.pointerBaseWidth = 5;
+    pin.background.pointerLength = 30;
+    // Adding an image with its "href" attribute tied to values in data
+    pin.image = new am4core.Image();
+    pin.image.propertyFields.href = "imageURL";
 
-    {
-      id: "ES",
-      fill: "images/Poze-romanasul/1.Turnee/Barcelona-2022/Afis-Barcelona.jpg",
-    },
+    // Creating a "heat rule" to modify "radius" of the bullet based
+    // on value in data
+    imageSeries.heatRules.push({
+      target: pin.background,
+      property: "radius",
+      min: 20,
+      max: 40,
+      dataField: "value",
+    });
 
-    {
-      id: "CA",
-      fill: "images/gallery/AfiseTurnee/Canada.jpg",
-    },
+    // Add a circle to pin base.
+    // Bullet is a Container, so we can add there anything.
+    var circle = pin.createChild(am4core.Ellipse);
+    //circle.radius = am4core.percent(80);
+    circle.radiusY = 3;
+    circle.strokeWidth = 0;
+    circle.fillOpacity = 0.1;
+    circle.zIndex = -1;
 
-    {
-      id: "PT",
-      fill: "images/Poze-romanasul/1.Turnee/Portugalia-2019/Afis-reversed.png",
-    },
+    // Create hover state to slightly increase radius
+    var hs_pin = pin.background.states.create("hover");
+    hs_pin.properties.radius = 50;
 
-    {
-      id: "FR",
-      fill: "images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg",
-    },
-  ];
+    imageSeries.data = [
+      // {
+      //   latitude: 40.416775,
+      //   longitude: -3.70379,
+      //   imageURL:
+      //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_madrid.jpg",
+      //   value: 100,
+      //   title: "Madrid",
+      // },
+      {
+        latitude: 25.276987,
+        longitude: 55.296249,
+        imageURL: "images/gallery/AfiseTurnee/Dubai.jpg",
+        value: 70,
+        title: "Dubai",
+      },
+      // {
+      //   latitude: 48.856614,
+      //   longitude: 2.352222,
+      //   imageURL:
+      //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_paris.jpg",
+      //   value: 60,
+      //   title: "Paris",
+      // },
+      // {
+      //   latitude: 52.520007,
+      //   longitude: 13.404954,
+      //   imageURL:
+      //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_berlin.jpg",
+      //   value: 22,
+      //   title: "Berlin",
+      // },
+      // {
+      //   latitude: 52.229676,
+      //   longitude: 21.012229,
+      //   imageURL:
+      //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_warsaw.jpg",
+      //   value: 39,
+      //   title: "Warsaw",
+      // },
+      // {
+      //   latitude: 41.872389,
+      //   longitude: 12.48018,
+      //   imageURL:
+      //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_rome.jpg",
+      //   value: 66,
+      //   title: "Rome",
+      // },
+      // {
+      //   latitude: 59.329323,
+      //   longitude: 18.068581,
+      //   imageURL:
+      //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_stockholm.jpg",
+      //   value: 50,
+      //   title: "Stockholm",
+      // },
+    ];
 
-  polygonSeries.events.on("datavalidated", function (ev) {
-    ev.target.mapPolygons.each(function (polygon) {
-      if (polygon.dataItem.dataContext.fill) {
-        // Create pattern
-        var pattern = new am4core.Pattern();
-        pattern.width = 600;
-        pattern.height = 750;
-        pattern.x = -250;
-        pattern.y = -375;
+    polygonSeries.data = [...visitedCountries];
 
-        //Create image
-        var image = new am4core.Image();
-        image.width = 700;
-        image.height = 950;
-        image.href = polygon.dataItem.dataContext.fill;
+    polygonSeries.events.on("datavalidated", function (ev) {
+      ev.target.mapPolygons.each(function (polygon) {
+        if (polygon.dataItem.dataContext.fill) {
+          // Create pattern
+          var pattern = new am4core.Pattern();
+          pattern.width = 600;
+          pattern.height = 750;
+          pattern.x = -250;
+          pattern.y = -375;
 
-        //fill each country with the image
-        switch (polygon.dataItem.dataContext.id) {
-          case "CA":
-            image.width = 600;
-            image.height = 400;
+          //Create image
+          var image = new am4core.Image();
+          image.width = 700;
+          image.height = 950;
+          image.href = polygon.dataItem.dataContext.fill;
 
-            pattern.width = 500;
-            pattern.height = 320;
+          //fill each country with the image
+          switch (polygon.dataItem.dataContext.id) {
+            case "CA":
+              image.width = 600;
+              image.height = 400;
 
-            pattern.x = 210;
-            pattern.y = 30;
-            break;
+              pattern.width = 500;
+              pattern.height = 320;
 
-          case "AE":
-            image.width = 30;
-            image.height = 15;
+              pattern.x = 210;
+              pattern.y = 30;
+              break;
 
-            pattern.width = 30;
-            pattern.height = 10;
-            pattern.x = -15;
-            pattern.y = 0;
-            break;
+            case "AE":
+              image.width = 30;
+              image.height = 15;
 
-          case "ES":
-            image.width = 70;
-            image.height = 115;
+              pattern.width = 30;
+              pattern.height = 10;
+              pattern.x = -15;
+              pattern.y = 0;
+              break;
 
-            pattern.width = 70;
-            pattern.height = 115;
-            pattern.x = -3;
-            pattern.y = 70;
-            break;
+            case "ES":
+              image.width = 70;
+              image.height = 115;
 
-          case "PT":
-            image.width = 15;
-            image.height = 23;
+              pattern.width = 70;
+              pattern.height = 115;
+              pattern.x = -3;
+              pattern.y = 70;
+              break;
 
-            pattern.width = 15;
-            pattern.height = 23;
-            pattern.x = -3;
-            pattern.y = 70;
-            break;
+            case "PT":
+              image.width = 15;
+              image.height = 23;
 
-          case "FR":
-            image.width = 150;
-            image.height = 100;
+              pattern.width = 15;
+              pattern.height = 23;
+              pattern.x = -3;
+              pattern.y = 70;
+              break;
 
-            pattern.width = 150;
-            pattern.height = 100;
-            pattern.x = 5;
-            pattern.y = -35;
-            break;
+            case "FR":
+              image.width = 150;
+              image.height = 100;
+
+              pattern.width = 150;
+              pattern.height = 100;
+              pattern.x = 5;
+              pattern.y = -35;
+              break;
+          }
+          pattern.addElement(image.element);
+
+          polygon.fill = pattern;
         }
-        pattern.addElement(image.element);
+      });
+    });
 
-        polygon.fill = pattern;
+    //Click event on countries
+    polygonSeries.mapPolygons.template.events.on("hit", function (ev) {
+      const countryId = ev.target.dataItem.dataContext.id;
+      const countryData = polygonSeries.data.find(
+        (data) => data.id === countryId
+      );
+
+      if (!visitedCountries.some((data) => data.id === countryId)) {
+        return;
       }
+
+      $(".right-side-pop-up").addClass("show");
+      $(".right-side-pop-up").html(rightSideContent(countryData));
+      $(".background").addClass("show");
     });
   });
 
-  //Click event on countries
-  polygonSeries.mapPolygons.template.events.on("hit", function (ev) {
-    switch (ev.target.dataItem.dataContext.id) {
-      case "CA":
-        window.location.assign("competitions.php");
-    }
+  const rightSideContent = (countryData) => {
+    const { fill, name, buttons } = countryData;
+
+    return `
+    <div class="content">
+      <div class="image-holder">
+        <img src="${fill}"/>
+      </div>
+      <h2>${name}</h2>
+      <div>
+      ${buttons?.map(
+        (button) =>
+          `<button id="CA-2016" class="button">
+          ${button}
+        </button>`
+      )}
+        
+      </div>
+    </div>`;
+  };
+
+  $(".background").on("click", function () {
+    $(this).removeClass("show");
+    $(".right-side-pop-up").removeClass("show");
+  });
+
+  $(document).on("click", ".right-side-pop-up .button", function () {
+    const id = $(this).attr("id");
+    console.log(id);
+
+    console.log($(`#${id}.slider`));
   });
 });

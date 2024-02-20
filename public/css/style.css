@@ -58,7 +58,7 @@ section {
 header {
   position: fixed;
   display: flex;
-  z-index: 1000;
+  z-index: 1;
   width: 100%;
   height: 100px;
   margin: 0 auto;
@@ -508,4 +508,46 @@ a.footer:hover {
 #chartdiv {
   width: 100%;
   height: 95vh;
+}
+
+.right-side-pop-up {
+  height: 100vh;
+  width: 50%;
+  background-color: #850;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: ease-in-out 0.2s;
+  z-index: 2;
+}
+
+.right-side-pop-up.show {
+  transform: translateX(0%);
+}
+
+.right-side-pop-up .content {
+  padding: 20px;
+}
+
+.right-side-pop-up .content .image-holder {
+  height: 190px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  opacity: 0.4;
+  z-index: 1;
+  display: none;
+}
+
+.background.show {
+  display: block;
 }
