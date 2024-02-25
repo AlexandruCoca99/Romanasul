@@ -102,11 +102,11 @@ jQuery(document).ready(function ($) {
     imageSeries.tooltip.pointerOrientation = "center";
 
     // Configuring pin appearance
-    pin.background.fill = chart.colors.getIndex(6);
+    pin.background.fill = chart.colors.getIndex(8);
     pin.background.fillOpacity = 0.7;
     pin.background.pointerAngle = 240;
-    pin.background.pointerBaseWidth = 5;
-    pin.background.pointerLength = 30;
+    pin.background.pointerBaseWidth = 50;
+    pin.background.pointerLength = 50;
     // Adding an image with its "href" attribute tied to values in data
     pin.image = new am4core.Image();
     pin.image.propertyFields.href = "imageURL";
