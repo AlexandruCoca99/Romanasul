@@ -21,7 +21,7 @@ $countries = [array('id' => 'CA-2022', "pictures" => array('')), array('id' => '
 <!-- SLIDER -->
 <header id="main-header"></header>
 
-<section class="slider-2">
+<section class="swiper-main hidden">
   <div class="container wide">
     <div class="swiper" id="swiper-2">
       <div class="swiper-wrapper">
@@ -67,6 +67,11 @@ $countries = [array('id' => 'CA-2022', "pictures" => array('')), array('id' => '
         <div class="swiper-slide">
           <figure>
             <img src="images/Poze-romanasul/1.Turnee/Canada-2023/Spectacol Mall.jpg" />
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Canada-2023/Ioana happy.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->

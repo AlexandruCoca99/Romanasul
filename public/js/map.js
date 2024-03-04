@@ -295,18 +295,6 @@ jQuery(document).ready(function ($) {
       <div class="image-holder">
         <img src="${fill}"/>
       </div>
-<<<<<<< Updated upstream
-      <h2>${name}</h2>
-      <div>
-      ${buttons?.map(
-        (button) =>
-          `<button id="CA-2016" class="button">
-          ${button}
-        </button>`
-      )}
-        
-      </div>
-=======
       <h1>${name}</h1>
       ${
         buttons
@@ -323,7 +311,6 @@ jQuery(document).ready(function ($) {
           : ""
       }
 
->>>>>>> Stashed changes
     </div>`;
   };
 
