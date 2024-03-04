@@ -19,7 +19,17 @@ function get_includes()
     <link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/fonts.css" />';
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    ';
+
+    
 }
 
 //add local scripts here
@@ -28,7 +38,9 @@ function get_local_scripts()
     return '       
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/map.js"></script>
-    <script type="text/javascript" src="js/highslide_custom.js"/></script>';
+    <script type="text/javascript" src="js/highslide_custom.js"/></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>';
 }
 
 function get_header($title = "")

@@ -25,7 +25,7 @@ const visitedCountries = [
     id: "CA",
     fill: "images/gallery/AfiseTurnee/Canada.jpg",
     name: "Canada",
-    buttons: ["CA-2016", "CA-2022"],
+    buttons: ["CA-2022"],
   },
 
   {
@@ -70,7 +70,7 @@ jQuery(document).ready(function ($) {
 
     // Create hover state and set alternative fill color
     var hs = polygonTemplate.states.create("hover");
-    hs.properties.fill = am4core.color("#367B25");
+    // hs.properties.fill = am4core.color("#367B25");
 
     var hs_countries = polygonTemplate.states.create("hover");
 
@@ -295,6 +295,7 @@ jQuery(document).ready(function ($) {
       <div class="image-holder">
         <img src="${fill}"/>
       </div>
+<<<<<<< Updated upstream
       <h2>${name}</h2>
       <div>
       ${buttons?.map(
@@ -305,6 +306,24 @@ jQuery(document).ready(function ($) {
       )}
         
       </div>
+=======
+      <h1>${name}</h1>
+      ${
+        buttons
+          ? `
+      <h3>Image Gallery</h3>
+      <div class="buttons-holder">
+        ${buttons?.map(
+          (button) =>
+            `<button id="CA-2022" class="button">
+            ${button}
+          </button>`
+        )}
+      </div>`
+          : ""
+      }
+
+>>>>>>> Stashed changes
     </div>`;
   };
 
@@ -315,8 +334,19 @@ jQuery(document).ready(function ($) {
 
   $(document).on("click", ".right-side-pop-up .button", function () {
     const id = $(this).attr("id");
-    console.log(id);
 
+    //add slider
+    $(".swiper-main").removeClass("hidden");
+    $(".swiper-main").addClass("show-slider");
+    $(".right-side-pop-up").removeClass("show");
+    $(".background").removeClass("show");
+
+    //remove slider
+    $(".background").on("click", function () {
+      $(".swiper-main").addClass("hidden");
+      $(".swiper-main").removeClass("show-slider");
+    });
+    console.log(id);
     console.log($(`#${id}.slider`));
   });
 });
