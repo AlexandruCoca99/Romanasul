@@ -21,7 +21,7 @@ $countries = [array('id' => 'CA-2022', "pictures" => array('')), array('id' => '
 <!-- SLIDER -->
 <header id="main-header"></header>
 
-<section class="swiper-main hidden">
+<section class="swiper-main hidden" id="CA-2022">
   <div class="container wide">
     <div class="swiper" id="swiper-2">
       <div class="swiper-wrapper">
@@ -134,7 +134,7 @@ array_map(function ($country) {
     ?>
 
 
-    <section class="swiper-main hidden show">
+    <section class="swiper-main hidden show" id="ES-2022">
       <div class="container wide">
         <div class="swiper" id="swiper-2">
           <div class="swiper-wrapper">

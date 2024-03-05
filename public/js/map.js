@@ -303,7 +303,7 @@ jQuery(document).ready(function ($) {
       <div class="buttons-holder">
         ${buttons?.map(
           (button) =>
-            `<button id="CA-2022" class="button">
+            `<button id="${button}" class="button">
             ${button}
           </button>`
         )}
@@ -323,8 +323,8 @@ jQuery(document).ready(function ($) {
     const id = $(this).attr("id");
 
     //add slider
-    $(".swiper-main").removeClass("hidden");
-    $(".swiper-main").addClass("show-slider");
+    $(".swiper-main").addClass("hidden");
+    $(`#${id}.swiper-main`).removeClass("hidden");
     $(".right-side-pop-up").removeClass("show");
     $(".background").removeClass("show");
 
