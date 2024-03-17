@@ -327,16 +327,18 @@ jQuery(document).ready(function ($) {
 
     //add slider
     $(".swiper-main").removeClass("hidden");
-    $(`#${id}`).css({ display: "block", opacity: "1" });
+    $(`#${id}.swiper`).removeClass("hidden");
     $(".right-side-pop-up").removeClass("show");
     $(".background").removeClass("show");
 
     //remove slider
-    $(".background").on("click", function () {
-      // $(".swiper-main").addClass("hidden");
-      // $(".swiper-main").removeClass("show-slider");
-    });
     console.log(id);
     // console.log($(`#${id}.slider`));
+  });
+
+  $(".swiper-main .close-button").on("click", function (e) {
+    e.preventDefault();
+    $(".swiper-main").addClass("hidden");
+    $(".swiper-main .swiper").addClass("hidden");
   });
 });

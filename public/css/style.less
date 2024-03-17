@@ -656,23 +656,37 @@ a.footer:hover {
   display: block;
 }
 
-/* SLIDER */
-.swiper-main.hidden {
+.hidden {
   height: 0;
-  padding: 0 2.25rem;
-  margin-bottom: 0;
-  display: none;
+  display: none !important;
 }
 
 /* Swiper */
 
 .swiper-main {
-  position: relative;
+  position: absolute;
   width: 100%;
-  transform: translateY(-47rem);
   display: block;
   opacity: 1;
+  height: 100vh;
+  background-color: @black;
+  top: 0;
+  z-index: 1;
+  .display(flex);
+
+  .close-button {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .swiper {
+    margin-top: 30px;
+  }
 }
+
 .swiper-slide img {
   display: block;
   height: 80vh;

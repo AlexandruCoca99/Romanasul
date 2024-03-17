@@ -22,6 +22,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022')];
 <!-- <header id="main-header"></header> -->
 
 <section class="swiper-main hidden" id="">
+  <a href="#" class="close-button"><img src="./images/close_icon.svg"/></a>
   <div class="container wide">
 
         <!-- //////////////////////////////////////////////////////////////// -->
