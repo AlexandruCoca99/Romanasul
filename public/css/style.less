@@ -661,17 +661,17 @@ a.footer:hover {
   height: 0;
   padding: 0 2.25rem;
   margin-bottom: 0;
-  opacity: 0;
+  display: none;
 }
 
-&.show-slider {
-  transform: translateY(-49rem);
-}
 /* Swiper */
 
 .swiper-main {
-  //position: relative;
+  position: relative;
   width: 100%;
+  transform: translateY(-47rem);
+  display: block;
+  opacity: 1;
 }
 .swiper-slide img {
   display: block;

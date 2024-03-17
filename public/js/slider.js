@@ -1,11 +1,11 @@
-new Swiper("#swiper-2", {
+new Swiper(".swiper", {
   slidesPerView: 1.1,
   autoHeight: true,
   centeredSlides: true,
   spaceBetween: 24,
   grabCursor: true,
   pagination: {
-    el: "#swiper-2 .swiper-custom-pagination",
+    el: ".swiper .swiper-custom-pagination",
     clickable: true,
     renderBullet: function (index, className) {
       return `<div class=${className}>

@@ -9,6 +9,8 @@
  * https://www.amcharts.com/docs/v4/
  * ---------------------------------------
  */
+
+let countryId;
 const visitedCountries = [
   {
     id: "AE",
@@ -25,7 +27,7 @@ const visitedCountries = [
     id: "CA",
     fill: "images/gallery/AfiseTurnee/Canada.jpg",
     name: "Canada",
-    buttons: ["CA-2022"],
+    buttons: ["CA-2023"],
   },
 
   {
@@ -272,7 +274,7 @@ jQuery(document).ready(function ($) {
 
     //Click event on countries
     polygonSeries.mapPolygons.template.events.on("hit", function (ev) {
-      const countryId = ev.target.dataItem.dataContext.id;
+      countryId = ev.target.dataItem.dataContext.id;
       const countryData = polygonSeries.data.find(
         (data) => data.id === countryId
       );
@@ -282,12 +284,13 @@ jQuery(document).ready(function ($) {
       }
 
       $(".right-side-pop-up").addClass("show");
-      $(".right-side-pop-up").html(rightSideContent(countryData));
+      $(".right-side-pop-up").html(renderRightSideContent(countryData));
       $(".background").addClass("show");
+      // console.log(countryId);
     });
   });
 
-  const rightSideContent = (countryData) => {
+  const renderRightSideContent = (countryData) => {
     const { fill, name, buttons } = countryData;
 
     return `
@@ -303,7 +306,7 @@ jQuery(document).ready(function ($) {
       <div class="buttons-holder">
         ${buttons?.map(
           (button) =>
-            `<button id="${button}" class="button">
+            `<button id="${buttons}" class="button">
             ${button}
           </button>`
         )}
@@ -323,17 +326,17 @@ jQuery(document).ready(function ($) {
     const id = $(this).attr("id");
 
     //add slider
-    $(".swiper-main").addClass("hidden");
-    $(`#${id}.swiper-main`).removeClass("hidden");
+    $(".swiper-main").removeClass("hidden");
+    $(`#${id}`).css({ display: "block", opacity: "1" });
     $(".right-side-pop-up").removeClass("show");
     $(".background").removeClass("show");
 
     //remove slider
     $(".background").on("click", function () {
-      $(".swiper-main").addClass("hidden");
-      $(".swiper-main").removeClass("show-slider");
+      // $(".swiper-main").addClass("hidden");
+      // $(".swiper-main").removeClass("show-slider");
     });
     console.log(id);
-    console.log($(`#${id}.slider`));
+    // console.log($(`#${id}.slider`));
   });
 });
