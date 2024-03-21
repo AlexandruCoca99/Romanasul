@@ -14,7 +14,9 @@ let countryId;
 const visitedCountries = [
   {
     id: "AE",
+    title: "Dubai",
     fill: "images/gallery/AfiseTurnee/Dubai.jpg",
+    buttons: ["AE-2019", "AE-2023"],
   },
 
   {
@@ -42,6 +44,13 @@ const visitedCountries = [
 ];
 
 jQuery(document).ready(function ($) {
+  //Display right side container
+  const displayRightSideContainer = (countryData) => {
+    $(".right-side-pop-up").addClass("show");
+    $(".right-side-pop-up").html(renderRightSideContent(countryData));
+    $(".background").addClass("show");
+  };
+
   am4core.ready(function () {
     // Themes begin
     am4core.useTheme(am4themes_animated);
@@ -74,8 +83,6 @@ jQuery(document).ready(function ($) {
     var hs = polygonTemplate.states.create("hover");
     // hs.properties.fill = am4core.color("#367B25");
 
-    var hs_countries = polygonTemplate.states.create("hover");
-
     //Background image
     var bgSeries = chart.series.push(new am4maps.MapImageSeries());
     bgSeries.toBack();
@@ -98,7 +105,7 @@ jQuery(document).ready(function ($) {
 
     // Creating a pin bullet
     var pin = imageTemplate.createChild(am4plugins_bullets.PinBullet);
-
+    console.log(pin);
     // Set what to display on rollover tooltip
     pin.tooltipText = "{title}";
     imageSeries.tooltip.pointerOrientation = "center";
@@ -133,8 +140,8 @@ jQuery(document).ready(function ($) {
     circle.zIndex = -1;
 
     // Create hover state to slightly increase radius
-    var hs_pin = pin.background.states.create("hover");
-    hs_pin.properties.radius = 50;
+    let hoverState = pin.states.create("hover");
+    hoverState.properties.scale = 1.5;
 
     imageSeries.data = [
       // {
@@ -272,6 +279,20 @@ jQuery(document).ready(function ($) {
       });
     });
 
+    pin.events.on("hit", function (ev) {
+      console.log(ev);
+      countryId = ev.target.dataItem.dataContext.title;
+      const countryData = polygonSeries.data.find(
+        (data) => data.title === countryId
+      );
+
+      if (!visitedCountries.some((data) => data.title === countryId)) {
+        return;
+      }
+
+      displayRightSideContainer(countryData);
+    });
+
     //Click event on countries
     polygonSeries.mapPolygons.template.events.on("hit", function (ev) {
       countryId = ev.target.dataItem.dataContext.id;
@@ -283,10 +304,7 @@ jQuery(document).ready(function ($) {
         return;
       }
 
-      $(".right-side-pop-up").addClass("show");
-      $(".right-side-pop-up").html(renderRightSideContent(countryData));
-      $(".background").addClass("show");
-      // console.log(countryId);
+      displayRightSideContainer(countryData);
     });
   });
 
@@ -306,7 +324,7 @@ jQuery(document).ready(function ($) {
       <div class="buttons-holder">
         ${buttons?.map(
           (button) =>
-            `<button id="${buttons}" class="button">
+            `<button id="${button}" class="button">
             ${button}
           </button>`
         )}
@@ -324,18 +342,15 @@ jQuery(document).ready(function ($) {
 
   $(document).on("click", ".right-side-pop-up .button", function () {
     const id = $(this).attr("id");
-
+    console.log(id);
     //add slider
     $(".swiper-main").removeClass("hidden");
     $(`#${id}.swiper`).removeClass("hidden");
     $(".right-side-pop-up").removeClass("show");
     $(".background").removeClass("show");
-
-    //remove slider
-    console.log(id);
-    // console.log($(`#${id}.slider`));
   });
 
+  //close slider
   $(".swiper-main .close-button").on("click", function (e) {
     e.preventDefault();
     $(".swiper-main").addClass("hidden");

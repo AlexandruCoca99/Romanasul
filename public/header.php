@@ -32,6 +32,10 @@
         <!-- Evenimente/Events (dropdown -> nunti/majorate, petreceri, spectacole, corporate events ) -->
         <!-- galerie cu poze de la fiecare tip de eveniment cu float  de contact -->
 
+        <a href="repertoriu.php" class="scrollBtn <?php if ($page == 'repertoriu')
+            echo 'selected'; ?>">
+            <?php echo _("Repertoriu") ?>
+        </a> |
 
         <!-- Pt Nenea Luci -->
         <a href="contacts.php" class="scrollBtn <?php if ($page == 'contacts')

@@ -28,7 +28,7 @@ new Swiper(".swiper", {
       slidesPerView: 1,
     },
     1400: {
-      slidesPerView: 1.3,
+      slidesPerView: 1.2,
     },
   },
 });
