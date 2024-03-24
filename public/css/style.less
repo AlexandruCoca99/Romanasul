@@ -845,13 +845,15 @@ a.footer:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
 }
 
 .right {
   width: 100%;
   max-width: 100rem;
   background-color: var(--bg-color);
-  padding: 65px 2rem 0;
+  padding: 65px 0 0;
   align-items: center;
   position: relative;
   order: 2;
@@ -887,7 +889,7 @@ a.footer:hover {
 }
 
 .form-wrapper-right {
-  margin-left: 10rem;
+  // margin-left: 10rem;
   margin-bottom: 8rem;
   max-width: 35rem;
 }
@@ -1039,13 +1041,6 @@ textarea.contact-input ~ .icon {
 
 .left {
   width: 100%;
-  max-width: 100rem;
-  background-color: var(--bg-color);
-  display: flex;
-  justify-content: center;
-  order: 1;
-  gap: 20rem;
-  z-index: 3;
 }
 
 .form-wrapper-left {
@@ -1068,19 +1063,29 @@ textarea.contact-input ~ .icon {
   transition: all 0.3s ease-out;
   -webkit-transition: max-width 0.5s;
   transition: max-width 0.5s;
-}
 
-.form-wrapper-left .icon {
-  height: 60px;
-  width: 60px;
-  align-items: center;
-  border-radius: 50px;
-  box-sizing: border-box;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
-}
-.form-wrapper-left .button:hover {
-  max-width: 200px;
+  &:focus {
+    max-width: 200px;
+  }
+
+  .icon-holder {
+    height: 60px;
+    width: 60px;
+    .flex-shrink(0);
+    .display(flex);
+    .align-items(center);
+    .justify-content(center);
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+    color: #8c9aaf;
+
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
 
 // .form-wrapper-left .icon:hover {
