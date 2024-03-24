@@ -28,6 +28,16 @@ body {
   font-weight: normal;
   color: #5d5d5d;
   background-color: #f7f7f7;
+  --main-hue: 208;
+  --main-color: hsl(var(--main-hue), 92%, 54%);
+  --main-color-hover: hsl(var(--main-hue), 77%, 48%);
+  --text-color: #000;
+  --bg-color: #fff;
+  --light-text-color: #9ca7b6;
+  --input-text: #8c9aaf;
+  --light-main-color: hsl(var(--main-hue), 91%, 55%);
+  --input-bg: hsla(var(--main-hue), 50%, 50%, 6.5%);
+  --input-bg-hover: hsla(var(--main-hue), 50%, 50%, 14%);
 }
 
 body::-webkit-scrollbar {
@@ -71,7 +81,7 @@ section {
 header {
   position: fixed;
   display: flex;
-  z-index: 1;
+  z-index: 4;
   width: 100%;
   height: 100px;
   margin: 0 auto;
@@ -93,6 +103,7 @@ nav {
   color: #dde1e4;
   font-size: 23px;
   font-family: "FuturaStdLightTrRegular";
+  text-align: center;
 }
 
 /* Style the links inside the navbar */
@@ -818,4 +829,272 @@ a.footer:hover {
   .swiper-custom-nav {
     display: none;
   }
+}
+
+// FORM DE CONTACT
+
+.contact {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--bg-color);
+}
+
+.container-form {
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right {
+  width: 100%;
+  max-width: 100rem;
+  background-color: var(--bg-color);
+  padding: 65px 2rem 0;
+  align-items: center;
+  position: relative;
+  order: 2;
+  z-index: 3;
+}
+
+.contact-heading h1 {
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 0.3;
+  color: var(--text-color);
+  white-space: nowrap;
+  margin-bottom: 1.2rem;
+}
+
+.contact-heading span {
+  color: blue;
+}
+
+.text {
+  color: var(--input-text);
+  line-height: 1.1;
+  font-size: 1rem;
+}
+
+.text a {
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.text a:hover {
+  color: var(--main-color-hover);
+}
+
+.form-wrapper-right {
+  margin-left: 10rem;
+  margin-bottom: 8rem;
+  max-width: 35rem;
+}
+
+.contact-form {
+  display: grid;
+  margin-top: 2.55rem;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+  row-gap: 2rem;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input-wrap.w-100 {
+  grid-column: span 2;
+}
+
+.contact-input {
+  width: 100%;
+  background-color: hsla(var(--main-hue), 50%, 50%, 6.5%);
+  padding: 20px 15px 14px 13px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  border-radius: 20px;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 0px hsla(var(--main-hue), 92%, 54%, 0.169);
+  transition: 0.3s;
+}
+
+.contact-input:hover {
+  background-color: hsla(var(--main-hue), 50%, 50%, 14%);
+}
+
+.input-wrap label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  color: var(--light-text-color);
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input-wrap .icon {
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--input-text);
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+textarea.contact-input {
+  resize: none;
+  width: 100%;
+  min-height: 150px;
+}
+
+textarea.contact-input ~ label {
+  top: 1.2rem;
+  transform: none;
+}
+
+textarea.contact-input ~ .icon {
+  top: 1.2rem;
+  transform: none;
+}
+
+.input-wrap.focus .contact-input {
+  background-color: var(--bg-color);
+  border: 2px solid var(--light-main-color);
+  box-shadow: 0 0 0 5px hsla(var(--main-hue), 91%, 55%, 0.11);
+}
+
+.input-wrap.focus label {
+  color: var(--light-main-color);
+}
+
+.input-wrap.focus .icon {
+  color: var(--light-main-color);
+}
+
+.input-wrap.not-empty label {
+  font-size: 0.9rem;
+  top: 0.4rem;
+  transform: translateY(0);
+}
+
+.contact-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  grid-column: span 2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.1rem 2rem;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 40px;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--main-color-hover);
+}
+
+.btn.upload {
+  position: relative;
+  background-color: var(--input-bg);
+}
+
+.btn.upload span {
+  color: var(--light-text-color);
+}
+
+.btn.upload:hover {
+  background-color: var(--input-bg-hover);
+}
+
+.btn.upload input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+
+// Contact buttons
+
+.left {
+  width: 100%;
+  max-width: 100rem;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  order: 1;
+  gap: 20rem;
+  z-index: 3;
+}
+
+.form-wrapper-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-wrapper-left .button {
+  // display: block;
+  display: inline-flex;
+  height: 60px;
+  max-width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+}
+
+.form-wrapper-left .icon {
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.form-wrapper-left .button:hover {
+  max-width: 200px;
+}
+
+// .form-wrapper-left .icon:hover {
+//   width: 200px;
+// }
+
+.form-wrapper-left .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.form-wrapper-left .button:nth-child(1) span {
+  color: #12970e;
 }

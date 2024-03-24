@@ -1,57 +1,86 @@
 <?php $page = "contacts";
- include 'header.php'; 
  include 'functions.php';
-get_header("Who we are");
+ get_header("Contact Us");
+ include 'header.php'; 
 ?>
 
 
-<div class="contacts">
-    <div class="footerCenter">
-        <div class="formBox">
-            <p class="footerTitle"><i><?php echo _("Current artistic management:")?></i></p>
-        <span class="footerText">Director:<strong> Lucian Revnic</strong><br/>
-            Choreographer: <strong> Viorel Roman</strong><br/>
-            Conductor: <strong>Hatfaludi Alexandru</strong><br/>
-        </span><br/>
-        <span class="footerText"><?php echo _("We are under the patronage of the Technical University in Cluj Napoca, rector: Prof.Dr.Ing")?><strong> Aurel Vlaicu</strong></span>
+<body>
 
-            <p>&nbsp;</p>
+<main>
+    <section class="contact">
+        <div class="container-form">
+        <div class="right">
+                <div class="form-wrapper-right">
+                    <!-- <div class="contact-heading">
+                        <h1>Colaboram <span>!</span></h1>
+                        <p class="text">Contactati-ne prin email: <a href="mailto:">revnic2002@yahoo.com</a></p>
+                    </div> -->
 
-            <p>&nbsp;</p>
+                    <form action="index.html" method="post" class="contact-form">
 
-            <p class="footerTitle"><i><?php echo _("Address")?>: Ansamblul folcloric &quot;Româna&#351;ul&quot;</i></p>
-        <span class="footerText">
-            Clubul Cultural Studenţesc al Universităţii Tehnice <br/>
-            Str. Observator nr. 34, 400489<br/>
-            Cluj Napoca România,<br/>
-            Tel: 264-594930, 064-401890<br/>
-            Fax: 264-594921<br/>
-            E-mail: <a class="footer" href="mailto:revnic2002@yahoo.com">revnic2002@yahoo.com</a><br/>
-            Facebook: <a class="footer" href="https://www.facebook.com/AnsamblulFolcloricRomanasul" target=" _blank">https://www.facebook.com/AnsamblulFolcloricRomanasul </a>
-        </span>
+                        <!-- Input prenume -->
+                        <div class="input-wrap">
+                            <input type="text"  name="Prenume" class="contact-input" required>
+                            <label>Prenume</label>
+                            <i class="icon fa-solid fa-address-card"></i>
+                        </div>
+                        <!-- Input nume -->
+                        <div class="input-wrap">
+                            <input type="text"  name="Nume" class="contact-input" required>
+                            <label>Nume</label>
+                            <i class="icon fa-solid fa-address-card"></i>
+                        </div>
+                        <!-- Input email -->
+                        <div class="input-wrap w-100">
+                            <input type="email"  name="Email" class="contact-input" required>
+                            <label>Email</label>
+                            <i class="icon fa-solid fa-envelope"></i>
+                        </div>
+                        <!-- Input mesaj -->
+                        <div class="input-wrap textarea w-100">
+                            <textarea name="Mesaj" class="contact-input" required></textarea>
+                            <label>Mesaj</label>
+                            <i class="icon fa-solid fa-inbox"></i>
+                        </div>
 
-            <p>&nbsp;</p>
-
-            <div class="map">
-                <iframe width="410" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="http://maps.google.ro/maps?q=cluj+napoca+400489&amp;ie=UTF8&amp;hl=ro&amp;hq=&amp;hnear=Cantina+UTC-N+Observator,+Strada+Observatorului+34,+Cluj+400489&amp;t=m&amp;ll=46.757739,23.593569&amp;spn=0.01029,0.036564&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
-                <br/>
-                <small><a
-                    href="http://maps.google.ro/maps?q=cluj+napoca+400489&amp;ie=UTF8&amp;hl=ro&amp;hq=&amp;hnear=Cantina+UTC-N+Observator,+Strada+Observatorului+34,+Cluj+400489&amp;t=m&amp;ll=46.757739,23.593569&amp;spn=0.01029,0.036564&amp;z=14&amp;iwloc=A&amp;source=embed"
-                    style="color:#0000FF;text-align:left"><?php echo _("See full map")?></a></small>
+                        <!-- Buton send -->
+                        <div class="contact-buttons">
+                            <button class="btn upload">
+                                <span>
+                                    <i class="fa-solid fa-paperclip"></i>Add attachment
+                                </span>
+                                <input type="file" name="attachment">
+                            </button>
+                            <input type="submit" value="Send message" class="btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="left">
+                <div class="form-wrapper-left">
+                    <div class="button">
+                        
+                            <i class="icon fa-solid fa-phone"></i>
+                        
+                        <span>0751356714</span>
+                    </div>
+                    <div class="button">
+                        <div class=" maps">
+                            <i class="icon fa-solid fa-location-dot"></i>
+                        </div>
+                    </div>
+                    <div class="button">
+                         <div class=" social-media">
+                            <i class="icon fa-solid fa-globe"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+</main>
 
-    <div class="center">
-        <div class="bottomCopy">
-            <div class="copyright">Copyright © 2012 Romanasul Cluj-Napoca - <?php echo _("All rights reserved")?>.</div>
-            <div class="followBox">
-                <iframe
-                    src="http://www.facebook.com/plugins/like.php?href=https://www.facebook.com/pages/Romanasul/120500011311202"
-                    scrolling="no" frameborder="0"
-                    style="border:none; width:450px; height:80px"></iframe>
-            </div>
-        </div>
-    </div>
-</div>
+<?php get_footer(); ?>
+</body>
+

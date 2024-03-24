@@ -16,10 +16,15 @@ function get_includes()
     <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/plugins/bullets.js"></script>
     
+    
     <link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     
     
     <link
@@ -40,7 +45,9 @@ function get_local_scripts()
     <script src="js/map.js"></script>
     <script type="text/javascript" src="js/highslide_custom.js"/></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/slider.js"></script>';
+    <script src="js/slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script src="js/form.js"></script>';
 }
 
 function get_header($title = "")
