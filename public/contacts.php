@@ -8,6 +8,9 @@ include 'header.php';
 <body>
 
     <main>
+        <!-- <div class="hero-wrapper" style = "">
+            <img class="whoweare-bg"  src="images/Poze-romanasul/2.Evenimente/1.Spectacole/4.-Zilele-prieteniei/Poza-misto-alb-negru.jpg" />
+        </div> -->
         <section class="contact">
             <div class="container-form">
                 <div class="right">
@@ -60,19 +63,29 @@ include 'header.php';
                 <div class="left">
                     <div class="form-wrapper-left">
                         <button class="button">
-                            <div class="icon-holder">
-                                <i class="icon fa-solid fa-phone"></i>
+                            <div class="icon-holder phone">
+                                <i class="icon-phone fa-solid fa-phone "></i>
                             </div>
                             <div class="button-slide-part"><span>0751356714</span></div>
                         </button>
                         <button class="button">
-                            <div class="icon-holder"><i class="icon fa-solid fa-location-dot"></i></div>
+                            <div class="icon-holder dot">
+                                <i class="icon-dot fa-solid fa-location-dot"></i>
+                            </div>
                             <div class="button-slide-part"><span>0751356714</span></div>
                         </button>
-                        <button class="button">
-                            <div class="icon-holder"><i class="icon fa-solid fa-globe"></i></div>
-                            <div class="button-slide-part"><span>0751356714</span></div>
-                        </button>
+                        <div class="button">
+                            <input type="checkbox" id="check" />
+                            <label class="button-media globe" for="check">
+                                <i class="icon-globe fa-solid fa-globe"></i>
+                            </label>
+                            <div class="media-icons">
+                                <a href="https://www.facebook.com/AnsamblulFolcloricRomanasul"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
