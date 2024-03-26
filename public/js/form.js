@@ -17,6 +17,7 @@ inputs.forEach((input) => {
 jQuery(document).ready(function ($) {
   $(document).on("click", ".phone ", function () {
     $(".icon-phone").addClass("fa-shake");
+    $(".button").toggleClass("clicked");
     $(".icon-dot").removeClass("fa-bounce");
     $(".icon-globe").removeClass("fa-flip");
   });

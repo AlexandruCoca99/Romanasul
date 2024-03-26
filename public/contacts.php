@@ -63,7 +63,7 @@ include 'header.php';
                 <div class="left">
                     <div class="form-wrapper-left">
                         <button class="button">
-                            <div class="icon-holder phone">
+                            <div class="icon-holder phone ">
                                 <i class="icon-phone fa-solid fa-phone "></i>
                             </div>
                             <div class="button-slide-part"><span>0751356714</span></div>
