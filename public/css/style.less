@@ -1077,7 +1077,7 @@ textarea.contact-input ~ .icon {
   -webkit-transition: max-width 0.3s;
   transition: max-width 0.3s;
 
-  .clicked {
+  &:focus {
     max-width: 200px;
   }
 
@@ -1090,7 +1090,7 @@ textarea.contact-input ~ .icon {
     .justify-content(center);
     border-radius: 50px;
     box-sizing: border-box;
-    line-height: 60px;
+    line-height: 24px;
     transition: all 0.3s ease-out;
     color: #8c9aaf;
 
@@ -1109,6 +1109,10 @@ textarea.contact-input ~ .icon {
 .icon-dot {
   height: 30px;
   width: 30px;
+}
+
+.button-globe {
+  padding-left: 5px;
 }
 
 .icon-globe {
