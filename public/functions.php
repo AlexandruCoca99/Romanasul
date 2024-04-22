@@ -47,7 +47,8 @@ function get_local_scripts()
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-    <script src="js/form.js"></script>';
+    <script src="js/form.js"></script>
+    <script src="js/repertoriu.js"></script>';
 }
 
 function get_header($title = "")

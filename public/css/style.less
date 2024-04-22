@@ -1233,3 +1233,82 @@ label::before {
 .media-icons a:nth-child(4):hover {
   color: #ff0000;
 }
+
+//Repertoriu
+
+.repertoriu {
+  padding-top: 120px;
+  background-color: #f9f9f9;
+  display: block;
+}
+
+.repertoriu h2 {
+  float: none;
+  text-align: center;
+  margin-top: 20px; /* Adaugă un spațiu la partea de sus, dacă este necesar */
+  margin-bottom: 20px; /* Adaugă un spațiu la partea de jos, pentru a separa titlul de restul conținutului */
+}
+
+.container-repertoriu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* sau 'space-between' în funcție de preferințele de design */
+  gap: 20px; /* spațiu între elemente */
+}
+
+.dans {
+  position: relative; /* Setează contextul de poziționare */
+  width: 100%; /* Definește o lățime, ajustează după necesități */
+  height: 300px; /* Ajustează înălțimea după necesități */
+  flex: 1 1 22%; /* Ajustează acest procent pentru a controla cât de mult spațiu ocupă fiecare element pe rând */
+  margin: 10px; /* Optional, pentru a da un spațiu mic între elemente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* adaugă o umbră ușoară pentru un aspect mai plăcut */
+  text-align: center; /* aliniază textul la centru în div */
+  overflow: hidden; /* Ascunde orice conținut care depășește dimensiunile div-ului */
+  background: url("../images/favicon.jpg"); /* Setează imaginea de fundal */
+  background-size: cover; /* Asigură că imaginea de fundal acoperă întregul div */
+  background-position: center; /* Centrează imaginea de fundal */
+}
+
+.dans .left-side,
+.dans .right-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%; /* Asigură că fiecare div umple containerul .dans */
+  height: 100%; /* Asigură că fiecare div umple containerul .dans */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrează conținutul pe verticală și orizontală */
+  justify-content: center;
+  cursor: pointer; /* Adaugă un indicator vizual că elementele pot fi clicabile */
+  transition: opacity 0.5s ease; /* Adaugă o tranziție pentru efect vizual */
+}
+
+.dans .left-side {
+  left: 0; /* Aliniază la stânga */
+  background-color: #005596;
+}
+
+.dans .right-side {
+  left: 50%; /* Împinge inițial partea dreaptă în afara vizualului */
+  right: 0; /* Poziționează .right-side la dreapta */
+  background-color: #005596;
+}
+
+.dans .right-side:hover,
+.dans .left-side:hover {
+  // left: 0; /* Când .dans este hover, adu partea dreaptă peste stânga */
+  opacity: 0.5; /* Schimbă opacitatea pentru efect vizual la hover */
+}
+
+.dans img {
+  width: 50%; /* face ca imaginea să ocupe întreaga lățime a div-ului părinte */
+  height: auto; /* menține proporția imaginii */
+}
+
+.dans h3 {
+  margin-top: 10px; /* spațiu între imagine și titlu */
+  color: white; /* Schimbă culoarea textului pentru a se distinge pe fundalul întunecat */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adaugă o umbră textului pentru a îmbunătăți lizibilitatea */
+}
