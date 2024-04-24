@@ -1,16 +1,19 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const leftSides = document.querySelectorAll('.left-side');
-    const rightSides = document.querySelectorAll('.right-side');
+jQuery(document).ready(function ($) {
+  $(document).on("click", ".left-side", function () {
+    const id = $(this).attr("id");
+    console.log(id);
+    //add slider
+    $(".swiper-main").removeClass("hidden");
+    $(`.swiper.${id}`).removeClass("hidden");
+  });
 
-    leftSides.forEach(side => {
-        side.addEventListener('click', function() {
-            alert('Ai apăsat pe partea stângă!');
-        });
-    });
+  $(".swiper-main .close-button").on("click", function (e) {
+    e.preventDefault();
+    $(".swiper-main").addClass("hidden");
+    $(".swiper-main .swiper").addClass("hidden");
+  });
 
-    rightSides.forEach(side => {
-        side.addEventListener('click', function() {
-            alert('Ai apăsat pe partea dreaptă!');
-        });
-    });
+  $(".right-side").on("click", function () {
+    window.open("https://www.youtube.com/watch?v=CUcJ6SjzesM", "_blank");
+  });
 });

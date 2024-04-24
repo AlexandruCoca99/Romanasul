@@ -440,9 +440,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'),array('id' => '
 
 <footer></footer>
 <!-- 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/slider.js"></script>
+
 <!-- END SLIDER -->
 <?php
 array_map(function ($country) {
