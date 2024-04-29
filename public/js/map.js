@@ -21,13 +21,50 @@ const visitedCountries = [
   },
 
   {
-    id: "PT",
-    fill: "images/Poze-romanasul/1.Turnee/Portugalia-2019/Afis-reversed.png",
+    id: "NL",
+    fill: "images/gallery/AfiseTurnee/Netherlands.jpg",
+    buttons: ["NL-2015"],
   },
 
   {
-    id: "FR",
+    id: "BE",
+    fill: "images/gallery/AfiseTurnee/Belgium.jpg",
+    buttons: ["BE-2016"],
+  },
+  {
+    id: "RU",
+    fill: "images/gallery/AfiseTurnee/Morocco-Tanger.jpg",
+    buttons: ["RU-2012"],
+  },
+  {
+    id: "MA",
+    fill: "images/gallery/AfiseTurnee/Morocco-Tanger.jpg",
+    buttons: ["MA-2023"],
+  },
+  {
+    id: "PL",
     fill: "images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg",
+    buttons: ["PL-2013", "PL-2014", "PL-2017"],
+  },
+  {
+    id: "FI",
+    fill: "images/gallery/AfiseTurnee/Finland.jpg",
+    buttons: ["FI-2022"],
+  },
+  {
+    id: "FR",
+    fill: "images/gallery/AfiseTurnee/France.jpg",
+    buttons: ["FR-2022"],
+  },
+  {
+    id: "PT",
+    fill: "images/gallery/AfiseTurnee/Portugal.jpg",
+    buttons: ["PT-2019", "PT-2024"],
+  },
+  {
+    id: "AL",
+    fill: "images/gallery/AfiseTurnee/Portugal.jpg",
+    buttons: ["AL-2024"],
   },
 ];
 
@@ -93,7 +130,7 @@ jQuery(document).ready(function ($) {
 
     // Creating a pin bullet
     var pin = imageTemplate.createChild(am4plugins_bullets.PinBullet);
-    console.log(pin);
+
     // Set what to display on rollover tooltip
     pin.tooltipText = "{title}";
     imageSeries.tooltip.pointerOrientation = "center";
@@ -101,7 +138,8 @@ jQuery(document).ready(function ($) {
     // Configuring pin appearance
     pin.background.fill = chart.colors.getIndex(8);
     pin.background.fillOpacity = 0.7;
-    pin.background.pointerAngle = 240;
+    pin.background.radius = 25;
+    // pin.background.pointerAngle = "customValue";
     pin.background.pointerBaseWidth = 50;
     pin.background.pointerLength = 50;
     // Adding an image with its "href" attribute tied to values in data
@@ -110,6 +148,7 @@ jQuery(document).ready(function ($) {
 
     // Creating a "heat rule" to modify "radius" of the bullet based
     // on value in data
+
     imageSeries.heatRules.push({
       target: pin.background,
       property: "radius",
@@ -117,6 +156,14 @@ jQuery(document).ready(function ($) {
       max: 40,
       dataField: "value",
     });
+
+    // imageSeries.heatRules.push({
+    //   target: pin.background,
+    //   property: "pointerAngle",
+    //   dataField: "customValue",
+    // });
+    console.log(pin);
+    console.log(imageSeries);
 
     // Add a circle to pin base.
     // Bullet is a Container, so we can add there anything.
@@ -132,45 +179,45 @@ jQuery(document).ready(function ($) {
     hoverState.properties.scale = 1.5;
 
     imageSeries.data = [
-      // {
-      //   latitude: 40.416775,
-      //   longitude: -3.70379,
-      //   imageURL:
-      //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_madrid.jpg",
-      //   value: 100,
-      //   title: "Madrid",
-      // },
+      {
+        latitude: 50.5039,
+        longitude: 4.4699,
+        imageURL: "images/gallery/AfiseTurnee/Belgium.jpg",
+        value: 150,
+        // zoomLevel: 180,
+        title: "Belgium",
+      },
       {
         latitude: 25.276987,
         longitude: 55.296249,
         imageURL: "images/gallery/AfiseTurnee/Dubai.jpg",
-        value: 70,
+        value: 50,
         title: "Dubai",
       },
-      // {
-      //   latitude: 48.856614,
-      //   longitude: 2.352222,
-      //   imageURL:
-      //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_paris.jpg",
-      //   value: 60,
-      //   title: "Paris",
-      // },
-      // {
-      //   latitude: 52.520007,
-      //   longitude: 13.404954,
-      //   imageURL:
-      //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_berlin.jpg",
-      //   value: 22,
-      //   title: "Berlin",
-      // },
-      // {
-      //   latitude: 52.229676,
-      //   longitude: 21.012229,
-      //   imageURL:
-      //     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_warsaw.jpg",
-      //   value: 39,
-      //   title: "Warsaw",
-      // },
+      {
+        latitude: 52.1326,
+        longitude: 5.2913,
+        imageURL: "images/gallery/AfiseTurnee/Netherlands.jpg",
+        value: 50,
+        customValue: 180,
+        title: "Netherlands",
+      },
+      {
+        latitude: 43.9159,
+        longitude: 17.6791,
+        imageURL:
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_berlin.jpg",
+        value: 22,
+        title: "Bosnia and Herzegovina",
+      },
+      {
+        latitude: 41.1533,
+        longitude: 20.1683,
+        imageURL:
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_warsaw.jpg",
+        value: 39,
+        title: "Albania",
+      },
       // {
       //   latitude: 41.872389,
       //   longitude: 12.48018,
@@ -249,6 +296,25 @@ jQuery(document).ready(function ($) {
               pattern.x = -3;
               pattern.y = 70;
               break;
+
+            case "NL":
+              image.width = 15;
+              image.height = 23;
+
+              pattern.width = 15;
+              pattern.height = 23;
+              pattern.x = -3;
+              pattern.y = 70;
+              break;
+
+            case "FR":
+              image.width = 150;
+              image.height = 100;
+
+              pattern.width = 150;
+              pattern.height = 100;
+              pattern.x = 5;
+              pattern.y = -35;
 
             case "FR":
               image.width = 150;
