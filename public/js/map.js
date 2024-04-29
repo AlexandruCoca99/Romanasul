@@ -316,7 +316,7 @@ jQuery(document).ready(function ($) {
               pattern.x = 5;
               pattern.y = -35;
 
-            case "FR":
+            case "":
               image.width = 150;
               image.height = 100;
 
