@@ -183,7 +183,7 @@ jQuery(document).ready(function ($) {
         latitude: 50.5039,
         longitude: 4.4699,
         imageURL: "images/gallery/AfiseTurnee/Belgium.jpg",
-        value: 150,
+        value: 25,
         // zoomLevel: 180,
         title: "Belgium",
       },
@@ -191,15 +191,15 @@ jQuery(document).ready(function ($) {
         latitude: 25.276987,
         longitude: 55.296249,
         imageURL: "images/gallery/AfiseTurnee/Dubai.jpg",
-        value: 50,
+        value: 25,
         title: "Dubai",
       },
       {
         latitude: 52.1326,
         longitude: 5.2913,
         imageURL: "images/gallery/AfiseTurnee/Netherlands.jpg",
-        value: 50,
-        customValue: 180,
+        value: 25,
+        customValue: 25,
         title: "Netherlands",
       },
       {
@@ -308,22 +308,22 @@ jQuery(document).ready(function ($) {
               break;
 
             case "FR":
-              image.width = 150;
-              image.height = 100;
+              image.width = 700;
+              image.height = 115;
 
-              pattern.width = 150;
-              pattern.height = 100;
-              pattern.x = 5;
-              pattern.y = -35;
+              pattern.width = 700;
+              pattern.height = 115;
+              pattern.x = 100;
+              pattern.y = 0;
 
-            case "":
-              image.width = 150;
-              image.height = 100;
+            case "MA":
+              image.width = 40;
+              image.height = 60;
 
-              pattern.width = 150;
-              pattern.height = 100;
-              pattern.x = 5;
-              pattern.y = -35;
+              pattern.width = 40;
+              pattern.height = 60;
+              pattern.x = -10;
+              pattern.y = 23;
               break;
           }
           pattern.addElement(image.element);
