@@ -37,6 +37,11 @@
             <?php echo _("Repertoriu") ?>
         </a> |
 
+        <a href="reviews.php" class="scrollBtn <?php if ($page == 'reviews')
+            echo 'selected'; ?>">
+            <?php echo _("Reviews") ?>
+        </a> |
+
         <!-- Pt Nenea Luci -->
         <a href="contacts.php" class="scrollBtn <?php if ($page == 'contacts')
             echo 'selected'; ?>">
