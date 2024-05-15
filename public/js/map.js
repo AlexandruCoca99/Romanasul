@@ -26,15 +26,14 @@ jQuery(document).ready(function ($) {
 
         // Create and configure the polygon series for countries
         const polygonSeries = this.createPolygonSeries();
-        this.addEventListeners(polygonSeries); // Add event listeners to the polygon series
+        this.attachPolygonHitEvent(polygonSeries); // Add event listeners to the polygon series
+        polygonSeries.data = this.visitedCountries;
 
         // Create the image series for custom markers
         const imageSeries = this.createImageSeries();
-        this.addDataToSeries(imageSeries); // Populate the image series with data
 
         // Set the initial data for the polygon series
-        polygonSeries.data = this.visitedCountries;
-        console.log(polygonSeries.data);
+
         imageSeries.data = this.visitedCountriesSmall;
       });
     }
@@ -169,7 +168,7 @@ jQuery(document).ready(function ($) {
         target: pin.background,
         property: "radius",
         min: 6,
-        max: 10,
+        max: 20,
         dataField: "value",
       });
 
@@ -183,57 +182,54 @@ jQuery(document).ready(function ($) {
       // Create hover state to increase the pin's size on mouse over
       let hoverState = pin.states.create("hover");
       hoverState.properties.scale = 1.5; // Scale up to 150% when hovered
-
+      // this.addDataToSeries(imageSeries); // Populate the image series with data
       this.attachPinHitEvent(pin);
-
       return imageSeries;
     }
 
-    // Method to add data to the image series
-    addDataToSeries(imageSeries) {
-      // Map visited countries data to fit the image series format
-      imageSeries.data = this.visitedCountries.map((country) => ({
-        latitude: country.latitude,
-        longitude: country.longitude,
-        imageURL: country.fill,
-        value: 50, // Assuming static value for simplicity
-        title: country.title,
-      }));
-    }
-
     // Method to add event listeners to polygon series
-    addEventListeners(polygonSeries) {
+    attachPolygonHitEvent(polygonSeries) {
       // Handling click events on polygons to display detailed information
       polygonSeries.mapPolygons.template.events.on("hit", (ev) => {
-        this.handleCountryHit(ev.target.dataItem.dataContext.id);
+        countryId = ev.target.dataItem.dataContext.id;
+        console.log(countryId);
+        const countryData = polygonSeries.data.find(
+          (data) => data.id === countryId
+        );
+        console.log(ev.target.dataItem.dataContext);
+        if (!this.visitedCountries.some((data) => data.id === countryId)) {
+          return;
+        }
+        this.displayRightSideContainer(countryData);
       });
 
       // Event listener for background click to hide overlays
-      this.hideRightSideContainer();
-      this.addSlider();
-      this.closeSlider();
+      this.manageSlider();
     }
 
     attachPinHitEvent(pin) {
       // Handling pin hit event
+
       pin.events.on("hit", (ev) => {
-        this.handleCountryHit(ev.target.dataItem.dataContext.id);
+        console.log(ev.target.dataItems);
+        countryId = ev.target.dataItem.dataContext.id;
+        const countryData = imageSeries.data.find(
+          (data) => data.title === countryId
+        );
+        if (!visitedCountries.some((data) => data.title === countryId)) {
+          return;
+        }
+        displayRightSideContainer(countryData);
       });
 
       // Event listener for background click to hide overlays
-      this.hideRightSideContainer();
+      this.manageSlider();
     }
 
-    handleCountryHit(countryId) {
-      // Locate country data and display right side container if the country has been visited
-      const countryData = this.visitedCountries.find(
-        (data) => data.id === countryId
-      );
-
-      console.log(countryId);
-      if (countryData) {
-        this.displayRightSideContainer(countryData);
-      }
+    manageSlider() {
+      this.hideRightSideContainer();
+      this.addSlider();
+      this.closeSlider();
     }
 
     hideRightSideContainer() {
@@ -518,14 +514,14 @@ jQuery(document).ready(function ($) {
     // });
     // pin.events.on("hit", function (ev) {
     //   console.log(ev);
-    //   countryId = ev.target.dataItem.dataContext.title;
-    //   const countryData = polygonSeries.data.find(
-    //     (data) => data.title === countryId
-    //   );
-    //   if (!visitedCountries.some((data) => data.title === countryId)) {
-    //     return;
-    //   }
-    //   displayRightSideContainer(countryData);
+    // countryId = ev.target.dataItem.dataContext.title;
+    // const countryData = polygonSeries.data.find(
+    //   (data) => data.title === countryId
+    // );
+    // if (!visitedCountries.some((data) => data.title === countryId)) {
+    //   return;
+    // }
+    // displayRightSideContainer(countryData);
     // });
   });
 
@@ -618,6 +614,7 @@ jQuery(document).ready(function ($) {
         title: "Belgium",
       },
       {
+        id: "AE",
         latitude: 25.276987,
         longitude: 55.296249,
         imageURL: "images/gallery/AfiseTurnee/Dubai.jpg",
