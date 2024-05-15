@@ -166,16 +166,21 @@ jQuery(document).ready(function ($) {
       pin.background.fillOpacity = 0.7;
       pin.background.pointerBaseWidth = 20;
       pin.background.pointerLength = 50;
+      // pin.background.pointerAngle = "value";
       pin.image = new am4core.Image();
-      pin.image.propertyFields.href = "imageURL"; // Bind image URL field
+      pin.image.propertyFields.href = "fill"; // Bind image URL field
 
       // Add a heat rule for dynamic radius based on data
       imageSeries.heatRules.push({
         target: pin.background,
         property: "radius",
-        min: 6,
+        min: 20,
         max: 20,
         dataField: "value",
+      });
+
+      imageTemplate.adapter.add("rotation", (pointerAngle, target) => {
+        return target.dataItem.dataContext.angle || 0; // Apply the angle from data or default to 0
       });
 
       // Add a circle to the pin base for a visual enhancement
@@ -189,6 +194,7 @@ jQuery(document).ready(function ($) {
       let hoverState = pin.states.create("hover");
       hoverState.properties.scale = 1.5; // Scale up to 150% when hovered
       // this.addDataToSeries(imageSeries); // Populate the image series with data
+
       this.attachPinHitEvent(pin);
       return imageSeries;
     }
@@ -198,11 +204,6 @@ jQuery(document).ready(function ($) {
       // Handling click events on polygons to display detailed information
       polygonSeries.mapPolygons.template.events.on("hit", (ev) => {
         countryId = ev.target.dataItem.dataContext.id;
-        const countryData = polygonSeries.data.find(
-          (data) => data.id === countryId
-        );
-        console.log("polygonSeries", countryData);
-        console.log(ev.target.dataItem.dataContext);
         if (!this.visitedCountries.some((data) => data.id === countryId)) {
           return;
         }
@@ -218,17 +219,16 @@ jQuery(document).ready(function ($) {
 
     attachPinHitEvent(pin) {
       // Handling pin hit event
-
       pin.events.on("hit", (ev) => {
-        console.log(ev.target.dataItems);
         countryId = ev.target.dataItem.dataContext.id;
-        const countryData = imageSeries.data.find(
-          (data) => data.title === countryId
-        );
-        if (!visitedCountries.some((data) => data.title === countryId)) {
+
+        if (!visitedCountriesSmall.some((data) => data.id === countryId)) {
           return;
         }
-        displayRightSideContainer(countryData);
+        const foundVisitedCountry = this.visitedCountriesSmall.find(
+          (country) => country.id === countryId
+        );
+        this.displayRightSideContainer(foundVisitedCountry);
       });
 
       // Event listener for background click to hide overlays
@@ -613,60 +613,50 @@ jQuery(document).ready(function ($) {
   ];
   const visitedCountriesSmall = [
     {
-      latitude: 50.5039,
-      longitude: 4.4699,
-      imageURL: "images/gallery/AfiseTurnee/Belgium.jpg",
+      latitude: 50.8799,
+      longitude: 2.65594,
+      fill: "images/gallery/AfiseTurnee/Belgium.jpg",
       value: 25,
-      // zoomLevel: 180,
+      zoomLevel: 180,
       title: "Belgium",
+      id: "BE",
     },
     {
       id: "AE",
       latitude: 25.276987,
       longitude: 55.296249,
-      imageURL: "images/gallery/AfiseTurnee/Dubai.jpg",
+      fill: "images/gallery/AfiseTurnee/Dubai.jpg",
       value: 25,
+      angle: 45,
       title: "Dubai",
+      buttons: ["AE-2019", "AE-2023"],
     },
     {
-      latitude: 52.1326,
-      longitude: 5.2913,
-      imageURL: "images/gallery/AfiseTurnee/Netherlands.jpg",
+      id: "NL",
+      latitude: 53.22977,
+      longitude: 7.149182,
+      fill: "images/gallery/AfiseTurnee/Netherlands.jpg",
       value: 25,
-      customValue: 25,
+      zoomLevel: 180,
       title: "Netherlands",
     },
     {
+      id: "BA",
       latitude: 43.9159,
       longitude: 17.6791,
-      imageURL:
-        "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_berlin.jpg",
+      fill: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_berlin.jpg",
       value: 22,
+      zoomLevel: 180,
       title: "Bosnia and Herzegovina",
     },
     {
+      id: "AL",
       latitude: 41.1533,
       longitude: 20.1683,
-      imageURL:
-        "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_warsaw.jpg",
+      fill: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_warsaw.jpg",
       value: 39,
+      zoomLevel: 45,
       title: "Albania",
-    },
-    {
-      latitude: 41.872389,
-      longitude: 12.48018,
-      imageURL:
-        "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_rome.jpg",
-      value: 66,
-      title: "Rome",
-    },
-    {
-      latitude: 59.329323,
-      longitude: 18.068581,
-      imageURL:
-        "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_stockholm.jpg",
-      value: 50,
-      title: "Stockholm",
     },
   ];
   const map = new MapManager(
