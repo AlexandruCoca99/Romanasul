@@ -5,6 +5,7 @@ jQuery(document).ready(function ($) {
   class MapManager {
     // Constructor to initialize the map with the specified chart ID and visited countries data
     constructor(chartId, visitedCountries, visitedCountriesSmall) {
+      console.log(visitedCountries);
       this.chartId = chartId;
       this.visitedCountries = visitedCountries;
       this.visitedCountriesSmall = visitedCountriesSmall;
@@ -26,8 +27,9 @@ jQuery(document).ready(function ($) {
 
         // Create and configure the polygon series for countries
         const polygonSeries = this.createPolygonSeries();
+        // polygonSeries.data = this.visitedCountries;
+
         this.attachPolygonHitEvent(polygonSeries); // Add event listeners to the polygon series
-        polygonSeries.data = this.visitedCountries;
 
         // Create the image series for custom markers
         const imageSeries = this.createImageSeries();
@@ -59,7 +61,11 @@ jQuery(document).ready(function ($) {
     applyPatternsToCountries(polygonSeries) {
       polygonSeries.mapPolygons.each((polygon) => {
         const dataContext = polygon.dataItem.dataContext;
-        if (dataContext.fill) {
+        const id = dataContext.id;
+        const foundVisitedCountry = this.visitedCountries.find(
+          (country) => country.id === id
+        );
+        if (foundVisitedCountry) {
           const pattern = new am4core.Pattern();
           pattern.width = 600;
           pattern.height = 750;
@@ -69,7 +75,7 @@ jQuery(document).ready(function ($) {
           const image = new am4core.Image();
           image.width = 700;
           image.height = 950;
-          image.href = dataContext.fill;
+          image.href = foundVisitedCountry.fill;
 
           this.adjustImageSizeForCountry(dataContext.id, image, pattern);
 
@@ -192,15 +198,18 @@ jQuery(document).ready(function ($) {
       // Handling click events on polygons to display detailed information
       polygonSeries.mapPolygons.template.events.on("hit", (ev) => {
         countryId = ev.target.dataItem.dataContext.id;
-        console.log(countryId);
         const countryData = polygonSeries.data.find(
           (data) => data.id === countryId
         );
+        console.log("polygonSeries", countryData);
         console.log(ev.target.dataItem.dataContext);
         if (!this.visitedCountries.some((data) => data.id === countryId)) {
           return;
         }
-        this.displayRightSideContainer(countryData);
+        const foundVisitedCountry = this.visitedCountries.find(
+          (country) => country.id === countryId
+        );
+        this.displayRightSideContainer(foundVisitedCountry);
       });
 
       // Event listener for background click to hide overlays
@@ -525,143 +534,144 @@ jQuery(document).ready(function ($) {
     // });
   });
 
-  $(document).ready(function () {
-    const visitedCountries = [
-      {
-        id: "AE",
-        title: "Dubai",
-        fill: "images/gallery/AfiseTurnee/Dubai.jpg",
-        buttons: ["AE-2019", "AE-2023"],
-      },
+  const visitedCountries = [
+    {
+      id: "AE",
+      title: "Dubai",
+      fill: "images/gallery/AfiseTurnee/Dubai.jpg",
+      buttons: ["AE-2019", "AE-2023"],
+    },
 
-      {
-        id: "ES",
-        title: "Spain",
-        fill: "images/Poze-romanasul/1.Turnee/Barcelona-2022/Afis-Barcelona.jpg",
-        buttons: ["ES-2022"],
-      },
+    {
+      id: "ES",
+      title: "Spain",
+      fill: "images/Poze-romanasul/1.Turnee/Barcelona-2022/Afis-Barcelona.jpg",
+      buttons: ["ES-2022"],
+    },
 
-      {
-        id: "CA",
-        fill: "images/gallery/AfiseTurnee/Canada.jpg",
-        title: "Canada",
-        buttons: ["CA-2023"],
-      },
+    {
+      id: "CA",
+      fill: "images/gallery/AfiseTurnee/Canada.jpg",
+      title: "Canada",
+      buttons: ["CA-2023"],
+    },
 
-      {
-        id: "NL",
-        title: "Netherlands",
-        fill: "images/gallery/AfiseTurnee/Netherlands.jpg",
-        buttons: ["NL-2015"],
-      },
-
-      {
-        id: "BE",
-        title: "Belgium",
-        fill: "images/gallery/AfiseTurnee/Belgium.jpg",
-        buttons: ["BE-2016"],
-      },
-      {
-        id: "RU",
-        title: "Russia",
-        fill: "images/gallery/AfiseTurnee/Morocco-Tanger.jpg",
-        buttons: ["RU-2012"],
-      },
-      {
-        id: "MA",
-        title: "Morocco",
-        fill: "images/gallery/AfiseTurnee/Morocco-Tanger.jpg",
-        buttons: ["MA-2023"],
-      },
-      {
-        id: "PL",
-        title: "Poland",
-        fill: "images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg",
-        buttons: ["PL-2013", "PL-2014", "PL-2017"],
-      },
-      {
-        id: "FI",
-        title: "Finland",
-        fill: "images/gallery/AfiseTurnee/Finland.jpg",
-        buttons: ["FI-2022"],
-      },
-      {
-        id: "FR",
-        title: "France",
-        fill: "images/gallery/AfiseTurnee/France.jpg",
-        buttons: ["FR-2022"],
-      },
-      {
-        id: "PT",
-        title: "Portugal",
-        fill: "images/gallery/AfiseTurnee/Portugal.jpg",
-        buttons: ["PT-2019", "PT-2024"],
-      },
-      {
-        id: "AL",
-        title: "Albania",
-        fill: "images/gallery/AfiseTurnee/Portugal.jpg",
-        buttons: ["AL-2024"],
-      },
-    ];
-    const visitedCountriesSmall = [
-      {
-        latitude: 50.5039,
-        longitude: 4.4699,
-        imageURL: "images/gallery/AfiseTurnee/Belgium.jpg",
-        value: 25,
-        // zoomLevel: 180,
-        title: "Belgium",
-      },
-      {
-        id: "AE",
-        latitude: 25.276987,
-        longitude: 55.296249,
-        imageURL: "images/gallery/AfiseTurnee/Dubai.jpg",
-        value: 25,
-        title: "Dubai",
-      },
-      {
-        latitude: 52.1326,
-        longitude: 5.2913,
-        imageURL: "images/gallery/AfiseTurnee/Netherlands.jpg",
-        value: 25,
-        customValue: 25,
-        title: "Netherlands",
-      },
-      {
-        latitude: 43.9159,
-        longitude: 17.6791,
-        imageURL:
-          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_berlin.jpg",
-        value: 22,
-        title: "Bosnia and Herzegovina",
-      },
-      {
-        latitude: 41.1533,
-        longitude: 20.1683,
-        imageURL:
-          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_warsaw.jpg",
-        value: 39,
-        title: "Albania",
-      },
-      {
-        latitude: 41.872389,
-        longitude: 12.48018,
-        imageURL:
-          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_rome.jpg",
-        value: 66,
-        title: "Rome",
-      },
-      {
-        latitude: 59.329323,
-        longitude: 18.068581,
-        imageURL:
-          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_stockholm.jpg",
-        value: 50,
-        title: "Stockholm",
-      },
-    ];
-    new MapManager("chartdiv", visitedCountries, visitedCountriesSmall);
-  });
+    {
+      id: "NL",
+      title: "Netherlands",
+      fill: "images/gallery/AfiseTurnee/Netherlands.jpg",
+      buttons: ["NL-2015"],
+    },
+    {
+      id: "BE",
+      title: "Belgium",
+      fill: "images/gallery/AfiseTurnee/Belgium.jpg",
+      buttons: ["BE-2016"],
+    },
+    {
+      id: "RU",
+      title: "Russia",
+      fill: "images/gallery/AfiseTurnee/Morocco-Tanger.jpg",
+      buttons: ["RU-2012"],
+    },
+    {
+      id: "MA",
+      title: "Morocco",
+      fill: "images/gallery/AfiseTurnee/Morocco-Tanger.jpg",
+      buttons: ["MA-2023"],
+    },
+    {
+      id: "PL",
+      title: "Poland",
+      fill: "images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg",
+      buttons: ["PL-2013", "PL-2014", "PL-2017"],
+    },
+    {
+      id: "FI",
+      title: "Finland",
+      fill: "images/gallery/AfiseTurnee/Finland.jpg",
+      buttons: ["FI-2022"],
+    },
+    {
+      id: "FR",
+      title: "France",
+      fill: "images/gallery/AfiseTurnee/France.jpg",
+      buttons: ["FR-2022"],
+    },
+    {
+      id: "PT",
+      title: "Portugal",
+      fill: "images/gallery/AfiseTurnee/Portugal.jpg",
+      buttons: ["PT-2019", "PT-2024"],
+    },
+    {
+      id: "AL",
+      title: "Albania",
+      fill: "images/gallery/AfiseTurnee/Portugal.jpg",
+      buttons: ["AL-2024"],
+    },
+  ];
+  const visitedCountriesSmall = [
+    {
+      latitude: 50.5039,
+      longitude: 4.4699,
+      imageURL: "images/gallery/AfiseTurnee/Belgium.jpg",
+      value: 25,
+      // zoomLevel: 180,
+      title: "Belgium",
+    },
+    {
+      id: "AE",
+      latitude: 25.276987,
+      longitude: 55.296249,
+      imageURL: "images/gallery/AfiseTurnee/Dubai.jpg",
+      value: 25,
+      title: "Dubai",
+    },
+    {
+      latitude: 52.1326,
+      longitude: 5.2913,
+      imageURL: "images/gallery/AfiseTurnee/Netherlands.jpg",
+      value: 25,
+      customValue: 25,
+      title: "Netherlands",
+    },
+    {
+      latitude: 43.9159,
+      longitude: 17.6791,
+      imageURL:
+        "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_berlin.jpg",
+      value: 22,
+      title: "Bosnia and Herzegovina",
+    },
+    {
+      latitude: 41.1533,
+      longitude: 20.1683,
+      imageURL:
+        "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_warsaw.jpg",
+      value: 39,
+      title: "Albania",
+    },
+    {
+      latitude: 41.872389,
+      longitude: 12.48018,
+      imageURL:
+        "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_rome.jpg",
+      value: 66,
+      title: "Rome",
+    },
+    {
+      latitude: 59.329323,
+      longitude: 18.068581,
+      imageURL:
+        "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_stockholm.jpg",
+      value: 50,
+      title: "Stockholm",
+    },
+  ];
+  const map = new MapManager(
+    "chartdiv",
+    visitedCountries,
+    visitedCountriesSmall
+  );
 });
