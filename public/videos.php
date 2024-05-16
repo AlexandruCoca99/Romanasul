@@ -821,57 +821,98 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'),array('id' => '
     <!-- end swiper -->
     
         <!-- //////////////////////////////////////////////////////////////// -->
-      <!-- DUBAI 2023 SWIPER -->
+      <!-- FINLAND 2022 SWIPER -->
 
-      <div class="swiper hidden" id="AE-2023">
+      <div class="swiper hidden" id="FI-2022">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Afis Dubai 2023.jpg" alt="afis" />
+            <img src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Afis.jpg" alt="afis" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Alaturi de Presedinte.jpg" />
+            <img src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Boju 1.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2013/" />
+            <img src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Colaj 2 fete.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
             <img
-              src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/"
-              alt="Mall Dans de Moldova"
+              src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Colaj.jpg"
             />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Dans din Fagaras.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Fagaras 1.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Fetele din Romanasul.jpg" />
           </figure>
         </div>
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Hai echipa.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Hora.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Nasaud 1.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Orchestra 1.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Parada.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Piruete.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Poza pe scari.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Finlanda-2022/Workshop cu dans.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
@@ -918,57 +959,98 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'),array('id' => '
     <!-- end swiper -->
     
         <!-- //////////////////////////////////////////////////////////////// -->
-      <!-- DUBAI 2023 SWIPER -->
+      <!-- NETHERLANDS 2023 SWIPER -->
 
-      <div class="swiper hidden" id="AE-2023">
+      <div class="swiper hidden" id="NL-2015">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Afis Dubai 2023.jpg" alt="afis" />
+            <img src="images/Poze-romanasul/1.Turnee/Olanda-2015/Afis.jpg" alt="afis" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Alaturi de Presedinte.jpg" />
+            <img src="images/Poze-romanasul/1.Turnee/Olanda-2015/Baieti.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2013/" />
+            <img src="images/Poze-romanasul/1.Turnee/Olanda-2015/Baieti 2.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
             <img
-              src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/"
-              alt="Mall Dans de Moldova"
+              src="images/Poze-romanasul/1.Turnee/Olanda-2015/Codru.jpg"
             />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Olanda-2015/Crihalma fetelor.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Olanda-2015/Dans din Banat.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Olanda-2015/Dans din Bnata.jpg" />
           </figure>
         </div>
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Olanda-2015/Fecioresc.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Olanda-2015/Nasaud.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Olanda-2015/Orchestra Olanda.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Olanda-2015/Parada.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Olanda-2015/Piruete.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Olanda-2015/Poza de grup.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Olanda-2015/Socacite.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Olanda-2015/Workshop.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
@@ -1015,13 +1097,13 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'),array('id' => '
     <!-- end swiper -->
     
         <!-- //////////////////////////////////////////////////////////////// -->
-      <!-- DUBAI 2023 SWIPER -->
+      <!-- BELGIUM 2023 SWIPER -->
 
-      <div class="swiper hidden" id="AE-2023">
+      <div class="swiper hidden" id="BE-2016">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Afis Dubai 2023.jpg" alt="afis" />
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Afis-Belgia.jpg" alt="afis" />
           </figure>
         </div>
         <!-- end swiper-slide -->

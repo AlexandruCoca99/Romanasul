@@ -24,7 +24,12 @@ jQuery(document).ready(function ($) {
         this.chart.geodata = am4geodata_worldLow;
         // Set the map's projection type
         this.chart.projection = new am4maps.projections.Miller();
-
+        // Set the map's initial zoom
+        this.chart.homeZoomLevel = 1.2;
+        this.chart.homeGeoPoint = {
+          latitude: 40,
+          longitude: 11,
+        };
         // Create and configure the polygon series for countries
         const polygonSeries = this.createPolygonSeries();
         // polygonSeries.data = this.visitedCountries;
@@ -49,7 +54,7 @@ jQuery(document).ready(function ($) {
       polygonSeries.useGeodata = true; // Use the provided GeoJSON for polygons
       polygonSeries.mapPolygons.template.tooltipText = "{name}"; // Tooltip text format
       polygonSeries.mapPolygons.template.fill = this.chart.colors.getIndex(0); // Default fill color
-
+      console.log(polygonSeries);
       // Adding a pattern on data validation
       polygonSeries.events.on("datavalidated", (ev) => {
         this.applyPatternsToCountries(ev.target);
@@ -203,14 +208,7 @@ jQuery(document).ready(function ($) {
     attachPolygonHitEvent(polygonSeries) {
       // Handling click events on polygons to display detailed information
       polygonSeries.mapPolygons.template.events.on("hit", (ev) => {
-        countryId = ev.target.dataItem.dataContext.id;
-        if (!this.visitedCountries.some((data) => data.id === countryId)) {
-          return;
-        }
-        const foundVisitedCountry = this.visitedCountries.find(
-          (country) => country.id === countryId
-        );
-        this.displayRightSideContainer(foundVisitedCountry);
+        this.manageVisitedCountries(this.visitedCountries, ev);
       });
 
       // Event listener for background click to hide overlays
@@ -220,21 +218,23 @@ jQuery(document).ready(function ($) {
     attachPinHitEvent(pin) {
       // Handling pin hit event
       pin.events.on("hit", (ev) => {
-        countryId = ev.target.dataItem.dataContext.id;
-
-        if (!visitedCountriesSmall.some((data) => data.id === countryId)) {
-          return;
-        }
-        const foundVisitedCountry = this.visitedCountriesSmall.find(
-          (country) => country.id === countryId
-        );
-        this.displayRightSideContainer(foundVisitedCountry);
+        this.manageVisitedCountries(this.visitedCountriesSmall, ev);
       });
 
       // Event listener for background click to hide overlays
       this.manageSlider();
     }
 
+    manageVisitedCountries(visitedCountry, ev) {
+      countryId = ev.target.dataItem.dataContext.id;
+      if (!visitedCountry.some((data) => data.id === countryId)) {
+        return;
+      }
+      const foundVisitedCountry = visitedCountry.find(
+        (country) => country.id === countryId
+      );
+      this.displayRightSideContainer(foundVisitedCountry);
+    }
     manageSlider() {
       this.hideRightSideContainer();
       this.addSlider();
@@ -613,13 +613,14 @@ jQuery(document).ready(function ($) {
   ];
   const visitedCountriesSmall = [
     {
+      id: "BE",
       latitude: 50.8799,
       longitude: 2.65594,
       fill: "images/gallery/AfiseTurnee/Belgium.jpg",
       value: 25,
       zoomLevel: 180,
       title: "Belgium",
-      id: "BE",
+      buttons: ["BE-2016"],
     },
     {
       id: "AE",
@@ -639,6 +640,7 @@ jQuery(document).ready(function ($) {
       value: 25,
       zoomLevel: 180,
       title: "Netherlands",
+      buttons: ["NL-2015"],
     },
     {
       id: "BA",
