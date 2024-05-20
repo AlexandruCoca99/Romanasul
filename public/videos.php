@@ -724,57 +724,56 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'),array('id' => '
     <!-- end swiper -->
     
         <!-- //////////////////////////////////////////////////////////////// -->
-      <!-- FRANCE 2022 SWIPER -->
+      <!-- FRANCE 2021 SWIPER -->
 
-      <div class="swiper hidden" id="FR-2022">
+      <div class="swiper hidden" id="FR-2021">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Afis Dubai 2023.jpg" alt="afis" />
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg" alt="afis" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Alaturi de Presedinte.jpg" />
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2013/" />
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
             <img
-              src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/"
-              alt="Mall Dans de Moldova"
+              src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg"
             />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg" />
           </figure>
         </div>
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->

@@ -99,10 +99,6 @@ header {
 
 /* hero wrapper */
 
-.hero-wrapper {
-  display: flex;
-}
-
 /* Style the navbar */
 nav {
   color: #dde1e4;
@@ -165,7 +161,7 @@ nav a:hover {
 
 /* Who we are section */
 
-#whoweare-bg {
+.whoweare-bg {
   position: relative;
   margin: 0 auto;
   overflow: hidden;
@@ -1352,4 +1348,29 @@ button.submit-review {
 
 button.submit-review:hover {
   background-color: #003366;
+}
+
+//who we are section
+.hero-wrapper {
+  padding-top: 100px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-wrapper img {
+  width: 100%;
+  height: auto;
+  filter: blur(5px); /* Adjust the blur value as needed */
+}
+
+.hero-title {
+  position: absolute;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Increase text shadow for better visibility */
 }
