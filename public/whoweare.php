@@ -11,8 +11,10 @@ include 'header.php';
 </div>
     
 <div>
-    <p class="title">Mission:</p>
-    <span>To disseminate and bring Romanian folklore on stage, to cultivate among students the taste for beauty and the passion for art.</span>
+    <div class="mission-wrapper">
+    <h2 class="title">Mission:</h2>
+    <p>To disseminate and bring Romanian folklore on stage, to cultivate among students the taste for beauty and the passion for art.</p>
+    </div>
 
     <p>&nbsp;</p>
     <p class="title">Short history:</p>
