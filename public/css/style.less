@@ -1364,7 +1364,8 @@ button.submit-review:hover {
 .hero-wrapper img {
   width: 100%;
   height: auto;
-  filter: blur(5px); /* Adjust the blur value as needed */
+  // filter: blur(5px); /* Adjust the blur value as needed */
+  filter: brightness(0.7); /* Adjust the value to make the image darker */
 }
 
 .hero-title {
@@ -1373,4 +1374,53 @@ button.submit-review:hover {
   font-size: 3em;
   text-align: center;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Increase text shadow for better visibility */
+}
+
+.who-we-are-container {
+  font-family: "Abhaya Libre", serif;
+}
+.mission-wrapper {
+  width: 80%; /* Adjust width as needed */
+  margin: auto; /* Center horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Optional: Center text inside the mission-wrapper */
+  padding: 50px 0; /* Adjust padding as needed */
+
+  h2 {
+    font-family: "Abhaya Libre", serif;
+    font-size: 50px;
+    font-style: italic;
+    padding-bottom: 35px;
+  }
+
+  p {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+.short-history-wrapper {
+  width: 30%; /* Adjust width as needed */
+  margin-left: 20px; /* Center horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Optional: Center text inside the mission-wrapper */
+  padding: 50px 0; /* Adjust padding as needed */
+
+  h2 {
+    font-family: "Abhaya Libre", serif;
+    font-size: 50px;
+    font-style: italic;
+    padding-bottom: 35px;
+  }
+
+  p {
+    font-size: 21px;
+    line-height: 34px;
+  }
 }

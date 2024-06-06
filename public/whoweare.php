@@ -7,18 +7,24 @@ include 'header.php';
 
 <div class="hero-wrapper">
     <img class="whoweare-bg" src="images/gallery/PozeRemastered/Fundal-who-we-are2.jpg" alt="Background Image">
-    <h1 class = "hero-title">Cine suntem?</h1>
+    <!-- <h1 class = "hero-title">Cine suntem?</h1> -->
 </div>
     
-<div>
+<div class="who-we-are-container">
     <div class="mission-wrapper">
-    <h2 class="title">Mission:</h2>
-    <p>To disseminate and bring Romanian folklore on stage, to cultivate among students the taste for beauty and the passion for art.</p>
+        <h2 class="title">Mission:</h2>
+        <p>To disseminate and bring Romanian folklore on stage, to cultivate among students the taste for beauty and the passion for art.</p>
     </div>
 
-    <p>&nbsp;</p>
-    <p class="title">Short history:</p>
-    <span>Founded in 1974, initiated by a group of students from the Polytechnic Institute of Cluj-Napoca, coordinated by prof. Teodor NILAS. Since 1979, we enjoy a fruitful collaboration with Prof. Dumitru POP, with the Language Faculty of the Cluj-Napoca Babes-Bolyai University. We have developed, attained maturity and achieved consecration in student's contests and festivals 'Primavara Studenteasca', 'Festivalul artei si creatiei studentesti', 'Festivalul National Studentesc de Folclor', in shows and tours both in our country and abroad. In 1984, we have starred in a movie, 'O ceata de calusari din Campia Transilvaniei', in 35mm, of certified artistic and documentary value. In 1994 and in 2000, we brought two monographies to print, by Prof. Teodor NILAS. We have made recordings at National Radio and TV stations, and we have recorded a CD.</span>
+    <div class="short-history-wrapper"> 
+        <h2 class="title">Short history:</h2>
+        <p>Founded in 1974, initiated by a group of students from the Polytechnic Institute of Cluj-Napoca, coordinated by prof. Teodor NILAS. Since 1979, we enjoy a fruitful collaboration with Prof. Dumitru POP, with the Language Faculty of the Cluj-Napoca Babes-Bolyai University. We have developed, attained maturity and achieved consecration in student's contests and festivals 'Primavara Studenteasca', 'Festivalul artei si creatiei studentesti', 'Festivalul National Studentesc de Folclor', in shows and tours both in our country and abroad. In 1984, we have starred in a movie, 'O ceata de calusari din Campia Transilvaniei', in 35mm, of certified artistic and documentary value. In 1994 and in 2000, we brought two monographies to print, by Prof. Teodor NILAS. We have made recordings at National Radio and TV stations, and we have recorded a CD.</span>
+    </div>
+
+    <div class="short-history-images-container">
+        <img src="images/gallery/pozeVechi/1978_nasaud.JPG" alt="Nasaud-1978" class="photo-1">
+        <img src="images/gallery/pozeVechi/1978_ceterasi.JPG" alt="Ceterasi-1978" class="photo-2">
+    </div>
 
     <p>&nbsp;</p>
     <p class="title">Members:</p>
