@@ -321,7 +321,7 @@ article {
 }
 
 h2 {
-  float: left;
+  // float: left;
   display: block;
   font-weight: normal;
   font-size: 25px;
@@ -1351,6 +1351,34 @@ button.submit-review:hover {
 }
 
 //who we are section
+
+.members-list,
+.short-history-wrapper,
+.mission-wrapper,
+.members-presentation,
+.member-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Optional: Center text inside the mission-wrapper */
+  padding: 50px 0; /* Adjust padding as needed */
+  margin-left: 20px;
+
+  h2 {
+    font-family: "Abhaya Libre", serif;
+    font-size: 50px;
+    font-style: italic;
+    padding-bottom: 35px;
+  }
+
+  p,
+  li {
+    font-size: 21px;
+    line-height: 34px;
+  }
+}
+
 .hero-wrapper {
   padding-top: 100px;
   position: relative;
@@ -1379,50 +1407,15 @@ button.submit-review:hover {
 .who-we-are-container {
   font-family: "Abhaya Libre", serif;
 }
+
 .mission-wrapper {
   width: 80%; /* Adjust width as needed */
   margin: auto; /* Center horizontally */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  text-align: center; /* Optional: Center text inside the mission-wrapper */
-  padding: 50px 0; /* Adjust padding as needed */
-
-  h2 {
-    font-family: "Abhaya Libre", serif;
-    font-size: 50px;
-    font-style: italic;
-    padding-bottom: 35px;
-  }
-
-  p {
-    font-size: 45px;
-    line-height: 45px;
-  }
 }
 
 .short-history-wrapper {
   width: 30%; /* Adjust width as needed */
   margin-left: 20px; /* Center horizontally */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  text-align: center; /* Optional: Center text inside the mission-wrapper */
-  padding: 50px 0; /* Adjust padding as needed */
-
-  h2 {
-    font-family: "Abhaya Libre", serif;
-    font-size: 50px;
-    font-style: italic;
-    padding-bottom: 35px;
-  }
-
-  p {
-    font-size: 21px;
-    line-height: 34px;
-  }
 }
 
 .history-content-wrapper {
@@ -1447,27 +1440,81 @@ button.submit-review:hover {
   }
 }
 
-.members-container {
-  .members-presentation {
-    // width: 0%; /* Adjust width as needed */
-    margin-left: 20px; /* Center horizontally */
+.members-list {
+  align-items: flex-start;
+  // justify-content: space-around;
+  // flex-direction: unset;
+}
+
+.member-content {
+  display: flex;
+  // justify-content: space-between; /* Ensure content is spaced between the left and right edges */
+  // align-items: center; /* Align items vertically in the center */
+  // width: 100%; /* Ensure the content takes the full width */
+  margin: 20px 0; /* Optional: add some margin for spacing */
+}
+
+.element-left {
+  align-items: flex-start;
+}
+
+.element-center {
+  align-items: center;
+}
+
+.element-right {
+  align-items: flex-end;
+}
+
+.swiper-members {
+  // position: relative;
+  width: 10%;
+  display: flex;
+  align-items: flex-end; /* Align the swiper to the right */
+  // opacity: 1;
+  // height: 10vh;
+  // // background-color: @black;
+  // // top: 0;
+  // z-index: 1;
+
+  .swiper {
+    margin-top: 30px;
+  }
+
+  .swiper-slide img {
+    // display: block;
+    height: 30vh;
+    /* height: 40rem; */
+    // object-fit: cover;
+    // margin: auto;
+    border-radius: 30px;
+  }
+
+  // .swiper-slide figure {
+  //   position: relative;
+  //   margin: 0;
+  //   overflow: hidden;
+  // }
+
+  .swiper-custom-nav-left {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 10;
+    padding: 0 2rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    text-align: center; /* Optional: Center text inside the mission-wrapper */
-    padding: 50px 0; /* Adjust padding as needed */
+    justify-content: space-between;
+  }
 
-    h2 {
-      font-family: "Abhaya Libre", serif;
-      font-size: 50px;
-      font-style: italic;
-      padding-bottom: 35px;
-    }
-
-    p {
-      font-size: 21px;
-      line-height: 34px;
-    }
+  .swiper-custom-nav-right {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 10;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
   }
 }
