@@ -1478,11 +1478,37 @@ button.submit-review:hover {
   align-items: flex-end;
 }
 
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: var(--light-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.read-more:hover {
+  background-color: #5d5d5d;
+}
+
 .swiper-members-holder {
   width: 30%;
   position: relative;
+  margin: auto 0;
+  // padding: 50px 0;
 
-  .swiper-members {
+  .swiper-choreographers,
+  .swiper-conductors,
+  .swiper-cultural-attaches,
+  .swiper-singers,
+  .swiper-collaborating-singers,
+  .swiper-collaborating-musicians,
+  .swiper-show-hosts {
     overflow: hidden;
     display: flex;
     align-items: flex-end; /* Align the swiper to the right */
@@ -1500,7 +1526,7 @@ button.submit-review:hover {
     top: 50%;
     transform: translateY(-50%);
     left: -70px;
-    z-index: 10;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -1511,7 +1537,7 @@ button.submit-review:hover {
     top: 50%;
     transform: translateY(-50%);
     right: -70px;
-    z-index: 10;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     padding: 0;
