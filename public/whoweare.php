@@ -37,14 +37,14 @@ include 'header.php';
                 <img src="images/gallery/pozeVechi/1978_ceterasi.JPG" alt="Ceterasi-1978" class="photo-2">
             </div>
         </div>
-        <div class="members-container">
+        
             <div class="members-presentation">
                 <h2 class="title">Members:</h2>
                 <p>Students of the Technical University and other Universities of Cluj-Napoca: each year, more than 80
                     students participate in our activities. Dancers, singers and musicians. Conductors, choreographers,
                     stage directors, referents, artistic counselors.</span>
             </div>
-
+            <div class="members-container">
             <!-- <p>&nbsp;</p> -->
             <div class="flex-direction-row justify-content-space-around members-list ">
                 <div class="member-content">
@@ -116,7 +116,7 @@ include 'header.php';
                         <li>4. Ştefan Lustig (1976 - 1982)</li>
                         <li>5. Prof. Ioan Crişan (1982 - 1988)</li>
                         <li>6. Prof. Iulian Raţiu (1988 - 1990)</li>
-                        <div class="more hidden">
+                        <div id="more-conductors" class=" hidden">
                             <li>7. Prof. Ioan Morar (1990 - 1991)</li>
                             <li>8. Prof. Titus Beşa-Fluieraş (1991 - 2001)</li>
                             <li>9. Traian Covrig</li>
@@ -126,7 +126,7 @@ include 'header.php';
                             <li>13. Hatfaludi Alexandru (2013-now)</li>
                         </div>
                     </ul>
-                    <button class="read-more" onclick="showMore()">Read More</button>
+                    <button id="read-more-conductors" onclick="showMoreConductors()">Read More</button>
                 </div>
                 <div class="swiper-members-holder">
                     <div class="swiper-conductors" id="Conductors">
@@ -241,8 +241,8 @@ include 'header.php';
                         <li>4. Ionuţ Fulea</li>
                         <li>5. Marius Fulea</li>
                         <li>6. Georgeta Fârţală</li>
-                        <div class="more hidden">
-                            <li>7. Adriana Irimieş</li>
+                        <li>7. Adriana Irimieş</li>
+                        <div id="more-singers" class="hidden">
                             <li>8. Felicia Lupu</li>
                             <li>9. Dorina Pentelescu</li>
                             <li>10. Ioan Sîncu</li>
@@ -261,7 +261,7 @@ include 'header.php';
                             <li>23. Claudiu Ciotleuş</li>
                         </div>
                     </ul>
-                    <button class="read-more" onclick="showMore()">Read More</button>
+                    <button id="read-more-singers" onclick="showMoreSingers()">Read More</button>
                 </div>
                 <div class="swiper-members-holder">
                     <div class="swiper-singers" id="Singers">
@@ -320,15 +320,18 @@ include 'header.php';
                         <li>5. Veta Biriş</li>
                         <li>6. Nicolae Furdui Iancu</li>
                         <li>7. Ion Pojar</li>
-                        <li>8. Maria Lobont</li>
-                        <li>9. Angela Nistor</li>
-                        <li>10. Mariana Morcan</li>
-                        <li>11. Maria Dan Golban</li>
-                        <li>12. Marius Ciprian Pop</li>
-                        <li>13. Adriana Hagău</li>
-                        <li>14. Aurel Ciceoan</li>
-                        <li>15. Maria Dan Golban</li>
+                        <div id="more-collaborating-singers" class="hidden" >
+                            <li>8. Maria Lobont</li>
+                            <li>9. Angela Nistor</li>
+                            <li>10. Mariana Morcan</li>
+                            <li>11. Maria Dan Golban</li>
+                            <li>12. Marius Ciprian Pop</li>
+                            <li>13. Adriana Hagău</li>
+                            <li>14. Aurel Ciceoan</li>
+                            <li>15. Maria Dan Golban</li>
+                        </div>
                     </ul>
+                    <button id="read-more-collaborating-singers" onclick="showMoreCollaboratingSingers()">Read More</button>
                 </div>
                 <div class="swiper-members-holder">
                     <div class="swiper-collaborating-singers" id="Collaborating singers">

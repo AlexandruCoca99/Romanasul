@@ -1452,6 +1452,11 @@ button.submit-review:hover {
   }
 }
 
+.members-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .members-list {
   align-items: flex-start;
   // justify-content: space-around;
@@ -1478,7 +1483,9 @@ button.submit-review:hover {
   align-items: flex-end;
 }
 
-.read-more {
+#read-more-conductors,
+#read-more-singers,
+#read-more-collaborating-singers {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
@@ -1492,7 +1499,9 @@ button.submit-review:hover {
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
-.read-more:hover {
+#read-more-conductors:hover,
+#read-more-singers:hover,
+#read-more-collaborating-singers:hover {
   background-color: #5d5d5d;
 }
 

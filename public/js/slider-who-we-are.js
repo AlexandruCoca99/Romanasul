@@ -122,15 +122,43 @@ const swiper7 = new Swiper(".swiper-show-hosts", {
 
 // Repeat initialization for each swiper
 
-function showMore() {
-  var moreText = document.getElementsByClassName("more");
-  var btnText = document.getElementsByClassName("read-more");
+let conductors = document.getElementById("more-conductors");
+let singers = document.getElementById("more-singers");
+let collaboratingSingers = document.getElementById(
+  "more-collaborating-singers"
+);
+var btnConductors = document.getElementById("read-more-conductors");
+var btnSingers = document.getElementById("read-more-singers");
+var btnCollaboratingSingers = document.getElementById(
+  "read-more-collaborating-singers"
+);
 
-  if (moreText.classList.contains("hidden")) {
-    moreText.classList.remove("hidden");
-    btnText.textContent = "Show Less";
+function showMoreConductors() {
+  if (conductors.classList.contains("hidden")) {
+    conductors.classList.remove("hidden");
+    btnConductors.textContent = "Show Less";
   } else {
-    moreText.classList.add("hidden");
-    btnText.textContent = "Read More";
+    conductors.classList.add("hidden");
+    btnConductors.textContent = "Read More";
+  }
+}
+
+function showMoreSingers() {
+  if (singers.classList.contains("hidden")) {
+    singers.classList.remove("hidden");
+    btnSingers.textContent = "Show Less";
+  } else {
+    singers.classList.add("hidden");
+    btnSingers.textContent = "Read More";
+  }
+}
+
+function showMoreCollaboratingSingers() {
+  if (collaboratingSingers.classList.contains("hidden")) {
+    collaboratingSingers.classList.remove("hidden");
+    btnCollaboratingSingers.textContent = "Show Less";
+  } else {
+    collaboratingSingers.classList.add("hidden");
+    btnCollaboratingSingers.textContent = "Read More";
   }
 }
