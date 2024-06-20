@@ -1483,6 +1483,20 @@ button.submit-review:hover {
   align-items: flex-end;
 }
 
+#more-conductors,
+#more-singers,
+#more-collaborating-singers {
+  height: 0;
+  transition: height 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+#more-conductors.expand,
+#more-singers.expand,
+#more-collaborating-singers.expand {
+  height: auto; /* This will be handled in the JavaScript */
+}
+
 #read-more-conductors,
 #read-more-singers,
 #read-more-collaborating-singers {

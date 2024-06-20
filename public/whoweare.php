@@ -116,7 +116,7 @@ include 'header.php';
                         <li>4. Ştefan Lustig (1976 - 1982)</li>
                         <li>5. Prof. Ioan Crişan (1982 - 1988)</li>
                         <li>6. Prof. Iulian Raţiu (1988 - 1990)</li>
-                        <div id="more-conductors" class=" hidden">
+                        <div id="more-conductors" style="height: 0;">
                             <li>7. Prof. Ioan Morar (1990 - 1991)</li>
                             <li>8. Prof. Titus Beşa-Fluieraş (1991 - 2001)</li>
                             <li>9. Traian Covrig</li>
@@ -242,7 +242,7 @@ include 'header.php';
                         <li>5. Marius Fulea</li>
                         <li>6. Georgeta Fârţală</li>
                         <li>7. Adriana Irimieş</li>
-                        <div id="more-singers" class="hidden">
+                        <div id="more-singers" style="height: 0;">
                             <li>8. Felicia Lupu</li>
                             <li>9. Dorina Pentelescu</li>
                             <li>10. Ioan Sîncu</li>
@@ -320,7 +320,7 @@ include 'header.php';
                         <li>5. Veta Biriş</li>
                         <li>6. Nicolae Furdui Iancu</li>
                         <li>7. Ion Pojar</li>
-                        <div id="more-collaborating-singers" class="hidden" >
+                        <div id="more-collaborating-singers" style="height: 0;" >
                             <li>8. Maria Lobont</li>
                             <li>9. Angela Nistor</li>
                             <li>10. Mariana Morcan</li>
@@ -492,73 +492,7 @@ include 'header.php';
                     <!-- end swiper-custom-nav -->
                 </div>
             </div>
-            <!-- <div class="members-list">
-                <h2 class="title">Singers:</h2>
-                <ul>
-                    <li>1. Mariana Chiorean</li>
-                    <li>2. Ioan Dragoş</li>
-                    <li>3. Ioan Fechete</li>
-                    <li>4. Ionuţ Fulea</li>
-                    <li>5. Marius Fulea</li>
-                    <li>6. Georgeta Fârţală</li>
-                    <li>7. Adriana Irimieş</li>
-                    <li>8. Felicia Lupu</li>
-                    <li>9. Dorina Pentelescu</li>
-                    <li>10. Ioan Sîncu</li>
-                    <li>11. Crina Varga</li>
-                    <li>12. Rozalia Iuga</li>
-                    <li>13. Dorina Grad</li>
-                    <li>14. Maria Mariş</li>
-                    <li>15. Simona Baciu</li>
-                    <li>16. Anda Conţiş</li>
-                    <li>17. Mircea Sime</li>
-                    <li>18. Florin Bota</li>
-                    <li>19. Silviu Adrian Popa</li>
-                    <li>20. Irinel Popa</li>
-                    <li>21. Mirela Suciu</li>
-                    <li>22. Camelia Lupaş</li>
-                    <li>23. Claudiu Ciotleuş</li>
-                </ul>
-            </div> -->
-            <!-- <div class="members-list">
-                <h2 class="title">Collaborating singers:</h2>
-                <ul>
-                    <li>1. Mia Dan</li>
-                    <li>2. Dumitru Sopon</li>
-                    <li>3. Maria Marcu</li>
-                    <li>4. Sava Negrean Brudaşcu</li>
-                    <li>5. Veta Biriş</li>
-                    <li>6. Nicolae Furdui Iancu</li>
-                    <li>7. Ion Pojar</li>
-                    <li>8. Maria Lobont</li>
-                    <li>9. Angela Nistor</li>
-                    <li>10. Mariana Morcan</li>
-                    <li>11. Maria Dan Golban</li>
-                    <li>12. Marius Ciprian Pop</li>
-                    <li>13. Adriana Hagău</li>
-                    <li>14. Aurel Ciceoan</li>
-                    <li>15. Maria Dan Golban</li>
-                </ul>
-            </div> -->
-            <!-- <div class="members-list">
-                <h2 class="title">Collaborating musicians:</h2>
-                <ul>
-                    <li>1. Dumitru Fărcaş</li>
-                    <li>2. Gheorghe Zamfir</li>
-                    <li>3. Gheorghe Palcu</li>
-                    <li>4. Ioan Berci</li>
-                    <li>5. Dan Gâdea</li>
-                    <li>6. Constantin Istici</li>
-                    <li>7. Mircea Câmpeanu</li>
-                </ul>
-            </div> -->
-            <!-- <div class="members-list">
-                <h2 class="title">Show hosts:</h2>
-                <ul>
-                    <li>1. Vania Atudorei</li>
-                    <li>2. Victor Bercea</li>
-                </ul>
-            </div> -->
+ 
         </div>
     </div>
 </body>

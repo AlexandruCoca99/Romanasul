@@ -133,32 +133,84 @@ var btnCollaboratingSingers = document.getElementById(
   "read-more-collaborating-singers"
 );
 
+// function showMoreConductors() {
+//   if (conductors.classList.contains("hidden")) {
+//     conductors.classList.remove("hidden");
+//     btnConductors.textContent = "Show Less";
+//   } else {
+//     conductors.classList.add("hidden");
+//     btnConductors.textContent = "Read More";
+//   }
+// }
+
+// function showMoreSingers() {
+//   if (singers.classList.contains("hidden")) {
+//     singers.classList.remove("hidden");
+//     btnSingers.textContent = "Show Less";
+//   } else {
+//     singers.classList.add("hidden");
+//     btnSingers.textContent = "Read More";
+//   }
+// }
+
 function showMoreConductors() {
-  if (conductors.classList.contains("hidden")) {
-    conductors.classList.remove("hidden");
-    btnConductors.textContent = "Show Less";
-  } else {
-    conductors.classList.add("hidden");
+  const conductors = document.getElementById("more-conductors");
+  const btnConductors = document.getElementById("read-more-conductors");
+
+  if (conductors.classList.contains("expand")) {
+    conductors.style.height = "0";
+    conductors.classList.remove("expand");
     btnConductors.textContent = "Read More";
+  } else {
+    conductors.classList.add("expand");
+    let autoHeight = conductors.scrollHeight + "px"; // Get the actual height of the content
+    conductors.style.height = autoHeight;
+    btnConductors.textContent = "Show Less";
   }
 }
 
 function showMoreSingers() {
-  if (singers.classList.contains("hidden")) {
-    singers.classList.remove("hidden");
-    btnSingers.textContent = "Show Less";
-  } else {
-    singers.classList.add("hidden");
+  const singers = document.getElementById("more-singers");
+  const btnSingers = document.getElementById("read-more-singers");
+
+  if (singers.classList.contains("expand")) {
+    singers.style.height = "0";
+    singers.classList.remove("expand");
     btnSingers.textContent = "Read More";
+  } else {
+    singers.classList.add("expand");
+    let autoHeight = singers.scrollHeight + "px"; // Get the actual height of the content
+    singers.style.height = autoHeight;
+    btnSingers.textContent = "Show Less";
   }
 }
 
 function showMoreCollaboratingSingers() {
-  if (collaboratingSingers.classList.contains("hidden")) {
-    collaboratingSingers.classList.remove("hidden");
-    btnCollaboratingSingers.textContent = "Show Less";
-  } else {
-    collaboratingSingers.classList.add("hidden");
+  const collaboratingSingers = document.getElementById(
+    "more-collaborating-singers"
+  );
+  const btnCollaboratingSingers = document.getElementById(
+    "read-more-collaborating-singers"
+  );
+
+  if (collaboratingSingers.classList.contains("expand")) {
+    collaboratingSingers.style.height = "0";
+    collaboratingSingers.classList.remove("expand");
     btnCollaboratingSingers.textContent = "Read More";
+  } else {
+    collaboratingSingers.classList.add("expand");
+    let autoHeight = collaboratingSingers.scrollHeight + "px"; // Get the actual height of the content
+    collaboratingSingers.style.height = autoHeight;
+    btnCollaboratingSingers.textContent = "Show Less";
   }
 }
+
+// function showMoreCollaboratingSingers() {
+//   if (collaboratingSingers.classList.contains("hidden")) {
+//     collaboratingSingers.classList.remove("hidden");
+//     btnCollaboratingSingers.textContent = "Show Less";
+//   } else {
+//     collaboratingSingers.classList.add("hidden");
+//     btnCollaboratingSingers.textContent = "Read More";
+//   }
+// }
