@@ -8,7 +8,7 @@ include 'header.php';
 
     <div class="hero-wrapper">
         <img class="whoweare-bg" src="images/gallery/PozeRemastered/Fundal-who-we-are2.jpg" alt="Background Image">
-        <!-- <h1 class = "hero-title">Cine suntem?</h1> -->
+        <h1 class = "hero-title">Cine suntem?</h1>
     </div>
 
     <div class="who-we-are-container">
