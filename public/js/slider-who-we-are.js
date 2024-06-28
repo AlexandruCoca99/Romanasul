@@ -1,38 +1,3 @@
-// new Swiper(".swiper-members", {
-//   slidesPerView: 1.1,
-//   autoHeight: true,
-//   centeredSlides: true,
-//   spaceBetween: 24,
-//   grabCursor: true,
-//   pagination: {
-//     el: ".swiper-members .swiper-custom-pagination",
-//     clickable: true,
-//     renderBullet: function (index, className) {
-//       return `<div class=${className}>
-//                 <span class="number">${index + 1}</span>
-//                 <span class="line"></span>
-//                 </div>`;
-//     },
-//   },
-//   lazyLoading: true,
-//   //   loop: true,
-//   keyboard: {
-//     enabled: true,
-//   },
-//   navigation: {
-//     nextEl: "#nav-right",
-//     prevEl: "#nav-left",
-//   },
-//   breakpoints: {
-//     800: {
-//       slidesPerView: 1,
-//     },
-//     1400: {
-//       slidesPerView: 1,
-//     },
-//   },
-// });
-
 const swiperConfigs = {
   slidesPerView: 1.1,
   autoHeight: true,
@@ -133,26 +98,6 @@ var btnCollaboratingSingers = document.getElementById(
   "read-more-collaborating-singers"
 );
 
-// function showMoreConductors() {
-//   if (conductors.classList.contains("hidden")) {
-//     conductors.classList.remove("hidden");
-//     btnConductors.textContent = "Show Less";
-//   } else {
-//     conductors.classList.add("hidden");
-//     btnConductors.textContent = "Read More";
-//   }
-// }
-
-// function showMoreSingers() {
-//   if (singers.classList.contains("hidden")) {
-//     singers.classList.remove("hidden");
-//     btnSingers.textContent = "Show Less";
-//   } else {
-//     singers.classList.add("hidden");
-//     btnSingers.textContent = "Read More";
-//   }
-// }
-
 function showMoreConductors() {
   const conductors = document.getElementById("more-conductors");
   const btnConductors = document.getElementById("read-more-conductors");
@@ -205,12 +150,35 @@ function showMoreCollaboratingSingers() {
   }
 }
 
-// function showMoreCollaboratingSingers() {
-//   if (collaboratingSingers.classList.contains("hidden")) {
-//     collaboratingSingers.classList.remove("hidden");
-//     btnCollaboratingSingers.textContent = "Show Less";
-//   } else {
-//     collaboratingSingers.classList.add("hidden");
-//     btnCollaboratingSingers.textContent = "Read More";
-//   }
-// }
+const createObserver = (effect, thd) =>
+  (observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(effect);
+        }
+      });
+    },
+    {
+      threshold: thd,
+    }
+  ));
+
+document.addEventListener("DOMContentLoaded", function () {
+  const photos = document.querySelectorAll(".photo-1, .photo-2 ");
+  const members = document.querySelectorAll(
+    ".member-content, .swiper-members-holder "
+  );
+
+  const observerPhotos = createObserver("active", 0.5);
+
+  const observerMembers = createObserver("fade-in", 0.7);
+
+  photos.forEach((photo) => {
+    observerPhotos.observe(photo);
+  });
+
+  members.forEach((member) => {
+    observerMembers.observe(member);
+  });
+});
