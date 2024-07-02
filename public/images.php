@@ -4,6 +4,38 @@
 get_header("Images");
 ?>
 
+
+<body>
+    <div class="gallery-container">
+        <div class="time-period-container">
+            <img src="images\1985_nasaud6.jpg" class="time-period-background" alt="Background Old">
+            <div class="header-container">
+                <h2>Photos from 1974-2000</h2>
+            </div>
+            <!-- <img src="photo1.jpg" alt="Old Photo 1">
+            <img src="photo2.jpg" alt="Old Photo 2"> -->
+        </div>
+        
+        <div class="time-period-container">
+            <img src="images\banatGrup_93.jpg" class="time-period-background" alt="Background Mid">
+            <div class="header-container">
+                <h2>Photos from 2000-2010</h2>
+            </div>
+            <!-- <img src="photo3.jpg" alt="Mid Photo 1">
+            <img src="photo4.jpg" alt="Mid Photo 2"> -->
+        </div>
+        
+        <div class="time-period-container">
+            <img src="images\Baieti.jpg" class="time-period-background" alt="Background Recent">
+            <div class="header-container">
+            <h2>Photos from 2010-2024</h2>
+            </div>
+            <!-- <img src="photo5.jpg" alt="Recent Photo 1">
+            <img src="photo6.jpg" alt="Recent Photo 2"> -->
+        </div>
+    </div>
+</body>
+<!-- 
 <section>
 <table>
 <tr>
@@ -186,5 +218,5 @@ get_header("Images");
     </td>
 </tr>
 </table>
-</section>
+</section> -->
 	
