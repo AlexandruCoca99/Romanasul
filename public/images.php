@@ -7,16 +7,15 @@ get_header("Images");
 
 <body>
     <div class="gallery-container">
-        <div class="time-period-container">
+        <div class="time-period-container" id="old">
             <img src="images\1985_nasaud6.jpg" class="time-period-background" alt="Background Old">
             <div class="header-container">
                 <h2>Photos from 1974-2000</h2>
             </div>
-            <!-- <img src="photo1.jpg" alt="Old Photo 1">
-            <img src="photo2.jpg" alt="Old Photo 2"> -->
+
         </div>
         
-        <div class="time-period-container">
+        <div class="time-period-container" id="mid">
             <img src="images\banatGrup_93.jpg" class="time-period-background" alt="Background Mid">
             <div class="header-container">
                 <h2>Photos from 2000-2010</h2>
@@ -25,7 +24,7 @@ get_header("Images");
             <img src="photo4.jpg" alt="Mid Photo 2"> -->
         </div>
         
-        <div class="time-period-container">
+        <div class="time-period-container" id="recent">
             <img src="images\Baieti.jpg" class="time-period-background" alt="Background Recent">
             <div class="header-container">
             <h2>Photos from 2010-2024</h2>
@@ -34,7 +33,122 @@ get_header("Images");
             <img src="photo6.jpg" alt="Recent Photo 2"> -->
         </div>
     </div>
+    <div class="gallery-wrapper old-period hidden">
+      <div class="image1 tall">
+        <img src="images\gallery\pozeVechi\1986_ceterasi3.jpg" alt="" />
+      </div>
+      <div class="image2 wide"><img src="images\gallery\pozeVechi\1978_all.jpg" alt="" /></div>
+      <div class="image3"><img src="images\gallery\pozeVechi\1978_ceterasi.JPG" alt="" /></div>
+      <div class="image4"><img src="images\gallery\pozeVechi\1978_crihalma.JPG" alt="" /></div>
+      <div class="image5"><img src="images\gallery\pozeVechi\1978_nasaud.JPG" alt="" /></div>
+      <div class="image6"><img src="images\gallery\pozeVechi\1978_nasaud2.JPG" alt="" /></div>
+      <div class="image7">
+        <img src="images\gallery\pozeVechi\1978_nasaud3.JPG" alt="" />
+      </div>
+      <div class="image8">
+        <img src="images\gallery\pozeVechi\1978_nasaud4.jpg" alt="" />
+      </div>
+      <div class="image9">
+        <img src="images\gallery\pozeVechi\1978_some.JPG" alt="" />
+      </div>
+      <div class="image10">
+        <img src="images\gallery\pozeVechi\1980_ceterasi2.JPG" alt="" />
+      </div>
+      <div class="image11">
+        <img src="images\gallery\pozeVechi\1980_maramures.JPG" alt="" />
+      </div>
+      <div class="image12">
+        <img src="images\gallery\pozeVechi\1980_nasaud5.JPG" alt="" />
+      </div>
+      <div class="image13">
+        <img src="images\gallery\pozeVechi\1983_3.jpg" alt="" />
+      </div>
+      <div class="image14">
+        <img src="images\gallery\pozeVechi\1983_4.jpg" alt="" />
+      </div>
+      <div class="image15">
+        <img src="images\gallery\pozeVechi\1983_5.jpg" alt="" />
+      </div>
+    </div>
+    <div class="gallery-wrapper mid-period hidden">
+      <div class="image1 tall">
+        <img src="images\gallery\pozeMijloc\banat_02.jpg" alt="" />
+      </div>
+      <div class="image2 wide"><img src="images\gallery\pozeMijloc\banat2_02.jpg" alt="" /></div>
+      <div class="image3"><img src="images\gallery\pozeMijloc\banat3_02.JPG" alt="" /></div>
+      <div class="image4"><img src="images\gallery\pozeMijloc\banat4_02.JPG" alt="" /></div>
+      <div class="image5"><img src="images\gallery\pozeMijloc\1978_nasaud.JPG" alt="" /></div>
+      <div class="image6"><img src="images\gallery\pozeMijloc\1978_nasaud2.JPG" alt="" /></div>
+      <div class="image7">
+        <img src="images\gallery\pozeMijloc\1978_nasaud3.JPG" alt="" />
+      </div>
+      <div class="image8">
+        <img src="images\gallery\pozeMijloc\1978_nasaud4.jpg" alt="" />
+      </div>
+      <div class="image9">
+        <img src="images\gallery\pozeMijloc\1978_some.JPG" alt="" />
+      </div>
+      <div class="image10">
+        <img src="images\gallery\pozeMijloc\1980_ceterasi2.JPG" alt="" />
+      </div>
+      <div class="image11">
+        <img src="images\gallery\pozeMijloc\1980_maramures.JPG" alt="" />
+      </div>
+      <div class="image12">
+        <img src="images\gallery\pozeMijloc\1980_nasaud5.JPG" alt="" />
+      </div>
+      <div class="image13">
+        <img src="images\gallery\pozeMijloc\1983_3.jpg" alt="" />
+      </div>
+      <div class="image14">
+        <img src="images\gallery\pozeMijloc\1983_4.jpg" alt="" />
+      </div>
+      <div class="image15">
+        <img src="images\gallery\pozeMijloc\1983_5.jpg" alt="" />
+      </div>
+    </div>
+    <div class="gallery-wrapper old hidden">
+      <div class="image1 tall">
+        <img src="1986_ceterasi3.jpg" alt="" />
+      </div>
+      <div class="image2 wide"><img src="1978_all.jpg" alt="" /></div>
+      <div class="image3"><img src="1978_ceterasi.JPG" alt="" /></div>
+      <div class="image4"><img src="1978_crihalma.JPG" alt="" /></div>
+      <div class="image5"><img src="1978_nasaud.JPG" alt="" /></div>
+      <div class="image6"><img src="1978_nasaud2.JPG" alt="" /></div>
+      <div class="image7">
+        <img src="1978_nasaud3.JPG" alt="" />
+      </div>
+      <div class="image8">
+        <img src="1978_nasaud4.jpg" alt="" />
+      </div>
+      <div class="image9">
+        <img src="1978_some.JPG" alt="" />
+      </div>
+      <div class="image10">
+        <img src="1980_ceterasi2.JPG" alt="" />
+      </div>
+      <div class="image11">
+        <img src="1980_maramures.JPG" alt="" />
+      </div>
+      <div class="image12">
+        <img src="1980_nasaud5.JPG" alt="" />
+      </div>
+      <div class="image13">
+        <img src="1983_3.jpg" alt="" />
+      </div>
+      <div class="image14">
+        <img src="1983_4.jpg" alt="" />
+      </div>
+      <div class="image15">
+        <img src="1983_5.jpg" alt="" />
+      </div>
+    </div>
 </body>
+<?php
+
+get_footer();
+?>
 <!-- 
 <section>
 <table>

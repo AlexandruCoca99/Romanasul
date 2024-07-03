@@ -54,7 +54,8 @@ function get_local_scripts()
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
     <script src="js/form.js"></script>
     <script src="js/repertoriu.js"></script>
-    <script src="js/slider-who-we-are.js"></script>';
+    <script src="js/slider-who-we-are.js"></script>
+    <script src="js/images.js"></script>';
 }
 
 function get_header($title = "")
