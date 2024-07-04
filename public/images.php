@@ -34,6 +34,7 @@ get_header("Images");
         </div>
     </div>
     <div class="gallery-wrapper old-period hidden">
+    <a href="#" class="close-button"><img src="images/close-red-icon.svg"/></a>
       <div class="image1 tall">
         <img src="images\gallery\pozeVechi\1986_ceterasi3.jpg" alt="" />
       </div>
