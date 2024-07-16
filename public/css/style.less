@@ -1726,15 +1726,22 @@ button.submit-review:hover {
 
 // Masonry gallery
 .gallery-wrapper {
-  border: red;
+  // border: red;
   border-style: solid;
-  background-color: #000;
+  background-color: wheat;
   position: absolute;
-  top: 0;
+  // top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
   margin: 0px auto;
+  padding: 50px;
   columns: 4 250px;
   gap: 10px;
   z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, transform 0.5s;
 
   div {
     width: 100%;
@@ -1746,13 +1753,19 @@ button.submit-review:hover {
     height: 100%;
     border-radius: 20px;
   }
+
   .close-button {
     position: absolute;
-    height: 20px;
-    width: 30px;
-    top: 115px;
+    height: 35px;
+    width: auto;
+    top: 20px;
     left: 15px;
-
     z-index: 10;
   }
+}
+
+.gallery-wrapper.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
 }
