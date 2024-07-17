@@ -3,11 +3,25 @@ jQuery(document).ready(function ($) {
     const id = $(this).attr("id");
     console.log(id);
     //add slider
-    $(`.gallery-wrapper.${id}-period`).addClass("show");
+    $(`.gallery-wrapper.${id}-period`).removeClass("hidden");
   });
 
   $(".gallery-wrapper .close-button").on("click", function (e) {
     e.preventDefault();
-    $(".gallery-wrapper").removeClass("show");
+    $(".gallery-wrapper").addClass("hidden");
+  });
+
+  var images = $(".gallery-image-container img:not(:first)");
+  console.log(images);
+  // You can now manipulate the images as needed
+  images.on("click", function () {
+    var imgSrc = $(this).attr("src"); // Get the src of the clicked image
+    $(".popup-img img").attr("src", imgSrc); // Change the src of the popup image
+    $(".popup-img").css("display", "block"); // Display the popup image container
+  });
+
+  // Bind a click event to the close button to hide the popup image
+  $(".popup-img ").on("click", function () {
+    $(".popup-img").css("display", "none"); // Hide the popup image container
   });
 });
