@@ -8,7 +8,7 @@ get_header("Images");
 <body>
     <div class="gallery-container">
         <div class="time-period-container" id="old">
-            <img src="images\1985_nasaud6.jpg" class="time-period-background" alt="Background Old">
+            <img src="images\gallery\pozeVechi\1978_nasaud4.jpg" class="time-period-background" alt="Background Old">
             <div class="header-container">
                 <h2>Photos from 1974-2000</h2>
             </div>
@@ -16,7 +16,7 @@ get_header("Images");
         </div>
 
         <div class="time-period-container" id="mid">
-            <img src="images\banatGrup_93.jpg" class="time-period-background" alt="Background Mid">
+            <img src="images\gallery\pozeMijloc\nasaudGrup_00.JPG" class="time-period-background" alt="Background Mid">
             <div class="header-container">
                 <h2>Photos from 2000-2010</h2>
             </div>
