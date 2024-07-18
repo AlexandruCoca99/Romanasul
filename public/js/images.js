@@ -12,12 +12,15 @@ jQuery(document).ready(function ($) {
   });
 
   var images = $(".gallery-image-container img:not(:first)");
-  console.log(images);
+  // console.log(images);
   // You can now manipulate the images as needed
   images.on("click", function () {
     var imgSrc = $(this).attr("src"); // Get the src of the clicked image
-    $(".popup-img img").attr("src", imgSrc); // Change the src of the popup image
-    $(".popup-img").css("display", "block"); // Display the popup image container
+    console.log(imgSrc);
+    if (imgSrc !== "images/close-red-icon.svg") {
+      $(".popup-img img").attr("src", imgSrc); // Change the src of the popup image
+      $(".popup-img").css("display", "block"); // Display the popup image container
+    }
   });
 
   // Bind a click event to the close button to hide the popup image

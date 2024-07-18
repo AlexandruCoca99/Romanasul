@@ -1727,7 +1727,6 @@ button.submit-review:hover {
 
 // Masonry gallery
 .gallery-image-container {
-  // border: red;
   border-style: solid;
   background-color: wheat;
   position: absolute;
@@ -1744,7 +1743,7 @@ button.submit-review:hover {
   // visibility: hidden;
   // transition: opacity 0.5s, transform 0.5s;
 
-  div:not(:last-child) {
+  div:not(:first-child) {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 20px;
@@ -1757,9 +1756,6 @@ button.submit-review:hover {
   img {
     max-width: 100%;
     height: 100%;
-  }
-
-  div > img:not(:last-child) {
     object-fit: cover;
     transition: 0.2s linear;
 
