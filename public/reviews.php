@@ -24,7 +24,7 @@ include 'header.php';
                 <input type="radio" name="rate" id="rate-1" />
                 <label for="rate-1" class="fas fa-star"></label>
                 <form action="#">
-                    <!-- <header></header> -->
+                    <header></header>
                     <div class="textarea">
                         <textarea cols="30" placeholder="Describe your experience.."></textarea>
                     </div>
