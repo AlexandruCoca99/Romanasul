@@ -31,15 +31,13 @@ function get_includes()
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
     ';
-
-    
 }
 
 //add local scripts here
@@ -55,7 +53,8 @@ function get_local_scripts()
     <script src="js/form.js"></script>
     <script src="js/repertoriu.js"></script>
     <script src="js/slider-who-we-are.js"></script>
-    <script src="js/images.js"></script>';
+    <script src="js/images.js"></script>
+';
 }
 
 function get_header($title = "")
