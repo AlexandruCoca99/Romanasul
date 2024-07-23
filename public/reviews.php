@@ -14,7 +14,7 @@ include 'header.php';
             </div>
             <div class="star-widget">
                 <input type="radio" name="rate" id="rate-5" />
-                <label for="rate-5" class="fas fa-star"></label>
+                <label for="rate-5" class="fa-solid fa-star"></label>
                 <input type="radio" name="rate" id="rate-4" />
                 <label for="rate-4" class="fas fa-star"></label>
                 <input type="radio" name="rate" id="rate-3" />
@@ -24,7 +24,7 @@ include 'header.php';
                 <input type="radio" name="rate" id="rate-1" />
                 <label for="rate-1" class="fas fa-star"></label>
                 <form action="#">
-                    <header></header>
+                    <!-- <header></header> -->
                     <div class="textarea">
                         <textarea cols="30" placeholder="Describe your experience.."></textarea>
                     </div>
