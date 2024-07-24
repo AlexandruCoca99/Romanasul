@@ -1,6 +1,6 @@
-<?php $page = "contacts";
+<?php $page = "reviews";
 include 'functions.php';
-get_header("Contact Us");
+get_header("Reviews");
 include 'header.php';
 ?>
 
@@ -14,15 +14,15 @@ include 'header.php';
             </div>
             <div class="star-widget">
                 <input type="radio" name="rate" id="rate-5" />
-                <label for="rate-5" class="fa-solid fa-star"></label>
+                <label for="rate-5" <i class="fa-solid fa-star"></i> </label>
                 <input type="radio" name="rate" id="rate-4" />
-                <label for="rate-4" class="fas fa-star"></label>
+                <label for="rate-4" class="fa-solid fa-star"></label>
                 <input type="radio" name="rate" id="rate-3" />
-                <label for="rate-3" class="fas fa-star"></label>
+                <label for="rate-3" class="fa-solid fa-star"></label>
                 <input type="radio" name="rate" id="rate-2" />
-                <label for="rate-2" class="fas fa-star"></label>
+                <label for="rate-2" class="fa-solid fa-star"></label>
                 <input type="radio" name="rate" id="rate-1" />
-                <label for="rate-1" class="fas fa-star"></label>
+                <label for="rate-1" class="fa-solid fa-star"></label>
                 <form action="#">
                     <!-- <header></header> -->
                     <div class="textarea">

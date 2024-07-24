@@ -31,6 +31,10 @@ function get_includes()
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
 
     <link
       rel="stylesheet"
@@ -49,7 +53,6 @@ function get_local_scripts()
     <script type="text/javascript" src="js/highslide_custom.js"/></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
     <script src="js/form.js"></script>
     <script src="js/repertoriu.js"></script>
     <script src="js/slider-who-we-are.js"></script>
