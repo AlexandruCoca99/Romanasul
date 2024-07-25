@@ -15,12 +15,8 @@ include 'header.php';
             <div class="container-form">
                 <div class="right">
                     <div class="form-wrapper-right">
-                        <!-- <div class="contact-heading">
-                        <h1>Colaboram <span>!</span></h1>
-                        <p class="text">Contactati-ne prin email: <a href="mailto:">revnic2002@yahoo.com</a></p>
-                    </div> -->
 
-                        <form method="post" action="send-email.php" enctype="multipart/form-data"  class="contact-form">
+                        <form method="post" action="send-email.php" enctype="multipart/form-data" class="contact-form">
 
                             <!-- Input prenume -->
                             <div class="input-wrap">
@@ -37,7 +33,7 @@ include 'header.php';
                             <!-- Input email -->
                             <div class="input-wrap w-100">
                                 <input type="email" name="email" class="contact-input" required>
-                                <label for="email" >Email</label>
+                                <label for="email">Email</label>
                                 <i class="icon fa-solid fa-envelope"></i>
                             </div>
                             <!-- Input mesaj -->
@@ -70,7 +66,7 @@ include 'header.php';
                         </button>
                         <button class="button">
                             <div class="icon-holder dot">
-                            <a href="https://www.google.com/maps/place/Club+Studen%C8%9Besc+Observator/@46.7573198,23.5914802,15.5z/data=!4m6!3m5!1s0x47490dd2962f95b7:0x5d0e80ba58cb06fe!8m2!3d46.7560631!4d23.5932852!16s%2Fg%2F11hb84yxfv?entry=ttu"><i class="icon-dot fa-solid fa-location-dot"></i></a>
+                                <a href="https://www.google.com/maps/place/Club+Studen%C8%9Besc+Observator/@46.7573198,23.5914802,15.5z/data=!4m6!3m5!1s0x47490dd2962f95b7:0x5d0e80ba58cb06fe!8m2!3d46.7560631!4d23.5932852!16s%2Fg%2F11hb84yxfv?entry=ttu"><i class="icon-dot fa-solid fa-location-dot"></i></a>
                             </div>
                             <div class="button-slide-part"></div>
                         </button>
