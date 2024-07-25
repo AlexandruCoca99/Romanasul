@@ -47,7 +47,6 @@ include 'header.php';
                     <div class="submit-btn">
                         <button type="submit">Post</button>
                     </div>
-
                 </form>
             </div>
         </div>
