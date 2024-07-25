@@ -1821,11 +1821,17 @@ label::before {
     display: none;
   }
   .star-widget label {
-    font-size: 40px;
+    font-size: 20px;
     color: #444;
     padding: 10px;
     float: right;
     transition: all 0.2s ease;
+    position: relative;
+
+    &::before {
+      opacity: 1;
+      background: transparent;
+    }
   }
   input:not(:checked) ~ label:hover,
   input:not(:checked) ~ label:hover ~ label {
