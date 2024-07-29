@@ -14,33 +14,35 @@ include 'header.php';
             </div>
             <div class="star-widget">
                 <div class="stars-wrapper">
-                    <input type="radio" name="rate" id="rate-5" />
-                    <label for="rate-5" <i class="fa-solid fa-star"></i> </label>
-                    <input type="radio" name="rate" id="rate-4" />
-                    <label for="rate-4" class="fa-solid fa-star"></label>
-                    <input type="radio" name="rate" id="rate-3" />
-                    <label for="rate-3" class="fa-solid fa-star"></label>
-                    <input type="radio" name="rate" id="rate-2" />
-                    <label for="rate-2" class="fa-solid fa-star"></label>
-                    <input type="radio" name="rate" id="rate-1" />
-                    <label for="rate-1" class="fa-solid fa-star"></label>
+                    <input class="star-radio" type="radio" name="rate" id="rate-5" />
+                    <label for="rate-5" class=" review-star fa-solid fa-star"> </label>
+                    <input class="star-radio" type="radio" name="rate" id="rate-4" />
+                    <label for="rate-4" class="review-star fa-solid fa-star"></label>
+                    <input class="star-radio" type="radio" name="rate" id="rate-3" />
+                    <label for="rate-3" class="review-star fa-solid fa-star"></label>
+                    <input class="star-radio" type="radio" name="rate" id="rate-2" />
+                    <label for="rate-2" class="review-star fa-solid fa-star"></label>
+                    <input class="star-radio" type="radio" name="rate" id="rate-1" />
+                    <label for="rate-1" class="review-star fa-solid fa-star"></label>
                 </div>
                 <form action="#">
                     <div class="description-content"></div>
-                    <div class="input-reviews-row-wrapper">
+                    <!-- <div class="input-reviews-row-wrapper"> -->
                         <!-- Input prenume -->
                         <div class="input-reviews">
-                            <input class="name-input" type="text" name="name" class="contact-input" required>
-                            <label class="name-label" for="name">Name</label>
-                            <i class="icon fa-solid fa-address-card"></i>
+                        <label class="name-label" for="name">Name</label>
+                        <i class="icon fa-solid fa-address-card"></i>
+                        <input class="name-input" type="text" name="name" class="contact-input" required>
+                            
+                            
                         </div>
                         <!-- Input nume -->
                         <div class="input-reviews">
-                            <input class="name-input" type="text" name="subject" class="contact-input" required>
-                            <label class="name-label" for="subject">Subject</label>
-                            <i class="icon fa-solid fa-address-card"></i>
+                        <label class="name-label" for="subject">Subject</label>
+                        <i class="icon fa-solid fa-address-card"></i>
+                        <input class="name-input" type="text" name="subject" class="contact-input" required>
                         </div>
-                    </div>
+                    <!-- </div> -->
                     <div class="textarea">
                         <textarea cols="30" placeholder="Describe your experience.."></textarea>
                     </div>
@@ -60,7 +62,7 @@ include 'header.php';
             widget.style.display = "none";
             post.style.display = "block";
             editBtn.onclick = () => {
-                widget.style.display = "block";
+                widget.style.display = "flex";
                 post.style.display = "none";
             }
             return false;
