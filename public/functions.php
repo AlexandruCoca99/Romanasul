@@ -57,6 +57,7 @@ function get_local_scripts()
     <script src="js/repertoriu.js"></script>
     <script src="js/slider-who-we-are.js"></script>
     <script src="js/images.js"></script>
+    <script src="js/reviews.js"></script>
 ';
 }
 

@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit_review'])) {
     $rating = $_POST['rating'];
     $comment = $_POST['comment'];
     $date = $_POST['date'];
-    
+
     $sql = "INSERT INTO reviewsystem (name, surname, rating, comment, date) VALUES (:name, :surname, :rating, :comment, :date)"; // interogare 
     $stmt = $connection->prepare($sql);
     // var -> param
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit_review'])) {
     $stmt->bindParam(':comment', $comment);
     $stmt->bindParam(':date', $date);
     $stmt->execute();
-    
+
     echo "Review added successfully</br>";
 }
 
@@ -41,7 +41,7 @@ $stmt->execute();
 //print_r($db_user_name) ; 
 $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC); // foarte bun stackoverflow
 ?>
-
+<!-- 
 <!mi am facut si eu damblaua >
 <!DOCTYPE html>
 <html>
@@ -71,7 +71,7 @@ $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC); // foarte bun stackoverflow
     <input type="submit" name="submit_review" value="Submit Review">
 </form>
 
-<h1>Reviews</h1>
+<h1>Reviews</h1> -->
 <?php
 if ($reviews) {
     foreach ($reviews as $review) {
@@ -88,4 +88,5 @@ if ($reviews) {
 ?>
 
 </body>
+
 </html>

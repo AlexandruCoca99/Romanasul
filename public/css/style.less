@@ -27,7 +27,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Abhaya Libre", serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
@@ -1274,7 +1274,7 @@ label::before {
   text-align: center; /* aliniază textul la centru în div */
   overflow: hidden; /* Ascunde orice conținut care depășește dimensiunile div-ului */
   background: url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/4.-Zilele-prieteniei/Inceput Banat.jpg"); /* Setează imaginea de fundal */
-  background-size: contain; /* Asigură că imaginea de fundal acoperă întregul div */
+  background-size: cover; /* Asigură că imaginea de fundal acoperă întregul div */
   background-position: center; /* Centrează imaginea de fundal */
   border-radius: 20px;
 }
@@ -1785,6 +1785,151 @@ label::before {
   justify-content: center;
   background: #000;
 
+  .review-overview {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .rating-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .average-rating {
+    text-align: center;
+    margin: auto 4svw;
+  }
+
+  .rating-score {
+    font-size: 4.5em;
+    color: black;
+    display: block;
+    margin: 30px;
+  }
+
+  .stars,
+  .stars-average {
+    color: #f1c40f;
+    font-size: 3em;
+  }
+
+  .stars-average {
+    margin-top: 35px;
+  }
+
+  .rating-distribution {
+    // margin-left: 20px;
+    font-size: 1.9em; /* Adjust the font size */
+  }
+
+  .rating-bar {
+    display: flex;
+    align-items: center;
+    margin: 20px 0; /* Adjust the margin */
+  }
+
+  .rating-bar span {
+    margin: 0 10px; /* Adjust the margin */
+  }
+
+  .bar {
+    background-color: #eee;
+    border-radius: 5px;
+    width: 200px; /* Double the width */
+    height: 20px; /* Double the height */
+    overflow: hidden;
+  }
+
+  .fill {
+    background-color: #f1c40f;
+    height: 100%;
+  }
+
+  .review-form {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .review-button {
+    background-color: #000000;
+    color: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .review-button:hover {
+    background-color: #3d3e46;
+  }
+
+  .review {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .review-author {
+    color: #888;
+    font-size: 0.9em;
+  }
+
+  .review-text {
+    margin-top: 10px;
+  }
+
+  @media (max-width: 800px) {
+    .average-rating {
+      font-size: 10px;
+      width: 100%;
+      margin: auto;
+    }
+
+    .rating-score {
+      margin: auto;
+    }
+
+    .rating-summary {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .rating-distribution {
+      font-size: 1em; /* Adjust font size for mobile */
+      width: 100%;
+    }
+
+    .rating-bar {
+      margin: 5px 0; /* Reduce margin for mobile */
+      width: 100%;
+    }
+
+    .bar {
+      height: 15px; /* Adjust height for mobile */
+    }
+
+    .review-button {
+      width: 100%; /* Make button take full width */
+      padding: 10px;
+    }
+
+    .review-header {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
   .container-reviews {
     position: relative;
     width: 50%;
@@ -1798,7 +1943,10 @@ label::before {
     flex-direction: column;
 
     .post {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .text {
@@ -1807,10 +1955,8 @@ label::before {
       font-weight: 500;
     }
 
-    .edit {
-      position: absolute;
-      right: 10px;
-      top: 5px;
+    .return-button {
+      margin-top: 25px;
       font-size: 16px;
       color: #666;
       font-weight: 500;
@@ -1893,9 +2039,9 @@ label::before {
       .input-reviews {
         margin-bottom: 20px;
         .name-label {
-          // display: block;
+          display: block;
           margin-bottom: 5px;
-          font-size: 1.2em;
+          font-size: 1.6em;
         }
         .name-input {
           height: 100%;
@@ -1944,7 +2090,7 @@ label::before {
         }
       }
 
-      .submit-btn {
+      .submit-button {
         height: 45px;
         width: 100%;
         margin: 15px 0;
