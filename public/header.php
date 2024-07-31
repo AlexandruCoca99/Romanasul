@@ -2,29 +2,29 @@
     <!-- <div class="border"> -->
     <nav>
         <a href="home.php" class="scrollBtn <?php if ($page == 'home')
-            echo 'selected'; ?>">
+                                                echo 'selected'; ?>">
             <?php echo _("Home") ?>
         </a> |
 
         <!-- stilizat fain -->
         <a href="whoweare.php" class="scrollBtn <?php if ($page == 'whoweare')
-            echo 'selected'; ?>">
+                                                    echo 'selected'; ?>">
             <?php echo _("Who we are") ?>
         </a> |
 
         <!-- galerie impartita pe perioade de ani -->
         <a href="images.php" class="scrollBtn <?php if ($page == 'images')
-            echo 'selected'; ?>">
+                                                    echo 'selected'; ?>">
             <?php echo _("Images") ?>
         </a> |
         <!-- 3 sectiuni -> playlist muzica, carusel videoclipuri, carusel spectacole -->
-        <a href="videos.php" class="scrollBtn <?php if ($page == 'festivaluri')
-            echo 'selected'; ?>">
-            <?php echo _("Music & Videos") ?>
+        <a href="tours.php" class="scrollBtn <?php if ($page == 'tours')
+                                                    echo 'selected'; ?>">
+            <?php echo _("Tours") ?>
         </a> |
         <!-- harta (festivaluri) -->
         <a href="competitions.php" class="scrollBtn <?php if ($page == 'competitions')
-            echo 'selected'; ?>">
+                                                        echo 'selected'; ?>">
             <?php echo _("Competitions") ?>
         </a> |
 
@@ -33,18 +33,18 @@
         <!-- galerie cu poze de la fiecare tip de eveniment cu float  de contact -->
 
         <a href="repertoriu.php" class="scrollBtn <?php if ($page == 'repertoriu')
-            echo 'selected'; ?>">
+                                                        echo 'selected'; ?>">
             <?php echo _("Repertoriu") ?>
         </a> |
 
         <a href="reviews.php" class="scrollBtn <?php if ($page == 'reviews')
-            echo 'selected'; ?>">
+                                                    echo 'selected'; ?>">
             <?php echo _("Reviews") ?>
         </a> |
 
         <!-- Pt Nenea Luci -->
         <a href="contacts.php" class="scrollBtn <?php if ($page == 'contacts')
-            echo 'selected'; ?>">
+                                                    echo 'selected'; ?>">
             <?php echo _("Contact Us") ?>
         </a>
 
