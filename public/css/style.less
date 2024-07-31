@@ -99,7 +99,7 @@ header {
   position: fixed;
   display: flex;
   z-index: 4;
-  width: 100%;
+  width: 100svw;
   height: 100px;
   margin: 0 auto;
   padding: 0 20px;
@@ -1279,6 +1279,12 @@ label::before {
   border-radius: 20px;
 }
 
+@media (max-width: 800px) {
+  .dans {
+    flex: none;
+  }
+}
+
 .dans .left-side,
 .dans .right-side {
   position: absolute;
@@ -1665,6 +1671,17 @@ label::before {
   }
 }
 
+@media (max-width: 800px) {
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .time-period-container img {
+    width: 100svw;
+    height: calc(41.3svh - 100px);
+  }
+}
 .time-period-container:hover .header-container {
   opacity: 1;
   cursor: pointer;
@@ -1927,6 +1944,10 @@ label::before {
     .review-header {
       flex-direction: column;
       justify-content: center;
+    }
+
+    .stars {
+      font-size: 2em;
     }
   }
 

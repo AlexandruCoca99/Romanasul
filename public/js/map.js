@@ -92,6 +92,9 @@ jQuery(document).ready(function ($) {
 
     adjustImageSizeForCountry(countryId, image, pattern) {
       // Adjustments specific to each country
+      const screenWidth = window.innerWidth;
+      const screenHeight = window.innerHeight;
+
       switch (countryId) {
         case "CA":
           image.width = 600;
