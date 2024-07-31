@@ -13,7 +13,27 @@ jQuery(document).ready(function ($) {
     $(".swiper-main .swiper").addClass("hidden");
   });
 
-  $(".right-side").on("click", function () {
-    window.open("https://www.youtube.com/watch?v=CUcJ6SjzesM", "_blank");
+  // $(".right-side").on("click", function () {
+  //   window.open("https://www.youtube.com/watch?v=CUcJ6SjzesM", "_blank");
+  // });
+
+  $(".right-side").click(function () {
+    // Clone the video container and create an overlay
+    var videoContainer = $(".dance-yt-video-container")
+      .clone()
+      .removeClass("hidden")
+      .wrap('<div class="video-overlay"></div>')
+      .parent();
+    $("body").append(videoContainer);
+
+    // Close the video when clicking outside of it
+    $(".video-overlay").click(function () {
+      $(this).remove();
+    });
+
+    // Prevent closing the video when clicking on the video itself
+    $(".dance-yt-video-container").click(function (event) {
+      event.stopPropagation();
+    });
   });
 });

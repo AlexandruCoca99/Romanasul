@@ -1333,6 +1333,33 @@ label::before {
   width: 100%; /* Asigură lățimea totală */
 }
 
+// .dance-yt-video-container {
+//   position: relative;
+//   width: 90%;
+//   max-width: 800px;
+//   padding-bottom: 56.25%; /* 16:9 aspect ratio */
+//   height: 0;
+// }
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.video-overlay iframe {
+  border-radius: 20px;
+  aspect-ratio: 16 / 9;
+  width: 900px;
+}
+
 //who we are section
 
 .members-list,
