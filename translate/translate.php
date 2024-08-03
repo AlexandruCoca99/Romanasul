@@ -1,9 +1,11 @@
+@ -0,0 +1,58 @@
 <?php
+
 function translateText($text, $targetLanguage) {
     $url = 'https://libretranslate.com/translate';
     $data = [
         'q' => $text,
-        'source' => 'ro', // Limba sursă
+        'source' => 'ro', // Limba sursă, poți ajusta în funcție de necesități
         'target' => $targetLanguage,
         'format' => 'text'
     ];
@@ -28,7 +30,7 @@ function translateText($text, $targetLanguage) {
 
 function getHtmlContent() {
     // Încarcă conținutul HTML dintr-un fișier sau dintr-o bază de date
-    return file_get_contents('form.html');
+    return file_get_contents('index.html');
 }
 
 function saveTranslatedHtml($content) {
