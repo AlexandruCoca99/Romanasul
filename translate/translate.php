@@ -1,4 +1,3 @@
-@ -0,0 +1,58 @@
 <?php
 
 function translateText($text, $targetLanguage) {
