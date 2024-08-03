@@ -28,31 +28,49 @@ function translateText($text, $targetLanguage) {
 }
 
 function getHtmlContent() {
-    // Încarcă conținutul HTML dintr-un fișier sau dintr-o bază de date
-    return file_get_contents('index.html');
+    $file = 'index.html';
+    if (file_exists($file)) {
+        return file_get_contents($file);
+    } else {
+        echo "File does not exist: " . realpath($file);
+        exit;
+    }
 }
 
 function saveTranslatedHtml($content) {
-    // Salvează conținutul tradus într-un fișier sau într-o bază de date
     file_put_contents('translated.html', $content);
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $targetLanguage = $_POST['lang'];
+    echo "Request method is POST<br>";
+
+    if (isset($_POST['lang'])) {
+        $targetLanguage = $_POST['lang'];
+        echo "Target language: $targetLanguage<br>";
+    } else {
+        echo "Language not set<br>";
+        exit;
+    }
 
     // Încarcă conținutul HTML original
     $htmlContent = getHtmlContent();
+    echo "Original HTML content loaded<br>";
 
     // Utilizează regex pentru a extrage textul din tagurile HTML
     $translatedContent = preg_replace_callback('/>([^<]+)</', function($matches) use ($targetLanguage) {
         $originalText = $matches[1];
+        echo "Translating: $originalText<br>";
         $translatedText = translateText($originalText, $targetLanguage);
+        echo "Translated: $translatedText<br>";
         return '>' . $translatedText . '<';
     }, $htmlContent);
 
     // Salvează conținutul tradus
     saveTranslatedHtml($translatedContent);
+    echo "Translated content saved<br>";
 
     // Afișează conținutul tradus
     echo $translatedContent;
+} else {
+    echo "Request method is not POST<br>";
 }
