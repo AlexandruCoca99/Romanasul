@@ -24,11 +24,24 @@ function validatePostFields($fields) {
     return true;
 }
 
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
+
 if (!validatePostFields(['name', 'email', 'subject', 'message'])) {
     exitWithMessage('All fields are required.');
 }
 
-$email = $_POST['email'];
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = test_input($_POST["email"]);
+    $name = test_input($_POST["name"])
+}
+
+
 if (!validateEmail($email)) {
     exitWithMessage('Invalid email format.');
 }
@@ -46,14 +59,14 @@ try {
     $mail->Password = "pqxn xvcf knqy wjvo";
 
     //Recipients
-    $mail->setFrom($email, $_POST['name']);
+    $mail->setFrom($email, $name);
     $mail->addAddress("alexandru.coca@yahoo.com", "Alex");
     $mail->addReplyTo("alexandru.coca@yahoo.com", "Alex");
 
     // Content
     $mail->isHTML(true);
-    $mail->Subject = $_POST['subject'];
-    $mail->Body    = $_POST['message'];
+    $mail->Subject = test_input($_POST["subject"]);
+    $mail->Body    = test_input($_POST["message"]);
 
     // Attachments
     if (isset($_FILES['attachment']) && $_FILES['attachment']['error'] == UPLOAD_ERR_OK) {

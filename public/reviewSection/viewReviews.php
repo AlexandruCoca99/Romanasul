@@ -20,7 +20,7 @@ $stmt->execute();
 // all 
 $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
-
+ 
 <!DOCTYPE html>
 <html>
 <head>

@@ -21,6 +21,7 @@ function get_includes()
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +36,9 @@ function get_includes()
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 
     <link
       rel="stylesheet"
@@ -58,6 +62,7 @@ function get_local_scripts()
     <script src="js/slider-who-we-are.js"></script>
     <script src="js/images.js"></script>
     <script src="js/reviews.js"></script>
+    <script src="js/homepage.js"></script>
 ';
 }
 
