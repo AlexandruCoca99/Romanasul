@@ -103,10 +103,10 @@ header {
   height: 100px;
   margin: 0 auto;
   padding: 0 20px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   box-shadow: 0 1px 12px #7e7e7e2e;
-  background-color: #f7f7f7;
+  // background-color: #f7f7f7;
 }
 
 /* hero wrapper */
@@ -122,8 +122,9 @@ nav {
 /* Style the links inside the navbar */
 nav a {
   margin: 0 10px 0 10px;
-  font-size: 16px;
-  color: @red;
+  font-size: 32px;
+  font-weight: 700;
+  // color: @red;
   font-family: "FuturaStdBookTrRegular";
   line-height: 20px;
   padding: 20px 0;
@@ -145,7 +146,7 @@ nav a:hover {
 .logo {
   width: 150px;
   height: 90px;
-  background: url(../images/Sigla-noua.png);
+  background: url(../images/Sigla-no-background.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -377,7 +378,7 @@ nav a.selected {
   border-bottom-right-radius: 4px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  background-color: #f7f7f7;
+  // background-color: #f7f7f7;
   font-style: italic;
 }
 
@@ -2169,7 +2170,7 @@ label::before {
 .swiper-homepage-wrapper {
   padding-top: 100px;
   width: 100%;
-  height: 50vh;
+  // height: 50vh;
   position: relative;
   margin: auto 0;
   // padding: 50px 0;
@@ -2192,7 +2193,104 @@ label::before {
 
   .swiper-custom-nav-right,
   .swiper-custom-nav-left {
-    top: 100%;
+    // top: 100%;
     transform: none;
+  }
+}
+
+.homepage-video-wrapper {
+  background-color: #000;
+
+  video {
+    opacity: 0.5;
+  }
+}
+
+.countdown-container-background {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background: black;
+
+  .countdown-container {
+    text-align: center;
+    color: white;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .countdown-element {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80px;
+    text-align: center;
+  }
+
+  .countdown-element span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .countdown-element p {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+
+.homepage-about-us-wrapper {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #cccbcb;
+  border-radius: 10px;
+
+  .about-us-short {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    gap: 4rem;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    button {
+      background-color: #dc2626ba;
+      height: 3rem;
+      width: 6rem;
+      border-radius: 20px;
+      color: white;
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+
+  .homepage-about-us-image {
+    height: 45svh;
+    margin: 40px;
+    border-radius: 20px;
   }
 }

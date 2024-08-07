@@ -9,6 +9,23 @@ get_header("Home");
 
     <div class="home">
 
+        <div class="homepage-video-wrapper">
+            <video autoplay loop muted plays-inline>
+                <source src="Videos/[Românii au talent] Românii au talent 2022： Ansamblul Românașul.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+        <div class="homepage-about-us-wrapper">
+            <div class="about-us-short">
+                <h1>ABOUT US</h1>
+                <p>Founded in 1974, initiated by a group of students from the Polytechnic Institute of Cluj-Napoca, coordinated by prof. Teodor NILAS. Since 1979, we enjoy a fruitful collaboration with Prof. Dumitru POP, with the Language Faculty of the Cluj-Napoca Babes-Bolyai University.</p>
+                <button><a href="whoweare.php">Learn more</a></button>
+            </div>
+            <img class="homepage-about-us-image" src="images\Poze-romanasul\2.Evenimente\1.Spectacole\4.-Zilele-prieteniei\Multumiri.jpg" alt="">
+        </div>
+
+
         <div class="swiper-homepage-wrapper">
             <div class="swiper-homepage">
                 <div class="swiper-wrapper">
@@ -47,6 +64,32 @@ get_header("Home");
             </div>
             <!-- end swiper-custom-nav -->
 
+        </div>
+
+        <div class="countdown-container-background">
+            <div class="countdown-container">
+                <h1>COUNTDOWN TO</h1>
+                <h2>ROMANASUL'S 50 YEAR ANIVERSARY</h2>
+                <div class="countdown">
+                    <div class="countdown-element">
+                        <span id="days"></span>
+                        <p>Days</p>
+                    </div>
+                    <div class="countdown-element">
+                        <span id="hours"></span>
+                        <p>Hours</p>
+                    </div>
+                    <div class="countdown-element">
+                        <span id="minutes"></span>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="countdown-element">
+                        <span id="seconds"></span>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+            </div>
+            <script src="app.js"></script>
         </div>
         <!-- <div class="homeSlogan">
             <div>
