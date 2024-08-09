@@ -1,5 +1,5 @@
 new Swiper(".swiper-homepage", {
-  slidesPerView: 1,
+  effect: "fade",
   autoHeight: true,
   centeredSlides: true,
   spaceBetween: 24,
@@ -26,14 +26,6 @@ new Swiper(".swiper-homepage", {
   navigation: {
     nextEl: "#nav-right",
     prevEl: "#nav-left",
-  },
-  breakpoints: {
-    800: {
-      slidesPerView: 1,
-    },
-    1400: {
-      slidesPerView: 1,
-    },
   },
 });
 
