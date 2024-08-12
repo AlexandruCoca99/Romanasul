@@ -27,7 +27,7 @@ get_header("Home");
             <img class="homepage-about-us-image" src="images\Poze-romanasul\2.Evenimente\1.Spectacole\4.-Zilele-prieteniei\Multumiri.jpg" alt="">
         </div>
 
-        <div class="fixed-background-image-container">În repertoriul ansamblului se regăsesc dansuri populare din Transilvania, Moldova, Oltenia, Muntenia, Banat, Dobrogea</div>
+
 
         <div class="swiper-homepage-wrapper">
             <h1>Gallery</h1>
@@ -72,12 +72,7 @@ get_header("Home");
         </div>
 
         <div class="homepage-tours-wrapper">
-            <!-- <div class="tours-short">
-                <h1>Tours abroad</h1>
-                <p>Our ensemble has had the honor of participating in prestigious tours around the world, including in Canada, Dubai, Morocco, and Finland. Since 1979, we have received the title of Laureate in every edition of the student's folkloric festivals that we have taken part in, and of important cultural meanings in Europe, North America, Africa, and Asia. Over the years, we have won 36 First Prizes, 12 Second Prizes, 2 Third Prizes, 3 Gold Medals, 2 Silver Medals, and 1 Bronze Medal, along with numerous Special Prizes, Honorary Plaquettes and Diplomas, Excellence Diplomas, and Merit Diplomas.</p>
-                <button><a href="tours.php">Learn more</a></button>
-            </div>
-            <img class="homepage-tours-image" src="images\Tours_Map.png" alt="Tour Map"> -->
+
             <div class="tours-grid-container">
                 <div class="grid-item">
                     <img src="images\Poze-romanasul\1.Turnee\Canada-2023\afis Canada.jpg" alt="Canada">
@@ -113,7 +108,11 @@ get_header("Home");
                 <p>Our ensemble has had the honor of participating in prestigious tours around the world, including in Canada, Dubai, Morocco, and Finland. Since 1979, we have received the title of Laureate in every edition of the student's folkloric festivals that we have taken part in, and of important cultural meanings in Europe, North America, Africa, and Asia. Over the years, we have won 36 First Prizes, 12 Second Prizes, 2 Third Prizes, 3 Gold Medals, 2 Silver Medals, and 1 Bronze Medal, along with numerous Special Prizes, Honorary Plaquettes and Diplomas, Excellence Diplomas, and Merit Diplomas.</p>
                 <a href="tours.php" class="explore-button">Explore All →</a>
             </div>
+        </div>
 
+        <div class="fixed-background-image-container">
+            <!-- <div class="overlay"></div> -->
+            <h2>În repertoriul ansamblului se regăsesc dansuri populare din Transilvania, Moldova, Oltenia, Muntenia, Banat, Dobrogea</h2>
         </div>
 
         <div class="countdown-container-background">
