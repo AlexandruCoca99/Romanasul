@@ -6,16 +6,19 @@ require "vendor/autoload.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-function exitWithMessage($message) {
+function exitWithMessage($message)
+{
     echo "<script>alert('{$message}'); history.go(-1);</script>";
     exit;
 }
 
-function validateEmail($email) {
+function validateEmail($email)
+{
     return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
 
-function validatePostFields($fields) {
+function validatePostFields($fields)
+{
     foreach ($fields as $field) {
         if (empty($_POST[$field])) {
             return false;
@@ -24,12 +27,13 @@ function validatePostFields($fields) {
     return true;
 }
 
-function test_input($data) {
+function test_input($data)
+{
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
     return $data;
-  }
+}
 
 if (!validatePostFields(['name', 'email', 'subject', 'message'])) {
     exitWithMessage('All fields are required.');
@@ -38,7 +42,7 @@ if (!validatePostFields(['name', 'email', 'subject', 'message'])) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = test_input($_POST["email"]);
-    $name = test_input($_POST["name"])
+    $name = test_input($_POST["name"]);
 }
 
 
@@ -78,4 +82,3 @@ try {
 } catch (Exception $e) {
     exitWithMessage("Message could not be sent. Mailer Error: {$mail->ErrorInfo}");
 }
-?>
