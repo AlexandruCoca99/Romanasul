@@ -403,5 +403,8 @@ include 'header.php';
     </div>
     <!-- end container -->
   </section>
-  <?php get_footer(); ?>
+
+  <?php
+  include 'footer.php';
+  get_footer(); ?>
 </body>

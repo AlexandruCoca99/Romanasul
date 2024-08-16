@@ -6,9 +6,6 @@ get_header("Home");
 
 <body>
 
-
-
-
     <div class="homepage-video-wrapper">
         <video autoplay loop muted plays-inline>
             <source src="Videos/[Românii au talent] Românii au talent 2022： Ansamblul Românașul.mp4" type="video/mp4">
@@ -181,6 +178,7 @@ get_header("Home");
 
     </div>
     <?php
+    include 'footer.php';
     get_footer();
     ?>
 </body>
