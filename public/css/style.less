@@ -98,6 +98,7 @@ section {
 header {
   position: fixed;
   display: flex;
+  background-color: maroon;
   z-index: 4;
   width: 100svw;
   height: 100px;
@@ -145,8 +146,8 @@ nav a:hover {
 /* Style the logo */
 .logo {
   width: 150px;
-  height: 90px;
-  background: url(../images/Sigla-no-background.jpg);
+  height: 143px;
+  background: url(../images/withoutBlueSpecific.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -2295,14 +2296,14 @@ label::before {
   }
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Overlay color */
-}
+// .overlay {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.5); /* Overlay color */
+// }
 
 // Tours
 
@@ -2339,7 +2340,7 @@ label::before {
 //   transition: all 0.7s;
 // }
 
-.header-container {
+.tours-homepage {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2347,10 +2348,11 @@ label::before {
   top: -211px;
   z-index: 1;
   // width: 100%;
+  border-radius: 50%;
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: all 0.7s ease;
-  border-radius: 50%;
+
   height: 12rem;
   h3 {
     // background-color: white;
@@ -2415,6 +2417,69 @@ label::before {
 
 .explore-button:hover {
   background-color: #7775a5;
+}
+
+// homepage reviews
+
+.homepage-reviews-wrapper {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  background-color: #1da060;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.homepage-reviews-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.customer-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.review-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.review-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.rating span {
+  color: #f39c12;
+  font-size: 18px;
 }
 
 // COUNTDOWN

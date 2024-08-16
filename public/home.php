@@ -31,7 +31,7 @@ get_header("Home");
 
         <div class="swiper-homepage-wrapper">
             <h1>Gallery</h1>
-            <button><a href="gallery.php">Learn more</a></button>
+            <button><a href="images.php">Learn more</a></button>
             <div class="swiper-homepage">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -64,28 +64,28 @@ get_header("Home");
             <div class="tours-grid-container">
                 <div class="grid-item">
                     <img src="images\Poze-romanasul\1.Turnee\Canada-2023\afis Canada.jpg" alt="Canada">
-                    <div class="header-container">
+                    <div class="header-container tours-homepage">
                         <h3>Canada 2023</h3>
                     </div>
                     <!-- <p>Text Canada</p> -->
                 </div>
                 <div class="grid-item">
                     <img src="images\Poze-romanasul\1.Turnee\Dubai\3.2. 2023\Afis Dubai 2023.jpg" alt="Dubai">
-                    <div class="header-container">
+                    <div class="header-container tours-homepage">
                         <h3>Dubai 2023</h3>
                     </div>
                     <!-- <p>Dubai text</p> -->
                 </div>
                 <div class="grid-item">
                     <img src="images\Poze-romanasul\1.Turnee\Franta-2021\Afis.jpg" alt="France">
-                    <div class="header-container">
+                    <div class="header-container tours-homepage">
                         <h3>France 2022</h3>
                     </div>
                     <!-- <p>France text</p> -->
                 </div>
                 <div class="grid-item">
                     <img src="images\Poze-romanasul\1.Turnee/Finlanda-2022/Afis.jpg" alt="Morocco">
-                    <div class="header-container finland">
+                    <div class="header-container tours-homepage finland">
                         <h3>Finland 2021</h3>
                     </div>
                     <!-- <p>Morocco text</p> -->
@@ -103,8 +103,9 @@ get_header("Home");
                 <h2>În repertoriul ansamblului se regăsesc dansuri populare din Transilvania, Moldova, Oltenia, Muntenia, Banat, Dobrogea</h2>
                 <a href="repertoriu.php" class="explore-button">Explore All →</a>
             </div>
-
         </div>
+
+
         <div class="countdown-container-background">
             <div class="countdown-container">
                 <h1>COUNTDOWN TO</h1>
@@ -129,6 +130,47 @@ get_header("Home");
                 </div>
             </div>
             <script src="app.js"></script>
+        </div>
+
+        <div class="homepage-reviews-wrapper">
+            <h2 class="section-title">
+                Customer's <span class="highlight">Review</span>
+            </h2>
+            <div class="homepage-reviews-container">
+                <div class="review-card">
+                    <img src="images/Eugen-tanar.png" alt="Customer Photo" class="customer-photo">
+                    <p>STRIGA!</p>
+                    <h3>Nicoara Eugen</h3>
+                    <div class="rating">
+                        <span>&#9733;&#9734;&#9734;&#9734;&#9734;</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="images/Rares-tanar.png" alt="Customer Photo" class="customer-photo">
+                    <p>Ati adus tuica?</p>
+                    <h3>Marginean Rares</h3>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="images/Nenea-Luci-tanar.png" alt="Customer Photo" class="customer-photo">
+                    <p>EUGEN!<br>COLAJUL!<br>tanganangangang
+                    </p>
+                    <h3>Nenea Luci</h3>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="images/Hatfa-piranda.png" alt="Customer Photo" class="customer-photo">
+                    <p>No servus!</p>
+                    <h3>Hatfa Alexandru</h3>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- <div class="homeSlogan">
             <div>
