@@ -37,7 +37,7 @@ function get_includes()
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
 
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 
 
     <link
@@ -84,9 +84,7 @@ function get_header($title = "")
 function get_footer()
 {
     echo '
-        <div>
-            <h2>Footer</h2>
-        </div>    
+  
         ' . get_local_scripts() . '
     </body>
     </html>';

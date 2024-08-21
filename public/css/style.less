@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import "./less/lesshat.less";
 
-@markerColor: #005596;
+// @markerColor: #005596;
 @markerInnerColor: #fff;
 @markerSize: 30px;
 @duration: 1s;
@@ -130,6 +130,7 @@ nav a {
   // font-family: "FuturaStdBookTrRegular";
   line-height: 20px;
   padding: 20px 0;
+  color: white;
 }
 
 /* On hover, change the background color of the links */
@@ -342,6 +343,7 @@ h2 {
   font-size: 25px;
   color: #5d5d5d;
   margin-left: 0px;
+  line-height: normal;
   // font-family: "FuturaStdMediumTrItalic";
 }
 
@@ -382,6 +384,7 @@ nav a.selected {
   border-top-right-radius: 4px;
   // background-color: #f7f7f7;
   // font-style: italic;
+  color: white;
 }
 
 .home {
@@ -2569,51 +2572,46 @@ label::before {
   h3 {
     color: maroon;
     margin-bottom: 15px;
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  ul {
+    // list-style: disc;
+    padding: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+      }
+
+      a:hover {
+        color: maroon;
+      }
+
+      span {
+        margin-right: 10px;
+      }
+    }
   }
 }
-
-.footer-section ul {
-  list-style: disc;
-  padding: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-section ul li span {
-  margin-right: 10px;
-}
-
-.footer-section form {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-section form input {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 5px;
-}
-
-.footer-section form button {
-  padding: 10px;
-  background-color: #f00;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+iframe {
+  width: 30rem;
+  height: 15rem;
+  border-radius: 20px;
 }
 
 .footer-logo {
   margin-bottom: 15px;
+  width: 100%;
+  margin-top: -2rem;
 }
 
 .footer-bottom {
@@ -2624,14 +2622,33 @@ label::before {
   max-width: 1200px;
   padding-top: 20px;
   border-top: 1px solid #333;
+
+  .whatsapp .float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
 }
 
-.footer-bottom .whatsapp a {
-  background-color: #25d366;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-decoration: none;
+.fa-whatsapp {
+  font-size: 2.5rem;
+}
+
+.fa-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 .footer-bottom .scroll-up a {
@@ -2640,15 +2657,19 @@ label::before {
   text-decoration: none;
 }
 
-.social-section p {
-  font-size: 20px;
-  margin-bottom: 20px;
+.social-section {
+  margin: auto;
+  p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding-top: 2rem;
 }
 
 .social-icon {

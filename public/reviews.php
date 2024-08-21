@@ -2,6 +2,7 @@
 include 'functions.php';
 get_header("Reviews");
 include 'header.php';
+include 'reviewSection/connect.php'
 ?>
 
 <body>
@@ -87,7 +88,7 @@ include 'header.php';
                     <input class="star-radio" type="radio" name="rate" id="rate-1" />
                     <label for="rate-1" class="review-star fa-solid fa-star"></label>
                 </div>
-                <form action="connect.php">
+                <form action="reviewSection\connect.php" method="POST">
                     <div class="description-content"></div>
                     <!-- <div class="input-reviews-row-wrapper"> -->
                     <!-- Input prenume -->
