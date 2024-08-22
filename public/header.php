@@ -23,8 +23,8 @@
             <?php echo _("Tours") ?>
         </a> |
         <!-- harta (festivaluri) -->
-        <a href="competitions.php" class="scrollBtn <?php if ($page == 'competitions')
-                                                        echo 'selected'; ?>">
+        <a href="../competitions.php" class="scrollBtn <?php if ($page == 'competitions')
+                                                            echo 'selected'; ?>">
             <?php echo _("Competitions") ?>
         </a> |
 
@@ -37,8 +37,8 @@
             <?php echo _("Repertoriu") ?>
         </a> |
 
-        <a href="reviews.php" class="scrollBtn <?php if ($page == 'reviews')
-                                                    echo 'selected'; ?>">
+        <a href="reviews.view.php" class="scrollBtn <?php if ($page == 'reviews')
+                                                        echo 'selected'; ?>">
             <?php echo _("Reviews") ?>
         </a> |
 

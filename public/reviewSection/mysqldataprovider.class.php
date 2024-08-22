@@ -2,10 +2,20 @@
 
 class MySqlDataProvider
 {
+    private $db_name;
+    private $db_user_name;
+    private $db_user_password;
+    private $connection;
+    public function __construct($db_name, $db_user_name, $db_user_password)
+    {
+        $this->db_name = $db_name;
+        $this->db_user_name = $db_user_name;
+        $this->db_user_password = $db_user_password;
+    }
     private function connect()
     {
         try {
-            return new PDO(CONFIG['db_name'], CONFIG['db_user_name'], CONFIG['db_user_password']);
+            return new PDO($this->db_name, $this->db_user_name, $this->db_user_password);
         } catch (PDOException $e) {
             die("Connection failed: " . $e->getMessage());
         }
@@ -13,14 +23,11 @@ class MySqlDataProvider
 
     public function insert_review($name, $surname, $rating, $comment)
     {
-        $database = $this->connect();
+        $this->connection = $this->connect();
 
-        if ($database == null) {
-            return;
-        }
 
         $sql = 'INSERT INTO reviewsystem (name, surname, rating, comment) VALUES (:name, :surname, :rating, :comment)'; // interogare 
-        $stmt = $database->prepare($sql);
+        $stmt = $this->connection->prepare($sql);
 
         $stmt->execute([
             ':name' => $name,
@@ -30,6 +37,6 @@ class MySqlDataProvider
         ]);
 
         $stmt = null;
-        $database = null;
+        $this->connection = null;
     }
 }
