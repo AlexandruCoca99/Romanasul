@@ -71,10 +71,10 @@ include '../reviewSection/connect.php'
             </div>
         </div>
         <div class="container-reviews hidden">
-            <div class="post hidden">
+            <!-- <div class="post hidden">
                 <div class="text">Thanks for rating us!</div>
                 <button class="return-button">RETURN</button>
-            </div>
+            </div> -->
             <div class="star-widget">
 
                 <form action="reviewSection\app.php" method="POST">
