@@ -15,8 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit-button'])) {
     $rating = $_POST['rating'];
     $comment = $_POST['comment'];
     // $date = $_POST['date'];
-    print_r('$name');
 
     $dataProvider->insert_review($name, $surname, $rating, $comment);
-    // print_r "Review inserted successfully!";
 }

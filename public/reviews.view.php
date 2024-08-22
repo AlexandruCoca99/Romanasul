@@ -76,19 +76,20 @@ include '../reviewSection/connect.php'
                 <button class="return-button">RETURN</button>
             </div>
             <div class="star-widget">
-                <div class="stars-wrapper">
-                    <input class="star-radio" type="radio" name="rate" id="rate-5" data-rating="5" />
-                    <label for="rate-5" class=" review-star fa-solid fa-star"> </label>
-                    <input class="star-radio" type="radio" name="rate" id="rate-4" />
-                    <label for="rate-4" class="review-star fa-solid fa-star"></label>
-                    <input class="star-radio" type="radio" name="rate" id="rate-3" />
-                    <label for="rate-3" class="review-star fa-solid fa-star"></label>
-                    <input class="star-radio" type="radio" name="rate" id="rate-2" />
-                    <label for="rate-2" class="review-star fa-solid fa-star"></label>
-                    <input class="star-radio" type="radio" name="rate" id="rate-1" />
-                    <label for="rate-1" class="review-star fa-solid fa-star"></label>
-                </div>
+
                 <form action="reviewSection\app.php" method="POST">
+                    <div class="stars-wrapper">
+                        <input class="star-radio" type="radio" name="rating" id="rate-5" value="5" />
+                        <label for="rate-5" class=" review-star fa-solid fa-star"> </label>
+                        <input class="star-radio" type="radio" name="rating" id="rate-4" value="4" />
+                        <label for="rate-4" class="review-star fa-solid fa-star"></label>
+                        <input class="star-radio" type="radio" name="rating" id="rate-3" value="3" />
+                        <label for="rate-3" class="review-star fa-solid fa-star"></label>
+                        <input class="star-radio" type="radio" name="rating" id="rate-2" value="2" />
+                        <label for="rate-2" class="review-star fa-solid fa-star"></label>
+                        <input class="star-radio" type="radio" name="rating" id="rate-1" value="1" />
+                        <label for="rate-1" class="review-star fa-solid fa-star"></label>
+                    </div>
                     <div class="description-content"></div>
                     <!-- <div class="input-reviews-row-wrapper"> -->
                     <!-- Input prenume -->
