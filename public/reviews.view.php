@@ -2,7 +2,59 @@
 include('functions.php');
 get_header("Reviews");
 include('header.php');
-include '../reviewSection/connect.php'
+include '../public/reviewSection/mysqldataprovider.class.php'
+?>
+
+<?php
+
+$model = new MySqlDataProvider(); // Create an instance of the ReviewModel
+$reviews = $model->get_review(); // Fetch all reviews
+$ratingStats = $model->fetchRatingStats(); // Fetch rating statistics
+$totalRating = 0;
+$ratingsCount = [1 => 0, 2 => 0, 3 => 0, 4 => 0, 5 => 0];
+
+foreach ($reviews as $review):
+    $count++;
+    $rating = htmlspecialchars($review['rating']);
+// $totalRating += $rating;
+endforeach;
+
+
+
+// Initialize statistics variables
+$totalReviews = $count;
+
+
+
+// Populate the ratings count
+foreach ($ratingStats as $stat) {
+    $ratingsCount[(int)$stat['rating']] = (int)$stat['count'];
+    $totalRating += (int)$stat['rating'] * (int)$stat['count'];
+}
+
+// Calculate the average rating
+$averageRating = $totalReviews > 0 ? $totalRating / $totalReviews : 0;
+$averageRatingFormatted = number_format($averageRating, 1); // Format to one decimal place
+
+// Calculate the percentage for each rating bar
+function calculatePercentage($count, $total)
+{
+    return $total > 0 ? ($count / $total) * 100 : 0;
+}
+
+// Function to generate star rating HTML
+function generateStarRating($rating)
+{
+    $stars = '';
+    for ($i = 1; $i <= 5; $i++) {
+        if ($i <= $rating) {
+            $stars .= '<span>★</span>'; // Filled star
+        } else {
+            $stars .= '<span>☆</span>'; // Empty star
+        }
+    }
+    return $stars;
+}
 ?>
 
 <body>
@@ -11,64 +63,45 @@ include '../reviewSection/connect.php'
         <div class="review-overview">
             <div class="rating-summary">
                 <div class="average-rating">
-                    <span class="rating-score">1.5/5.0</span>
-                    <div class="stars-average">
-                        <span>★</span><span>★</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <p>No Reviews</p>
+                    <span class="rating-score"><?php echo $averageRatingFormatted; ?>/5.0</span>
+                    <div class="stars-average"><?php echo generateStarRating(round($averageRating)); ?></div>
                 </div>
                 <div class="rating-distribution">
-                    <div class="rating-bar">
-                        <span>5 ★</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 4%"></div>
+                    <?php foreach ($ratingsCount as $stars => $count): ?>
+                        <div class="rating-bar">
+                            <span><?php echo $stars; ?> ★</span>
+                            <div class="bar">
+                                <div class="fill" style="width: <?php echo calculatePercentage($count, $totalReviews); ?>%"></div>
+                            </div>
+                            <span>(<?php echo $count; ?>)</span>
                         </div>
-                        <span>(1)</span>
-                    </div>
-                    <div class="rating-bar">
-                        <span>4 ★</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 4%"></div>
-                        </div>
-                        <span>(1)</span>
-                    </div>
-                    <div class="rating-bar">
-                        <span>3 ★</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 60%"></div>
-                        </div>
-                        <span>(15)</span>
-                    </div>
-                    <div class="rating-bar">
-                        <span>2 ★</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 44%"></div>
-                        </div>
-                        <span>(11)</span>
-                    </div>
-                    <div class="rating-bar">
-                        <span>1 ★</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 52%"></div>
-                        </div>
-                        <span>(13)</span>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
             <div class="review-form">
                 <button class="review-button">Add Review</button>
             </div>
-            <div class="review">
-                <div class="review-header">
-                    <div class="stars">
-                        <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span>
+
+            <!-- // Display the reviews -->
+            <div class="reviews">
+                <?php foreach ($reviews as $review): ?>
+                    <?php
+                    $name = htmlspecialchars($review['name']);
+                    $surname = htmlspecialchars($review['surname']);
+                    $rating = htmlspecialchars($review['rating']);
+                    $comment = htmlspecialchars($review['comment']);
+                    $date = htmlspecialchars($review['date']);
+                    ?>
+                    <div class="review">
+                        <div class="review-header">
+                            <div class="stars"><?php echo generateStarRating($rating); ?></div>
+                            <span class="review-author">By <?php echo $name . ' ' . $surname; ?> on <?php echo $date; ?></span>
+                        </div>
+                        <p class="review-text"><?php echo $comment; ?></p>
                     </div>
-                    <span class="review-author">By Brighton jan 21 2020</span>
-                </div>
-                <p class="review-text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, rerum.
-                </p>
+                <?php endforeach; ?>
             </div>
+
         </div>
         <div class="container-reviews hidden">
             <!-- <div class="post hidden">
@@ -100,7 +133,7 @@ include '../reviewSection/connect.php'
                     </div>
                     <!-- Input nume -->
                     <div class="input-reviews">
-                        <label class="name-label" for="subject">Subject</label>
+                        <label class="name-label" for="surname">Surname</label>
                         <!-- <i class="icon fa-solid fa-address-card"></i> -->
                         <input class="name-input" type="text" name="surname" class="contact-input" required>
                     </div>

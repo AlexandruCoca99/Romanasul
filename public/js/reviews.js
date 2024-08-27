@@ -18,16 +18,4 @@ jQuery(document).ready(function ($) {
     $(".container-reviews").removeClass("hidden");
     $(".review-overview").addClass("hidden");
   });
-
-  $(document).on("click", ".submit-button", function () {
-    $(".post").removeClass("hidden");
-    $(".star-widget").addClass("hidden");
-  });
-
-  $(document).on("click", ".return-button", function () {
-    $(".review-overview").removeClass("hidden");
-    $(".post").addClass("hidden");
-    $(".container-reviews").addClass("hidden");
-    $(".star-widget").removeClass("hidden");
-  });
 });

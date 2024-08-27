@@ -78,6 +78,7 @@ jQuery(document).ready(function ($) {
           pattern.y = -375;
 
           const image = new am4core.Image();
+          console.log(image);
           image.width = 700;
           image.height = 950;
           image.href = foundVisitedCountry.fill;

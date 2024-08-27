@@ -1,16 +1,16 @@
 <?php
-
+include 'config.php';
 class MySqlDataProvider
 {
     private $db_name;
     private $db_user_name;
     private $db_user_password;
     private $connection;
-    public function __construct($db_name, $db_user_name, $db_user_password)
+    public function __construct()
     {
-        $this->db_name = $db_name;
-        $this->db_user_name = $db_user_name;
-        $this->db_user_password = $db_user_password;
+        $this->db_name = CONFIG['db_name'];
+        $this->db_user_name = CONFIG['db_user_name'];
+        $this->db_user_password = CONFIG['db_user_password'];
     }
     private function connect()
     {
@@ -25,6 +25,10 @@ class MySqlDataProvider
     {
         $this->connection = $this->connect();
 
+        if ($this->connection == null) {
+            return;
+        }
+
 
         $sql = 'INSERT INTO reviewsystem (name, surname, rating, comment) VALUES (:name, :surname, :rating, :comment)'; // interogare 
         $stmt = $this->connection->prepare($sql);
@@ -38,5 +42,36 @@ class MySqlDataProvider
 
         $stmt = null;
         $this->connection = null;
+    }
+
+    public function get_review()
+    {
+        $this->connection = $this->connect();
+
+        if ($this->connection == null) {
+            return [];
+        }
+
+        $querry = $this->connection->query('SELECT * FROM reviewsystem');
+        $data = $querry->fetchAll(PDO::FETCH_ASSOC);
+
+        $querry = null;
+        $this->connection = null;
+
+        return $data;
+    }
+
+    // Fetch rating statistics for the overview
+    public function fetchRatingStats()
+    {
+        $this->connection = $this->connect();
+
+        if ($this->connection == null) {
+            return [];
+        }
+        // SQL query to get the count of each rating level
+        $querry = "SELECT rating, COUNT(*) as count FROM reviewsystem GROUP BY rating";
+        $data = $this->connection->query($querry); // Execute the query
+        return $data->fetchAll(PDO::FETCH_ASSOC); // Fetch the results as an associative array
     }
 }

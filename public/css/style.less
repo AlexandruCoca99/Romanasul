@@ -597,6 +597,7 @@ a.footer:hover {
 /*-------- //IE7 Hack --------*/
 
 #chartdiv {
+  padding-top: 100px;
   width: 100%;
   height: 95vh;
 }
@@ -615,6 +616,7 @@ a.footer:hover {
   .transition(ease-in-out 0.2s);
   z-index: 2;
   padding: 20px;
+  padding-top: 100px;
   border-left: 2px solid @red;
 
   &.show {
@@ -1875,6 +1877,8 @@ label::before {
   .rating-distribution {
     // margin-left: 20px;
     font-size: 1.9em; /* Adjust the font size */
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .rating-bar {
@@ -1932,11 +1936,12 @@ label::before {
 
   .review-author {
     color: #888;
-    font-size: 0.9em;
+    font-size: 1rem;
   }
 
   .review-text {
     margin-top: 10px;
+    font-size: 1.3rem;
   }
 
   @media (max-width: 800px) {
@@ -2063,21 +2068,6 @@ label::before {
         text-shadow: 0 0 20px #952;
       }
     }
-    #rate-1:checked ~ form .description-content:before {
-      content: "I just hate it ";
-    }
-    #rate-2:checked ~ form .description-content:before {
-      content: "I don't like it ";
-    }
-    #rate-3:checked ~ form .description-content:before {
-      content: "It's awesome ! ";
-    }
-    #rate-4:checked ~ form .description-content:before {
-      content: "I just like it ";
-    }
-    #rate-5:checked ~ form .description-content:before {
-      content: "I just love it ";
-    }
 
     .container-reviews form {
       display: none;
@@ -2089,9 +2079,15 @@ label::before {
     form {
       width: inherit;
       padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
 
       .input-reviews {
         margin-bottom: 20px;
+        width: 100%;
         .name-label {
           display: block;
           margin-bottom: 5px;
