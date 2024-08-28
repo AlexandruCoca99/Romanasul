@@ -17,6 +17,218 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
 <div class="background"></div>
 <div class="right-side-pop-up"></div>
 
+<div class="right-side-container">
+
+
+  <table>
+    <caption>International tours</caption>
+    <tr>
+      <th>Year</th>
+      <th>Country</th>
+      <th>City/Cities</th>
+    </tr>
+    <tr>
+      <td data-cell="Year">2014</td>
+      <td data-cell="Country"><strong>Poland<strong></td>
+      <td data-cell="City">Katovice</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2013</td>
+      <td data-cell="Country"><strong>Poland<strong></td>
+      <td data-cell="City">Plock</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2012</td>
+      <td data-cell="Country"><strong><?php echo _("Russia") ?><strong></td>
+      <td data-cell="City">Moskova, Vladimir</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2011</td>
+      <td data-cell="Country"><strong><?php echo _("Macedonia") ?><strong></td>
+      <td data-cell="City">Ohrid</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2010</td>
+      <td data-cell="Country"><strong><?php echo _("Netherlands") ?><strong></td>
+      <td data-cell="City">Diepenheim</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2009</td>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Argenton sur Creuse, Marcillat-en-Combrailles, Saint-Florent sur Cher, Paizay-le-Sec, Oradour-sur-Vayres</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2008</td>
+      <td data-cell="Country"><strong><?php echo _("Italy") ?><strong></td>
+      <td data-cell="City">Cunardo Varese</td>
+    </tr>
+    <tr>
+      <td data-cell="Year" rowspan="3" valign=TOP>2007</td>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Nice</td>
+    </tr>
+    <tr>
+      <td data-cell="Country"><strong><?php echo _("Italy") ?><strong></td>
+      <td data-cell="City">Coredo Trentino</td>
+    </tr>
+    <tr>
+      <td data-cell="Country"><strong><?php echo _("Switzerland") ?><strong></td>
+      <td data-cell="City"></td>
+    </tr>
+
+    <tr>
+      <td data-cell="Year">2006</td>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Suman, Volvic, Cellule, Gannat</td>
+    </tr>
+    <tr>
+      <td data-cell="Year" rowspan="2">2005</td>
+      <td data-cell="Country"><strong><?php echo _("Italy") ?><strong></td>
+      <td data-cell="City">Parma</td>
+    </tr>
+    <tr>
+      <td data-cell="Country"><strong><?php echo _("Serbia - Montenegro") ?>&nbsp;&nbsp;&nbsp;&nbsp;<strong></td>
+      <td data-cell="City">Loznica</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2004</td>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Poitiers, Marseille, Gannat, Bourges</td>
+    </tr>
+    <tr>
+      <td data-cell="Year" rowspan="3">2003</td>
+      <td data-cell="Country"><strong><?php echo _("Greece") ?><strong></td>
+      <td data-cell="City">Chalkida</td>
+    </tr>
+    <tr>
+      <td data-cell="Country"><strong><?php echo _("Turkey") ?><strong></td>
+      <td data-cell="City">Antakya</td>
+    </tr>
+    <tr>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Bourgtheroulde, Bourg-Achard, Gannat, Vichy, Montmarault</td>
+    </tr>
+    <tr>
+      <td data-cell="Year" rowspan="3">2002</td>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Rouen</td>
+    </tr>
+    <tr>
+      <td data-cell="Country"><strong><?php echo _("Macedonia") ?><strong></td>
+      <td data-cell="City">Skopje</td>
+    </tr>
+    <tr>
+      <td data-cell="Country"><strong><?php echo _("Italy") ?><strong></td>
+      <td data-cell="City">Atina</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2001</td>
+      <td data-cell="Country"><strong><?php echo _("Turkey") ?><strong></td>
+      <td data-cell="City">Tasova</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2000</td>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Montignac, Concarneau</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">1998</td>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Montignac</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">1997</td>
+      <td data-cell="Country"><strong><?php echo _("Italy") ?><strong></td>
+      <td data-cell="City">Alatri</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">1995</td>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Lir&eacute;</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">1994</td>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Montignac</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">1993</td>
+      <td data-cell="Country"><strong><?php echo _("South Africa") ?><strong></td>
+      <td data-cell="City">Johannesburg</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">1992</td>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Guegnon, Saint Di&eacute; des Vosges</td>
+    </tr>
+    <tr>
+      <td data-cell="Year" rowspan="2">1991</td>
+      <td data-cell="Country"><strong><?php echo _("USA") ?><strong></td>
+      <td data-cell="City">Carolina de Nord</td>
+    </tr>
+    <tr>
+      <td data-cell="Country"><strong><?php echo _("Switzerland") ?><strong></td>
+      <td data-cell="City">Lausanne</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">1990</td>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Dijon, Montignac</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">1986</td>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Thiers, Puy en Vellay, Quimper, Baule</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">1985</td>
+      <td data-cell="Country"><strong><?php echo _("Spain") ?><strong></td>
+      <td data-cell="City">Rohanda, Barcelona</td>
+    </tr>
+    <tr>
+      <td data-cell="Year" rowspan="2">1984</td>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Montignac, Mont-Blank(Herrault)</td>
+    </tr>
+    <tr>
+      <td data-cell="Country"><strong><?php echo _("Spain") ?><strong></td>
+      <td data-cell="City">Portugalete-Bilbao</td>
+    </tr>
+    <tr>
+      <td data-cell="Year" rowspan="2">1983</td>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Montignac</td>
+    </tr>
+    <tr>
+      <td data-cell="Country"><strong><?php echo _("Spain") ?><strong></td>
+      <td data-cell="City">Portugalete</td>
+    </tr>
+    <tr>
+      <td data-cell="Year" rowspan="2">1982</td>
+      <td data-cell="Country"><strong><?php echo _("Norway") ?><strong></td>
+      <td data-cell="City">Oslo</td>
+    </tr>
+    <tr>
+      <td data-cell="Country"><strong><?php echo _("Switzerland") ?><strong></td>
+      <td data-cell="City">Lausanne</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">1981</td>
+      <td data-cell="Country"><strong><?php echo _("Greece") ?><strong></td>
+      <td data-cell="City">Atena</td>
+    </tr>
+    <tr>
+      <td data-cell="Year" rowspan="2">1980</td>
+      <td data-cell="Country"><strong><?php echo _("Switzerland") ?><strong></td>
+      <td data-cell="City">Lausanne</td>
+    </tr>
+    <tr>
+      <td data-cell="Country"><strong><?php echo _("France") ?><strong></td>
+      <td data-cell="City">Savoie, Haute Savoie</td>
+    </tr>
+  </table>
+</div>
+
 <!-- SLIDER -->
 <!-- <header id="main-header"></header> -->
 

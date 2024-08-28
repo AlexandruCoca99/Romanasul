@@ -25,10 +25,10 @@ jQuery(document).ready(function ($) {
         // Set the map's projection type
         this.chart.projection = new am4maps.projections.Miller();
         // Set the map's initial zoom
-        this.chart.homeZoomLevel = 1.2;
+        this.chart.homeZoomLevel = 1;
         this.chart.homeGeoPoint = {
-          latitude: 40,
-          longitude: 11,
+          latitude: 30,
+          longitude: 0,
         };
         // Create and configure the polygon series for countries
         const polygonSeries = this.createPolygonSeries();

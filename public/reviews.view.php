@@ -43,17 +43,30 @@ function calculatePercentage($count, $total)
 }
 
 // Function to generate star rating HTML
-function generateStarRating($rating)
+function generateStarRating($averageRating)
 {
-    $stars = '';
-    for ($i = 1; $i <= 5; $i++) {
-        if ($i <= $rating) {
-            $stars .= '<span>★</span>'; // Filled star
-        } else {
-            $stars .= '<span>☆</span>'; // Empty star
-        }
+    $fullStars = floor($averageRating);  // Number of full stars (e.g., 3 for 3.8)
+    $halfStars = ($averageRating - $fullStars) >= 0.5 ? 1 : 0; // One half star if the decimal is 0.5 or more
+    $emptyStars = 5 - $fullStars - $halfStars; // Remaining stars are empty
+
+    $starsHtml = '';
+
+    // Add full stars
+    for ($i = 0; $i < $fullStars; $i++) {
+        $starsHtml .= '<span class="star">&#9733;</span>'; // Filled star (★)
     }
-    return $stars;
+
+    // Add half star if applicable
+    if ($halfStars) {
+        $starsHtml .= '<span class="star">&#9734;</span>'; // Half-filled star (★) or use custom CSS for a half star
+    }
+
+    // Add empty stars
+    for ($i = 0; $i < $emptyStars; $i++) {
+        $starsHtml .= '<span class="star">&#9734;</span>'; // Empty star (☆)
+    }
+
+    return $starsHtml;
 }
 ?>
 
@@ -64,7 +77,7 @@ function generateStarRating($rating)
             <div class="rating-summary">
                 <div class="average-rating">
                     <span class="rating-score"><?php echo $averageRatingFormatted; ?>/5.0</span>
-                    <div class="stars-average"><?php echo generateStarRating(round($averageRating)); ?></div>
+                    <div class="stars-average"><?php echo generateStarRating($averageRating); ?></div>
                 </div>
                 <div class="rating-distribution">
                     <?php foreach ($ratingsCount as $stars => $count): ?>
