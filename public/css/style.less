@@ -44,6 +44,8 @@ body {
   --light-main-color: hsl(var(--main-hue), 91%, 55%);
   --input-bg: hsla(var(--main-hue), 50%, 50%, 6.5%);
   --input-bg-hover: hsla(var(--main-hue), 50%, 50%, 14%);
+
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -159,6 +161,7 @@ nav {
 @media screen and (max-width: 1330px) {
   header {
     padding: 0 50px;
+    // position: fixed;
     a {
       padding: 10px 1rem;
       font-size: 1rem;
@@ -2324,71 +2327,62 @@ label::before {
 }
 
 .home-content-wrapper {
-  // width: 80svw;
-  margin: auto 10rem;
+  margin: auto 5svw;
 }
 
 .swiper-homepage-wrapper {
-  // padding-top: 100px;
   width: 100%;
-  // height: 50vh;
   position: relative;
   margin: auto 0;
-  // padding: 50px 0;
 
   .swiper-homepage {
     overflow: hidden;
     display: flex;
     align-items: flex-end; /* Align the swiper to the right */
-    margin-bottom: 10rem;
+    margin-bottom: 10svh;
 
     .swiper {
-      margin-top: 30px;
+      margin-top: 5svh;
     }
     .swiper-slide img {
       display: block;
       width: 100%;
-      // height: 100%;
       object-fit: cover;
+      max-height: 80svh;
     }
   }
 
   .swiper-custom-nav-right,
   .swiper-custom-nav-left {
-    // top: 100%;
     transform: none;
   }
-}
-
-.about-us-short h1,
-.swiper-homepage-wrapper h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  color: white;
 }
 
 .about-us-short button,
 .swiper-homepage-wrapper button,
 .tours-short button {
-  background-color: #dc2626ba;
-  height: 3rem;
-  width: 6rem;
-  border-radius: 20px;
-  color: white;
-  font-size: 15px;
-  font-weight: 400;
-  text-transform: uppercase;
+  background-color: #000000;
+  color: #f1c40f;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Add shadow for a 3D effect */
   transition: background-color 0.3s ease;
   cursor: pointer;
+
+  a:visited {
+    color: #f1c40f;
+  }
 }
 
 .swiper-homepage-wrapper h1 {
-  font-size: 6rem;
+  font-size: 8svw;
   position: absolute;
   left: 12%;
   top: 12%;
   z-index: 10;
+  color: white;
 }
 .swiper-homepage-wrapper button {
   position: absolute;
@@ -2400,36 +2394,57 @@ label::before {
 
 .homepage-about-us-wrapper,
 .homepage-tours-wrapper {
-  margin: 10rem auto 10rem;
-  padding: 40px;
+  margin: 10svh auto; /* Use viewport height for margins */
+  padding: 5svw; /* Use viewport width for padding */
   display: flex;
+  // flex-direction: column; /* Stack content vertically for smaller screens */
   align-items: center;
   justify-content: space-around;
   background-color: #f8f8f8;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  // border-radius: 10px;
 }
-.about-us-short
-// .tours-short
-{
+
+.about-us-short {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 40px;
-  gap: 4rem;
+  margin-left: 5svw; /* Use viewport width for margins */
+  gap: 10svh; /* Adjust gap using viewport height */
 
   h1 {
     color: #000;
     line-height: normal;
+    font-size: 4svw; /* Font size scales with viewport width */
   }
 }
 
 .homepage-about-us-image {
-  height: 45svh;
-  margin: 40px;
   border-radius: 20px;
+  width: 60%;
+  object-fit: cover;
+  margin-left: 1rem;
 }
 
+@media screen and (max-width: 980px) {
+  .homepage-about-us-wrapper {
+    flex-direction: column;
+  }
+
+  .about-us-short {
+    gap: 2svh;
+
+    button {
+      margin-bottom: 1rem;
+      font-size: 2svw;
+      width: 27%;
+    }
+  }
+
+  .homepage-about-us-image {
+    width: 100%;
+    margin: 1rem;
+  }
+}
 .fixed-background-image-container {
   height: 50svh;
   text-align: center;
@@ -2439,29 +2454,19 @@ label::before {
   background: url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/1. Mica Unire/Colaj 4 opacity.png");
   background-attachment: fixed;
 
-  // opacity: 0.3;
-
   h2 {
-    font-size: 3.5rem;
+    font-size: 4vw;
     color: #610404;
+    line-height: normal;
   }
 }
-
-// .overlay {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, 0, 0.5); /* Overlay color */
-// }
 
 // Tours
 
 .tours-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  // gap: 20px;
   justify-items: center;
 }
 
@@ -2481,15 +2486,6 @@ label::before {
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-
-// .grid-item h3 {
-//   margin-bottom: 10px;
-//   font-size: 18px;
-//   position: relative;
-//   z-index: 3;
-//   transform: translateY(300%);
-//   transition: all 0.7s;
-// }
 
 .tours-homepage {
   display: flex;
@@ -2570,6 +2566,27 @@ label::before {
   background-color: #7775a5;
 }
 
+@media screen and (max-width: 1200px) {
+  .grid-item {
+    display: none;
+  }
+
+  .grid-item:first-child {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .homepage-tours-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tours-short-content {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
 // homepage reviews
 
 .homepage-reviews-wrapper {
@@ -2633,6 +2650,16 @@ label::before {
   font-size: 18px;
 }
 
+@media screen and (max-width: 650px) {
+  .review-card {
+    display: none;
+  }
+
+  .review-card:nth-child(-n + 2) {
+    display: block;
+  }
+}
+
 // COUNTDOWN
 .countdown-container-background {
   margin: 0;
@@ -2658,6 +2685,7 @@ label::before {
     margin: 10px 0;
     font-size: 1.5rem;
     letter-spacing: 1px;
+    line-height: normal;
   }
 
   .countdown {
@@ -2707,6 +2735,7 @@ label::before {
   width: 100%;
   max-width: 90svw;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .footer-section {
@@ -2850,6 +2879,12 @@ iframe {
 
 .social-icon.youtube i:hover {
   background-color: #ff0000;
+}
+
+@media screen and (max-width: 1200px) {
+  iframe {
+    width: 80svw;
+  }
 }
 
 // Thank you page
