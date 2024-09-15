@@ -250,6 +250,7 @@ jQuery(document).ready(function ($) {
         // Remove 'show' class from elements to hide them
         $(".right-side-pop-up").removeClass("show");
         $(".background").removeClass("show");
+        $(".right-side-container").removeClass("transformRight");
       });
     }
 
@@ -258,6 +259,7 @@ jQuery(document).ready(function ($) {
       $(".right-side-pop-up").addClass("show");
       $(".right-side-pop-up").html(this.renderRightSideContent(countryData));
       $(".background").addClass("show");
+      $(".right-side-container").addClass("transformRight");
     }
 
     addSlider() {
@@ -277,6 +279,7 @@ jQuery(document).ready(function ($) {
         e.preventDefault();
         $(".swiper-main").addClass("hidden");
         $(".swiper-main .swiper").addClass("hidden");
+        $(".right-side-container").removeClass("transformRight");
       });
     }
 

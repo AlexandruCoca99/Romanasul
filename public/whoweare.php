@@ -5,7 +5,7 @@ include 'header.php';
 ?>
 
 <body>
-    <div class="repertoriu-wrapper">
+    <div class="who-we-are-wrapper">
         <div class="hero-wrapper">
             <img class="whoweare-bg" src="images/gallery/PozeRemastered/Fundal-who-we-are2.jpg" alt="Background Image">
             <h1 class="hero-title">Cine suntem?</h1>
@@ -46,7 +46,7 @@ include 'header.php';
             </div>
             <div class="members-container">
                 <!-- <p>&nbsp;</p> -->
-                <div class="flex-direction-row justify-content-space-around members-list " style="transform: translateX(55px);">
+                <div class="members-list ">
                     <div class="member-content choreographers-list">
                         <h2 class="title">Choreographers:</h2>
                         <ul type="circle">
@@ -98,7 +98,7 @@ include 'header.php';
 
                 </div>
                 <p>&nbsp;</p>
-                <div class="flex-direction-row justify-content-space-around members-list " style="transform: translateX(50px);">
+                <div class=" members-list" style="transform: translateX(50px);">
                     <div class="member-content">
                         <h2 class="title">Conductors:</h2>
                         <ul type="circle">
@@ -158,7 +158,7 @@ include 'header.php';
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
-                <div class="flex-direction-row justify-content-space-around members-list " style="transform: translateX(35px);">
+                <div class="members-list " style="transform: translateX(35px);">
                     <div class="member-content">
                         <h2 class="title">Cultural Attaches:</h2>
                         <ul>
@@ -207,7 +207,7 @@ include 'header.php';
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
-                <div class="flex-direction-row justify-content-space-around members-list " style="transform: translateX(85px);">
+                <div class="members-list " style="transform: translateX(85px);">
                     <div class="member-content">
                         <h2 class="title">Singers:</h2>
                         <ul>
@@ -277,7 +277,7 @@ include 'header.php';
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
-                <div class="flex-direction-row justify-content-space-around members-list  " style="transform: translateX(15px);">
+                <div class="members-list" style="transform: translateX(15px);">
                     <div class="member-content">
                         <h2 class="title">Collaborating singers:</h2>
                         <ul>
@@ -339,7 +339,7 @@ include 'header.php';
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
-                <div class="flex-direction-row justify-content-space-around members-list ">
+                <div class="members-list ">
                     <div class="member-content">
                         <h2 class="title">Collaborating musicians:</h2>
                         <ul>
@@ -390,7 +390,7 @@ include 'header.php';
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
-                <div class="flex-direction-row justify-content-space-around members-list " style="transform: translateX(65px);">
+                <div class="members-list " style="transform: translateX(65px);">
                     <div class="member-content">
                         <h2 class="title">Show hosts:</h2>
                         <ul>

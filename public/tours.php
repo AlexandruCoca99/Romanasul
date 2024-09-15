@@ -17,9 +17,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
 <div class="background"></div>
 <div class="right-side-pop-up"></div>
 
-<div class="right-side-container">
-
-
+<div class="right-side-container ">
   <table>
     <caption>International tours</caption>
     <tr>
