@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
   class MapManager {
     // Constructor to initialize the map with the specified chart ID and visited countries data
     constructor(chartId, visitedCountries, visitedCountriesSmall) {
-      console.log(visitedCountries);
+      // console.log(visitedCountries);
       this.chartId = chartId;
       this.visitedCountries = visitedCountries;
       this.visitedCountriesSmall = visitedCountriesSmall;
@@ -15,6 +15,8 @@ jQuery(document).ready(function ($) {
 
     initMap() {
       am4core.ready(() => {
+        const isMobile = window.innerWidth <= 1000;
+        console.log(window.innerWidth);
         // Apply animated theme to the chart
         am4core.useTheme(am4themes_animated);
 
@@ -25,10 +27,10 @@ jQuery(document).ready(function ($) {
         // Set the map's projection type
         this.chart.projection = new am4maps.projections.Miller();
         // Set the map's initial zoom
-        this.chart.homeZoomLevel = 1;
+        this.chart.homeZoomLevel = isMobile ? 5 : 1;
         this.chart.homeGeoPoint = {
-          latitude: 30,
-          longitude: 0,
+          latitude: 50,
+          longitude: 10,
         };
         // Create and configure the polygon series for countries
         const polygonSeries = this.createPolygonSeries();
@@ -54,7 +56,7 @@ jQuery(document).ready(function ($) {
       polygonSeries.useGeodata = true; // Use the provided GeoJSON for polygons
       polygonSeries.mapPolygons.template.tooltipText = "{name}"; // Tooltip text format
       polygonSeries.mapPolygons.template.fill = this.chart.colors.getIndex(0); // Default fill color
-      console.log(polygonSeries);
+      // console.log(polygonSeries);
       // Adding a pattern on data validation
       polygonSeries.events.on("datavalidated", (ev) => {
         this.applyPatternsToCountries(ev.target);
@@ -78,7 +80,7 @@ jQuery(document).ready(function ($) {
           pattern.y = -375;
 
           const image = new am4core.Image();
-          console.log(image);
+          // console.log(image);
           image.width = 700;
           image.height = 950;
           image.href = foundVisitedCountry.fill;
@@ -243,14 +245,16 @@ jQuery(document).ready(function ($) {
       this.hideRightSideContainer();
       this.addSlider();
       this.closeSlider();
+      this.toggleMap();
     }
 
     hideRightSideContainer() {
       $(".background").on("click", () => {
+        const isMobile = window.innerWidth <= 1000;
         // Remove 'show' class from elements to hide them
         $(".right-side-pop-up").removeClass("show");
         $(".background").removeClass("show");
-        $(".right-side-container").removeClass("transformRight");
+        if (!isMobile) $(".right-side-container").removeClass("transformRight");
       });
     }
 
@@ -259,13 +263,13 @@ jQuery(document).ready(function ($) {
       $(".right-side-pop-up").addClass("show");
       $(".right-side-pop-up").html(this.renderRightSideContent(countryData));
       $(".background").addClass("show");
-      $(".right-side-container").addClass("transformRight");
+      if (!isMobile) $(".right-side-container").addClass("transformRight");
     }
 
     addSlider() {
       $(document).on("click", ".right-side-pop-up .button", function () {
         const id = $(this).attr("id");
-        console.log(id);
+        // console.log(id);
         //add slider
         $(".swiper-main").removeClass("hidden");
         $(`#${id}.swiper`).removeClass("hidden");
@@ -279,7 +283,23 @@ jQuery(document).ready(function ($) {
         e.preventDefault();
         $(".swiper-main").addClass("hidden");
         $(".swiper-main .swiper").addClass("hidden");
-        $(".right-side-container").removeClass("transformRight");
+        if (!isMobile) $(".right-side-container").removeClass("transformRight");
+      });
+    }
+
+    toggleMap() {
+      let mapVisible = true;
+      $("#toggleMap").on("click", function (e) {
+        if (mapVisible) {
+          $("#chartdiv").hide();
+          $(this).text("Show Map");
+        } else {
+          $("#chartdiv").show(); // Show the map
+          $(this).text("Hide Map"); // Change button text
+        }
+
+        // Toggle the map visibility state
+        mapVisible = !mapVisible;
       });
     }
 

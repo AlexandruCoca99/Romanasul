@@ -16,6 +16,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
 
 <div class="background"></div>
 <div class="right-side-pop-up"></div>
+<button id="toggleMap">Hide Map</button>
 
 <div class="right-side-container ">
   <table>
