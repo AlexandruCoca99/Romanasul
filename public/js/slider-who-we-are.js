@@ -170,15 +170,32 @@ document.addEventListener("DOMContentLoaded", function () {
     ".member-content, .swiper-members-holder "
   );
 
-  const observerPhotos = createObserver("active", 0.5);
+  function isMobile() {
+    return window.matchMedia("(max-width: 767px)").matches;
+  }
 
-  const observerMembers = createObserver("fade-in", 0.7);
+  // Function to set observers based on screen size
+  function setObservers() {
+    // On mobile, you might want to change thresholds or behavior
+    const photoThreshold = isMobile() ? 0.3 : 0.5;
+    const memberThreshold = isMobile() ? 0.4 : 0.7;
 
-  photos.forEach((photo) => {
-    observerPhotos.observe(photo);
-  });
+    const observerPhotos = createObserver("active", photoThreshold);
+    const observerMembers = createObserver("fade-in", memberThreshold);
 
-  members.forEach((member) => {
-    observerMembers.observe(member);
+    photos.forEach((photo) => {
+      observerPhotos.observe(photo);
+    });
+
+    members.forEach((member) => {
+      observerMembers.observe(member);
+    });
+  }
+
+  setObservers();
+
+  // Recheck if window is resized (to handle resize from desktop to mobile or vice versa)
+  window.addEventListener("resize", function () {
+    setObservers();
   });
 });

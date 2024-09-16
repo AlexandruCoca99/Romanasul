@@ -1120,7 +1120,7 @@ label::before {
   align-items: center; /* Center horizontally */
   text-align: center; /* Optional: Center text inside the mission-wrapper */
   padding: 50px 0; /* Adjust padding as needed */
-  margin-left: 20px;
+  // margin-left: 20px;
 
   h2 {
     font-family: "Abhaya Libre", serif;
@@ -1422,8 +1422,56 @@ label::before {
   }
 
   .members-list {
-    transform: translateX(0%);
+    transform: translateX(0%) !important;
     flex-direction: column;
+
+    .member-content {
+      margin: auto;
+    }
+
+    h2 {
+      line-height: normal;
+    }
+  }
+
+  .members-presentation {
+    margin: auto 20px;
+  }
+
+  .swiper-choreographers,
+  .swiper-conductors,
+  .swiper-cultural-attaches,
+  .swiper-singers,
+  .swiper-collaborating-singers,
+  .swiper-collaborating-musicians,
+  .swiper-show-hosts {
+    width: 80svw;
+    // margin: auto 20px;
+
+    .swiper-slide img {
+      height: 30vh;
+      border-radius: 30px;
+      object-fit: cover;
+      margin: auto;
+      width: 73svw;
+    }
+  }
+
+  .swiper-members-holder {
+    width: auto;
+    margin: auto;
+
+    svg {
+      width: 40px;
+    }
+
+    .swiper-custom-nav-left {
+      left: -35px;
+    }
+
+    .swiper-custom-nav-right {
+      right: -35px;
+    }
   }
 }
 

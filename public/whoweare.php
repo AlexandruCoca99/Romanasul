@@ -62,21 +62,21 @@ include 'header.php';
                         <div class="swiper-choreographers" id="Choreographers">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <figure>
-                                        <img src="images\gallery\Membri\Coregrafi\florin-ciobanu.jpg" alt="afis" />
-                                    </figure>
+                                    <!-- <figure> -->
+                                    <img src="images\gallery\Membri\Coregrafi\florin-ciobanu.jpg" alt="afis" />
+                                    <!-- </figure> -->
                                 </div>
                                 <!-- end swiper-slide -->
                                 <div class="swiper-slide">
-                                    <figure>
-                                        <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Baietii din Romanasul.jpg" />
-                                    </figure>
+                                    <!-- <figure> -->
+                                    <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Baietii din Romanasul.jpg" />
+                                    <!-- </figure> -->
                                 </div>
                                 <!-- end swiper-slide -->
                                 <div class="swiper-slide">
-                                    <figure>
-                                        <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Dans de Codru.jpg" />
-                                    </figure>
+                                    <!-- <figure> -->
+                                    <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Dans de Codru.jpg" />
+                                    <!-- </figure> -->
                                 </div>
                                 <!-- end swiper-slide -->
                             </div>
@@ -124,21 +124,21 @@ include 'header.php';
                         <div class="swiper-conductors" id="Conductors">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <figure>
-                                        <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Afis-Barcelona.jpg" alt="afis" />
-                                    </figure>
+                                    <!-- <figure> -->
+                                    <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Afis-Barcelona.jpg" alt="afis" />
+                                    <!-- </figure> -->
                                 </div>
                                 <!-- end swiper-slide -->
                                 <div class="swiper-slide">
-                                    <figure>
-                                        <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Baietii din Romanasul.jpg" />
-                                    </figure>
+                                    <!-- <figure> -->
+                                    <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Baietii din Romanasul.jpg" />
+                                    <!-- </figure> -->
                                 </div>
                                 <!-- end swiper-slide -->
                                 <div class="swiper-slide">
-                                    <figure>
-                                        <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Dans de Codru.jpg" />
-                                    </figure>
+                                    <!-- <figure> -->
+                                    <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Dans de Codru.jpg" />
+                                    <!-- </figure> -->
                                 </div>
                                 <!-- end swiper-slide -->
                             </div>
