@@ -289,6 +289,18 @@ jQuery(document).ready(function ($) {
 
     toggleMap() {
       let mapVisible = true;
+      let dropdownOpen = false;
+      $(".dropdown-arrow").on("click", function () {
+        if (dropdownOpen) {
+          $(".dropdown-content").css("display", "none");
+          $(this).css("transform", "translateY(0)"); // Reset arrow translation
+        } else {
+          $(".dropdown-content").css("display", "block");
+          $(this).css("transform", "translateY(30px)"); // Translate arrow down by 30px
+        }
+        dropdownOpen = !dropdownOpen;
+      });
+
       $("#toggleMap").on("click", function (e) {
         if (mapVisible) {
           $("#chartdiv").hide();
