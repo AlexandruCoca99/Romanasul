@@ -305,9 +305,11 @@ jQuery(document).ready(function ($) {
         if (mapVisible) {
           $("#chartdiv").hide();
           $(this).text("Show Map");
+          $(".right-side-container").css("padding-top", "100px");
         } else {
           $("#chartdiv").show(); // Show the map
           $(this).text("Hide Map"); // Change button text
+          $(".right-side-container").css("padding-top", "0px");
         }
 
         // Toggle the map visibility state

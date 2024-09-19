@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
   //   };
 
   $(document).on("click", ".review-button", function () {
-    $(".container-reviews").removeClass("hidden");
+    $(".container-reviews-wrapper").removeClass("hidden");
     $(".review-overview").addClass("hidden");
   });
 });

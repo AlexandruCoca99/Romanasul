@@ -106,58 +106,62 @@ function generateStarRating($averageRating)
                     $date = htmlspecialchars($review['date']);
                     ?>
                     <div class="review">
+                        <p class="review-text"><?php echo $comment; ?></p>
                         <div class="review-header">
+
                             <div class="stars"><?php echo generateStarRating($rating); ?></div>
                             <span class="review-author">By <?php echo $name . ' ' . $surname; ?> on <?php echo $date; ?></span>
                         </div>
-                        <p class="review-text"><?php echo $comment; ?></p>
+
                     </div>
                 <?php endforeach; ?>
             </div>
 
         </div>
-        <div class="container-reviews hidden">
-            <!-- <div class="post hidden">
+        <div class="container-reviews-wrapper hidden">
+            <div class="container-reviews ">
+                <!-- <div class="post hidden">
                 <div class="text">Thanks for rating us!</div>
                 <button class="return-button">RETURN</button>
             </div> -->
-            <div class="star-widget">
+                <div class="star-widget">
 
-                <form action="reviewSection\app.php" method="POST">
-                    <div class="stars-wrapper">
-                        <input class="star-radio" type="radio" name="rating" id="rate-5" value="5" />
-                        <label for="rate-5" class=" review-star fa-solid fa-star"> </label>
-                        <input class="star-radio" type="radio" name="rating" id="rate-4" value="4" />
-                        <label for="rate-4" class="review-star fa-solid fa-star"></label>
-                        <input class="star-radio" type="radio" name="rating" id="rate-3" value="3" />
-                        <label for="rate-3" class="review-star fa-solid fa-star"></label>
-                        <input class="star-radio" type="radio" name="rating" id="rate-2" value="2" />
-                        <label for="rate-2" class="review-star fa-solid fa-star"></label>
-                        <input class="star-radio" type="radio" name="rating" id="rate-1" value="1" />
-                        <label for="rate-1" class="review-star fa-solid fa-star"></label>
-                    </div>
-                    <div class="description-content"></div>
-                    <!-- <div class="input-reviews-row-wrapper"> -->
-                    <!-- Input prenume -->
-                    <div class="input-reviews">
-                        <label class="name-label" for="name">Name</label>
-                        <!-- <i class="icon fa-solid fa-address-card"></i> -->
-                        <input class="name-input" type="text" name="name" class="contact-input" required>
-                    </div>
-                    <!-- Input nume -->
-                    <div class="input-reviews">
-                        <label class="name-label" for="surname">Surname</label>
-                        <!-- <i class="icon fa-solid fa-address-card"></i> -->
-                        <input class="name-input" type="text" name="surname" class="contact-input" required>
-                    </div>
-                    <!-- </div> -->
-                    <div class="textarea">
-                        <textarea name="comment" cols="30" placeholder="Describe your experience.."></textarea>
-                    </div>
-                    <div class="submit-button">
-                        <button type="submit" name="submit-button">Post</button>
-                    </div>
-                </form>
+                    <form action="reviewSection\app.php" method="POST">
+                        <div class="stars-wrapper">
+                            <input class="star-radio" type="radio" name="rating" id="rate-5" value="5" />
+                            <label for="rate-5" class=" review-star fa-solid fa-star"> </label>
+                            <input class="star-radio" type="radio" name="rating" id="rate-4" value="4" />
+                            <label for="rate-4" class="review-star fa-solid fa-star"></label>
+                            <input class="star-radio" type="radio" name="rating" id="rate-3" value="3" />
+                            <label for="rate-3" class="review-star fa-solid fa-star"></label>
+                            <input class="star-radio" type="radio" name="rating" id="rate-2" value="2" />
+                            <label for="rate-2" class="review-star fa-solid fa-star"></label>
+                            <input class="star-radio" type="radio" name="rating" id="rate-1" value="1" />
+                            <label for="rate-1" class="review-star fa-solid fa-star"></label>
+                        </div>
+                        <div class="description-content"></div>
+                        <!-- <div class="input-reviews-row-wrapper"> -->
+                        <!-- Input prenume -->
+                        <div class="input-reviews">
+                            <label class="name-label" for="name">Name</label>
+                            <!-- <i class="icon fa-solid fa-address-card"></i> -->
+                            <input class="name-input" type="text" name="name" class="contact-input" required>
+                        </div>
+                        <!-- Input nume -->
+                        <div class="input-reviews">
+                            <label class="name-label" for="surname">Surname</label>
+                            <!-- <i class="icon fa-solid fa-address-card"></i> -->
+                            <input class="name-input" type="text" name="surname" class="contact-input" required>
+                        </div>
+                        <!-- </div> -->
+                        <div class="textarea">
+                            <textarea name="comment" cols="30" placeholder="Describe your experience.."></textarea>
+                        </div>
+                        <div class="submit-button">
+                            <button type="submit" name="submit-button">Post</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
