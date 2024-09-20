@@ -165,5 +165,8 @@ function generateStarRating($averageRating)
             </div>
         </div>
     </div>
-    <?php get_footer(); ?>
+    <?php
+    include 'footer.php';
+    get_footer();
+    ?>
 </body>

@@ -87,6 +87,8 @@ include 'header.php';
             </div>
         </section>
     </main>
-
-    <?php get_footer(); ?>
+    <?php
+    include 'footer.php';
+    get_footer();
+    ?>
 </body>

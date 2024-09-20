@@ -14,6 +14,9 @@
             <li> <a href="contacts.php" class="scrollBtn <?php if ($page == 'contacts') echo 'selected'; ?>"><?php echo _("Contact Us") ?></a></li>
         </ul>
     </nav>
-    <div class="logo scrollBtn" title="Romanasul Cluj-Napoca"></div>
+    <a class="logo-img" href="home.php">
+        <div class="logo " title="Romanasul Cluj-Napoca">
+        </div>
+    </a>
     <!-- </div> -->
 </header>

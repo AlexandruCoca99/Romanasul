@@ -440,9 +440,8 @@ include 'header.php';
             </div>
         </div>
     </div>
+    <?php
+    include 'footer.php';
+    get_footer();
+    ?>
 </body>
-
-<?php
-
-get_footer();
-?>
