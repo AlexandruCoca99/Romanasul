@@ -101,6 +101,36 @@ section {
   margin: 0 auto;
 }
 
+// Loading spinner
+
+/* Spinner styles */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hide the body overflow when the spinner is visible */
+body.loading {
+  overflow: hidden;
+}
+
 /* Header section*/
 header {
   width: 100svw;
@@ -288,7 +318,7 @@ nav {
   .display(flex);
   .flex-direction(column);
   .align-items(center);
-  height: 100vh;
+  height: 95vh;
   width: 500px;
   background-color: @white;
   position: absolute;
@@ -310,6 +340,7 @@ nav {
     .flex-direction(column);
 
     .image-holder {
+      max-height: 60svh;
       border-radius: 20px;
       overflow: hidden;
 
@@ -454,7 +485,7 @@ nav {
     height: 20px;
     width: 30px;
     top: 115px;
-    left: 15px;
+    right: 15px;
     // background-color: #900;
     z-index: 10;
   }
@@ -468,6 +499,7 @@ nav {
   display: block;
   height: 80vh;
   /* height: 40rem; */
+  width: 100%;
   object-fit: cover;
   margin: auto;
   border-radius: 30px;
@@ -477,6 +509,7 @@ nav {
   position: relative;
   margin: 0;
   overflow: hidden;
+  margin-top: 4svh;
 }
 
 .swiper-custom-nav-left {
@@ -627,6 +660,12 @@ nav {
     border: none;
     cursor: pointer;
     border-radius: 10px;
+  }
+}
+
+@media (min-width: 800px) {
+  #toggleMap {
+    display: none;
   }
 }
 
@@ -1683,6 +1722,8 @@ label::before {
 }
 
 .gallery-wrapper {
+  height: 100svh;
+  background-color: wheat;
   .popup-img {
     position: fixed;
     top: 0;

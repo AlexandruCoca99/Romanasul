@@ -4,11 +4,13 @@ jQuery(document).ready(function ($) {
     console.log(id);
     //add slider
     $(`.gallery-wrapper.${id}-period`).removeClass("hidden");
+    $(".gallery-container").addClass("hidden");
   });
 
   $(".gallery-wrapper .close-button").on("click", function (e) {
     e.preventDefault();
     $(".gallery-wrapper").addClass("hidden");
+    $(".gallery-container").removeClass("hidden");
   });
 
   var images = $(".gallery-image-container img:not(:first)");

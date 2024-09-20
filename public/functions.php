@@ -63,6 +63,7 @@ function get_local_scripts()
     <script src="js/images.js"></script>
     <script src="js/reviews.js"></script>
     <script src="js/homepage.js"></script>
+    <script src="js/loader.js"></script>
 ';
 }
 
@@ -78,14 +79,22 @@ function get_header($title = "")
 
         ' . get_includes() . '
     </head>
-    <body>';
+    <body>
+    <!-- Loading Spinner -->
+    <div id="spinner" class="spinner"></div>
+
+    <div class="content-wrapper" style="display: none;">';
 }
 
 function get_footer()
 {
+
     echo '
+     </div> 
   
         ' . get_local_scripts() . '
+        
+       
     </body>
     </html>';
 }

@@ -250,7 +250,8 @@ jQuery(document).ready(function ($) {
 
     hideRightSideContainer() {
       $(".background").on("click", () => {
-        const isMobile = window.innerWidth <= 1000;
+        const isMobile = window.innerWidth <= 650;
+        console.log(isMobile);
         // Remove 'show' class from elements to hide them
         $(".right-side-pop-up").removeClass("show");
         $(".background").removeClass("show");
@@ -260,6 +261,7 @@ jQuery(document).ready(function ($) {
 
     // Method to display the right side container with country details
     displayRightSideContainer(countryData) {
+      const isMobile = window.innerWidth <= 650;
       $(".right-side-pop-up").addClass("show");
       $(".right-side-pop-up").html(this.renderRightSideContent(countryData));
       $(".background").addClass("show");
@@ -280,6 +282,7 @@ jQuery(document).ready(function ($) {
 
     closeSlider() {
       $(".swiper-main .close-button").on("click", function (e) {
+        const isMobile = window.innerWidth <= 650;
         e.preventDefault();
         $(".swiper-main").addClass("hidden");
         $(".swiper-main .swiper").addClass("hidden");

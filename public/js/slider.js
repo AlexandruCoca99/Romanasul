@@ -1,4 +1,4 @@
-new Swiper(".swiper", {
+const swiper = new Swiper(".swiper", {
   slidesPerView: 1.1,
   autoHeight: true,
   centeredSlides: true,
@@ -32,3 +32,15 @@ new Swiper(".swiper", {
     },
   },
 });
+
+function handleKeydown(event) {
+  // Check if the pressed key is "Escape"
+  if (event.key === "Escape") {
+    // Destroy the swiper instance
+    swiper.destroy();
+    console.log("Swiper closed with Escape key");
+  }
+}
+
+// Add keydown event listener to the document
+document.addEventListener("keydown", handleKeydown);
