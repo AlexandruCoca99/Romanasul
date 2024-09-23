@@ -57,7 +57,7 @@ include 'header.php';
                     </div>
                 </div>
                 <div class="left">
-                    <div class="form-wrapper-left">
+                    <!-- <div class="form-wrapper-left">
                         <button class="button">
                             <div class="icon-holder phone ">
                                 <i class="icon-phone fa-solid fa-phone "></i>
@@ -81,6 +81,23 @@ include 'header.php';
                                 <a href="#"><i class="fab fa-instagram"></i></a>
                                 <a href="#"><i class="fab fa-youtube"></i></a>
                             </div>
+                        </div>
+                    </div> -->
+                    <div class="contact-card">
+                        <h2>Contact Information</h2>
+
+                        <div class="contact-details">
+                            <p><i class="fa fa-phone"></i> (+40) 0751356714</p>
+                            <p><i class="fa fa-envelope"></i> neneaLuci@romanasul.ro</p>
+                            <p><i class="fa fa-map-marker"></i> Observator Student Complex, Strada Observatorului 34, Cluj-Napoca</p>
+                        </div>
+
+                        <div class="social-icons">
+                            <h3>Find us on social media</h3>
+                            <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok fa-lg"></i></a>
                         </div>
                     </div>
                 </div>
