@@ -735,6 +735,19 @@ nav {
   z-index: 3;
 }
 
+@media (min-width: 800px) {
+  .contact {
+    background-position: 28%;
+  }
+  .right {
+    margin: 26rem 2rem 2rem;
+  }
+
+  .left {
+    display: none;
+  }
+}
+
 .contact-heading h1 {
   font-weight: 600;
   font-size: 3.5rem;
@@ -2224,7 +2237,7 @@ label::before {
   position: absolute;
   left: 12%;
   top: 12%;
-  z-index: 10;
+  z-index: 3;
   color: white;
 }
 .swiper-homepage-wrapper button {
@@ -2511,17 +2524,22 @@ label::before {
   justify-content: center;
   align-items: center;
   height: 50vh;
-  background: black;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/4.-Zilele-prieteniei/Banat 2.jpg ");
 
   .countdown-container {
     text-align: center;
     color: white;
+    margin-left: 10svw;
+    transform: translateY(-50%);
   }
 
   h1 {
     margin: 0;
     font-size: 2rem;
     letter-spacing: 2px;
+    margin-bottom: 10px;
   }
 
   h2 {
@@ -2542,7 +2560,7 @@ label::before {
     background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 10px;
-    width: 80px;
+    width: 6.5svw;
     text-align: center;
   }
 
