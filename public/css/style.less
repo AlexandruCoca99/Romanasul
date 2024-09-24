@@ -710,7 +710,7 @@ nav {
   // background-color: var(--bg-color);
   background: url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/4.-Zilele-prieteniei/Poza-misto-alb-negru_2.jpg");
   background-size: cover;
-  // background-repeat: no-repeat;
+  background-position: 28%;
 }
 
 .container-form {
@@ -735,10 +735,7 @@ nav {
   z-index: 3;
 }
 
-@media (min-width: 800px) {
-  .contact {
-    background-position: 28%;
-  }
+@media (max-width: 800px) {
   .right {
     margin: 26rem 2rem 2rem;
   }
@@ -930,7 +927,74 @@ textarea.contact-input ~ .icon {
 
 .left {
   width: 100%;
-  margin-top: 23rem;
+  // padding: 65px 0 0;
+  margin-top: 18rem;
+
+  .contact-card {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 27svw;
+    // background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    color: white;
+    // backdrop-filter: blur(10px); /* Glass effect */
+    // -webkit-backdrop-filter: blur(10px); /* For Safari */
+    // border-radius: 10px;
+    // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    // border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for glass effect */
+  }
+
+  .contact-card h2 {
+    font-size: 2rem;
+    margin: 3rem auto 4rem 0;
+  }
+
+  .contact-card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .contact-details i {
+    margin-right: 8px;
+  }
+
+  .contact-details p {
+    margin: 10px 0;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons .fa-brands {
+    color: white;
+    scale: 1;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.6s;
+    transition: 0.3s;
+  }
+
+  .social-icons {
+    .fa-facebook:hover {
+      color: #1877f2;
+      scale: 1.5;
+    }
+    .fa-youtube:hover {
+      color: #ff0000;
+      scale: 1.5;
+    }
+    .fa-instagram:hover {
+      color: #d6249f;
+      scale: 1.5;
+    }
+    .fa-tiktok:hover {
+      color: #25f4ee;
+      scale: 1.5;
+    }
+  }
 }
 
 .form-wrapper-left {
