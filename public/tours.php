@@ -908,81 +908,40 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
     <!-- end swiper -->
 
     <!-- //////////////////////////////////////////////////////////////// -->
-    <!-- Portugal 2024 SWIPER -->
+    <!-- Portugalia SWIPER -->
 
     <div class="swiper hidden" id="PT-2024">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
+          <div class="swiper-slide">
+            <figure>
+              <img src="images/Poze-romanasul/1.Turnee/Portugalia 2024/afis portugalia.jpg" />
+            </figure>
+          </div>
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Portugalia-2019/Afis-Portugalia.jpg" alt="afis" />
+            <img src="images/Poze-romanasul/1.Turnee/Portugalia 2024/Colaj baieti.jpg" alt="afis" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Portugalia-2019/Baieti.jpg" />
+            <img src="images/Poze-romanasul/1.Turnee/Portugalia 2024/colaj baieti +fete.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Portugalia-2019/Colaj.jpg" />
+            <img src="images/Poze-romanasul/1.Turnee/Portugalia 2024/poza la mare.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img
-              src="images/Poze-romanasul/1.Turnee/Portugalia-2019/Dans din Fagaras.jpg" />
+            <img src="images/Poze-romanasul/1.Turnee/Portugalia 2024/poza de grup la statuie.jpg" alt="afis" />
           </figure>
         </div>
-        <!-- end swiper-slide -->
-        <div class="swiper-slide">
-          <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Portugalia-2019/Hora.jpg" />
-          </figure>
-        </div>
-        <!-- end swiper-slide -->
-        <div class="swiper-slide">
-          <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Portugalia-2019/Matosinhos show 2019.jpg" />
-          </figure>
-        </div>
-        <!-- end swiper-slide -->
-        <div class="swiper-slide">
-          <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Portugalia-2019/Orchestra Portugalia.jpg" />
-          </figure>
-        </div>
-        <div class="swiper-slide">
-          <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Portugalia-2019/Porto final turneu.jpg" />
-          </figure>
-        </div>
-        <!-- end swiper-slide -->
-        <div class="swiper-slide">
-          <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Portugalia-2019/Poza de grup in civil.jpg" />
-          </figure>
-        </div>
-        <!-- end swiper-slide -->
-        <div class="swiper-slide">
-          <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Portugalia-2019/Poza de grup.jpg" />
-          </figure>
-        </div>
-        <!-- end swiper-slide -->
-        <div class="swiper-slide">
-          <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Portugalia-2019/Romanasii impreuna cu oficialitatile si organizatorul.jpg" />
-          </figure>
-        </div>
-        <!-- end swiper-slide -->
-        <div class="swiper-slide">
-          <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Portugalia-2019/Schema smechera Fagaras.jpg" />
-          </figure>
-        </div>
+
+
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
