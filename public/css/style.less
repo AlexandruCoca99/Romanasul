@@ -2297,16 +2297,16 @@ label::before {
 }
 
 .swiper-homepage-wrapper h1 {
-  font-size: 8svw;
+  font-size: 6rem;
   position: absolute;
   left: 12%;
-  top: 12%;
+  top: 22%;
   z-index: 3;
   color: white;
 }
 .swiper-homepage-wrapper button {
   position: absolute;
-  z-index: 10;
+  z-index: 3;
   left: 17%;
   bottom: 22%;
   transform: translateX(-50%);
@@ -2363,6 +2363,9 @@ label::before {
   .homepage-about-us-image {
     width: 100%;
     margin: 1rem;
+  }
+  .swiper-homepage-wrapper h1 {
+    font-size: 3rem;
   }
 }
 .fixed-background-image-container {
@@ -2595,7 +2598,7 @@ label::before {
   .countdown-container {
     text-align: center;
     color: white;
-    margin-left: 10svw;
+    // margin-left: 10svw;
     transform: translateY(-50%);
   }
 
@@ -2625,18 +2628,26 @@ label::before {
     padding: 20px;
     border-radius: 10px;
     width: 6.5svw;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .countdown-element span {
     display: block;
     font-size: 2rem;
     font-weight: bold;
+    padding-bottom: 10px;
   }
 
   .countdown-element p {
     margin: 0;
     font-size: 1rem;
+  }
+}
+@media (max-width: 650px) {
+  .countdown-element {
+    width: 17.5svw !important;
   }
 }
 

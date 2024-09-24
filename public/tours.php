@@ -1785,63 +1785,68 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
     </div>
     <!-- end swiper -->
 
+
+    <!-- //////////////////////////////////////////////////////////////// -->
+    <!-- Albania SWIPER -->
+
+    <div class="swiper hidden" id="AL-2024">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Afis.jpg" alt="afis" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Ariana si Andrei.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Colaj.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Inmanarea trofeului.jpg" alt="afis" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Parada.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Poza de grup cu coordonatorii.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Poza la statuie.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Sergiu rade.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+      </div>
+    </div>
+    <!-- end swiper-wrapper -->
+    <?php get_custom_nav() ?>
   </div>
   <!-- end container -->
 </section>
-<!-- //////////////////////////////////////////////////////////////// -->
-<!-- Albania SWIPER -->
 
-<div class="swiper hidden" id="AL-2024">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <figure>
-        <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Afis.jpg" alt="afis" />
-      </figure>
-    </div>
-    <!-- end swiper-slide -->
-    <div class="swiper-slide">
-      <figure>
-        <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Ariana si Andrei.jpg" />
-      </figure>
-    </div>
-    <!-- end swiper-slide -->
-    <div class="swiper-slide">
-      <figure>
-        <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Colaj.jpg" />
-      </figure>
-    </div>
-    <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Inmanarea trofeului.jpg" alt="afis" />
-    </figure>
-  </div>
-  <!-- end swiper-slide -->
-  <div class="swiper-slide">
-    <figure>
-      <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Parada.jpg" />
-    </figure>
-  </div>
-  <!-- end swiper-slide -->
-  <div class="swiper-slide">
-    <figure>
-      <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Poza de grup cu coordonatorii.jpg" />
-    </figure>
-  </div>
-  <div class="swiper-slide">
-    <figure>
-      <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Poza la statuie.jpg" />
-    </figure>
-  </div>
-  <div class="swiper-slide">
-    <figure>
-      <img src="images/Poze-romanasul/1.Turnee/Albania 2024/Sergiu rade.jpg" />
-    </figure>
-    <!-- end swiper-slide -->
-    <
-      <!-- end swiper-slide -->
-  </div>
-  <!-- end swiper-wrapper -->
-  <!-- end swiper-slide -->
-</div>
-<!-- end swiper-wrapper -->
 
 <footer></footer>
 

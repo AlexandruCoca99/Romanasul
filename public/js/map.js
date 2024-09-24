@@ -703,6 +703,7 @@ jQuery(document).ready(function ($) {
       value: 39,
       zoomLevel: 45,
       title: "Albania",
+      buttons: ["AL-2024"],
     },
   ];
   const map = new MapManager(
