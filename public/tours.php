@@ -1844,6 +1844,47 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
     <!-- end swiper-wrapper -->
     <?php get_custom_nav() ?>
   </div>
+  <!-- end swiper -->
+  <!-- //////////////////////////////////////////////////////////////// -->
+  <!-- Portugalia SWIPER -->
+
+  <div class="swiper hidden" id="PT-2024">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Portugalia 2024/afis portugalia.jpg" />
+          </figure>
+        </div>
+        <figure>
+          <img src="images/Poze-romanasul/1.Turnee/Portugalia 2024/Colaj baieti.jpg" alt="afis" />
+        </figure>
+      </div>
+      <!-- end swiper-slide -->
+      <div class="swiper-slide">
+        <figure>
+          <img src="images/Poze-romanasul/1.Turnee/Portugalia 2024/colaj baieti +fete.jpg" />
+        </figure>
+      </div>
+      <!-- end swiper-slide -->
+      <div class="swiper-slide">
+        <figure>
+          <img src="images/Poze-romanasul/1.Turnee/Portugalia 2024/poza la mare.jpg" />
+        </figure>
+      </div>
+      <!-- end swiper-slide -->
+      <div class="swiper-slide">
+        <figure>
+          <img src="images/Poze-romanasul/1.Turnee/Portugalia 2024/poza de grup la statuie.jpg" alt="afis" />
+        </figure>
+      </div>
+
+      <!-- end swiper-slide -->
+    </div>
+  </div>
+  <!-- end swiper-wrapper -->
+  <?php get_custom_nav() ?>
+  </div>
   <!-- end container -->
 </section>
 
