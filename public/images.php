@@ -1,7 +1,9 @@
 <?php $page = "images";
-include 'header.php';
 include 'functions.php';
+
 get_header("Images");
+include 'header.php';
+
 ?>
 
 
@@ -37,6 +39,8 @@ get_header("Images");
         <div class="gallery-image-wrapper">
             <div class="gallery-image-container">
                 <a href="#" class="close-button"><img src="images/close-red-icon.svg" /></a>
+
+
                 <div class="image1">
                     <img src="images\gallery\pozeVechi\1986_ceterasi3.jpg" alt="" />
                 </div>
@@ -75,7 +79,9 @@ get_header("Images");
             </div>
         </div>
         <div class="popup-img">
-            <img src="" alt="">
+            <a class="prev " onclick="changeSlide(-1)">&#10094;</a>
+            <img src="" alt="Popup Image" />
+            <a class="next " onclick="changeSlide(1)">&#10095;</a>
         </div>
     </div>
 
