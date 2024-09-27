@@ -1815,7 +1815,7 @@ label::before {
     z-index: 200;
     display: none;
 
-    img {
+    .popup-image-content {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -1828,12 +1828,30 @@ label::before {
     }
 
     @media (max-width: 770px) {
-      img {
+      .popup-image-content {
         width: 95%;
       }
     }
+
+    .close-button {
+      img {
+        position: absolute;
+        height: 35px;
+        width: auto;
+        top: 20px;
+        right: 15px;
+        z-index: 10;
+      }
+    }
+
+    .background {
+      height: 100vh;
+      position: initial;
+      display: block;
+      background-color: transparent;
+    }
   }
-  .close-button {
+  .close-button-container {
     position: absolute;
     height: 35px;
     width: auto;
@@ -1859,6 +1877,7 @@ label::before {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   transition: background-color 0.3s ease;
+  z-index: 1;
   // display: none;
 }
 

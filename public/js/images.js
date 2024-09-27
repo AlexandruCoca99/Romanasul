@@ -6,46 +6,57 @@ $(document).on("click", ".time-period-container", function () {
   $(".gallery-container").addClass("hidden");
 });
 
-$(".gallery-wrapper .close-button").on("click", function (e) {
+$(".gallery-wrapper .close-button-container").on("click", function (e) {
   e.preventDefault();
   $(".gallery-wrapper").addClass("hidden");
   $(".gallery-container").removeClass("hidden");
 });
+
 let currentImageIndex = 0;
+let closeButtonIndex = 0;
 var images = $(".gallery-image-container img:not(:first)");
-// console.log(images);
+
+function getVisibleGalleryImages() {
+  return $(".gallery-wrapper:not(.hidden) .gallery-image-container img");
+}
+
 // You can now manipulate the images as needed
 images.on("click", function () {
-  var imgSrc = $(this).attr("src"); // Get the src of the clicked image
-  currentImageIndex = images.index(this); // Get the index of the clicked image
+  const visibleImages = getVisibleGalleryImages(); // Get visible images
+  currentImageIndex = visibleImages.index(this); // Set the current index
+
+  var imgSrc = $(this).attr("src");
+  // currentImageIndex = images.index(this);
   if (imgSrc !== "images/close-red-icon.svg") {
-    $(".popup-img img").attr("src", imgSrc); // Change the src of the popup image
-    $(".popup-img").css("display", "block"); // Display the popup image container
-    // $(".prev").css("display", "block");
-    // $(".next").css("display", "block");
+    $(".popup-img .popup-image-content").attr("src", imgSrc); // Change the src of the popup image
+    $(".popup-img").css("display", "block");
   }
 });
 
 // Bind a click event to the close button to hide the popup image
-$(".popup-img ").on("click", function () {
-  // $(this).css("display", "none"); // Hide the popup image container
-  // $(".prev").hide();
-  // $(".next").hide();
+$(".popup-img .close-button").on("click", function () {
+  $(".popup-img").css("display", "none");
+});
+
+$(".background").on("click", function () {
+  $(".popup-img").css("display", "none");
 });
 
 // Function to change slides in the popup
 function changeSlide(n) {
+  const visibleImages = getVisibleGalleryImages(); // Get visible images
   currentImageIndex += n;
-
   // If the index exceeds the number of images, loop back
-  if (currentImageIndex >= images.length) {
+
+  if (currentImageIndex >= visibleImages.length) {
     currentImageIndex = 0;
   }
   if (currentImageIndex < 0) {
-    currentImageIndex = images.length - 1;
+    currentImageIndex = visibleImages.length - 1;
   }
 
   // Change the popup image to the new one based on currentImageIndex
-  const newSrc = $(images[currentImageIndex]).attr("src");
-  $(".popup-img img").attr("src", newSrc);
+  const newSrc = $(visibleImages[currentImageIndex]).attr("src");
+  if (newSrc !== "images/close-red-icon.svg")
+    $(".popup-img .popup-image-content").attr("src", newSrc);
 }
