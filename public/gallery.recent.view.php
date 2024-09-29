@@ -1,6 +1,6 @@
 <?php include 'functions.php';
 get_header("Recent galley");
-include 'header.php' ?>
+?>
 
 <div class="gallery-wrapper recent-period ">
     <div class="gallery-image-wrapper">

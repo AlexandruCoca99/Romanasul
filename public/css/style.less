@@ -1726,7 +1726,7 @@ label::before {
 
     h2 {
       // background-color: white;
-      color: wheat;
+      color: rgb(255, 255, 255);
       font-size: 55px;
       line-height: 66px;
       padding: 10px;
@@ -1790,16 +1790,16 @@ label::before {
 // Masonry gallery
 .gallery-image-container {
   border-style: solid;
-  background-color: wheat;
+  // background-color: wheat;
   position: absolute;
   top: 0;
   // top: 50%;
   // left: 50%;
   // transform: translate(-50%, -50%) scale(0);
   margin: 0px auto;
-  padding: 50px 8%;
-  columns: 4 250px;
-  gap: 30px;
+  // padding: 50px 8%;
+  columns: 4 20rem;
+  gap: 8px;
   z-index: 100;
   // opacity: 0;
   // visibility: hidden;
@@ -1807,10 +1807,10 @@ label::before {
 
   div:not(:first-child) {
     width: 100%;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    border: 10px solid #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    // margin-bottom: 10px;
+    // border-radius: 20px;
+    // border: 10px solid #fff;
+    // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     overflow: hidden;
   }
@@ -1829,7 +1829,7 @@ label::before {
 
 .gallery-wrapper {
   height: 100svh;
-  background-color: wheat;
+  // background-color: wheat;
   .popup-img {
     position: fixed;
     top: 0;
@@ -1845,9 +1845,9 @@ label::before {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      border: 10px solid #fff;
+      // border: 10px solid #fff;
       border-radius: 5px;
-      max-width: 750px;
+      width: 60%;
       // height: 100vh;
       object-fit: cover;
     }
@@ -2331,6 +2331,11 @@ label::before {
 
 .home-content-wrapper {
   margin: auto 5svw;
+  p {
+    font-size: 1.2rem;
+    line-height: normal;
+    text-align: center;
+  }
 }
 
 .swiper-homepage-wrapper {
@@ -2544,6 +2549,10 @@ label::before {
 .tours-short-content {
   max-width: 400px;
   margin-left: 40px;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tours-short-content h1 {
@@ -2554,10 +2563,9 @@ label::before {
 }
 
 .tours-short-content p {
-  font-size: 16px;
+  // font-size: 16px;
   margin-bottom: 30px;
   // color: #555;
-  line-height: normal;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2662,7 +2670,7 @@ label::before {
   justify-content: center;
   align-items: center;
   height: 50vh;
-  background-position: center;
+  background-position-y: 67%;
   background-size: cover;
   background-image: url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/4.-Zilele-prieteniei/Banat 2.jpg ");
 
