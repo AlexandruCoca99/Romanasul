@@ -19,9 +19,9 @@ include 'header.php';
 
     <div class="homepage-about-us-wrapper">
         <div class="about-us-short">
-            <h1>ABOUT US</h1>
-            <p>Founded in 1974, initiated by a group of students from the Polytechnic Institute of Cluj-Napoca, coordinated by prof. Teodor NILAS. Since 1979, we enjoy a fruitful collaboration with Prof. Dumitru POP, with the Language Faculty of the Cluj-Napoca Babes-Bolyai University.</p>
-            <button><a href="whoweare.php">Learn more</a></button>
+            <h1>DESPRE NOI</h1>
+            <p>Ansamblul folcloric studenţesc “Românaşul” a luat fiinţă în primăvara anului 1974 în cadrul Clubului Cultural Studenţesc al Universităţii Tehnice din Cluj-Napoca. Iniţiat de un grup de studenţi (Ioan Dragoş - solist vocal, Octavian Corcheş - solist instrumentist şi dansatorii: Alexa Sînă, Petru Nistor, Vasile Titan, Nicolae Botiza, Alexandru Ortan, Andrei Chima, Susana Neamţu, Aurora Bucur, Cristina Mureşan, Maria Dit şi Florica Bădilă) coordonat de profesorul Teodor NILAŞ.</p>
+            <button><a href="whoweare.php">Mai multe →</a></button>
         </div>
         <img class="homepage-about-us-image" src="images\Poze-romanasul\2.Evenimente\1.Spectacole\4.-Zilele-prieteniei\Multumiri.jpg" alt="">
     </div>
@@ -29,8 +29,7 @@ include 'header.php';
 
 
     <div class="swiper-homepage-wrapper">
-        <h1>Gallery</h1>
-        <button><a href="images.php">Learn more</a></button>
+        <h1><a href="images.php">GALERIE</a></h1>
         <div class="swiper-homepage">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -78,53 +77,53 @@ include 'header.php';
             <div class="grid-item">
                 <img src="images\Poze-romanasul\1.Turnee\Franta-2021\Afis.jpg" alt="France">
                 <div class="header-container tours-homepage">
-                    <h3>France 2022</h3>
+                    <h3>Franța 2022</h3>
                 </div>
                 <!-- <p>France text</p> -->
             </div>
             <div class="grid-item">
                 <img src="images\Poze-romanasul\1.Turnee/Finlanda-2022/Afis.jpg" alt="Morocco">
                 <div class="header-container tours-homepage finland">
-                    <h3>Finland 2021</h3>
+                    <h3>Finlanda 2021</h3>
                 </div>
                 <!-- <p>Morocco text</p> -->
             </div>
         </div>
         <div class="tours-short-content">
-            <h1>Tours abroad</h1>
-            <p>Our ensemble has had the honor of participating in prestigious tours around the world, including in Canada, Dubai, Morocco, and Finland. Since 1979, we have received the title of Laureate in every edition of the student's folkloric festivals that we have taken part in, and of important cultural meanings in Europe, North America, Africa, and Asia. Over the years, we have won 36 First Prizes, 12 Second Prizes, 2 Third Prizes, 3 Gold Medals, 2 Silver Medals, and 1 Bronze Medal, along with numerous Special Prizes, Honorary Plaquettes and Diplomas, Excellence Diplomas, and Merit Diplomas.</p>
-            <a href="tours.php" class="explore-button">Explore All →</a>
+            <h1>TURNEE</h1>
+            <p>Ansamblul nostru a avut onoarea de a participa la turnee prestigioase în întreaga lume, inclusiv în Canada, Dubai, Maroc și Finlanda. Din 1979, am primit titlul de Laureat la fiecare ediție a festivalurilor folclorice studențești la care am participat, precum și la evenimente culturale importante din Europa, America de Nord, Africa și Asia. De-a lungul anilor, am câștigat 36 de Premii I, 12 Premii II, 2 Premii III, 3 Medalii de Aur, 2 Medalii de Argint și 1 Medalie de Bronz, alături de numeroase Premii Speciale, Plachete și Diplome de Onoare, Diplome de Excelență și Diplome de Merit.</p>
+            <button><a href="tours.php" class="explore-button">Mai multe →</a></button>
         </div>
     </div>
     <div class="repertoriu-container">
         <div class="fixed-background-image-container">
             <!-- <div class="overlay"></div> -->
-            <h2>În repertoriul ansamblului se regăsesc dansuri populare din Transilvania, Moldova, Oltenia, Muntenia, Banat, Dobrogea</h2>
-            <a href="repertoriu.php" class="explore-button">Explore All →</a>
+            <h2>În repertoriul ansamblului se regăsesc coregrafii de dans popular din Campia Transilvaniei, Moldova, Oltenia, Banat, Nasaud, Maramures, Bihor</h2>
+            <button><a href="repertoriu.php" class="explore-button">Mai multe →</a></button>
         </div>
     </div>
 
 
     <div class="countdown-container-background">
         <div class="countdown-container">
-            <h1>COUNTDOWN TO</h1>
-            <h2>ROMANASUL'S 50 YEAR ANIVERSARY</h2>
+            <h1>TIMP RĂMAS</h1>
+            <h2>PÂNA LA ANIVERSAREA DE 50 DE ANI A ROMÂNAȘULUI</h2>
             <div class="countdown">
                 <div class="countdown-element">
                     <span id="days"></span>
-                    <p>Days</p>
+                    <p>Zile</p>
                 </div>
                 <div class="countdown-element">
                     <span id="hours"></span>
-                    <p>Hours</p>
+                    <p>Ore</p>
                 </div>
                 <div class="countdown-element">
                     <span id="minutes"></span>
-                    <p>Minutes</p>
+                    <p>Minute</p>
                 </div>
                 <div class="countdown-element">
                     <span id="seconds"></span>
-                    <p>Seconds</p>
+                    <p>Secunde</p>
                 </div>
             </div>
         </div>
@@ -133,7 +132,7 @@ include 'header.php';
 
     <div class="homepage-reviews-wrapper">
         <h2 class="section-title">
-            Customer's <span class="highlight">Review</span>
+            <span class="highlight"><a href="reviews.view.php">Recenzii</a></span>
         </h2>
         <div class="homepage-reviews-container">
             <div class="review-card">

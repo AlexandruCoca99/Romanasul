@@ -1,34 +1,37 @@
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-content">
-            <div class="footer-section">
+            <!-- <div class="footer-section">
                 <img src="images/withoutBlueSpecific.png" alt="Logo" class="footer-logo" />
                 <p>
                     Founded in 1974, initiated by a group of students from the Polytechnic Institute of Cluj-Napoca,
                     coordinated by prof. Teodor NILAS.
                 </p>
-            </div>
+            </div> -->
             <div class="footer-section">
-                <h3>Meniu</h3>
+                <h3>MENIU</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Who we are</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Tours</a></li>
-                    <li><a href="#">Repertorium</a></li>
-                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Acasa</a></li>
+                    <li><a href="#">Cine suntem</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">Turnee</a></li>
+                    <li><a href="#">Repertoriu</a></li>
+                    <li><a href="#">Recenzii</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section combined">
-                <h3>Informații</h3>
+                <h3>INFORMAȚII</h3>
                 <ul>
-                    <li><span class="icon-location"></span>Cluj-Napoca</li>
-                    <li><span class="icon-phone"></span>0721933683</li>
-                    <li><span class="icon-mail"></span>nenealuci@gmail.com</li>
+                    <li><span class="icon-location"></span>Dirijor: ALEX HATFA</li>
+                    <li><span class="icon-phone"></span>0736 040 846</li>
+                    <li><span class="icon-location"></span>Coregraf: EUGEN NICOARA</li>
+                    <li><span class="icon-phone"></span>0745 538 682</li>
+                    <li><span class="icon-location"></span>Director artistic: LUCIAN REVNIC</li>
+                    <li><span class="icon-phone"></span>0733 115 251</li>
                 </ul>
                 <div class="social-section">
-                    <h3>Ne Găsești pe:</h3>
+                    <h3>NE GASESTI AICI:</h3>
                     <div class="social-icons">
                         <a href="https://facebook.com" target="_blank" class="social-icon facebook">
                             <i class="fab fa-facebook-f"></i>
@@ -62,7 +65,7 @@
         </div>
         <div class="footer-bottom">
             <div class="whatsapp">
-                <a href="https://wa.me/0721933683" class="float" target="_blank">
+                <a href="https://wa.me/0733115251" class="float" target="_blank">
                     <i class="fa-brands fa-whatsapp"> </i>
                 </a>
                 <!-- <span class="tooltip-text">Contact us on WhatsApp</span> -->
