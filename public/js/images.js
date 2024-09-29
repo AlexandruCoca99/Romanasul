@@ -1,16 +1,17 @@
+const id = 0;
 $(document).on("click", ".time-period-container", function () {
-  const id = $(this).attr("id");
-  console.log(id);
+  id = $(this).attr("id");
+
   //add slider
   $(`.gallery-wrapper.${id}-period`).removeClass("hidden");
-  $(".gallery-container").addClass("hidden");
+  // $(".gallery-container").addClass("hidden");
 });
-
-$(".gallery-wrapper .close-button-container").on("click", function (e) {
-  e.preventDefault();
-  $(".gallery-wrapper").addClass("hidden");
-  $(".gallery-container").removeClass("hidden");
-});
+console.log(id);
+// $(".gallery-wrapper .close-button-container").on("click", function (e) {
+//   e.preventDefault();
+//   $(".gallery-wrapper").addClass("hidden");
+//   $(".gallery-container").removeClass("hidden");
+// });
 
 let currentImageIndex = 0;
 let closeButtonIndex = 0;

@@ -101,6 +101,10 @@ section {
   margin: 0 auto;
 }
 
+a:visited {
+  color: white;
+}
+
 // Loading spinner
 
 /* Spinner styles */
@@ -1316,7 +1320,7 @@ label::before {
   // margin-left: 20px;
 
   h2 {
-    font-family: "Abhaya Libre", serif;
+    // font-family: "Abhaya Libre", serif;
     font-size: 50px;
     font-style: italic;
     padding-bottom: 35px;
@@ -1368,7 +1372,7 @@ label::before {
 }
 
 .who-we-are-container {
-  font-family: "Abhaya Libre", serif;
+  // font-family: "Abhaya Libre", serif;
   background: url("../images/Poze-romanasul/background-wea.jpg"); /* Setează imaginea de fundal */
 }
 
@@ -1448,12 +1452,33 @@ label::before {
   align-items: flex-start;
   justify-content: space-around;
   flex-direction: row;
+
+  table {
+    width: 80svw;
+    border-spacing: 1rem;
+    border-collapse: unset;
+
+    tbody {
+      font-size: 2rem;
+      line-height: normal;
+    }
+  }
 }
 
+#Collaborating-singers {
+  flex-direction: column;
+
+  .member-content {
+    margin: auto;
+  }
+
+  .swiper-members-holder {
+    margin: auto;
+  }
+}
 .members-list:nth-of-type(2n) {
   flex-direction: row-reverse;
 }
-
 .member-content {
   display: flex;
   // justify-content: space-between; /* Ensure content is spaced between the left and right edges */
@@ -2338,24 +2363,25 @@ label::before {
 
 .about-us-short button,
 .swiper-homepage-wrapper button,
-.tours-short button {
-  background-color: #000000;
-  color: #f1c40f;
+.tours-short-content button,
+.repertoriu-container button {
+  background-color: maroon;
+  color: #ffffff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Add shadow for a 3D effect */
+
   transition: background-color 0.3s ease;
   cursor: pointer;
 
   a:visited {
-    color: #f1c40f;
+    color: white;
   }
 }
 
 .swiper-homepage-wrapper h1 {
-  font-size: 6rem;
+  font-size: 4svw;
   position: absolute;
   left: 12%;
   top: 22%;
@@ -2372,14 +2398,12 @@ label::before {
 
 .homepage-about-us-wrapper,
 .homepage-tours-wrapper {
-  margin: 10svh auto; /* Use viewport height for margins */
+  // margin: 10svh auto; /* Use viewport height for margins */
   padding: 5svw; /* Use viewport width for padding */
   display: flex;
   // flex-direction: column; /* Stack content vertically for smaller screens */
   align-items: center;
   justify-content: space-around;
-  background-color: #f8f8f8;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .about-us-short {
@@ -2427,7 +2451,7 @@ label::before {
   }
 }
 .fixed-background-image-container {
-  height: 50svh;
+  height: 30svh;
   text-align: center;
   align-content: center;
   background-position: center;
@@ -2436,9 +2460,10 @@ label::before {
   background-attachment: fixed;
 
   h2 {
-    font-size: 4vw;
+    font-size: 2.5vw;
     color: #610404;
     line-height: normal;
+    margin-bottom: 2rem;
   }
 }
 
@@ -2449,6 +2474,7 @@ label::before {
   grid-template-columns: repeat(2, 1fr);
   // gap: 20px;
   justify-items: center;
+  transform: translateY(6%);
 }
 
 .grid-item {
@@ -2460,7 +2486,7 @@ label::before {
 }
 
 .grid-item img {
-  max-width: 21rem;
+  width: 21rem;
   height: 12rem;
   object-fit: cover;
   margin-bottom: 20px;
@@ -2495,12 +2521,12 @@ label::before {
   }
 }
 
-.header-container.finland {
-  width: 17rem;
-  h3 {
-    font-size: 25px;
-  }
-}
+// .header-container.finland {
+//   width: 17rem;
+//   h3 {
+//     font-size: 25px;
+//   }
+// }
 
 .grid-item:hover .header-container {
   opacity: 1;
@@ -2521,30 +2547,17 @@ label::before {
 }
 
 .tours-short-content h1 {
-  font-size: 4rem;
-  margin-bottom: 20px;
+  font-size: 4svw;
+  color: black;
+  margin-bottom: 2rem;
   line-height: 1.2;
 }
 
 .tours-short-content p {
   font-size: 16px;
   margin-bottom: 30px;
-  color: #555;
-}
-
-.explore-button {
-  display: inline-block;
-  padding: 12px 25px;
-  background-color: #c0bdf5;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 14px;
-  transition: all 0.4s ease;
-}
-
-.explore-button:hover {
-  background-color: #7775a5;
+  // color: #555;
+  line-height: normal;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2583,7 +2596,7 @@ label::before {
 }
 
 .highlight {
-  background-color: #1da060;
+  background-color: maroon;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -2738,12 +2751,14 @@ label::before {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   h3 {
-    color: maroon;
-    margin-bottom: 15px;
-    font-size: 2rem;
+    color: white;
+    // margin-bottom: 15px;
+    font-size: 1.2rem;
     text-align: center;
+    font-weight: bold;
   }
 
   ul {
@@ -2864,8 +2879,10 @@ iframe {
   font-size: 30px;
   display: block;
   margin-bottom: 10px;
-  background-color: #dd0a37;
-  padding: 10px;
+  // background-color: #dd0a37;
+  padding: 12px;
+  border: white;
+  border-style: solid;
   border-radius: 50%;
   transition: background-color 0.3s;
 }
