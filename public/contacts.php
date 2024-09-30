@@ -57,32 +57,6 @@ include 'header.php';
                     </div>
                 </div>
                 <div class="left">
-                    <!-- <div class="form-wrapper-left">
-                        <button class="button">
-                            <div class="icon-holder phone ">
-                                <i class="icon-phone fa-solid fa-phone "></i>
-                            </div>
-                            <div class="button-slide-part"><span>0751356714</span></div>
-                        </button>
-                        <button class="button">
-                            <div class="icon-holder dot">
-                                <a href="https://www.google.com/maps/place/Club+Studen%C8%9Besc+Observator/@46.7573198,23.5914802,15.5z/data=!4m6!3m5!1s0x47490dd2962f95b7:0x5d0e80ba58cb06fe!8m2!3d46.7560631!4d23.5932852!16s%2Fg%2F11hb84yxfv?entry=ttu"><i class="icon-dot fa-solid fa-location-dot"></i></a>
-                            </div>
-                            <div class="button-slide-part"></div>
-                        </button>
-                        <div class="button-globe">
-                            <input type="checkbox" id="check" />
-                            <label class="button-media globe" for="check">
-                                <i class="icon-globe fa-solid fa-globe"></i>
-                            </label>
-                            <div class="media-icons">
-                                <a href="https://www.facebook.com/AnsamblulFolcloricRomanasul"><i class="fa-brands fa-facebook"></i></a>
-                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div> -->
                     <div class="contact-card">
                         <h2>Contact Information</h2>
 
@@ -94,10 +68,10 @@ include 'header.php';
 
                         <div class="social-icons">
                             <h3>Find us on social media</h3>
-                            <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
-                            <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
-                            <a href="#"><i class="fa-brands fa-tiktok fa-lg"></i></a>
+                            <a href="https://www.facebook.com/AnsamblulFolcloricRomanasul?locale=ro_RO"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                            <a href="https://www.instagram.com/romanasul.utcluj/"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                            <a href="https://www.youtube.com/@romanasulutcn853"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                            <a href="https://www.tiktok.com/@romanasul.utcluj"><i class="fa-brands fa-tiktok fa-lg"></i></a>
                         </div>
                     </div>
                 </div>
