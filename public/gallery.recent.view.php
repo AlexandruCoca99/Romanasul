@@ -7,39 +7,58 @@ get_header("Recent galley");
         <div class="gallery-image-container">
             <a href="images.php" class="close-button-container"><img src="images/close-red-icon.svg" /></a>
             <div class="image1 tall">
-                <img src="images\gallery\pozeVechi\1986_ceterasi3.jpg" alt="" />
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\img.jpg" alt="" />
             </div>
-            <div class="image2 wide"><img src="images\gallery\pozeVechi\1978_all.jpg" alt="" /></div>
-            <div class="image3"><img src="images\gallery\pozeVechi\1978_ceterasi.JPG" alt="" /></div>
-            <div class="image4"><img src="images\gallery\pozeVechi\1978_crihalma.JPG" alt="" /></div>
-            <div class="image5"><img src="images\gallery\pozeVechi\1978_nasaud.JPG" alt="" /></div>
-            <div class="image6"><img src="images\gallery\pozeVechi\1978_nasaud2.JPG" alt="" /></div>
+            <div class="image2 wide">
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Baieti 2.jpg" alt="" />
+            </div>
+            <div class="image3">
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Calus 2.jpg" alt="" />
+            </div>
+            <div class="image4">
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Codru.jpg" alt="" />
+            </div>
+            <div class="image5">
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Codru_Produs.jpg" alt="" />
+            </div>
+            <div class="image6">
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Colaj 4.jpg" alt="" />
+            </div>
             <div class="image7">
-                <img src="images\gallery\pozeVechi\1978_nasaud3.JPG" alt="" />
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Colaj.jpg" alt="" />
             </div>
             <div class="image8">
-                <img src="images\gallery\pozeVechi\1978_nasaud4.jpg" alt="" />
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Dans de fete.jpg" alt="" />
             </div>
             <div class="image9">
-                <img src="images\gallery\pozeVechi\1978_some.JPG" alt="" />
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Fecioresc Baieti.jpg" alt="" />
             </div>
             <div class="image10">
-                <img src="images\gallery\pozeVechi\1980_ceterasi2.JPG" alt="" />
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Fete Maramures.jpg" alt="" />
             </div>
             <div class="image11">
-                <img src="images\gallery\pozeVechi\1980_maramures.JPG" alt="" />
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Inceput Banat.jpg" alt="" />
             </div>
             <div class="image12">
-                <img src="images\gallery\pozeVechi\1980_nasaud5.JPG" alt="" />
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Matosinhos show 2019.jpg" alt="" />
             </div>
             <div class="image13">
-                <img src="images\gallery\pozeVechi\1983_3.jpg" alt="" />
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Orchestra spectacol.jpg" alt="" />
             </div>
             <div class="image14">
-                <img src="images\gallery\pozeVechi\1983_4.jpg" alt="" />
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\PARADA 2.jpg" alt="" />
             </div>
             <div class="image15">
-                <img src="images\gallery\pozeVechi\1983_5.jpg" alt="" />
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Parada Tnager.jpg" alt="" />
+            </div>
+            <div class="image15">
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Poza grup.jpg" alt="" />
+            </div>
+            <div class="image15">
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Saritura smechera.jpg" alt="" />
+            </div>
+            <div class="image15">
+                <img src="images\Poze-romanasul\4.Galerie\2010-prezent\Multumiri banat.jpg" alt="" />
             </div>
         </div>
     </div>

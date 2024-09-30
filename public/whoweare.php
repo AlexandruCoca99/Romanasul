@@ -78,7 +78,6 @@ include 'header.php';
                         <?php get_custom_nav() ?>
                         <!-- end swiper-custom-nav -->
                     </div>
-
                 </div>
                 <p>&nbsp;</p>
                 <div class=" members-list" style="transform: translateX(50px);">
@@ -221,7 +220,6 @@ include 'header.php';
                     </div>
 
                 </div>
-                <?php get_custom_nav() ?>
                 <!-- end swiper-custom-nav -->
 
 
