@@ -9,18 +9,12 @@ new Swiper(".swiper-homepage", {
   spaceBetween: 24,
   grabCursor: true,
   autoplay: {
-    delay: 250,
-    // disableOnInteraction: false,
+    delay: 2500,
+    disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-homepage .swiper-custom-pagination",
     clickable: true,
-    // renderBullet: function (index, className) {
-    //   return `<div class=${className}>
-    //           <span class="number">${index + 1}</span>
-    //           <span class="line"></span>
-    //           </div>`;
-    // },
   },
 
   lazyLoading: true,

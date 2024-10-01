@@ -2,14 +2,9 @@
 
 function get_includes()
 {
-    return '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  return '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="../apis.google.com/js/plusone.js"></script>
     <script type="text/javascript" src="highslide/highslide-with-gallery.packed.js"/></script>
-    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/geodata/canadaLow.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script src="//cdn.amcharts.com/lib/4/core.js"></script>
     <script src="//cdn.amcharts.com/lib/4/maps.js"></script>
     <script src="//cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
@@ -21,7 +16,6 @@ function get_includes()
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,11 +45,11 @@ function get_includes()
 //add local scripts here
 function get_local_scripts()
 {
-    return '       
+  return '       
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/map.js"></script>
     <script type="text/javascript" src="js/highslide_custom.js"/></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/form.js"></script>
     <script src="js/repertoriu.js"></script>
@@ -69,7 +63,7 @@ function get_local_scripts()
 
 function get_header($title = "")
 {
-    echo '
+  echo '
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -89,7 +83,7 @@ function get_header($title = "")
 function get_footer()
 {
 
-    echo '
+  echo '
      </div> 
   
         ' . get_local_scripts() . '
@@ -101,7 +95,7 @@ function get_footer()
 
 function get_custom_nav()
 {
-    echo '
+  echo '
           <div class="swiper-custom-nav-left">
         <svg
           width="64"
