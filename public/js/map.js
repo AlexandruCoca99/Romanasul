@@ -124,12 +124,12 @@ jQuery(document).ready(function ($) {
             pattern.y = 0;
             break;
           case "ES":
-            image.width = 70;
-            image.height = 115;
-            pattern.width = 70;
-            pattern.height = 115;
-            pattern.x = -3;
-            pattern.y = 70;
+            image.width = 3;
+            image.height = image.width;
+            pattern.width = image.width - 0.1;
+            pattern.height = pattern.width;
+            pattern.x = 2.9 * widthScale;
+            pattern.y = -2.25 * heightScale;
             break;
           case "PT":
             image.width = 15;
@@ -148,12 +148,12 @@ jQuery(document).ready(function ($) {
             pattern.y = 70;
             break;
           case "FR":
-            image.width = 700;
-            image.height = 115;
-            pattern.width = 700;
-            pattern.height = 115;
-            pattern.x = 100;
-            pattern.y = 0;
+            image.width = 0.5;
+            image.height = image.width / 2;
+            pattern.width = image.width / 2;
+            pattern.height = pattern.width / 2;
+            pattern.x = 1 * widthScale;
+            pattern.y = 1 * heightScale;
           case "MA":
             image.width = 40;
             image.height = 60;
@@ -182,12 +182,12 @@ jQuery(document).ready(function ($) {
             pattern.y = 0;
             break;
           case "ES":
-            image.width = 70;
-            image.height = 115;
-            pattern.width = 70;
-            pattern.height = 115;
-            pattern.x = -3;
-            pattern.y = 70;
+            image.width = 3;
+            image.height = image.width;
+            pattern.width = image.width - 0.1;
+            pattern.height = pattern.width;
+            pattern.x = 0 * widthScale;
+            pattern.y = -2.25 * heightScale;
             break;
           case "PT":
             image.width = 15;
