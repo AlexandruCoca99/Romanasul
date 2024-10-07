@@ -1399,8 +1399,7 @@ label::before {
     max-width: 30svw;
     height: 345px;
     margin-top: 50px;
-    // overflow: hidden;
-    // opacity: 1;
+    object-fit: cover;
 
     transform: translateX(-100%);
     opacity: 0;
@@ -1411,7 +1410,7 @@ label::before {
     max-width: 30svw;
     height: 345px;
     margin-top: 300px;
-
+    object-fit: cover;
     transform: translateX(50%);
     opacity: 0;
     transition: all 0.5s ease; /* Adaugă o tranziție pentru efect vizual */
@@ -1614,7 +1613,7 @@ label::before {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .mission-wrapper {
     margin: auto;
   }
