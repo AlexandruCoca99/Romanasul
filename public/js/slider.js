@@ -1,6 +1,6 @@
 const swiper = new Swiper(".swiper", {
   slidesPerView: 1.1,
-  autoHeight: true,
+  // autoHeight: true,
   centeredSlides: true,
   spaceBetween: 24,
   grabCursor: true,

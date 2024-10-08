@@ -8,7 +8,7 @@ include 'header.php';
         <div class="time-period-container " id="old">
             <img src="images\gallery\pozeVechi\1978_nasaud4.jpg" class="time-period-background" alt="Background Old">
             <div class="header-container">
-                <h2>Fotografii din perioada <br> 1974-2000</h2>
+                <h2>1974-2000</h2>
             </div>
 
         </div>
@@ -17,7 +17,7 @@ include 'header.php';
         <div class="time-period-container" id="mid">
             <img src="images\gallery\pozeMijloc\nasaudGrup_00.JPG" class="time-period-background" alt="Background Mid">
             <div class="header-container">
-                <h2>Fotografii din perioada <br> 2000-2010</h2>
+                <h2>2000-2010</h2>
             </div>
             <!-- <img src="photo3.jpg" alt="Mid Photo 1">
             <img src="photo4.jpg" alt="Mid Photo 2"> -->
@@ -27,7 +27,7 @@ include 'header.php';
         <div class="time-period-container" id="recent">
             <img src="images\Baieti.jpg" class="time-period-background" alt="Background Recent">
             <div class="header-container">
-                <h2>Fotografii din perioada <br> 2010-2024</h2>
+                <h2>2010-2024</h2>
             </div>
             <!-- <img src="photo5.jpg" alt="Recent Photo 1">
             <img src="photo6.jpg" alt="Recent Photo 2"> -->

@@ -11,13 +11,13 @@
             <div class="footer-section">
                 <h3>MENIU</h3>
                 <ul>
-                    <li><a href="#">Acasa</a></li>
-                    <li><a href="#">Cine suntem</a></li>
-                    <li><a href="#">Galerie</a></li>
-                    <li><a href="#">Turnee</a></li>
-                    <li><a href="#">Repertoriu</a></li>
-                    <li><a href="#">Recenzii</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="home.php">Acasa</a></li>
+                    <li><a href="whoweare.php">Cine suntem</a></li>
+                    <li><a href="images.php">Galerie</a></li>
+                    <li><a href="tours.php">Turnee</a></li>
+                    <li><a href="repertoriu.php">Repertoriu</a></li>
+                    <li><a href="reviews.view.php">Recenzii</a></li>
+                    <li><a href="contacts.php">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section combined">
