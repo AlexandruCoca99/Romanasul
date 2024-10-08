@@ -333,7 +333,7 @@ include 'header.php';
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
-                <div class="members-list " style="transform: translateX(65px);">
+                <div class="members-list ">
                     <div class="member-content">
                         <h2 class="title">Prezentatori de spectacole:</h2>
                         <ul>

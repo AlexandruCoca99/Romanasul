@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function setObservers() {
     // On mobile, you might want to change thresholds or behavior
     const photoThreshold = isMobile() ? 0.3 : 0.5;
-    const memberThreshold = isMobile() ? 0.4 : 0.7;
+    const memberThreshold = isMobile() ? 0.3 : 0.6;
 
     const observerPhotos = createObserver("active", photoThreshold);
     const observerMembers = createObserver("fade-in", memberThreshold);
