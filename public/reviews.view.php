@@ -110,7 +110,7 @@ function generateStarRating($averageRating)
                         <div class="review-header">
 
                             <div class="stars"><?php echo generateStarRating($rating); ?></div>
-                            <span class="review-author">By <?php echo $name . ' ' . $surname; ?> on <?php echo $date; ?></span>
+                            <span class="review-author">By <?php echo $name . ' ' . $surname; ?> on <br><?php echo $date; ?></span>
                         </div>
 
                     </div>
