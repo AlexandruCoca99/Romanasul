@@ -58,6 +58,7 @@ function get_local_scripts()
     <script src="js/reviews.js"></script>
     <script src="js/homepage.js"></script>
     <script src="js/loader.js"></script>
+    <script src="app.js"></script>
 ';
 }
 

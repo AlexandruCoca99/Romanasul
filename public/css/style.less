@@ -1199,15 +1199,15 @@ label::before {
 .container-repertoriu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* sau 'space-between' în funcție de preferințele de design */
-  gap: 20px; /* spațiu între elemente */
+  justify-content: space-evenly; /* sau 'space-between' în funcție de preferințele de design */
+  // gap: 1%; /* spațiu între elemente */
 }
 
 .dans {
   position: relative; /* Setează contextul de poziționare */
   width: 80%; /* Definește o lățime, ajustează după necesități */
   height: 243px; /* Ajustează înălțimea după necesități */
-  flex: 1 1 15%; /* Ajustează acest procent pentru a controla cât de mult spațiu ocupă fiecare element pe rând */
+  flex: 0 0 25%; /* Ajustează acest procent pentru a controla cât de mult spațiu ocupă fiecare element pe rând */
   margin: 50px; /* Optional, pentru a da un spațiu mic între elemente */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* adaugă o umbră ușoară pentru un aspect mai plăcut */
   text-align: center; /* aliniază textul la centru în div */
@@ -2626,7 +2626,7 @@ label::before {
   // color: #555;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1360px) {
   .grid-item {
     display: none;
   }
@@ -2635,8 +2635,18 @@ label::before {
     display: block;
   }
 }
-
-@media screen and (max-width: 740px) {
+@media (min-width: 900px) and (max-width: 1360px) {
+  .tours-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-item:first-child {
+    img {
+      width: 30svw;
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
   .homepage-tours-wrapper {
     flex-wrap: wrap;
     justify-content: center;
@@ -2644,6 +2654,9 @@ label::before {
   .tours-short-content {
     text-align: center;
     margin-left: 0;
+  }
+  .tours-grid-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

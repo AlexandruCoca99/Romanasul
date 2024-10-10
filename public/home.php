@@ -127,7 +127,7 @@ include 'header.php';
                 </div>
             </div>
         </div>
-        <script src="app.js"></script>
+
     </div>
 
     <div class="homepage-reviews-wrapper">
