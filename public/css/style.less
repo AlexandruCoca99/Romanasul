@@ -78,7 +78,7 @@ h2 {
 }
 
 p {
-  margin-bottom: 15px;
+  font-size: 16px;
 }
 
 * {
@@ -1403,6 +1403,8 @@ label::before {
 .short-history-images-container {
   display: flex;
   margin-left: 40px;
+  flex-direction: column;
+
   .photo-1 {
     border-radius: 120px;
     max-width: 30svw;
@@ -1418,13 +1420,12 @@ label::before {
     border-radius: 120px;
     max-width: 30svw;
     height: 345px;
-    margin-top: 300px;
+    // margin-top: 300px;
     object-fit: cover;
     transform: translateX(50%);
     opacity: 0;
     transition: all 0.5s ease; /* Adaugă o tranziție pentru efect vizual */
   }
-
   .active {
     opacity: 1;
     transform: translateX(0%);
@@ -2398,18 +2399,25 @@ label::before {
 }
 
 .home-content-wrapper {
-  margin: auto 5svw;
+  margin: auto;
+  max-width: 1200px;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
   p {
-    font-size: 1.2rem;
     line-height: normal;
-    text-align: center;
+    margin-bottom: 5rem;
+  }
+  button {
+    // width: 100%;
   }
 }
 
 .swiper-homepage-wrapper {
   width: 100%;
   position: relative;
-  margin: auto 0;
+  margin: auto;
 
   .swiper-homepage {
     overflow: hidden;
@@ -2472,7 +2480,7 @@ label::before {
 .homepage-about-us-wrapper,
 .homepage-tours-wrapper {
   // margin: 10svh auto; /* Use viewport height for margins */
-  padding: 5svw; /* Use viewport width for padding */
+  padding: 5svw 0; /* Use viewport width for padding */
   display: flex;
   // flex-direction: column; /* Stack content vertically for smaller screens */
   align-items: center;
@@ -2482,25 +2490,37 @@ label::before {
 .about-us-short {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-left: 5svw; /* Use viewport width for margins */
-  gap: 10svh; /* Adjust gap using viewport height */
+  align-items: flex-start;
+  margin: auto;
+  // gap: 10svh; /* Adjust gap using viewport height */
 
   h1 {
     color: #000;
     line-height: normal;
-    // font-size: 4svw; /* Font size scales with viewport width */
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin-bottom: 4rem;
+  }
+
+  button {
+    // width: 100%;
   }
 }
 
 .homepage-about-us-image {
   border-radius: 20px;
-  width: 60%;
+  // width: 60%;
+  height: 26rem;
   object-fit: cover;
-  margin-left: 1rem;
+  margin-left: 5rem;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1240px) {
+  .home-content-wrapper {
+    max-width: 600px;
+  }
   .homepage-about-us-wrapper {
     flex-direction: column;
   }
@@ -2523,18 +2543,25 @@ label::before {
     font-size: 3rem;
   }
 }
+
+.repertoriu-container {
+  margin: 5svh auto;
+}
+
 .fixed-background-image-container {
-  height: 30svh;
+  height: 50svh;
+  padding: 5svw;
   text-align: center;
   align-content: center;
   background-position: center;
   background-size: cover;
-  background: url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/1. Mica Unire/Colaj 4 opacity.png");
+  // background: url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/1. Mica Unire/Colaj 4 opacity.png");
   background-attachment: fixed;
+  background-color: maroon;
 
   h2 {
-    font-size: 2.5vw;
-    color: #610404;
+    // font-size: 2.5vw;
+    color: white;
     line-height: normal;
     margin-bottom: 2rem;
   }
@@ -2594,13 +2621,6 @@ label::before {
   }
 }
 
-// .header-container.finland {
-//   width: 17rem;
-//   h3 {
-//     font-size: 25px;
-//   }
-// }
-
 .grid-item:hover .header-container {
   opacity: 1;
   transform: translateY(-2.5%);
@@ -2620,20 +2640,19 @@ label::before {
   line-height: normal;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.tours-short-content h1 {
-  // font-size: 4svw;
-  color: black;
-  margin-bottom: 2rem;
-  line-height: 1.2;
-}
-
-.tours-short-content p {
-  // font-size: 16px;
-  margin-bottom: 30px;
-  // color: #555;
+.tours-short-content {
+  h1 {
+    // font-size: 4svw;
+    color: black;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+  p {
+    align-items: start;
+  }
 }
 
 @media screen and (max-width: 1360px) {
@@ -2662,7 +2681,7 @@ label::before {
     justify-content: center;
   }
   .tours-short-content {
-    text-align: center;
+    // text-align: center;
     margin-left: 0;
   }
   .tours-grid-container {

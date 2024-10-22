@@ -21,7 +21,7 @@ include 'header.php';
                 <div class="short-history-wrapper">
                     <h2 class="title">Short history:</h2>
                     <p>
-                        Fondat în 1974, la inițiativa unui grup de studenți de la Institutul Politehnic din Cluj-Napoca, coordonat de prof. Teodor NILAS. Din 1979, ne bucurăm de o colaborare fructuoasă cu prof. Dumitru POP, de la Facultatea de Litere a Universității Babeș-Bolyai din Cluj-Napoca. Ne-am dezvoltat, am atins maturitatea și am obținut consacrarea în concursurile și festivalurile studențești „Primăvara Studențească”, „Festivalul Artei și Creației Studențești”, „Festivalul Național Studențesc de Folclor”, în spectacole și turnee atât în țară, cât și în străinătate. În 1984, am jucat într-un film de 35mm, „O ceată de călușari din Câmpia Transilvaniei”, de valoare artistică și documentară certificată. În 1994 și 2000, am adus la tipar două monografii, semnate de prof. Teodor NILAS. Am realizat înregistrări la posturi de radio și TV naționale și am înregistrat un CD.</span>
+                        Fondat în 1974, la inițiativa unui grup de studenți de la Institutul Politehnic din Cluj-Napoca, coordonat de prof. Teodor NILAS. Din 1979, ne bucurăm de o colaborare fructuoasă cu prof. Dumitru POP, de la Facultatea de Litere a Universității Babeș-Bolyai din Cluj-Napoca. Ne-am dezvoltat, am atins maturitatea și am obținut consacrarea în concursurile și festivalurile studențești „Primăvara Studențească”, „Festivalul Artei și Creației Studențești”, „Festivalul Național Studențesc de Folclor”, în spectacole și turnee atât în țară, cât și în străinătate.</span>
                 </div>
 
                 <div class="short-history-images-container">

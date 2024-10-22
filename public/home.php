@@ -95,15 +95,18 @@ include 'header.php';
             <button><a href="tours.php" class="explore-button">Mai multe →</a></button>
         </div>
     </div>
-    <div class="repertoriu-container">
-        <div class="fixed-background-image-container">
-            <!-- <div class="overlay"></div> -->
-            <h2>În repertoriul ansamblului se regăsesc coregrafii de dans popular din Campia Transilvaniei, Moldova, Oltenia, Banat, Nasaud, Maramures, Bihor</h2>
-            <button><a href="repertoriu.php" class="explore-button">Mai multe →</a></button>
-        </div>
+
+</div>
+
+<div class="repertoriu-container">
+    <div class="fixed-background-image-container">
+        <!-- <div class="overlay"></div> -->
+        <h2>În repertoriul ansamblului se regăsesc coregrafii de dans popular din Campia Transilvaniei, Moldova, Oltenia, Banat, Nasaud, Maramures, Bihor</h2>
+        <button><a href="repertoriu.php" class="explore-button">Mai multe →</a></button>
     </div>
+</div>
 
-
+<div class="home-content-wrapper">
     <div class="countdown-container-background">
         <div class="countdown-container">
             <h1>TIMP RĂMAS</h1>
