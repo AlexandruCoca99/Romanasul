@@ -1,4 +1,4 @@
-<header>
+<header class="header">
     <!-- <div class="border"> -->
     <div class="hamburger">
         <i class="fa-solid fa-bars"></i>

@@ -1,19 +1,70 @@
+var choreographers = [
+  "Prof.Florin Ciobanu",
+  "Ing.Viorel Roman",
+  "Ing. Nicoara Eugen",
+];
+
+var dirijori = [
+  "Hatfaludi Alexandru",
+  "Vasile Moldovan",
+  "Marius Moldovan",
+  "Ioan Moloca",
+  "Traian Covrig",
+  "Prof. Titus Beşa-Fluieraş",
+  "Prof. Ioan Morar",
+  "Prof. Iulian Raţiu",
+  "Prof. Ioan Crişan",
+  "Ştefan Lustig",
+  "Romică Râmbu",
+  "Iuliu Hoca",
+  "Prof. Paul Stoica",
+];
+
+var directori = [
+  "Prof. Ioan Bârsan",
+  "Prof. Mîndru Alexandru",
+  "Prof. Victor Bercea",
+  "Ing. Marius Moldovan",
+  "Anghel Mirela",
+];
+
+var artists = [
+  "Mia Dan",
+  "Dumitru Sopon",
+  "Maria Marcu",
+  "Sava Negrean Brudaşcu",
+  "Veta Biriş",
+  "Nicolae Furdui Iancu",
+  "Ion Pojar",
+  "Maria Lobont",
+  "Angela Nistor",
+  "Mariana Morcan",
+  "Maria Dan Golban",
+  "Marius Ciprian Pop",
+  "Adriana Hagău",
+  "Aurel Ciceoan",
+  "Maria Dan Golban",
+];
+
+var musicians = [
+  "Dumitru Fărcaş",
+  "Gheorghe Zamfir",
+  "Gheorghe Palcu",
+  "Ioan Berci",
+  "Dan Gâdea",
+  "Constantin Istici",
+  "Mircea Câmpeanu",
+];
+
+var individuals = ["Vania Atudorei", "Victor Bercea"];
+
 const swiperConfigs = {
   slidesPerView: 1.1,
   autoHeight: true,
   centeredSlides: true,
   spaceBetween: 24,
   grabCursor: true,
-  pagination: {
-    el: ".swiper-custom-pagination",
-    clickable: true,
-    renderBullet: function (index, className) {
-      return `<div class=${className}>
-                <span class="number">${index + 1}</span>
-                <span class="line"></span>
-                </div>`;
-    },
-  },
+
   lazyLoading: true,
   keyboard: {
     enabled: true,
@@ -35,6 +86,15 @@ const swiper1 = new Swiper(".swiper-choreographers", {
     nextEl: "#nav-right",
     prevEl: "#nav-left",
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return (
+        `<span class="` + className + `">` + choreographers[index] + `</span>`
+      );
+    },
+  },
 });
 
 const swiper2 = new Swiper(".swiper-conductors", {
@@ -42,6 +102,15 @@ const swiper2 = new Swiper(".swiper-conductors", {
   navigation: {
     nextEl: "#nav-right-2",
     prevEl: "#nav-left-2",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return (
+        `<span class="` + className + `">` + choreographers[index] + `</span>`
+      );
+    },
   },
 });
 
@@ -51,6 +120,15 @@ const swiper3 = new Swiper(".swiper-cultural-attaches", {
     nextEl: "#nav-right-3",
     prevEl: "#nav-left-3",
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return (
+        `<span class="` + className + `">` + choreographers[index] + `</span>`
+      );
+    },
+  },
 });
 
 const swiper4 = new Swiper(".swiper-singers", {
@@ -58,6 +136,15 @@ const swiper4 = new Swiper(".swiper-singers", {
   navigation: {
     nextEl: "#nav-right-4",
     prevEl: "#nav-left-4",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return (
+        `<span class="` + className + `">` + choreographers[index] + `</span>`
+      );
+    },
   },
 });
 
@@ -67,6 +154,15 @@ const swiper5 = new Swiper(".swiper-collaborating-singers", {
     nextEl: "#nav-right-5",
     prevEl: "#nav-left-5",
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return (
+        `<span class="` + className + `">` + choreographers[index] + `</span>`
+      );
+    },
+  },
 });
 
 const swiper6 = new Swiper(".swiper-collaborating-musicians", {
@@ -75,6 +171,15 @@ const swiper6 = new Swiper(".swiper-collaborating-musicians", {
     nextEl: "#nav-right-6",
     prevEl: "#nav-left-6",
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return (
+        `<span class="` + className + `">` + choreographers[index] + `</span>`
+      );
+    },
+  },
 });
 
 const swiper7 = new Swiper(".swiper-show-hosts", {
@@ -82,6 +187,15 @@ const swiper7 = new Swiper(".swiper-show-hosts", {
   navigation: {
     nextEl: "#nav-right-7",
     prevEl: "#nav-left-7",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return (
+        `<span class="` + className + `">` + choreographers[index] + `</span>`
+      );
+    },
   },
 });
 

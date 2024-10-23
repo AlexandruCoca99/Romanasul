@@ -73,10 +73,12 @@ include 'header.php';
                                 <!-- end swiper-slide -->
                             </div>
                             <!-- end swiper-wrapper -->
+                            <div class="swiper-pagination"></div>
                             <!-- end swiper -->
                         </div>
                         <?php get_custom_nav() ?>
                         <!-- end swiper-custom-nav -->
+
                     </div>
                 </div>
                 <p>&nbsp;</p>
