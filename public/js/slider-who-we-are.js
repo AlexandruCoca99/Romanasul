@@ -107,9 +107,7 @@ const swiper2 = new Swiper(".swiper-conductors", {
     el: ".swiper-pagination",
     clickable: true,
     renderBullet: function (index, className) {
-      return (
-        `<span class="` + className + `">` + choreographers[index] + `</span>`
-      );
+      return `<span class="` + className + `">` + dirijori[index] + `</span>`;
     },
   },
 });
@@ -124,29 +122,25 @@ const swiper3 = new Swiper(".swiper-cultural-attaches", {
     el: ".swiper-pagination",
     clickable: true,
     renderBullet: function (index, className) {
-      return (
-        `<span class="` + className + `">` + choreographers[index] + `</span>`
-      );
+      return `<span class="` + className + `">` + directori[index] + `</span>`;
     },
   },
 });
 
-const swiper4 = new Swiper(".swiper-singers", {
-  ...swiperConfigs,
-  navigation: {
-    nextEl: "#nav-right-4",
-    prevEl: "#nav-left-4",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    renderBullet: function (index, className) {
-      return (
-        `<span class="` + className + `">` + choreographers[index] + `</span>`
-      );
-    },
-  },
-});
+// const swiper4 = new Swiper(".swiper-singers", {
+//   ...swiperConfigs,
+//   navigation: {
+//     nextEl: "#nav-right-4",
+//     prevEl: "#nav-left-4",
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//     renderBullet: function (index, className) {
+//       return `<span class="` + className + `">` + artists[index] + `</span>`;
+//     },
+//   },
+// });
 
 const swiper5 = new Swiper(".swiper-collaborating-singers", {
   ...swiperConfigs,
@@ -158,9 +152,7 @@ const swiper5 = new Swiper(".swiper-collaborating-singers", {
     el: ".swiper-pagination",
     clickable: true,
     renderBullet: function (index, className) {
-      return (
-        `<span class="` + className + `">` + choreographers[index] + `</span>`
-      );
+      return `<span class="` + className + `">` + artists[index] + `</span>`;
     },
   },
 });
@@ -175,9 +167,7 @@ const swiper6 = new Swiper(".swiper-collaborating-musicians", {
     el: ".swiper-pagination",
     clickable: true,
     renderBullet: function (index, className) {
-      return (
-        `<span class="` + className + `">` + choreographers[index] + `</span>`
-      );
+      return `<span class="` + className + `">` + musicians[index] + `</span>`;
     },
   },
 });
@@ -193,7 +183,7 @@ const swiper7 = new Swiper(".swiper-show-hosts", {
     clickable: true,
     renderBullet: function (index, className) {
       return (
-        `<span class="` + className + `">` + choreographers[index] + `</span>`
+        `<span class="` + className + `">` + individuals[index] + `</span>`
       );
     },
   },

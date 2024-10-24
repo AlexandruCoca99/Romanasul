@@ -51,13 +51,15 @@ const countdown = () => {
 
 setInterval(countdown, 1000);
 
-window.onscroll = function () {
-  const header = document.getElementsByClassName("header");
-  console.log(window.scrollY);
-  if (window.scrollY > 300) {
-    // You can adjust the scroll value
-    header.classList.add("header-scrolled");
-  } else {
-    header.classList.remove("header-scrolled");
-  }
-};
+$(document).ready(function () {
+  $(window).scroll(function () {
+    const header = $(".header");
+
+    if ($(window).scrollTop() > 300) {
+      // Adjust the scroll value as needed
+      header.addClass("header-scrolled");
+    } else {
+      header.removeClass("header-scrolled");
+    }
+  });
+});

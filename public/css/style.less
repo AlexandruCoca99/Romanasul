@@ -712,7 +712,7 @@ nav {
 
 .container.wide {
   max-width: 100%;
-  padding: 5rem;
+  padding: 5rem 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -1365,7 +1365,7 @@ label::before {
 }
 
 .hero-wrapper {
-  padding-top: 100px;
+  // padding-top: 100px;
   position: relative;
   width: 100%;
   height: auto;
@@ -1387,7 +1387,7 @@ label::before {
   // transform-origin: top;
   animation: hero-image-animation linear forwards;
   animation-timeline: view();
-  animation-range: exit -100px;
+  animation-range: exit;
 }
 
 .hero-title {
@@ -1696,6 +1696,7 @@ label::before {
   .member-content {
     li {
       font-size: 1.5rem;
+      text-align: left;
     }
   }
   .members-list {
@@ -1799,7 +1800,7 @@ label::before {
 // GALLERY
 .gallery-container {
   display: flex;
-  padding-top: 100px;
+  // padding-top: 100px;
 }
 .time-period-container {
   flex: 1;
@@ -2413,7 +2414,7 @@ label::before {
 
 .homepage-video-wrapper {
   background-color: #000;
-  padding-top: 100px;
+  // padding-top: 100px;
   overflow: hidden;
 
   video {
@@ -2580,8 +2581,8 @@ label::before {
 }
 
 .fixed-background-image-container {
-  height: 50svh;
-  padding: 5svw;
+  height: auto;
+  padding: 160px 60px;
   text-align: center;
   align-content: center;
   background-position: center;
@@ -2801,9 +2802,11 @@ label::before {
   justify-content: center;
   align-items: center;
   height: 50vh;
+  border-radius: 12px;
   background-position-y: 67%;
   background-size: cover;
-  background-image: url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/4.-Zilele-prieteniei/Banat 2.jpg ");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/4.-Zilele-prieteniei/Banat 2.jpg ");
 
   .countdown-container {
     text-align: center;
@@ -2834,7 +2837,7 @@ label::before {
   }
 
   .countdown-element {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.4);
     padding: 20px;
     border-radius: 10px;
     width: 6.5svw;

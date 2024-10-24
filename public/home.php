@@ -106,7 +106,7 @@ include 'header.php';
     </div>
 </div>
 
-<div class="home-content-wrapper">
+<div class="home-content-wrapper" style="margin: 120px auto;">
     <div class="countdown-container-background">
         <div class="countdown-container">
             <h1>TIMP RĂMAS</h1>
@@ -133,7 +133,8 @@ include 'header.php';
 
     </div>
 
-    <div class="homepage-reviews-wrapper">
+    <!-- DE PUS CAND AVEM BAZA DE DATE -->
+    <!-- <div class="homepage-reviews-wrapper">
         <h2 class="section-title">
             <span class="highlight"><a href="reviews.view.php">Recenzii</a></span>
         </h2>
@@ -172,7 +173,7 @@ include 'header.php';
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- <div class="homeSlogan">
             <div>
                 <p><?php echo _("Mankind will find itself again only when it will understand the great lesson of folklore, and will acquire the profound meaning of its splendid unity in folk culture.") ?> <br>

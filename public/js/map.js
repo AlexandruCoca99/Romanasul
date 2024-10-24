@@ -27,6 +27,7 @@ jQuery(document).ready(function ($) {
         // Set the map's projection type
         this.chart.projection = new am4maps.projections.Miller();
         this.chart.responsive.enabled = true;
+        this.chart.background.fill = "#000";
         // Set the map's initial zoom
         this.chart.homeZoomLevel = isMobile ? 5 : 1;
         this.chart.homeGeoPoint = {
@@ -115,6 +116,14 @@ jQuery(document).ready(function ($) {
             pattern.x = 4.5 * widthScale;
             pattern.y = 9.5 * heightScale;
             break;
+          case "RU":
+            image.width = 37;
+            image.height = image.width / 2;
+            pattern.width = image.width - 5;
+            pattern.height = pattern.width / 2;
+            pattern.x = 20 * widthScale;
+            pattern.y = -10 * heightScale;
+            break;
           case "AE":
             image.width = 30;
             image.height = 15;
@@ -139,6 +148,14 @@ jQuery(document).ready(function ($) {
             pattern.x = -3;
             pattern.y = 70;
             break;
+          case "FI":
+            image.width = 3;
+            image.height = image.width;
+            pattern.width = image.width - 0.1;
+            pattern.height = pattern.width;
+            pattern.x = 1.3 * widthScale;
+            pattern.y = 2 * heightScale;
+            break;
           case "NL":
             image.width = 15;
             image.height = 23;
@@ -148,19 +165,28 @@ jQuery(document).ready(function ($) {
             pattern.y = 70;
             break;
           case "FR":
-            image.width = 0.5;
-            image.height = image.width / 2;
-            pattern.width = image.width / 2;
-            pattern.height = pattern.width / 2;
-            pattern.x = 1 * widthScale;
-            pattern.y = 1 * heightScale;
+            image.width = 4;
+            image.height = image.width;
+            pattern.width = image.width - 0.1;
+            pattern.height = pattern.width;
+            pattern.x = 3.3 * widthScale;
+            pattern.y = 4.7 * heightScale;
+            break;
+          case "PL":
+            image.width = 3;
+            image.height = image.width;
+            pattern.width = image.width - 0.1;
+            pattern.height = pattern.width;
+            pattern.x = 3 * widthScale;
+            pattern.y = -1.6 * heightScale;
+            break;
           case "MA":
-            image.width = 40;
-            image.height = 60;
-            pattern.width = 40;
-            pattern.height = 60;
-            pattern.x = -10;
-            pattern.y = 23;
+            image.width = 2;
+            image.height = image.width;
+            pattern.width = image.width - 0.1;
+            pattern.height = pattern.width;
+            pattern.x = 2.35 * widthScale;
+            pattern.y = 0 * heightScale;
             break;
         }
       else
@@ -172,6 +198,14 @@ jQuery(document).ready(function ($) {
             pattern.height = pattern.width / 2;
             pattern.x = 17.5 * widthScale;
             pattern.y = 9.5 * heightScale;
+            break;
+          case "RU":
+            image.width = 40;
+            image.height = image.width / 2;
+            pattern.width = image.width - 10;
+            pattern.height = pattern.width / 2;
+            pattern.x = -45 * widthScale;
+            pattern.y = 8 * heightScale;
             break;
           case "AE":
             image.width = 30;
@@ -197,6 +231,14 @@ jQuery(document).ready(function ($) {
             pattern.x = -3;
             pattern.y = 70;
             break;
+          case "FI":
+            image.width = 3;
+            image.height = image.width;
+            pattern.width = image.width - 0.1;
+            pattern.height = pattern.width;
+            pattern.x = 5.4 * widthScale;
+            pattern.y = 2 * heightScale;
+            break;
           case "NL":
             image.width = 15;
             image.height = 23;
@@ -206,19 +248,20 @@ jQuery(document).ready(function ($) {
             pattern.y = 70;
             break;
           case "FR":
-            image.width = 700;
-            image.height = 115;
-            pattern.width = 700;
-            pattern.height = 115;
-            pattern.x = 100;
-            pattern.y = 0;
+            image.width = 4;
+            image.height = image.width;
+            pattern.width = image.width - 0.1;
+            pattern.height = pattern.width;
+            pattern.x = 15 * widthScale;
+            pattern.y = 4.7 * heightScale;
+            break;
           case "MA":
-            image.width = 40;
-            image.height = 60;
-            pattern.width = 40;
-            pattern.height = 60;
-            pattern.x = -10;
-            pattern.y = 23;
+            image.width = 2;
+            image.height = image.width;
+            pattern.width = image.width - 0.1;
+            pattern.height = pattern.width;
+            pattern.x = 1.3 * widthScale;
+            pattern.y = 0 * heightScale;
             break;
         }
     }
@@ -241,8 +284,8 @@ jQuery(document).ready(function ($) {
       // Configure the appearance of the pin
       pin.background.fill = this.chart.colors.getIndex(8);
       pin.background.fillOpacity = 0.7;
-      pin.background.pointerBaseWidth = 20;
-      pin.background.pointerLength = 50;
+      pin.background.pointerBaseWidth = 10;
+      pin.background.pointerLength = 20;
       // pin.background.pointerAngle = "value";
       pin.image = new am4core.Image();
       pin.image.propertyFields.href = "fill"; // Bind image URL field
@@ -251,8 +294,8 @@ jQuery(document).ready(function ($) {
       imageSeries.heatRules.push({
         target: pin.background,
         property: "radius",
-        min: 20,
-        max: 20,
+        min: 15,
+        max: 15,
         dataField: "value",
       });
 
@@ -441,34 +484,34 @@ jQuery(document).ready(function ($) {
       fill: "images/gallery/AfiseTurnee/Netherlands.jpg",
       buttons: ["NL-2015"],
     },
-    {
-      id: "BE",
-      title: "Belgium",
-      fill: "images/gallery/AfiseTurnee/Belgium.jpg",
-      buttons: ["BE-2016"],
-    },
+    // {
+    //   id: "BE",
+    //   title: "Belgium",
+    //   fill: "images/gallery/AfiseTurnee/Belgium.jpg",
+    //   buttons: ["BE-2016"],
+    // },
     {
       id: "RU",
       title: "Russia",
-      fill: "images/gallery/AfiseTurnee/Morocco-Tanger.jpg",
+      fill: "images/backgroundTurnee.png",
       buttons: ["RU-2012"],
     },
     {
       id: "MA",
       title: "Morocco",
-      fill: "images/gallery/AfiseTurnee/Morocco-Tanger.jpg",
+      fill: "images/backgroundTurnee.png",
       buttons: ["MA-2023"],
     },
     {
       id: "PL",
       title: "Poland",
-      fill: "images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg",
+      fill: "images/backgroundTurnee.png",
       buttons: ["PL-2013", "PL-2014", "PL-2017"],
     },
     {
       id: "FI",
       title: "Finland",
-      fill: "images/gallery/AfiseTurnee/Finland.jpg",
+      fill: "images/backgroundTurnee.png",
       buttons: ["FI-2022"],
     },
     {
@@ -483,12 +526,12 @@ jQuery(document).ready(function ($) {
       fill: "images/gallery/AfiseTurnee/Portugal.jpg",
       buttons: ["PT-2019", "PT-2024"],
     },
-    {
-      id: "AL",
-      title: "Albania",
-      fill: "images/gallery/AfiseTurnee/Portugal.jpg",
-      buttons: ["AL-2024"],
-    },
+    // {
+    //   id: "AL",
+    //   title: "Albania",
+    //   fill: "images/gallery/AfiseTurnee/Portugal.jpg",
+    //   buttons: ["AL-2024"],
+    // },
   ];
   const visitedCountriesSmall = [
     {
@@ -507,7 +550,7 @@ jQuery(document).ready(function ($) {
       longitude: 55.296249,
       fill: "images/gallery/AfiseTurnee/Dubai.jpg",
       value: 25,
-      angle: 45,
+      // angle: 45,
       title: "Dubai",
       buttons: ["AE-2019", "AE-2023"],
     },
@@ -524,7 +567,7 @@ jQuery(document).ready(function ($) {
     {
       id: "BA",
       latitude: 43.9159,
-      longitude: 17.6791,
+      longitude: 16.6791,
       fill: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-160/pin_berlin.jpg",
       value: 22,
       zoomLevel: 180,

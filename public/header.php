@@ -10,7 +10,7 @@
             <li> <a href="images.php" class="scrollBtn <?php if ($page == 'images') echo 'selected'; ?> nav-link"><?php echo _("IMAGINI") ?></a></li>
             <li> <a href="tours.php" class="scrollBtn <?php if ($page == 'tours') echo 'selected'; ?> nav-link"><?php echo _("TURNEE") ?></a></li>
             <li> <a href="repertoriu.php" class="scrollBtn <?php if ($page == 'repertoriu') echo 'selected'; ?> nav-link"><?php echo _("REPERTORIU") ?></a></li>
-            <li> <a href="reviews.view.php" class="scrollBtn <?php if ($page == 'reviews') echo 'selected'; ?> nav-link"><?php echo _("RECENZII") ?></a></li>
+            <!-- <li> <a href="reviews.view.php" class="scrollBtn <?php if ($page == 'reviews') echo 'selected'; ?> nav-link"><?php echo _("RECENZII") ?></a></li> -->
             <li> <a href="contacts.php" class="scrollBtn <?php if ($page == 'contacts') echo 'selected'; ?> nav-link"><?php echo _("CONTACT") ?></a></li>
         </ul>
     </nav>
