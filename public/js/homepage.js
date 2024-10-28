@@ -62,4 +62,11 @@ $(document).ready(function () {
       header.removeClass("header-scrolled");
     }
   });
+
+  const pagesToChange = ["/tours.php", "/images.php"];
+  console.log(window.location.pathname);
+
+  if (pagesToChange.some((page) => window.location.pathname.includes(page))) {
+    $(".header").css("background-color", "#000000"); // Black background
+  }
 });

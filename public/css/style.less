@@ -329,8 +329,8 @@ nav {
 // /*-------- //IE7 Hack --------*/
 
 #chartdiv {
-  padding-top: 100px;
-  width: 77%;
+  // padding-top: 100px;
+  // width: 77%;
   height: 95vh;
 }
 
@@ -411,7 +411,7 @@ nav {
   flex-direction: column;
   align-items: center;
   height: 95vh;
-  width: 21rem;
+  width: 350px;
   // background-color: hsl(0 0% 0%);
   position: absolute;
   top: 0;
@@ -519,7 +519,7 @@ nav {
   display: block;
   height: 70vh;
   /* height: 40rem; */
-  width: 100%;
+  // width: 100%;
   object-fit: cover;
   margin: auto;
   border-radius: 30px;
@@ -1214,7 +1214,7 @@ label::before {
 //Repertoriu
 
 .repertoriu {
-  padding-top: 120px;
+  // padding-top: 120px;
   background-color: #f9f9f9;
   display: block;
 }
@@ -1380,7 +1380,9 @@ label::before {
 
 .hero-wrapper img {
   width: 100%;
-  height: auto;
+  height: 400px;
+  object-fit: cover;
+  // object-position: 0;
   // filter: blur(5px); /* Adjust the blur value as needed */
   filter: brightness(0.7); /* Adjust the value to make the image darker */
 
@@ -1800,7 +1802,7 @@ label::before {
 // GALLERY
 .gallery-container {
   display: flex;
-  // padding-top: 100px;
+  padding-top: 100px;
 }
 .time-period-container {
   flex: 1;
@@ -2580,6 +2582,15 @@ label::before {
   margin: 5svh auto;
 }
 
+.repertoriu-bg {
+  object-position: 0 -250px;
+}
+@media screen and (max-width: 1240px) {
+  .repertoriu-bg {
+    object-position: 0;
+  }
+}
+
 .fixed-background-image-container {
   height: auto;
   padding: 160px 60px;
@@ -2812,7 +2823,7 @@ label::before {
     text-align: center;
     color: white;
     // margin-left: 10svw;
-    transform: translateY(-50%);
+    // transform: translateY(-50%);
   }
 
   h1 {

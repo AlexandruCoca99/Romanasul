@@ -76,7 +76,7 @@ include 'header.php';
                             <div class="swiper-pagination"></div>
                             <!-- end swiper -->
                         </div>
-                        <?php get_custom_nav() ?>
+                        <?php get_custom_nav(navID: null) ?>
                         <!-- end swiper-custom-nav -->
 
                     </div>
@@ -129,7 +129,7 @@ include 'header.php';
                             <!-- end swiper-wrapper -->
                             <!-- end swiper -->
                         </div>
-                        <?php get_custom_nav() ?>
+                        <?php get_custom_nav(navID: 2) ?>
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
@@ -169,7 +169,7 @@ include 'header.php';
                             <!-- end swiper-wrapper -->
                             <!-- end swiper -->
                         </div>
-                        <?php get_custom_nav() ?>
+                        <?php get_custom_nav(navID: 3) ?>
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
@@ -289,7 +289,7 @@ include 'header.php';
                             <!-- end swiper-wrapper -->
                             <!-- end swiper -->
                         </div>
-                        <?php get_custom_nav() ?>
+                        <?php get_custom_nav(navID: 5) ?>
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
@@ -331,7 +331,7 @@ include 'header.php';
                             <!-- end swiper-wrapper -->
                             <!-- end swiper -->
                         </div>
-                        <?php get_custom_nav() ?>
+                        <?php get_custom_nav(navID: 6) ?>
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
@@ -368,7 +368,7 @@ include 'header.php';
                             <!-- end swiper-wrapper -->
                             <!-- end swiper -->
                         </div>
-                        <?php get_custom_nav() ?>
+                        <?php get_custom_nav(navID: 7) ?>
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>

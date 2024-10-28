@@ -94,10 +94,10 @@ function get_footer()
     </html>';
 }
 
-function get_custom_nav()
+function get_custom_nav($navID)
 {
   echo '
-          <div class="swiper-custom-nav-left">
+          <div class="nav-left-' . $navID . '">
         <svg
           width="64"
           height="64"
@@ -112,7 +112,7 @@ function get_custom_nav()
             fill="red" />
         </svg>
       </div>
-      <div class="swiper-custom-nav-right">
+      <div class="nav-right-' . $navID . '">
         <svg
           width="64"
           height="64"

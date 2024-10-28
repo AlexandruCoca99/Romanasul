@@ -26,8 +26,9 @@ jQuery(document).ready(function ($) {
         this.chart.geodata = am4geodata_worldLow;
         // Set the map's projection type
         this.chart.projection = new am4maps.projections.Miller();
-        this.chart.responsive.enabled = true;
-        this.chart.background.fill = "#000";
+        // this.chart.responsive.enabled = true;
+        // this.chart.background.fill = am4core.color("#D3D3D3");
+        // this.chart.background.fillOpacity = 1;
         // Set the map's initial zoom
         this.chart.homeZoomLevel = isMobile ? 5 : 1;
         this.chart.homeGeoPoint = {

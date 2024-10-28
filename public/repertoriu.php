@@ -7,8 +7,12 @@ include 'header.php';
 <body>
 
   <div class="repertoriu">
+    <div class="hero-wrapper">
+      <img class="repertoriu-bg" src="images/Poze-romanasul/4.Galerie/2010-prezent/Colaj 4.jpg" alt="Background Image">
+      <h1 class="hero-title">Repertoriu</h1>
+    </div>
     <div class="background"></div>
-    <h2>Repertoriu</h2>
+
     <div class="container-repertoriu">
       <div class="dans banat">
         <div class="dance-yt-video-container hidden">
