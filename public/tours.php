@@ -294,7 +294,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
 
     </div>
     <!-- end swiper -->
@@ -377,7 +377,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
 
       </div>
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
     </div>
     <!-- end swiper -->
 
@@ -437,7 +437,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
 
     </div>
     <!-- end swiper -->
@@ -498,7 +498,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
 
     </div>
     <!-- end swiper -->
@@ -630,7 +630,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
 
     </div>
     <!-- end swiper -->
@@ -714,7 +714,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
 
     </div>
     <!-- end swiper -->
@@ -756,7 +756,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
       </div>
 
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
     </div>
 
     <!-- end swiper -->
@@ -816,7 +816,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
 
     </div>
     <!-- end swiper -->
@@ -918,7 +918,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
 
     </div>
     <!-- end swiper -->
@@ -1020,7 +1020,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
 
     </div>
     <!-- end swiper -->
@@ -1081,7 +1081,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
 
 
     </div>
@@ -1143,7 +1143,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
 
 
     </div>
@@ -1188,7 +1188,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
 
 
     </div>
@@ -1275,7 +1275,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
 
 
     </div>
@@ -1307,7 +1307,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
       </div>
       <!-- end swiper-wrapper -->
 
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
     </div>
     <!-- end swiper -->
 
@@ -1367,7 +1367,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
-      <?php get_custom_nav() ?>
+      <?php get_custom_nav(null) ?>
     </div>
 
 

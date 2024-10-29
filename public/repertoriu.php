@@ -155,7 +155,7 @@ include 'header.php';
           <!-- end swiper-slide -->
         </div>
         <!-- end swiper-wrapper -->
-        <?php get_custom_nav() ?>
+        <?php get_custom_nav(null) ?>
       </div>
       <!-- end swiper -->
 
@@ -236,7 +236,7 @@ include 'header.php';
 
         </div>
         <!-- end swiper-wrapper -->
-        <?php get_custom_nav() ?>
+        <?php get_custom_nav(null) ?>
       </div>
       <!-- end swiper -->
 
@@ -294,7 +294,7 @@ include 'header.php';
           <!-- end swiper-slide -->
         </div>
         <!-- end swiper-wrapper -->
-        <?php get_custom_nav() ?>
+        <?php get_custom_nav(null) ?>
       </div>
       <!-- end swiper -->
 
@@ -352,7 +352,7 @@ include 'header.php';
           <!-- end swiper-slide -->
         </div>
         <!-- end swiper-wrapper -->
-        <?php get_custom_nav() ?>
+        <?php get_custom_nav(null) ?>
 
       </div>
       <!-- end swiper -->

@@ -97,12 +97,12 @@ function get_footer()
 function get_custom_nav($navID)
 {
   echo '
-          <div class="nav-left-' . $navID . '">
+          <div class="swiper-custom-nav-left">
         <svg
           width="64"
           height="64"
           viewBox="0 0 64 64"
-          id="nav-left"
+          id="nav-left' . $navID . '"
           fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
@@ -112,12 +112,12 @@ function get_custom_nav($navID)
             fill="red" />
         </svg>
       </div>
-      <div class="nav-right-' . $navID . '">
+      <div class="swiper-custom-nav-right">
         <svg
           width="64"
           height="64"
           viewBox="0 0 64 64"
-          id="nav-right"
+          id="nav-right' . $navID . '"
           fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
@@ -128,5 +128,5 @@ function get_custom_nav($navID)
         </svg>
       </div>
       <!-- end swiper-custom-nav -->
-      <div class="swiper-custom-pagination"></div>';
+      ';
 }

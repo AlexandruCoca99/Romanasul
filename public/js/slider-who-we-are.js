@@ -1,10 +1,10 @@
-var choreographers = [
+const choreographers = [
   "Prof.Florin Ciobanu",
   "Ing.Viorel Roman",
   "Ing. Nicoara Eugen",
 ];
 
-var dirijori = [
+const dirijori = [
   "Hatfaludi Alexandru",
   "Vasile Moldovan",
   "Marius Moldovan",
@@ -20,43 +20,43 @@ var dirijori = [
   "Prof. Paul Stoica",
 ];
 
-var directori = [
-  "Prof. Ioan Bârsan",
-  "Prof. Mîndru Alexandru",
-  "Prof. Victor Bercea",
-  "Ing. Marius Moldovan",
-  "Anghel Mirela",
-];
+// var directori = [
+//   "Prof. Ioan Bârsan",
+//   "Prof. Mîndru Alexandru",
+//   "Prof. Victor Bercea",
+//   "Ing. Marius Moldovan",
+//   "Anghel Mirela",
+// ];
 
-var artists = [
-  "Mia Dan",
-  "Dumitru Sopon",
-  "Maria Marcu",
-  "Sava Negrean Brudaşcu",
-  "Veta Biriş",
-  "Nicolae Furdui Iancu",
-  "Ion Pojar",
-  "Maria Lobont",
-  "Angela Nistor",
-  "Mariana Morcan",
-  "Maria Dan Golban",
-  "Marius Ciprian Pop",
-  "Adriana Hagău",
-  "Aurel Ciceoan",
-  "Maria Dan Golban",
-];
+// var artists = [
+//   "Mia Dan",
+//   "Dumitru Sopon",
+//   "Maria Marcu",
+//   "Sava Negrean Brudaşcu",
+//   "Veta Biriş",
+//   "Nicolae Furdui Iancu",
+//   "Ion Pojar",
+//   "Maria Lobont",
+//   "Angela Nistor",
+//   "Mariana Morcan",
+//   "Maria Dan Golban",
+//   "Marius Ciprian Pop",
+//   "Adriana Hagău",
+//   "Aurel Ciceoan",
+//   "Maria Dan Golban",
+// ];
 
-var musicians = [
-  "Dumitru Fărcaş",
-  "Gheorghe Zamfir",
-  "Gheorghe Palcu",
-  "Ioan Berci",
-  "Dan Gâdea",
-  "Constantin Istici",
-  "Mircea Câmpeanu",
-];
+// var musicians = [
+//   "Dumitru Fărcaş",
+//   "Gheorghe Zamfir",
+//   "Gheorghe Palcu",
+//   "Ioan Berci",
+//   "Dan Gâdea",
+//   "Constantin Istici",
+//   "Mircea Câmpeanu",
+// ];
 
-var individuals = ["Vania Atudorei", "Victor Bercea"];
+// const individuals = ["Vania Atudorei", "Victor Bercea"];
 
 const swiperConfigs = {
   slidesPerView: 1.1,

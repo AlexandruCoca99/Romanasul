@@ -129,7 +129,7 @@ include 'header.php';
                             <!-- end swiper-wrapper -->
                             <!-- end swiper -->
                         </div>
-                        <?php get_custom_nav(navID: 2) ?>
+                        <?php get_custom_nav(navID: "-2") ?>
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
@@ -169,7 +169,7 @@ include 'header.php';
                             <!-- end swiper-wrapper -->
                             <!-- end swiper -->
                         </div>
-                        <?php get_custom_nav(navID: 3) ?>
+                        <?php get_custom_nav(navID: "-3") ?>
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
@@ -289,7 +289,7 @@ include 'header.php';
                             <!-- end swiper-wrapper -->
                             <!-- end swiper -->
                         </div>
-                        <?php get_custom_nav(navID: 5) ?>
+                        <?php get_custom_nav(navID: "-5") ?>
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
@@ -331,7 +331,7 @@ include 'header.php';
                             <!-- end swiper-wrapper -->
                             <!-- end swiper -->
                         </div>
-                        <?php get_custom_nav(navID: 6) ?>
+                        <?php get_custom_nav(navID: "-6") ?>
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
@@ -368,7 +368,7 @@ include 'header.php';
                             <!-- end swiper-wrapper -->
                             <!-- end swiper -->
                         </div>
-                        <?php get_custom_nav(navID: 7) ?>
+                        <?php get_custom_nav(navID: "-7") ?>
                         <!-- end swiper-custom-nav -->
                     </div>
                 </div>
