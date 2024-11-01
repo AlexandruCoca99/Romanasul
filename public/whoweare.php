@@ -73,7 +73,7 @@ include 'header.php';
                                 <!-- end swiper-slide -->
                             </div>
                             <!-- end swiper-wrapper -->
-                            <div class="swiper-pagination"></div>
+                            <div class="choreographers-pagination"></div>
                             <!-- end swiper -->
                         </div>
                         <?php get_custom_nav(navID: null) ?>
@@ -127,6 +127,7 @@ include 'header.php';
                                 <!-- end swiper-slide -->
                             </div>
                             <!-- end swiper-wrapper -->
+                            <div class="conductors-pagination"></div>
                             <!-- end swiper -->
                         </div>
                         <?php get_custom_nav(navID: "-2") ?>
@@ -167,6 +168,7 @@ include 'header.php';
                                 <!-- end swiper-slide -->
                             </div>
                             <!-- end swiper-wrapper -->
+                            <div class="cultural-attaches-pagination"></div>
                             <!-- end swiper -->
                         </div>
                         <?php get_custom_nav(navID: "-3") ?>
@@ -287,6 +289,7 @@ include 'header.php';
                                 <!-- end swiper-slide -->
                             </div>
                             <!-- end swiper-wrapper -->
+                            <div class="collaborating-singers-pagination"></div>
                             <!-- end swiper -->
                         </div>
                         <?php get_custom_nav(navID: "-5") ?>
@@ -329,6 +332,7 @@ include 'header.php';
                                 <!-- end swiper-slide -->
                             </div>
                             <!-- end swiper-wrapper -->
+                            <div class="collaborating-musicians-pagination"></div>
                             <!-- end swiper -->
                         </div>
                         <?php get_custom_nav(navID: "-6") ?>
@@ -366,6 +370,7 @@ include 'header.php';
                                 <!-- end swiper-slide -->
                             </div>
                             <!-- end swiper-wrapper -->
+                            <div class="show-hosts-pagination"></div>
                             <!-- end swiper -->
                         </div>
                         <?php get_custom_nav(navID: "-7") ?>

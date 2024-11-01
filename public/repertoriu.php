@@ -25,7 +25,7 @@ include 'header.php';
           <h3>Videoclip</h3>
         </div>
         <div class="dance-name">
-          <h3>BANAT</h3>
+          <h1>BANAT</h1>
         </div>
       </div>
 
@@ -102,7 +102,7 @@ include 'header.php';
     <div class="container wide">
 
       <!-- //////////////////////////////////////////////////////////////// -->
-      <!-- CANADA SWIPER -->
+      <!-- Banat SWIPER -->
 
       <div class="swiper hidden galerie-nasaud">
         <div class="swiper-wrapper">

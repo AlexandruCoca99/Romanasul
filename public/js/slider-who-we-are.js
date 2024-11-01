@@ -20,43 +20,43 @@ const dirijori = [
   "Prof. Paul Stoica",
 ];
 
-// var directori = [
-//   "Prof. Ioan Bârsan",
-//   "Prof. Mîndru Alexandru",
-//   "Prof. Victor Bercea",
-//   "Ing. Marius Moldovan",
-//   "Anghel Mirela",
-// ];
+const directori = [
+  "Prof. Ioan Bârsan",
+  "Prof. Mîndru Alexandru",
+  "Prof. Victor Bercea",
+  "Ing. Marius Moldovan",
+  "Anghel Mirela",
+];
 
-// var artists = [
-//   "Mia Dan",
-//   "Dumitru Sopon",
-//   "Maria Marcu",
-//   "Sava Negrean Brudaşcu",
-//   "Veta Biriş",
-//   "Nicolae Furdui Iancu",
-//   "Ion Pojar",
-//   "Maria Lobont",
-//   "Angela Nistor",
-//   "Mariana Morcan",
-//   "Maria Dan Golban",
-//   "Marius Ciprian Pop",
-//   "Adriana Hagău",
-//   "Aurel Ciceoan",
-//   "Maria Dan Golban",
-// ];
+const artists = [
+  "Mia Dan",
+  "Dumitru Sopon",
+  "Maria Marcu",
+  "Sava Negrean Brudaşcu",
+  "Veta Biriş",
+  "Nicolae Furdui Iancu",
+  "Ion Pojar",
+  "Maria Lobont",
+  "Angela Nistor",
+  "Mariana Morcan",
+  "Maria Dan Golban",
+  "Marius Ciprian Pop",
+  "Adriana Hagău",
+  "Aurel Ciceoan",
+  "Maria Dan Golban",
+];
 
-// var musicians = [
-//   "Dumitru Fărcaş",
-//   "Gheorghe Zamfir",
-//   "Gheorghe Palcu",
-//   "Ioan Berci",
-//   "Dan Gâdea",
-//   "Constantin Istici",
-//   "Mircea Câmpeanu",
-// ];
+const musicians = [
+  "Dumitru Fărcaş",
+  "Gheorghe Zamfir",
+  "Gheorghe Palcu",
+  "Ioan Berci",
+  "Dan Gâdea",
+  "Constantin Istici",
+  "Mircea Câmpeanu",
+];
 
-// const individuals = ["Vania Atudorei", "Victor Bercea"];
+const individuals = ["Vania Atudorei", "Victor Bercea"];
 
 const swiperConfigs = {
   slidesPerView: 1.1,
@@ -87,7 +87,7 @@ const swiper1 = new Swiper(".swiper-choreographers", {
     prevEl: "#nav-left",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".choreographers-pagination",
     clickable: true,
     renderBullet: function (index, className) {
       return (
@@ -104,7 +104,7 @@ const swiper2 = new Swiper(".swiper-conductors", {
     prevEl: "#nav-left-2",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".conductors-pagination",
     clickable: true,
     renderBullet: function (index, className) {
       return `<span class="` + className + `">` + dirijori[index] + `</span>`;
@@ -119,7 +119,7 @@ const swiper3 = new Swiper(".swiper-cultural-attaches", {
     prevEl: "#nav-left-3",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".cultural-attaches-pagination",
     clickable: true,
     renderBullet: function (index, className) {
       return `<span class="` + className + `">` + directori[index] + `</span>`;
@@ -149,7 +149,7 @@ const swiper5 = new Swiper(".swiper-collaborating-singers", {
     prevEl: "#nav-left-5",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".collaborating-singers-pagination",
     clickable: true,
     renderBullet: function (index, className) {
       return `<span class="` + className + `">` + artists[index] + `</span>`;
@@ -164,7 +164,7 @@ const swiper6 = new Swiper(".swiper-collaborating-musicians", {
     prevEl: "#nav-left-6",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".collaborating-musicians-pagination",
     clickable: true,
     renderBullet: function (index, className) {
       return `<span class="` + className + `">` + musicians[index] + `</span>`;
@@ -179,7 +179,7 @@ const swiper7 = new Swiper(".swiper-show-hosts", {
     prevEl: "#nav-left-7",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".show-hosts-pagination",
     clickable: true,
     renderBullet: function (index, className) {
       return (

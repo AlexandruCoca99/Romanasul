@@ -619,7 +619,14 @@ nav {
 // .swiper-custom-pagination .swiper-pagination-bullet-active .line {
 //   width: 2rem;
 // }
-.swiper-pagination {
+
+.choreographers-pagination,
+.conductors-pagination,
+.cultural-attaches-pagination,
+.collaborating-singers-pagination,
+.collaborating-musicians-pagination,
+.show-hosts-pagination {
+  position: absolute;
   display: flex;
   justify-content: center;
   margin-top: 15px;
@@ -1241,12 +1248,16 @@ label::before {
   flex: 0 0 25%; /* Ajustează acest procent pentru a controla cât de mult spațiu ocupă fiecare element pe rând */
   margin: 50px; /* Optional, pentru a da un spațiu mic între elemente */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* adaugă o umbră ușoară pentru un aspect mai plăcut */
-  text-align: center; /* aliniază textul la centru în div */
-  overflow: hidden; /* Ascunde orice conținut care depășește dimensiunile div-ului */
-  background: url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/4.-Zilele-prieteniei/Inceput Banat.jpg"); /* Setează imaginea de fundal */
+  text-align: center;
+  overflow: hidden;
   background-size: cover; /* Asigură că imaginea de fundal acoperă întregul div */
   background-position: center; /* Centrează imaginea de fundal */
   border-radius: 20px;
+}
+
+.banat {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/4.-Zilele-prieteniei/Inceput Banat.jpg");
 }
 
 .dans .left-side,
@@ -1256,7 +1267,7 @@ label::before {
   left: 0;
   width: 50%; /* Asigură că fiecare div umple containerul .dans */
   height: 80%; /* Asigură că fiecare div umple containerul .dans */
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center; /* Centrează conținutul pe verticală și orizontală */
   justify-content: center;
@@ -1293,8 +1304,15 @@ label::before {
 
 .dance-name {
   position: absolute;
-  bottom: 0;
+  color: white;
+  bottom: 0%;
   width: 100%; /* Asigură lățimea totală */
+  transition: bottom 0.3s ease;
+}
+.dans:hover {
+  .dance-name {
+    bottom: 75%;
+  }
 }
 
 // .dance-yt-video-container {
@@ -1598,6 +1616,7 @@ label::before {
       margin-top: 30px;
     }
     .swiper-slide img {
+      max-width: 370px;
       height: 30vh;
       border-radius: 30px;
     }
