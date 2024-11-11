@@ -5,7 +5,7 @@ const choreographers = [
 ];
 
 const dirijori = [
-  "Hatfaludi Alexandru",
+  "Hatfa Alexandru",
   "Vasile Moldovan",
   "Marius Moldovan",
   "Ioan Moloca",
@@ -21,18 +21,20 @@ const dirijori = [
 ];
 
 const directori = [
-  "Prof. Ioan Bârsan",
-  "Prof. Mîndru Alexandru",
-  "Prof. Victor Bercea",
-  "Ing. Marius Moldovan",
+  "Lucian Revnic",
   "Anghel Mirela",
+  "Ing. Marius Moldovan",
+  "Prof. Victor Bercea",
+  "Prof. Mîndru Alexandru",
+  "Prof. Ioan Bârsan",
 ];
 
 const artists = [
-  "Mia Dan",
-  "Dumitru Sopon",
-  "Maria Marcu",
   "Sava Negrean Brudaşcu",
+  "Marius Ciprian Pop",
+  "Ionut Fulea",
+  "Maria Marcu",
+  "Mia Dan",
   "Veta Biriş",
   "Nicolae Furdui Iancu",
   "Ion Pojar",
@@ -40,7 +42,7 @@ const artists = [
   "Angela Nistor",
   "Mariana Morcan",
   "Maria Dan Golban",
-  "Marius Ciprian Pop",
+  "Dumitru Sopon",
   "Adriana Hagău",
   "Aurel Ciceoan",
   "Maria Dan Golban",
@@ -49,8 +51,8 @@ const artists = [
 const musicians = [
   "Dumitru Fărcaş",
   "Gheorghe Zamfir",
-  "Gheorghe Palcu",
   "Ioan Berci",
+  "Gheorghe Palcu",
   "Dan Gâdea",
   "Constantin Istici",
   "Mircea Câmpeanu",
@@ -196,62 +198,31 @@ let singers = document.getElementById("more-singers");
 let collaboratingSingers = document.getElementById(
   "more-collaborating-singers"
 );
-var btnConductors = document.getElementById("read-more-conductors");
-var btnSingers = document.getElementById("read-more-singers");
-var btnCollaboratingSingers = document.getElementById(
+let btnConductors = document.getElementById("read-more-conductors");
+let btnSingers = document.getElementById("read-more-singers");
+let btnCollaboratingSingers = document.getElementById(
   "read-more-collaborating-singers"
 );
 
-function showMoreConductors() {
-  const conductors = document.getElementById("more-conductors");
-  const btnConductors = document.getElementById("read-more-conductors");
-
-  if (conductors.classList.contains("expand")) {
-    conductors.style.height = "0";
-    conductors.classList.remove("expand");
-    btnConductors.textContent = "Read More";
+function showMore(occupation, btn) {
+  if (occupation.classList.contains("expand")) {
+    occupation.style.height = "0";
+    occupation.classList.remove("expand");
+    btn.textContent = "Mai mult";
   } else {
-    conductors.classList.add("expand");
-    let autoHeight = conductors.scrollHeight + "px"; // Get the actual height of the content
-    conductors.style.height = autoHeight;
-    btnConductors.textContent = "Show Less";
+    occupation.classList.add("expand");
+    let autoHeight = occupation.scrollHeight + "px"; // Get the actual height of the content
+    occupation.style.height = autoHeight;
+    btn.textContent = "Mai putin";
   }
 }
 
-function showMoreSingers() {
-  const singers = document.getElementById("more-singers");
-  const btnSingers = document.getElementById("read-more-singers");
-
-  if (singers.classList.contains("expand")) {
-    singers.style.height = "0";
-    singers.classList.remove("expand");
-    btnSingers.textContent = "Read More";
-  } else {
-    singers.classList.add("expand");
-    let autoHeight = singers.scrollHeight + "px"; // Get the actual height of the content
-    singers.style.height = autoHeight;
-    btnSingers.textContent = "Show Less";
-  }
+function showMoreConductors() {
+  showMore(conductors, btnConductors);
 }
 
 function showMoreCollaboratingSingers() {
-  const collaboratingSingers = document.getElementById(
-    "more-collaborating-singers"
-  );
-  const btnCollaboratingSingers = document.getElementById(
-    "read-more-collaborating-singers"
-  );
-
-  if (collaboratingSingers.classList.contains("expand")) {
-    collaboratingSingers.style.height = "0";
-    collaboratingSingers.classList.remove("expand");
-    btnCollaboratingSingers.textContent = "Read More";
-  } else {
-    collaboratingSingers.classList.add("expand");
-    let autoHeight = collaboratingSingers.scrollHeight + "px"; // Get the actual height of the content
-    collaboratingSingers.style.height = autoHeight;
-    btnCollaboratingSingers.textContent = "Show Less";
-  }
+  showMore(collaboratingSingers, btnCollaboratingSingers);
 }
 
 const createObserver = (effect, thd) =>

@@ -64,8 +64,8 @@ try {
 
     //Recipients
     $mail->setFrom($email, $name);
-    $mail->addAddress("alexandru.coca@yahoo.com", "Alex");
-    $mail->addReplyTo("alexandru.coca@yahoo.com", "Alex");
+    $mail->addAddress("revnic2002@yahoo.com", "Lucian");
+    $mail->addReplyTo($email, $name);
 
     // Content
     $mail->isHTML(true);

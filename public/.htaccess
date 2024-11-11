@@ -1,9 +1,14 @@
 RewriteEngine On
 
-# Only apply the rule if the requested file doesn't actually exist
-RewriteCond %{REQUEST_FILENAME} !-f
-# Only apply the rule if the requested directory doesn't actually exist
+# Rewrite rule to remove .php extension
 RewriteCond %{REQUEST_FILENAME} !-d
-
-# Rewrite requests that do not contain a dot (.) to their .php counterparts
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+RewriteCond %{THE_REQUEST} \s(.+?)\.php[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
+<IfModule mod_headers.c>
+    # Prevent caching by setting no-store and no-cache headers
+    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires "Thu, 01 Jan 1970 00:00:00 GMT"
+</IfModule>

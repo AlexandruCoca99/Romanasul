@@ -16,7 +16,7 @@
                     <li><a href="images.php">Galerie</a></li>
                     <li><a href="tours.php">Turnee</a></li>
                     <li><a href="repertoriu.php">Repertoriu</a></li>
-                    <li><a href="reviews.view.php">Recenzii</a></li>
+                    <!-- <li><a href="reviews.view.php">Recenzii</a></li> -->
                     <li><a href="contacts.php">Contact</a></li>
                 </ul>
             </div>

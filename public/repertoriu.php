@@ -14,351 +14,99 @@ include 'header.php';
     <div class="background"></div>
 
     <div class="container-repertoriu">
-      <div class="dans banat">
-        <div class="dance-yt-video-container hidden">
+
+      <div class="dans " id="banat">
+        <div class="dance-yt-video-container-banat hidden">
           <iframe class="dance-yt-video" src="https://www.youtube.com/embed/CUcJ6SjzesM?si=QqO2ntbIHc4mhBSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div class="left-side " id="galerie-nasaud">
-          <h3>Galerie Poze</h3>
-        </div>
-        <div class="right-side">
-          <h3>Videoclip</h3>
-        </div>
         <div class="dance-name">
-          <h1>BANAT</h1>
+          <h2>BANAT</h2>
         </div>
       </div>
 
-      <div class="dans" style="background: url('images/Poze-romanasul/2.Evenimente/1.Spectacole/4.-Zilele-prieteniei/Baieti_Maramures.jpg');  background-size: cover;">
-        <!-- <img src="images/favicon.jpg" alt=""> -->
-        <div class="left-side galerie-nasaud">
-          <h3>Galerie Poze</h3>
+      <div class="dans " id="maramures">
+        <div class="dance-yt-video-container-maramures hidden">
+          <iframe class="dance-yt-video" src="https://www.youtube.com/embed/X3pjy1rcb9I" title="Ansamblul Folcloric Romanasul - Dans din Maramures" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div class="right-side videoclip-nasaud">
-          <h3>Videoclip</h3>
-        </div>
-        <div>
-          <h3>Maramures</h3>
+        <div class="dance-name">
+          <h2>MARAMURES</h2>
         </div>
       </div>
-      <div class="dans">
-        <!-- <img src="images/favicon.jpg" alt=""> -->
-        <div>
-          <h3>Dansul II</h3>
+
+      <div class="dans" id="nasaud">
+        <div class="dance-yt-video-container-nasaud hidden">
+          <iframe class="dance-yt-video" src="https://www.youtube.com/embed/BwPlQ0nch0w" title="Ansamblul Folcloric Romanasul - Cantec si dans din Nasaud" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="dance-name">
+          <h2>NASAUD</h2>
         </div>
       </div>
-      <div class="dans">
-        <!-- <img src="images/favicon.jpg" alt=""> -->
-        <div>
-          <h3>Dansul III</h3>
+      <div class="dans" id="moldova">
+        <div class="dance-yt-video-container-moldova hidden">
+          <iframe class="dance-yt-video" src="https://www.youtube.com/embed/D2nR31-v3Mw" title="Ansamblul Folcloric Romanasul - Cantec si dans din Moldova" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="dance-name">
+          <h2>MOLDOVA</h2>
         </div>
       </div>
-      <div class="dans">
-        <!-- <img src="images/favicon.jpg" alt=""> -->
-        <div>
-          <h3>Dansul IV</h3>
+      <div class="dans" id="campia-transilvaniei">
+        <div class="dance-yt-video-container-campia-transilvaniei hidden">
+          <iframe class="dance-yt-video" src="https://www.youtube.com/embed/HeNc5Fnq99I" title="Ansamblul Romanasul - Dans din Transilvania" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="dance-name" style="transform: translateY(20%);">
+          <h2>CAMPIA <br> TRANSILVANIEI</h2>
         </div>
       </div>
-      <div class="dans">
-        <!-- <img src="images/favicon.jpg" alt=""> -->
-        <div>
-          <h3>Dansul V</h3>
+      <div class="dans" id="fagaras">
+        <div class="dance-yt-video-container-fagaras hidden">
+          <iframe class="dance-yt-video" src="https://www.youtube.com/embed/CkVh8z6ijUc" title="Ansamblul Folcloric Romanasul - Dans din Fagaras" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="dance-name">
+          <h2>FAGARAS</h2>
         </div>
       </div>
-      <div class="dans">
-        <!-- <img src="images/favicon.jpg" alt=""> -->
-        <div>
-          <h3>Dansul VI</h3>
+      <div class="dans" id="codru">
+        <div class="dance-yt-video-container-codru hidden">
+          <img src="images/backgroundTurnee.png" alt="">
+        </div>
+        <div class="dance-name">
+          <h2>CODRU</h2>
         </div>
       </div>
-      <div class="dans">
-        <!-- <img src="images/favicon.jpg" alt=""> -->
-        <div>
-          <h3>Dansul VII</h3>
+      <div class="dans" id="calus">
+        <div class="dance-yt-video-container-calus hidden">
+          <iframe class="dance-yt-video" src="https://www.youtube.com/embed/Ag81FgRqi_o" title="Ansamblul Folcloric Romanasul - Calus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="dance-name">
+          <h2>CALUS</h2>
         </div>
       </div>
-      <div class="dans">
-        <!-- <img src="images/favicon.jpg" alt=""> -->
-        <div>
-          <h3>Dansul VIII</h3>
+      <div class="dans" id="fecioresc">
+        <div class="dance-yt-video-container-fecioresc hidden">
+          <iframe class="dance-yt-video" src="https://www.youtube.com/embed/bkeTImkpfKo?list=PL8-8E_OPpSPK11gh2B1GYn9qBY2YJL_tN" title="ANSAMBLUL FOLCLORIC ROMANASUL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="dance-name">
+          <h2>FECIORESC</h2>
         </div>
       </div>
-      <div class="dans">
-        <!-- <img src="images/favicon.jpg" alt=""> -->
-        <div>
-          <h3>Dansul IX</h3>
+      <div class="dans" id="crihalma">
+        <div class="dance-yt-video-container-crihalma hidden">
+          <iframe class="dance-yt-video" src="https://www.youtube.com/embed/4H_VaIPmrRM" title="Ansamblul Folcloric Romanasul - Crihalma" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="dance-name">
+          <h2>CRIHALMA</h2>
         </div>
       </div>
-      <div class="dans">
-        <!-- <img src="images/favicon.jpg" alt=""> -->
-        <div>
-          <h3>Dansul X</h3>
+      <div class="dans" id="oas">
+        <div class="dance-yt-video-container-oas hidden">
+          <iframe class="dance-yt-video" src="https://www.youtube.com/embed/bkeTImkpfKo?list=PL8-8E_OPpSPK11gh2B1GYn9qBY2YJL_tN" title="ANSAMBLUL FOLCLORIC ROMANASUL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="dance-name">
+          <h2>OAS</h2>
         </div>
       </div>
     </div>
   </div>
-  <section class="swiper-main hidden" id="">
-    <a href="#" class="close-button"><img src="images/close-red-icon.svg" /></a>
-    <div class="container wide">
-
-      <!-- //////////////////////////////////////////////////////////////// -->
-      <!-- Banat SWIPER -->
-
-      <div class="swiper hidden galerie-nasaud">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Canada-2023/afis Canada.jpg" alt="afis" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Canada-2023/Colaj.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Canada-2023/Dans de fete.jpeg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Canada-2023/Mall Dans de Moldova.jpg" alt="Mall Dans de Moldova" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Canada-2023/Maramures Baieti.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Canada-2023/Saritura baieti colaj.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Canada-2023/Spectacol Mall.jpg" />
-            </figure>
-          </div>
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Canada-2023/Ioana happy.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-        </div>
-        <!-- end swiper-wrapper -->
-        <?php get_custom_nav(null) ?>
-      </div>
-      <!-- end swiper -->
-
-      <!-- //////////////////////////////////////////////////////////////// -->
-      <!-- BARCELONA SWIPER -->
-
-      <div class="swiper hidden" id="ES-2022">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Afis-Barcelona.jpg" alt="afis" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Baietii din Romanasul.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Dans de Codru.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Dans din Nasaud.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Obicei Maramures masti.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Orchestra Barcelona.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Parada Barcelona.jpg" />
-            </figure>
-          </div>
-
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Reprezentanti Romanasul.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Romansul cu unul dintre organizatori +coregraf.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Sagrada Familia.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Barcelona-2022/Sarba Moldova.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-
-        </div>
-        <!-- end swiper-wrapper -->
-        <?php get_custom_nav(null) ?>
-      </div>
-      <!-- end swiper -->
-
-      <!-- //////////////////////////////////////////////////////////////// -->
-      <!-- DUBAI 2019 SWIPER -->
-
-      <div class="swiper hidden" id="AE-2019">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/Afis Dubai.jpg" alt="afis" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/Dubai 2019.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/" alt="Mall Dans de Moldova" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
-            </figure>
-          </div>
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-        </div>
-        <!-- end swiper-wrapper -->
-        <?php get_custom_nav(null) ?>
-      </div>
-      <!-- end swiper -->
-
-      <!-- //////////////////////////////////////////////////////////////// -->
-      <!-- DUBAI 2023 SWIPER -->
-
-      <div class="swiper hidden" id="AE-2023">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Afis Dubai 2023.jpg" alt="afis" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Alaturi de Presedinte.jpg" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2013/" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/" alt="Mall Dans de Moldova" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
-            </figure>
-          </div>
-          <div class="swiper-slide">
-            <figure>
-              <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
-            </figure>
-          </div>
-          <!-- end swiper-slide -->
-        </div>
-        <!-- end swiper-wrapper -->
-        <?php get_custom_nav(null) ?>
-
-      </div>
-      <!-- end swiper -->
-    </div>
-    <!-- end container -->
-  </section>
 
   <?php
   include 'footer.php';

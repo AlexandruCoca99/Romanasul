@@ -1,3 +1,9 @@
+$(document).ready(function () {
+  $("img").each(function () {
+    $(this).attr("loading", "lazy");
+  });
+});
+
 $(document).on("click", ".hamburger ", function () {
   $("nav").toggleClass("active");
 });
@@ -63,7 +69,7 @@ $(document).ready(function () {
     }
   });
 
-  const pagesToChange = ["/tours.php", "/images.php"];
+  const pagesToChange = ["/tours", "/Imagini"];
   console.log(window.location.pathname);
 
   if (pagesToChange.some((page) => window.location.pathname.includes(page))) {

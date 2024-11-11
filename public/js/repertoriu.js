@@ -17,17 +17,18 @@ jQuery(document).ready(function ($) {
   //   window.open("https://www.youtube.com/watch?v=CUcJ6SjzesM", "_blank");
   // });
 
-  $(".right-side").click(function () {
+  $(".dans").click(function () {
     // Clone the video container and create an overlay
-    var videoContainer = $(".dance-yt-video-container")
+    let id = this.id;
+    const videoContainer = $(`.dance-yt-video-container-${id}`)
       .clone()
       .removeClass("hidden")
-      .wrap('<div class="video-overlay"></div>')
+      .wrap(`<div class="video-overlay"></div>`)
       .parent();
     $("body").append(videoContainer);
 
     // Close the video when clicking outside of it
-    $(".video-overlay").click(function () {
+    $(`.video-overlay`).click(function () {
       $(this).remove();
     });
 

@@ -358,9 +358,9 @@ nav {
   .content {
     .display(flex);
     .flex-direction(column);
-
+    max-height: 600px;
     .image-holder {
-      max-height: 60svh;
+      max-height: 350px;
       border-radius: 20px;
       overflow: hidden;
 
@@ -1230,8 +1230,8 @@ label::before {
   float: none;
   text-align: center;
   margin-top: 20px; /* Adaugă un spațiu la partea de sus, dacă este necesar */
-  margin-bottom: 20px; /* Adaugă un spațiu la partea de jos, pentru a separa titlul de restul conținutului */
-  font-size: 6svh;
+  // margin-bottom: 20px; /* Adaugă un spațiu la partea de jos, pentru a separa titlul de restul conținutului */
+  // font-size: 6svh;
 }
 
 .container-repertoriu {
@@ -1253,65 +1253,80 @@ label::before {
   background-size: cover; /* Asigură că imaginea de fundal acoperă întregul div */
   background-position: center; /* Centrează imaginea de fundal */
   border-radius: 20px;
+  cursor: pointer;
 }
 
-.banat {
+#banat {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/4.-Zilele-prieteniei/Inceput Banat.jpg");
 }
-
-.dans .left-side,
-.dans .right-side {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%; /* Asigură că fiecare div umple containerul .dans */
-  height: 80%; /* Asigură că fiecare div umple containerul .dans */
-  display: none;
-  flex-direction: column;
-  align-items: center; /* Centrează conținutul pe verticală și orizontală */
-  justify-content: center;
-  cursor: pointer; /* Adaugă un indicator vizual că elementele pot fi clicabile */
-  transition: opacity 0.5s ease; /* Adaugă o tranziție pentru efect vizual */
+#maramures {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/4.-Zilele-prieteniei/Baieti_Maramures.jpg");
 }
-
-.dans .left-side {
-  left: 0; /* Aliniază la stânga */
+#nasaud {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/Poze-romanasul/1.Turnee/Maroc2023/Multumiri-Maroc.jpg");
 }
-
-.dans .right-side {
-  left: 50%; /* Împinge inițial partea dreaptă în afara vizualului */
-  right: 0; /* Poziționează .right-side la dreapta */
+#moldova {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/2. Zilele Recoltei/Poza grup.jpg");
 }
-
-.dans .right-side:hover h3,
-.dans .left-side:hover h3 {
-  font-size: 24px;
+#campia-transilvaniei {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/Poze-romanasul/3.Filmari/3. Fata lui M. C. Pop/2 perechi 2.jpg");
 }
-
-.dans img {
-  width: 50%; /* face ca imaginea să ocupe întreaga lățime a div-ului părinte */
-  height: auto; /* menține proporția imaginii */
+#fagaras {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/Poze-romanasul/1.Turnee/Finlanda-2022/Dans din Fagaras.jpg");
 }
-
-.dans h3 {
-  font-size: 20px;
-  margin-top: 10px; /* spațiu între imagine și titlu */
-  color: white; /* Schimbă culoarea textului pentru a se distinge pe fundalul întunecat */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adaugă o umbră textului pentru a îmbunătăți lizibilitatea */
-  transition: font-size 0.5s ease; /* Adaugă o tranziție pentru efect vizual */
+#codru {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/Poze-romanasul/2.Evenimente/1.Spectacole/5. Produs de Cluj/Codru_Produs1.jpg");
 }
-
+#calus {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/Poze-romanasul/1.Turnee/Belgia-2016/Calus 3.jpg");
+}
+#fecioresc {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/Poze-romanasul/1.Turnee/Belgia-2016/Fecioresc Baieti.jpg");
+}
+#crihalma {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/Poze-romanasul/1.Turnee/Belgia-2016/crihalma.jpg");
+}
+#oas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/Poze-romanasul/2.Evenimente/6.Aniversari/oas.jpg.png");
+}
+@media (min-width: 1540px) {
+  #crihalma {
+    background-position-y: 0px;
+  }
+}
 .dance-name {
   position: absolute;
   color: white;
-  bottom: 0%;
+  bottom: 40%;
   width: 100%; /* Asigură lățimea totală */
-  transition: bottom 0.3s ease;
+
+  h2 {
+    transition: all 0.3s ease;
+  }
 }
 .dans:hover {
   .dance-name {
-    bottom: 75%;
+    h2 {
+      transform: scale(1.15);
+    }
+  }
+}
+@media (max-width: 1460px) {
+  .dance-name {
+    h2 {
+      font-size: 36px;
+    }
   }
 }
 
@@ -1616,7 +1631,7 @@ label::before {
       margin-top: 30px;
     }
     .swiper-slide img {
-      max-width: 370px;
+      max-width: 100%;
       height: 30vh;
       border-radius: 30px;
     }
@@ -2626,6 +2641,13 @@ label::before {
     color: white;
     line-height: normal;
     margin-bottom: 2rem;
+  }
+
+  button {
+    background-color: white !important;
+    a {
+      color: maroon !important;
+    }
   }
 }
 

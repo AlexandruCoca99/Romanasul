@@ -1,11 +1,11 @@
 <?php include 'functions.php';
-get_header("Recent galley");
+get_header("2000-prezent");
 ?>
 
 <div class="gallery-wrapper recent-period ">
     <div class="gallery-image-wrapper">
         <div class="gallery-image-container">
-            <a href="images.php" class="close-button-container"><img src="images/close-red-icon.svg" /></a>
+            <a href="Imagini" class="close-button-container"><img src="images/close-red-icon.svg" /></a>
             <div class="image1 tall">
                 <img src="images\Poze-romanasul\4.Galerie\2010-prezent\img.jpg" alt="" />
             </div>

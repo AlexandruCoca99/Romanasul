@@ -1,11 +1,11 @@
 <?php include 'functions.php';
-get_header("Old galley");
+get_header("1974-2000");
 ?>
 
 <div class="gallery-wrapper old-period ">
     <div class="gallery-image-wrapper">
         <div class="gallery-image-container">
-            <a href="images.php" class="close-button-container"><img src="images/close-red-icon.svg" /></a>
+            <a href="Imagini" class="close-button-container"><img src="images/close-red-icon.svg" /></a>
 
 
             <div class="image">

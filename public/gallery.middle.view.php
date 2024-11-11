@@ -1,11 +1,11 @@
 <?php include 'functions.php';
-get_header("Middle galley");
+get_header("2000-2010");
 ?>
 
 <div class="gallery-wrapper mid-period ">
     <div class="gallery-image-wrapper">
         <div class="gallery-image-container">
-            <a href="images.php" class="close-button-container"><img src="images/close-red-icon.svg" /></a>
+            <a href="Imagini" class="close-button-container"><img src="images/close-red-icon.svg" /></a>
             <div class="image1">
                 <img src="images\gallery\pozeMijloc\banat_02.jpg" alt="" />
             </div>

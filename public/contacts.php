@@ -1,6 +1,6 @@
 <?php $page = "contacts";
 include 'functions.php';
-get_header("Contact Us");
+get_header("Contact");
 include 'header.php';
 ?>
 
@@ -16,18 +16,18 @@ include 'header.php';
                 <div class="right">
                     <div class="form-wrapper-right">
 
-                        <form method="post" action="send-email.php" enctype="multipart/form-data" class="contact-form">
+                        <form method="POST" action="send-email" enctype="multipart/form-data" class="contact-form">
 
                             <!-- Input prenume -->
                             <div class="input-wrap">
                                 <input type="text" name="name" class="contact-input" required>
-                                <label for="name">Name</label>
+                                <label for="name">Nume Prenume</label>
                                 <i class="icon fa-solid fa-address-card"></i>
                             </div>
                             <!-- Input nume -->
                             <div class="input-wrap">
                                 <input type="text" name="subject" class="contact-input" required>
-                                <label for="subject">Subject</label>
+                                <label for="subject">Subiect</label>
                                 <i class="icon fa-solid fa-address-card"></i>
                             </div>
                             <!-- Input email -->
@@ -47,27 +47,27 @@ include 'header.php';
                             <div class="contact-buttons">
                                 <button class="btn upload">
                                     <span>
-                                        <i class="fa-solid fa-paperclip"></i>Add attachment
+                                        <i class="fa-solid fa-paperclip"></i>Atașament
                                     </span>
                                     <input type="file" name="attachment">
                                 </button>
-                                <input type="submit" value="Send message" class="btn">
+                                <input type="submit" value="Trimite mesaj" class="btn">
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="left">
                     <div class="contact-card">
-                        <h2>Contact Information</h2>
+                        <h2>Informatii de contact</h2>
 
                         <div class="contact-details">
-                            <p><i class="fa fa-phone"></i> (+40) 0751356714</p>
-                            <p><i class="fa fa-envelope"></i> neneaLuci@romanasul.ro</p>
+                            <p><i class="fa fa-phone"></i> (+40)733115251</p>
+                            <p><i class="fa fa-envelope"></i> revnic2002@yahoo.com</p>
                             <p><i class="fa fa-map-marker"></i> Observator Student Complex, Strada Observatorului 34, Cluj-Napoca</p>
                         </div>
 
                         <div class="social-icons">
-                            <h3>Find us on social media</h3>
+                            <h3>Ne gasiti pe retelele de socializare</h3>
                             <a href="https://www.facebook.com/AnsamblulFolcloricRomanasul?locale=ro_RO"><i class="fa-brands fa-facebook fa-lg"></i></a>
                             <a href="https://www.instagram.com/romanasul.utcluj/"><i class="fa-brands fa-instagram fa-lg"></i></a>
                             <a href="https://www.youtube.com/@romanasulutcn853"><i class="fa-brands fa-youtube fa-lg"></i></a>

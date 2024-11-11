@@ -3,7 +3,6 @@
 function get_includes()
 {
   return '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../apis.google.com/js/plusone.js"></script>
     <script type="text/javascript" src="highslide/highslide-with-gallery.packed.js"/></script>
     <script src="//cdn.amcharts.com/lib/4/core.js"></script>
     <script src="//cdn.amcharts.com/lib/4/maps.js"></script>
@@ -70,6 +69,11 @@ function get_header($title = "")
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/Sigla-no-background.jpg" />
+        <meta name="description" content="‘Românașul Cluj-Napoca’, România este grupul tradițional de dans folcloric al Universității Tehnice. Ne place să dansăm și să cântăm, să participăm la festivaluri și să ne răspândim tradițiile, obiceiurile naționale, dansurile și cântecele în întreaga lume." />
+
+        <meta name="keywords" content="Romanasul, Cluj-Napoca, cluj, napoca, cj, romania, utcluj, UT, universitatea, tehnica, dance, dans popular, dansuri populare, traditii, folkloric, folk, festival, traditions, national customs, dancing, singing, music" />
+	      <meta name="verify-v1" content="KWriKiOK2JNWAK44Dz2MFU0B/OoblWp+kGv+oZBHPE0=" />
         <title>' . $title . '</title>
 
         ' . get_includes() . '
