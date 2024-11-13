@@ -66,6 +66,7 @@ body::-webkit-scrollbar {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 h1 {
@@ -654,7 +655,7 @@ nav {
   }
 
   .right-side-pop-up {
-    width: 50%;
+    width: 300px;
 
     .buttons-holder {
       text-align: center;
@@ -1298,7 +1299,7 @@ label::before {
 }
 #oas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/Poze-romanasul/2.Evenimente/6.Aniversari/oas.jpg.png");
+    url("../images/Poze-romanasul/2.Evenimente/6.Aniversari/oas.jpg");
 }
 @media (min-width: 1540px) {
   #crihalma {
@@ -1708,7 +1709,7 @@ label::before {
 
     .photo-1 {
       opacity: 1;
-      transform: translateX(0%);
+      transform: translateX(0%) !important;
       object-fit: cover;
       max-width: 100%;
       margin: auto;
@@ -1763,6 +1764,9 @@ label::before {
   }
   .members-list:nth-of-type(2n) {
     flex-direction: column;
+  }
+  .members-list:last-child {
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 875px) {

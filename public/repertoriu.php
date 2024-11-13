@@ -3,6 +3,14 @@ include 'functions.php';
 get_header("Repertoriu");
 include 'header.php';
 ?>
+<?php
+// Check if we're NOT on the page where the script should be excluded
+if ($_SERVER['REQUEST_URI'] !== '/repertoriu.php') {
+  echo '<script src="https://cdn.amcharts.com/lib/4/core.js"></script>';
+}
+?>
+
+
 
 <body>
 
@@ -99,7 +107,7 @@ include 'header.php';
       </div>
       <div class="dans" id="oas">
         <div class="dance-yt-video-container-oas hidden">
-          <iframe class="dance-yt-video" src="https://www.youtube.com/embed/bkeTImkpfKo?list=PL8-8E_OPpSPK11gh2B1GYn9qBY2YJL_tN" title="ANSAMBLUL FOLCLORIC ROMANASUL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <img src="images/backgroundTurnee.png" alt="">
         </div>
         <div class="dance-name">
           <h2>OAS</h2>

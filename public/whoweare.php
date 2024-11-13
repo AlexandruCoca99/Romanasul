@@ -31,7 +31,7 @@ include 'header.php';
             </div>
 
             <div class="members-presentation">
-                <h2 class="title">Membri:</h2>
+                <!-- <h2 class="title">Membri:</h2> -->
                 <!-- <p>Students of the Technical University and other Universities of Cluj-Napoca: each year, more than 80
                     students participate in our activities. Dancers, singers and musicians. Conductors, choreographers,
                     stage directors, referents, artistic counselors.</span> -->

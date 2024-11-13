@@ -11,13 +11,13 @@
             <div class="footer-section">
                 <h3>MENIU</h3>
                 <ul>
-                    <li><a href="home.php">Acasa</a></li>
-                    <li><a href="whoweare.php">Cine suntem</a></li>
-                    <li><a href="images.php">Galerie</a></li>
-                    <li><a href="tours.php">Turnee</a></li>
-                    <li><a href="repertoriu.php">Repertoriu</a></li>
+                    <li><a href="home">Acasă</a></li>
+                    <li><a href="whoweare">Cine suntem</a></li>
+                    <li><a href="Imagini">Galerie</a></li>
+                    <li><a href="tours">Turnee</a></li>
+                    <li><a href="repertoriu">Repertoriu</a></li>
                     <!-- <li><a href="reviews.view.php">Recenzii</a></li> -->
-                    <li><a href="contacts.php">Contact</a></li>
+                    <li><a href="contacts">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section combined">
@@ -44,19 +44,23 @@
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="social-section">
-                    <h3>NE GASESTI AICI:</h3>
+                    <h3>NE GĂSEȘTI AICI:</h3>
                     <div class="social-icons">
-                        <a href="https://facebook.com" target="_blank" class="social-icon facebook">
+                        <a href="https://www.facebook.com/AnsamblulFolcloricRomanasul?locale=ro_RO" target="_blank" class="social-icon facebook">
                             <i class="fab fa-facebook-f"></i>
                             <span>Facebook</span>
                         </a>
-                        <a href="https://instagram.com" target="_blank" class="social-icon instagram">
+                        <a href="https://www.instagram.com/romanasul.utcluj/" target="_blank" class="social-icon instagram">
                             <i class="fab fa-instagram"></i>
                             <span>Instagram</span>
                         </a>
-                        <a href="https://youtube.com" target="_blank" class="social-icon youtube">
+                        <a href="https://www.youtube.com/@romanasulutcn853" target="_blank" class="social-icon youtube">
                             <i class="fab fa-youtube"></i>
                             <span>YouTube</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@romanasul.utcluj" target="_blank" class="social-icon youtube">
+                            <i class="fab fa-tiktok"></i>
+                            <span>TikTok</span>
                         </a>
                     </div>
                 </div>

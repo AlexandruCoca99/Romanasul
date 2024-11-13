@@ -58,7 +58,7 @@ include 'header.php';
                 </div>
                 <div class="left">
                     <div class="contact-card">
-                        <h2>Informatii de contact</h2>
+                        <h2>Informații de contact</h2>
 
                         <div class="contact-details">
                             <p><i class="fa fa-phone"></i> (+40)733115251</p>
@@ -67,7 +67,7 @@ include 'header.php';
                         </div>
 
                         <div class="social-icons">
-                            <h3>Ne gasiti pe retelele de socializare</h3>
+                            <h3>Ne găsiți pe rețelele de socializare</h3>
                             <a href="https://www.facebook.com/AnsamblulFolcloricRomanasul?locale=ro_RO"><i class="fa-brands fa-facebook fa-lg"></i></a>
                             <a href="https://www.instagram.com/romanasul.utcluj/"><i class="fa-brands fa-instagram fa-lg"></i></a>
                             <a href="https://www.youtube.com/@romanasulutcn853"><i class="fa-brands fa-youtube fa-lg"></i></a>

@@ -35,7 +35,7 @@ new Swiper(".swiper-homepage", {
 });
 
 const countdown = () => {
-  const countDate = new Date("November 17, 2024 20:00:00").getTime();
+  const countDate = new Date("November 16, 2024 17:00:00").getTime();
   const now = new Date().getTime();
   const gap = countDate - now;
 

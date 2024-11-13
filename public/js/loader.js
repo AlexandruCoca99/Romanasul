@@ -3,7 +3,7 @@ jQuery(document).ready(function ($) {
   $("body").addClass("loading");
 
   // Once the window has fully loaded, hide the spinner and show the content
-  $(window).on("load", function () {
+  $(document).ready(function () {
     // Hide the spinner
     $("#spinner").fadeOut("slow", function () {
       // Once the spinner is hidden, show the main content
