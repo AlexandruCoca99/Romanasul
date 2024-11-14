@@ -2,17 +2,19 @@
 include('functions.php');
 get_header("Reviews");
 include('header.php');
-include '../public/reviewSection/mysqldataprovider.class.php'
+include __DIR__ . '/reviewSection/mysqldataprovider.class.php'
 ?>
 
 <?php
-
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 $model = new MySqlDataProvider(); // Create an instance of the ReviewModel
 $reviews = $model->get_review(); // Fetch all reviews
 $ratingStats = $model->fetchRatingStats(); // Fetch rating statistics
 $totalRating = 0;
 $ratingsCount = [1 => 0, 2 => 0, 3 => 0, 4 => 0, 5 => 0];
-
+$count = 0;
 foreach ($reviews as $review):
     $count++;
     $rating = htmlspecialchars($review['rating']);

@@ -1,6 +1,6 @@
 <?php $page = "whoweare";
 include 'functions.php';
-get_header("Cine suntem");
+get_header("Ansamblul folcloric Romanașul");
 include 'header.php';
 ?>
 
@@ -139,10 +139,10 @@ include 'header.php';
                     <div class="member-content">
                         <h2 class="title">Directori artistici</h2>
                         <ul>
-                            <li>1. Lucian Revnic (200x - prezent)</li>
-                            <li>2. Ing. Marius Moldovan (2004 - now)</li>
-                            <li>3. Anghel Mirela (2003 - now)</li>
-                            <li>4. Prof. Victor Bercea (1982 - 1989; 2002 - now)</li>
+                            <li>1. Lucian Revnic (2013 - prezent)</li>
+                            <li>2. Ing. Marius Moldovan (2004 - 2013)</li>
+                            <li>3. Anghel Mirela (2003 - 2004)</li>
+                            <li>4. Prof. Victor Bercea (1982 - 1989; 2002 - 2003)</li>
                             <li>5. Prof. Mîndru Alexandru (1981 - 2003)</li>
                             <li>6. Prof. Ioan Bârsan (1974 - 1981)</li>
 

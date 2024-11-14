@@ -21,5 +21,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit-button'])) {
     $dataProvider->insert_review($name, $surname, $rating, $comment);
 }
 
-header("Location: ../thankyou.view.php");
+header("Location: ../thankyou.view");
 die();

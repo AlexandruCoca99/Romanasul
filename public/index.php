@@ -1,6 +1,6 @@
 <?php $page = "index";
 include 'functions.php';
-get_header("Acasă");
+get_header("Ansamblul folcloric Romanașul");
 include 'header.php';
 ?>
 

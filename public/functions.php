@@ -69,7 +69,7 @@ function get_header($title = "")
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="images/Sigla-no-background.jpg" />
+        <link rel="shortcut icon" href="images/Sigla-noua.png" />
         <meta name="description" content="‘Românașul Cluj-Napoca’, România este grupul tradițional de dans folcloric al Universității Tehnice. Ne place să dansăm și să cântăm, să participăm la festivaluri și să ne răspândim tradițiile, obiceiurile naționale, dansurile și cântecele în întreaga lume." />
 
         <meta name="keywords" content="Romanasul, Cluj-Napoca, cluj, napoca, cj, romania, utcluj, UT, universitatea, tehnica, dance, dans popular, dansuri populare, traditii, folkloric, folk, festival, traditions, national customs, dancing, singing, music" />

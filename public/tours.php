@@ -1,6 +1,6 @@
 <?php $page = "videos";
 include 'functions.php';
-get_header("Turnee");
+get_header("Ansamblul folcloric Romanașul");
 include 'header.php';
 ?>
 
@@ -19,213 +19,285 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
 <div id="chartdiv"></div>
 
 <div class="background"></div>
-<div class="right-side-pop-up"></div>
+<div class="right-side-pop-up hidden"></div>
 
 <div class="right-side-container ">
   <table>
-    <caption>International tours</caption>
+    <caption>Turnee internaționale</caption>
     <tr>
-      <th>Year</th>
-      <th>Country</th>
-      <th>City/Cities</th>
+      <th>An</th>
+      <th>Țară</th>
+      <th>Oraș/Orașe</th>
+    </tr>
+    <tr>
+      <td data-cell="Year">2023</td>
+      <td data-cell="Country"><strong>Canada<strong></td>
+      <td data-cell="City">Winnipeg</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2023</td>
+      <td data-cell="Country"><strong>Maroc<strong></td>
+      <td data-cell="City">Larache, Tangier, Rabat</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2023</td>
+      <td data-cell="Country"><strong>Dubai<strong></td>
+      <td data-cell="City">Sharjah</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2022</td>
+      <td data-cell="Country"><strong>Spania<strong></td>
+      <td data-cell="City">Calella</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2021</td>
+      <td data-cell="Country"><strong>Franța<strong></td>
+      <td data-cell="City">Marsilia</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2019</td>
+      <td data-cell="Country"><strong>Portugalia<strong></td>
+      <td data-cell="City">Matosinhos</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2019</td>
+      <td data-cell="Country"><strong>Bosnia<strong></td>
+      <td data-cell="City">Milici</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2019</td>
+      <td data-cell="Country"><strong>Dubai<strong></td>
+      <td data-cell="City">Sharjah</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2018</td>
+      <td data-cell="Country"><strong>Franța<strong></td>
+      <td data-cell="City">Montignac</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2017</td>
+      <td data-cell="Country"><strong>Polonia<strong></td>
+      <td data-cell="City">Wisla</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2016</td>
+      <td data-cell="Country"><strong>Belga<strong></td>
+      <td data-cell="City">Edegem</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2015</td>
+      <td data-cell="Country"><strong>Olanda<strong></td>
+      <td data-cell="City">Sivo</td>
     </tr>
     <tr>
       <td data-cell="Year">2014</td>
-      <td data-cell="Country"><strong>Poland<strong></td>
+      <td data-cell="Country"><strong>Polonia<strong></td>
       <td data-cell="City">Katovice</td>
     </tr>
     <tr>
       <td data-cell="Year">2013</td>
-      <td data-cell="Country"><strong>Poland<strong></td>
+      <td data-cell="Country"><strong>Polonia<strong></td>
       <td data-cell="City">Plock</td>
     </tr>
     <tr>
       <td data-cell="Year">2012</td>
-      <td data-cell="Country"><strong><?php echo ("Russia") ?><strong></td>
+      <td data-cell="Country"><strong>Russia<strong></td>
       <td data-cell="City">Moskova, Vladimir</td>
     </tr>
     <tr>
       <td data-cell="Year">2011</td>
-      <td data-cell="Country"><strong><?php echo ("Macedonia") ?><strong></td>
+      <td data-cell="Country"><strong>Macedonia<strong></td>
       <td data-cell="City">Ohrid</td>
     </tr>
     <tr>
       <td data-cell="Year">2010</td>
-      <td data-cell="Country"><strong><?php echo ("Netherlands") ?><strong></td>
+      <td data-cell="Country"><strong>Netherlands<strong></td>
       <td data-cell="City">Diepenheim</td>
     </tr>
     <tr>
       <td data-cell="Year">2009</td>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Argenton sur Creuse, Marcillat-en-Combrailles, Saint-Florent sur Cher, Paizay-le-Sec, Oradour-sur-Vayres</td>
     </tr>
     <tr>
       <td data-cell="Year">2008</td>
-      <td data-cell="Country"><strong><?php echo ("Italy") ?><strong></td>
+      <td data-cell="Country"><strong>Italia<strong></td>
       <td data-cell="City">Cunardo Varese</td>
     </tr>
     <tr>
-      <td data-cell="Year" rowspan="3" valign=TOP>2007</td>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
-      <td data-cell="City">Nice</td>
-    </tr>
-    <tr>
-      <td data-cell="Country"><strong><?php echo ("Italy") ?><strong></td>
+      <td data-cell="Year">2008</td>
+      <td data-cell="Country"><strong>Italia<strong></td>
       <td data-cell="City">Coredo Trentino</td>
     </tr>
     <tr>
-      <td data-cell="Country"><strong><?php echo ("Switzerland") ?><strong></td>
-      <td data-cell="City"></td>
+      <td data-cell="Year">2007</td>
+      <td data-cell="Country"><strong>Franța<strong></td>
+      <td data-cell="City">Nice</td>
+    </tr>
+    <tr>
+      <td data-cell="Year">2007</td>
+      <td data-cell="Country"><strong>Switzerland<strong></td>
+      <td data-cell="City">Evolene</td>
     </tr>
 
     <tr>
       <td data-cell="Year">2006</td>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Suman, Volvic, Cellule, Gannat</td>
     </tr>
     <tr>
-      <td data-cell="Year" rowspan="2">2005</td>
-      <td data-cell="Country"><strong><?php echo ("Italy") ?><strong></td>
+      <td data-cell="Year">2005</td>
+      <td data-cell="Country"><strong>Italia<strong></td>
       <td data-cell="City">Parma</td>
     </tr>
     <tr>
-      <td data-cell="Country"><strong><?php echo ("Serbia - Montenegro") ?>&nbsp;&nbsp;&nbsp;&nbsp;<strong></td>
+      <td data-cell="Year">2005</td>
+      <td data-cell="Country"><strong>Serbia - Montenegro<strong></td>
       <td data-cell="City">Loznica</td>
     </tr>
     <tr>
       <td data-cell="Year">2004</td>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Poitiers, Marseille, Gannat, Bourges</td>
     </tr>
     <tr>
-      <td data-cell="Year" rowspan="3">2003</td>
-      <td data-cell="Country"><strong><?php echo ("Greece") ?><strong></td>
+      <td data-cell="Year">2003</td>
+      <td data-cell="Country"><strong>Greece<strong></td>
       <td data-cell="City">Chalkida</td>
     </tr>
     <tr>
-      <td data-cell="Country"><strong><?php echo ("Turkey") ?><strong></td>
+      <td data-cell="Year">2003</td>
+      <td data-cell="Country"><strong>Turkey<strong></td>
       <td data-cell="City">Antakya</td>
     </tr>
     <tr>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Year">2002</td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Bourgtheroulde, Bourg-Achard, Gannat, Vichy, Montmarault</td>
     </tr>
     <tr>
-      <td data-cell="Year" rowspan="3">2002</td>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Year">2002</td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Rouen</td>
     </tr>
     <tr>
-      <td data-cell="Country"><strong><?php echo ("Macedonia") ?><strong></td>
+      <td data-cell="Year">2002</td>
+      <td data-cell="Country"><strong>Macedonia<strong></td>
       <td data-cell="City">Skopje</td>
     </tr>
     <tr>
-      <td data-cell="Country"><strong><?php echo ("Italy") ?><strong></td>
+      <td data-cell="Year">2001</td>
+      <td data-cell="Country"><strong>Italia<strong></td>
       <td data-cell="City">Atina</td>
     </tr>
     <tr>
       <td data-cell="Year">2001</td>
-      <td data-cell="Country"><strong><?php echo ("Turkey") ?><strong></td>
+      <td data-cell="Country"><strong>Turkey<strong></td>
       <td data-cell="City">Tasova</td>
     </tr>
     <tr>
       <td data-cell="Year">2000</td>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Montignac, Concarneau</td>
     </tr>
     <tr>
       <td data-cell="Year">1998</td>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Montignac</td>
     </tr>
     <tr>
       <td data-cell="Year">1997</td>
-      <td data-cell="Country"><strong><?php echo ("Italy") ?><strong></td>
+      <td data-cell="Country"><strong>Italia<strong></td>
       <td data-cell="City">Alatri</td>
     </tr>
     <tr>
       <td data-cell="Year">1995</td>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Lir&eacute;</td>
     </tr>
     <tr>
       <td data-cell="Year">1994</td>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Montignac</td>
     </tr>
     <tr>
       <td data-cell="Year">1993</td>
-      <td data-cell="Country"><strong><?php echo ("South Africa") ?><strong></td>
+      <td data-cell="Country"><strong>South Africa<strong></td>
       <td data-cell="City">Johannesburg</td>
     </tr>
     <tr>
       <td data-cell="Year">1992</td>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Guegnon, Saint Di&eacute; des Vosges</td>
     </tr>
     <tr>
-      <td data-cell="Year" rowspan="2">1991</td>
-      <td data-cell="Country"><strong><?php echo ("USA") ?><strong></td>
+      <td data-cell="Year">1991</td>
+      <td data-cell="Country"><strong>USA<strong></td>
       <td data-cell="City">Carolina de Nord</td>
     </tr>
     <tr>
-      <td data-cell="Country"><strong><?php echo ("Switzerland") ?><strong></td>
+      <td data-cell="Year">1991</td>
+      <td data-cell="Country"><strong>Switzerland<strong></td>
       <td data-cell="City">Lausanne</td>
     </tr>
     <tr>
       <td data-cell="Year">1990</td>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Dijon, Montignac</td>
     </tr>
     <tr>
       <td data-cell="Year">1986</td>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Thiers, Puy en Vellay, Quimper, Baule</td>
     </tr>
     <tr>
       <td data-cell="Year">1985</td>
-      <td data-cell="Country"><strong><?php echo ("Spain") ?><strong></td>
+      <td data-cell="Country"><strong>Spain<strong></td>
       <td data-cell="City">Rohanda, Barcelona</td>
     </tr>
     <tr>
-      <td data-cell="Year" rowspan="2">1984</td>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Year">1984</td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Montignac, Mont-Blank(Herrault)</td>
     </tr>
     <tr>
-      <td data-cell="Country"><strong><?php echo ("Spain") ?><strong></td>
+      <td data-cell="Year">1984</td>
+      <td data-cell="Country"><strong>Spain<strong></td>
       <td data-cell="City">Portugalete-Bilbao</td>
     </tr>
     <tr>
-      <td data-cell="Year" rowspan="2">1983</td>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Year">1983</td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Montignac</td>
     </tr>
     <tr>
-      <td data-cell="Country"><strong><?php echo ("Spain") ?><strong></td>
+      <td data-cell="Year">1983</td>
+      <td data-cell="Country"><strong>Spain<strong></td>
       <td data-cell="City">Portugalete</td>
     </tr>
     <tr>
-      <td data-cell="Year" rowspan="2">1982</td>
-      <td data-cell="Country"><strong><?php echo ("Norway") ?><strong></td>
+      <td data-cell="Year">1982</td>
+      <td data-cell="Country"><strong>Norway<strong></td>
       <td data-cell="City">Oslo</td>
     </tr>
     <tr>
-      <td data-cell="Country"><strong><?php echo ("Switzerland") ?><strong></td>
+      <td data-cell="Year">1982</td>
+      <td data-cell="Country"><strong>Switzerland<strong></td>
       <td data-cell="City">Lausanne</td>
     </tr>
     <tr>
       <td data-cell="Year">1981</td>
-      <td data-cell="Country"><strong><?php echo ("Greece") ?><strong></td>
+      <td data-cell="Country"><strong>Greece<strong></td>
       <td data-cell="City">Atena</td>
     </tr>
     <tr>
-      <td data-cell="Year" rowspan="2">1980</td>
-      <td data-cell="Country"><strong><?php echo ("Switzerland") ?><strong></td>
+      <td data-cell="Year">1980</td>
+      <td data-cell="Country"><strong>Switzerland<strong></td>
       <td data-cell="City">Lausanne</td>
     </tr>
     <tr>
-      <td data-cell="Country"><strong><?php echo ("France") ?><strong></td>
+      <td data-cell="Year">1980</td>
+      <td data-cell="Country"><strong>Franța<strong></td>
       <td data-cell="City">Savoie, Haute Savoie</td>
     </tr>
   </table>
@@ -407,31 +479,30 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <div class="swiper-slide">
           <figure>
             <img
-              src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/"
-              alt="Mall Dans de Moldova" />
+              src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/Dubai Mall 2019.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/dubal hotel.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/Poza pe nisip.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/Poze spectacol +afis+ steag.jpg" />
           </figure>
         </div>
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/Premii Dubai 2019.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
@@ -468,31 +539,49 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <div class="swiper-slide">
           <figure>
             <img
-              src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2023/"
+              src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Dans din Maramures.jpg"
               alt="Mall Dans de Moldova" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Fecioresc.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Poza cu ghizi.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Poza la turnuri.jpg" />
           </figure>
         </div>
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Poza pe plaja.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Poza spectacol.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Romanasul la standul romanesc.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Safari.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
@@ -774,43 +863,61 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg" />
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Colaj 2.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg" />
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Colaj.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
             <img
-              src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg" />
+              src="images/Poze-romanasul/1.Turnee/Franta-2021/Dans din Moldova.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg" />
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Inceput dans din Moldova.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg" />
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Lyubliana -autocar.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg" />
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Marsilia 1.jpg" />
           </figure>
         </div>
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Afis.jpg" />
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/marsseille.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Orchestra +Dansatori -Poza de grup la repetitii.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/Orchestra Franta.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Franta-2021/poza chateau-gombert.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
@@ -1038,44 +1145,139 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.2. 2023/Alaturi de Presedinte.jpg" />
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Boju.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
-        <div class="swiper-slide">
+        <div class=" swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2013/" />
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Calus 2.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
             <img
-              src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/"
-              alt="Mall Dans de Moldova" />
+              src="images/Poze-romanasul/1.Turnee/Belgia-2016/Calus 3.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1. 2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Codru.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Colaj.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/crihalma.jpg" />
           </figure>
         </div>
         <div class="swiper-slide">
           <figure>
-            <img src="images/Poze-romanasul/1.Turnee/Dubai/3.1.2019/" />
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Dans din Banat fete+baieti.jpeg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Dans din Codru.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Dans din maramures traditie cu masti.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Dans din Moldova.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Dans din Nasaud.jpeg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Dans in biserica.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Fecioresc Baieti.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Masti 2.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Orchestra Belgia.jpeg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Poza de grup.jpeg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Premiere.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Romanasii cu alti dansatori.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Romanasul cu steagul.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Sakut.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Saritura Baieti.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Sarituri Baieti.jpg" />
+          </figure>
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/Poze-romanasul/1.Turnee/Belgia-2016/Workshop.jpg" />
           </figure>
         </div>
         <!-- end swiper-slide -->

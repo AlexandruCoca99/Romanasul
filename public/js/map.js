@@ -256,6 +256,14 @@ jQuery(document).ready(function ($) {
             pattern.x = 15 * widthScale;
             pattern.y = 4.7 * heightScale;
             break;
+          case "PL":
+            image.width = 3;
+            image.height = image.width;
+            pattern.width = image.width - 0.1;
+            pattern.height = pattern.width;
+            pattern.x = 1.5 * widthScale;
+            pattern.y = -1.6 * heightScale;
+            break;
           case "MA":
             image.width = 2;
             image.height = image.width;
@@ -369,9 +377,19 @@ jQuery(document).ready(function ($) {
       });
     }
 
+    hideRightSidePopUp() {
+      const myDiv = $(".right-side-pop-up");
+      if (window.innerWidth < 800) {
+        myDiv.classList.add("hidden");
+      } else {
+        myDiv.classList.remove("hidden");
+      }
+    }
+
     // Method to display the right side container with country details
     displayRightSideContainer(countryData) {
       const isMobile = window.innerWidth <= 650;
+      $(".right-side-pop-up").removeClass("hidden");
       $(".right-side-pop-up").addClass("show");
       $(".right-side-pop-up").html(this.renderRightSideContent(countryData));
       $(".background").addClass("show");
@@ -386,6 +404,7 @@ jQuery(document).ready(function ($) {
         $(".swiper-main").removeClass("hidden");
         $(`#${id}.swiper`).removeClass("hidden");
         $(".right-side-pop-up").removeClass("show");
+        $(".right-side-pop-up").addClass("hidden");
         $(".background").removeClass("show");
       });
     }
@@ -519,7 +538,7 @@ jQuery(document).ready(function ($) {
       id: "FR",
       title: "France",
       fill: "images/gallery/AfiseTurnee/France.jpg",
-      buttons: ["FR-2022"],
+      buttons: ["FR-2021"],
     },
     {
       id: "PT",

@@ -1,6 +1,6 @@
 <?php $page = "Imagini";
 include 'functions.php';
-get_header("Imagini");
+get_header("Ansamblul folcloric Romanașul");
 include 'header.php';
 ?>
 <div class="gallery-container">
