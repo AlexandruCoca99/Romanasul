@@ -69,7 +69,7 @@
         </div>
         <div class="footer-bottom">
             <div class="whatsapp">
-                <a href="https://wa.me/0733115251" class="float" target="_blank">
+                <a href="https://wa.me/+40733115251" class="float" target="_blank">
                     <i class="fa-brands fa-whatsapp"> </i>
                 </a>
                 <!-- <span class="tooltip-text">Contact us on WhatsApp</span> -->

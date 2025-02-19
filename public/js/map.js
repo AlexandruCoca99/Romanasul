@@ -26,6 +26,21 @@ jQuery(document).ready(function ($) {
         this.chart.geodata = am4geodata_worldLow;
         // Set the map's projection type
         this.chart.projection = new am4maps.projections.Miller();
+        // Enable zoom control (buttons to zoom in/out)
+        this.chart.zoomControl = new am4maps.ZoomControl();
+        // Move zoom control to the left
+        this.chart.zoomControl.align = "left";
+        // this.chart.zoomControl.valign = "top";
+        // Enable touch zoom and mouse wheel zoom
+        this.chart.chartContainer.wheelable = true;
+        this.chart.seriesContainer.mouseWheelBehavior = "zoom"; // Allow mouse wheel zooming
+        this.chart.seriesContainer.touchZoomBehavior = "zoom"; // Allow touch pinch zooming
+        this.chart.zoomControl.width = 50; // Increase button width
+        this.chart.zoomControl.height = 100; // Increase button height
+
+        // Optional: Restrict zoom levels (e.g., to prevent too much zooming out)
+        this.chart.minZoomLevel = 1; // Minimum zoom level
+        this.chart.maxZoomLevel = 42; // Maximum zoom level
         // this.chart.responsive.enabled = true;
         // this.chart.background.fill = am4core.color("#D3D3D3");
         // this.chart.background.fillOpacity = 1;
@@ -234,11 +249,11 @@ jQuery(document).ready(function ($) {
             break;
           case "FI":
             image.width = 3;
-            image.height = image.width;
-            pattern.width = image.width - 0.1;
-            pattern.height = pattern.width;
-            pattern.x = 5.4 * widthScale;
-            pattern.y = 2 * heightScale;
+            image.height = image.width - 1;
+            pattern.width = image.width;
+            pattern.height = pattern.width - 1;
+            pattern.x = 1.5 * widthScale;
+            pattern.y = 5.5 * heightScale;
             break;
           case "NL":
             image.width = 15;
@@ -250,10 +265,10 @@ jQuery(document).ready(function ($) {
             break;
           case "FR":
             image.width = 4;
-            image.height = image.width;
+            image.height = image.width - 2.6;
             pattern.width = image.width - 0.1;
-            pattern.height = pattern.width;
-            pattern.x = 15 * widthScale;
+            pattern.height = pattern.width - 2.6;
+            pattern.x = 1 * widthScale;
             pattern.y = 4.7 * heightScale;
             break;
           case "PL":
@@ -436,11 +451,11 @@ jQuery(document).ready(function ($) {
       $("#toggleMap").on("click", function (e) {
         if (mapVisible) {
           $("#chartdiv").hide();
-          $(this).text("Show Map");
+          $(this).text("Arată harta");
           $(".right-side-container").css("padding-top", "100px");
         } else {
           $("#chartdiv").show(); // Show the map
-          $(this).text("Hide Map"); // Change button text
+          $(this).text("Ascunde harta"); // Change button text
           $(".right-side-container").css("padding-top", "0px");
         }
 
@@ -461,7 +476,7 @@ jQuery(document).ready(function ($) {
         ${
           buttons
             ? `
-        <h3>Image Gallery</h3>
+        <h3>Galerie</h3>
         <div class="buttons-holder">
           ${buttons?.map(
             (button) =>
@@ -526,7 +541,7 @@ jQuery(document).ready(function ($) {
       id: "PL",
       title: "Poland",
       fill: "images/backgroundTurnee.png",
-      buttons: ["PL-2013", "PL-2014", "PL-2017"],
+      buttons: ["PL-2013", "PL-2014"],
     },
     {
       id: "FI",

@@ -13,7 +13,7 @@ $countries = [array('id' => 'CA-2022'), array('id' => 'ES-2022'), array('id' => 
 
 
 
-<button id="toggleMap">Hide Map</button>
+<button id="toggleMap">Ascunde harta</button>
 
 
 <div id="chartdiv"></div>

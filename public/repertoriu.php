@@ -34,10 +34,10 @@ if ($_SERVER['REQUEST_URI'] !== '/repertoriu.php') {
 
       <div class="dans " id="maramures">
         <div class="dance-yt-video-container-maramures hidden">
-          <iframe class="dance-yt-video" src="https://www.youtube.com/embed/X3pjy1rcb9I" title="Ansamblul Folcloric Romanasul - Dans din Maramures" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe class="dance-yt-video" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FAnsamblulFolcloricRomanasul%2Fvideos%2F783786836439910%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
         </div>
         <div class="dance-name">
-          <h2>MARAMURES</h2>
+          <h2>MARAMUREȘ</h2>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_URI'] !== '/repertoriu.php') {
           <iframe class="dance-yt-video" src="https://www.youtube.com/embed/BwPlQ0nch0w" title="Ansamblul Folcloric Romanasul - Cantec si dans din Nasaud" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="dance-name">
-          <h2>NASAUD</h2>
+          <h2>NĂSĂUD</h2>
         </div>
       </div>
       <div class="dans" id="moldova">
@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_URI'] !== '/repertoriu.php') {
           <iframe class="dance-yt-video" src="https://www.youtube.com/embed/HeNc5Fnq99I" title="Ansamblul Romanasul - Dans din Transilvania" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="dance-name" style="transform: translateY(20%);">
-          <h2>CAMPIA <br> TRANSILVANIEI</h2>
+          <h2>CÂMPIA <br> TRANSILVANIEI</h2>
         </div>
       </div>
       <div class="dans" id="fagaras">
@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_URI'] !== '/repertoriu.php') {
           <iframe class="dance-yt-video" src="https://www.youtube.com/embed/CkVh8z6ijUc" title="Ansamblul Folcloric Romanasul - Dans din Fagaras" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="dance-name">
-          <h2>FAGARAS</h2>
+          <h2>FĂGĂRAȘ</h2>
         </div>
       </div>
       <div class="dans" id="codru">
@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_URI'] !== '/repertoriu.php') {
           <iframe class="dance-yt-video" src="https://www.youtube.com/embed/Ag81FgRqi_o" title="Ansamblul Folcloric Romanasul - Calus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="dance-name">
-          <h2>CALUS</h2>
+          <h2>CĂLUȘ</h2>
         </div>
       </div>
       <div class="dans" id="fecioresc">
@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_URI'] !== '/repertoriu.php') {
           <img src="images/backgroundTurnee.png" alt="">
         </div>
         <div class="dance-name">
-          <h2>OAS</h2>
+          <h2>OAȘ</h2>
         </div>
       </div>
     </div>

@@ -58,7 +58,7 @@ const musicians = [
   "Mircea Câmpeanu",
 ];
 
-const individuals = ["Vania Atudorei", "Victor Bercea"];
+const individuals = ["Vania Atudorei", "Victor Bercea", "Oana Camelia Bara"];
 
 const swiperConfigs = {
   slidesPerView: 1.1,
